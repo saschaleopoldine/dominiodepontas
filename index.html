@@ -29,27 +29,32 @@
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
-
+    <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/forside.scss" rel="stylesheet" type="text/css">
-
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
-
+<body>
 <header class="header">
     <nav class="menubar">
         <ul>
-        <li class="forside"><a href="#">FORSIDE</a></li>
-        <li class="voresvin"><a href="voresvin.html">VORES VINE</a></li>
-        <li class="forhandler">FORHANDLER</li>
-            <img src="Image/logoweb.png">
-        <li class="arrangementer">ARRANGEMENTER</li>
-        <li class="kontaktos"><a href="kontaktos.html">KONTAKT OS</a></li>
+            <li class="forside"><a href="index.html">FORSIDE</a></li>
+            <li class="forside"><a href="#">VORES VIN</a></li>
+            <li class="forside"><a href="#">FORHANDLERE</a></li>
+            <img  class="logoweb" src="Image/logoweb.png" height="200" width="auto"/>
+            <li class="forside"><a href="#">ARRANGEMENTER</a></li>
+            <li class="forside"><a href="kontaktos.html">KONTAKT OS</a></li>
         </ul>
+
+        <i class="fa fas fa-bars"></i>
     </nav>
+
+    <img class="logomobil" src="Image/logomobil.png" height="328" width="385"/>
+
+</header>
 
     <p class="cta">Som medlem modtager du tilbud og rabatter,<br>
         og så har du mulighed for at være med i konkurrencen <br>
@@ -158,12 +163,57 @@
     </div>
 </section>
 
+<footer>
+    <div class="footer">
+        <div class="footertekst">
+            <div class="kontaktos">
+                <h1>Kontakt os</h1>
+                <ul>
+                    <li>Tlf.: +45 45 34 56 23</li>
+                    <li>E-mail: Dominio@depontas.com</li>
+                    <li>Adresse: Benegorri 31395, Navarra, Spanien</li>
+                </ul>
+            </div>
+            <div class="Åbningstider">
+                <h1>Åbningstider</h1>
+                <ul>
+                    <li>Man-Tors: kl 11.00 - 15.00</li>
+                    <li>Fredag: kl: 15.00 - 18.00</li>
+                    <li>Lørdag: kl: 10.00 - 17.00</li>
+                    <li>Søndag: LUKKET</li>
+                </ul>
+            </div>
+            <div class="vores vine"></div>
+            <h1>Vores Vine</h1>
+            <ul>
+                <li>Rødvin</li>
+                <li>Hvidvin</li>
+                <li>Rosévin</li>
+            </ul>
+            <div class="arrangementer">
+                <h1>Arrangementer</h1>
+                <ul>
+                    <li>Vinsmagning</li>
+                    <li>Rundvisning</li>
+                    <li>Messer 2018</li>
+                </ul>
+            </div>
+        </div>
+        <div class="socialemedier">
+            <div class="instagram">
+                <i class="fa fab fa-instagram"></i>
+            </div>
+            <div class="Facebook">
+                <i class="fa fab fa-facebook-square"></i>
+            </div>
+            <div class="Youtube">
+                <i class="fa fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
-
-
-
-<body>
 </body>
 </html>
