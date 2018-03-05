@@ -7,6 +7,7 @@
 
 body {
   margin: 0; // Ingen kanter i siden af browser
+  background-color: #f4ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,18 +37,17 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-@media screen and (min-width: 768px) {
-  // Alt der ændres i tablet stående fra mobil
-}
 
-@media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
-}
+$darkbeige: #f4ease;
+$lightbeige: #fff5ed;
+$brown: #4b2d1b;
+$green: #878532;
+$gold: linear-gradient(to right, #dcc17a, #a18348, #e4c981, #9d7f3f);
+
+
+
+
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-}
-
-@media print {
-  // Alt der gælder for print specifikt
 }
