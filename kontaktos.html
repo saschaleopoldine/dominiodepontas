@@ -46,7 +46,7 @@
     <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/kontaktos.scss" rel="stylesheet" type="text/css">
+    <link href="css/kontaktos.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,6 +56,8 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
+<div class="grid1">
+<header>
     <header class="header">
         <nav class="menubar">
             <ul>
@@ -81,13 +83,13 @@
     </p>
 
     <div class="cta"><a href="#">Bliv medlem her></a></div>
-
-
 </header>
 <section>
-    <div class="kontakt os">
+    <div class="kontaktos">
         <h1>Kontakt Os</h1></div>
+    <br>
     <div> <img src="Image/mellemstreg.png"></div>
+    <br>
 
     <div class="mapsogkontakt">
         <div class="googlemaps">
@@ -126,7 +128,7 @@
         </div>
     </div>
 </section>
-
+<br>
 
     <div> <img src="Image/mellemstreg.png"></div>
 
@@ -163,7 +165,7 @@
       <div class="footertekst">
           <div class="kontaktos">
           <h1>Kontakt os</h1>
-              <ul>
+              <ul class="adressen">
                   <li>Tlf.: +45 45 34 56 23</li>
                   <li>E-mail: Dominio@depontas.com</li>
                   <li>Adresse: Benegorri 31395, Navarra, Spanien</li>
@@ -171,7 +173,7 @@
           </div>
       <div class="Åbningstider">
               <h1>Åbningstider</h1>
-          <ul>
+          <ul class="åbningstiderne">
               <li>Man-Tors: kl 11.00 - 15.00</li>
               <li>Fredag: kl: 15.00 - 18.00</li>
               <li>Lørdag: kl: 10.00 - 17.00</li>
@@ -180,14 +182,14 @@
           </div>
       <div class="vores vine"></div>
           <h1>Vores Vine</h1>
-          <ul>
+          <ul class="vinene">
               <li>Rødvin</li>
               <li>Hvidvin</li>
               <li>Rosévin</li>
           </ul>
       <div class="arrangementer">
       <h1>Arrangementer</h1>
-          <ul>
+          <ul class="arrangementerne">
               <li>Vinsmagning</li>
               <li>Rundvisning</li>
               <li>Messer 2018</li>
@@ -212,7 +214,6 @@
       </div>
   </div>
 </footer>
-
-
+</div>
 </body>
 </html>
