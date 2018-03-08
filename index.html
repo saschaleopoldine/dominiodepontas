@@ -9,7 +9,7 @@
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Dominio de Pontas</title>
     <!-- En kort beskrivelser af indholdet på siden -->
     <meta name="description" content="Max ca. 170-200 karakterer - 600px">
     <!-- indsæt de keywords du har fundet frem til-->
@@ -31,39 +31,42 @@
     <meta name="copyright" content="Information om copyright">
     <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/forside.scss" rel="stylesheet" type="text/css">
+    <link href="css/forside.css" rel="stylesheet" type="text/css">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+<!-- ----------------------------HEADER WEB------------------------------------------- -->
+
 </head>
 <body>
-<header class="header">
-    <nav class="menubar">
-        <ul>
-            <li class="forside"><a href="index.html">FORSIDE</a></li>
-            <li class="forside"><a href=voresvin.html>VORES VIN</a></li>
-            <li class="forside"><a href="#">FORHANDLERE</a></li>
-            <img alt="Logo Dominios de Pontas" class="logoweb" src="Image/logoweb.png" height="200" width="auto"/>
-            <li class="forside"><a href="#">ARRANGEMENTER</a></li>
-            <li class="forside"><a href="kontaktos.html">KONTAKT OS</a></li>
-        </ul>
+<div class="header">
+    <div class="menubar">
+        <div class="item1"><a href="index.html"> FORSIDE</a></div>
+        <div class="item1"><a href="voresvin.html">VORES VIN</a></div>
+        <div class="item1"><a href="#">FORHANDLERE</a></div>
+        <div class="item1"><div class="logo"> <img src="Image/logoweb.png"></div></div>
+        <div class="item1"><a href="#">ARRANGEMENTER</a></div>
+        <div class="item1"><a href="kontaktos.html">KONTAKT OS</a></div>
+    </div>
+</div>
+
+
+
+
+<!-- -------------------------WEB/MOBIL TEKST/CTA ------------------------------------ -->
 
         <p class="cta">Som medlem modtager du tilbud og rabatter,<br>
             og så har du mulighed for at være med i konkurrencen <br>
             om en rejse for 2 til vores vingård, som ligger i Navarra <br>
             i det nordlige Spanien.
         </p>
+<div class="cta"><a href="#">Bliv medlem her></a></div>
+<i class="fa fas fa-bars"></i>
+<img alt="Logo Dominios de Pontas" class="logomobil" src="Image/logomobil.png" height="328" width="385"/>
 
-        <div class="cta"><a href="#">Bliv medlem her></a></div>
 
-        <i class="fa fas fa-bars"></i>
-    </nav>
-
-    <img alt="Logo Dominios de Pontas" class="logomobil" src="Image/logomobil.png" height="328" width="385"/>
-
-</header>
-
+</div>
 
 <p class="mobilcta">Som medlem modtager du tilbud og rabatter,<br>
     og så har du mulighed for at være med i konkurrencen <br>

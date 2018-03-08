@@ -5,6 +5,62 @@
 body {
   margin: 0; }
 
+.baggrund {
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed; }
+
+.logo {
+  width: 53.66%;
+  height: 53.56%; }
+
+.menubar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px 10px;
+  justify-content: space-between;
+  font-family: Bagatela, serif;
+  color: darkgoldenrod;
+  font-size: large;
+  font-weight: bolder; }
+
+a:link {
+  color: gold;
+  text-decoration-line: none; }
+
+a:visited {
+  color: gold; }
+
+a:hover {
+  color: #878532;
+  text-decoration-line: underline; }
+
+.item1:nth-of-type(1) {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(2) {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(3) {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(4) {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(5) {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(6) {
+  grid-column: 6 / span 1;
+  grid-row: 1 / span 1; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
@@ -26,4 +82,4 @@ img {
   max-width: 100%;
   height: auto; }
 
-/*# sourceMappingURL=forside.css.map.map */
+/*# sourceMappingURL=forside.css.map */

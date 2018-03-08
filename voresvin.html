@@ -56,14 +56,14 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
-
+<!---------------------------------------------Header-------------------------------------------->
 <header class="header">
     <nav class="menubar">
         <ul>
             <li class="forside"><a href="index.html">FORSIDE</a></li>
             <li class="forside"><a href="#">VORES VIN</a></li>
             <li class="forside"><a href="#">FORHANDLERE</a></li>
-            <img  class="logoweb" src="Image/logoweb.png" height="200" width="auto"/>
+            <img  class="logoweb" src="Image/logoweb.png"/>
             <li class="forside"><a href="#">ARRANGEMENTER</a></li>
             <li class="forside"><a href="kontaktos.html">KONTAKT OS</a></li>
         </ul>
@@ -71,17 +71,20 @@
         <i class="fa fas fa-bars"></i>
     </nav>
 
-    <img class="logomobil" src="Image/logomobil.png" height="328" width="385"/>
+    <img class="logomobil" src="Image/logomobil.png"/>
 
 </header>
+
+<!-------------------------------------------tekst element-------------------------------------------->
+
 
 <section>
     <h1 class="overskrift">VORES VIN</h1>
 
     <div>
-        <div class="redwine">Rødvin</div>
-        <div class="whitewine">Hvidvin</div>
-        <div class="rosewine">Rosévin</div>
+        <div class="redwine"><a href="#rodvin">Rødvin</a></div>
+        <div class="whitewine"><a href="#hvidvin">Hvidvin</a></div>
+        <div class="rosewine"><a href="#rosevin">Rosévin</a></div>
     </div>
 
     <h2 class="CTA-tekst">Hvis du vil dele din interesse for god vin og mad, og samtidig modtage gode tilbud
@@ -92,10 +95,13 @@
 
 </section>
 
+
+<!---------------------------------------------Rødvin-------------------------------------------->
+
 <section id="rodvin">
     <div class="flex">
         <div class="redwine">
-            <img alt="Amarone" src="Image/rodvin3.png" height="300" width="300"/>
+            <img alt="Amarone" src="Image/rodvin3.png"/>
             <p>Rødvin</p>
             <p>Amarone</p>
             <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
@@ -134,7 +140,7 @@
 
 </section>
 
-
+<!---------------------------------------------Hvidvin-------------------------------------------->
 
 <section id="hvidvin">
     <div class="flex">
@@ -153,7 +159,7 @@
         </div>
 
         <div class="hvidvin">
-            <img alt="Château Pontac Monplaisir" src="Image/hvidvin2.png" height="254" width="254"/>
+            <img alt="Château Pontac Monplaisir" src="Image/hvidvin2.png"/>
             <p>Hvidvin</p>
             <p>Château Pontac Monplaisir</p>
             <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
@@ -162,7 +168,7 @@
 
     <div class="flex">
         <div class="hvidvin">
-            <img alt="Botanicum Ibericum" src="Image/rodvin1.png"/>
+            <img alt="Botanicum Ibericum" src="Image/hvidvin1.png"/>
             <p>Hvidvin</p>
             <p>Botanicum Ibericum</p>
             <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
@@ -179,7 +185,7 @@
 </section>
 
 
-
+<!---------------------------------------------Rosévin-------------------------------------------->
 
 <section id="rosevin">
     <div class="flex">
@@ -191,7 +197,7 @@
         </div>
 
         <div class="rosevine">
-            <img alt="Condamine Bertrand" src="Image/rosevin4.png" height="245" width="245"/>
+            <img alt="Condamine Bertrand" src="Image/rosevin4.png"/>
             <p>Rosévin</p>
             <p>Condamine Bertrand</p>
             <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
@@ -206,8 +212,8 @@
     </div>
 
     <div class="flex">
-        <div alt="Sancerre" class="rosevine">
-            <img src="Image/rosevin3.png"/>
+        <div class="rosevine">
+            <img alt="Sancerre" src="Image/rosevin3.png"/>
             <p>Rosévin</p>
             <p>Sancerre</p>
             <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
@@ -262,16 +268,21 @@
                 </ul>
             </div>
         </div>
+        <div class="stregMobil"> <img src="Image/stregmobil.png"></div>
+        <div class="stregWEB"> <img src="Image/stregweb.png"></div>
         <div class="socialemedier">
-            <div class="instagram">
-                <i class="fa fab fa-instagram"></i>
-            </div>
-            <div class="Facebook">
-                <i class="fa fab fa-facebook-square"></i>
-            </div>
-            <div class="Youtube">
-                <i class="fa fab fa-youtube"></i>
-            </div>
+            <a href="https://www.instagram.com">
+                <div class="instagram2">
+                    <i class="fa fab fa-instagram"></i>
+                </div></a>
+            <a href="https://www.facebook.com">
+                <div class="facebook2">
+                    <i class="fa fab fa-facebook-square"></i>
+                </div></a>
+            <a href="https://www.youtube.com">
+                <div class="youtube2">
+                    <i class="fa fab fa-youtube"></i>
+                </div></a>
         </div>
     </div>
 </footer>
