@@ -4,7 +4,9 @@
 
 body {
   margin: 0;
-  background-color: #000000; }
+  background-color: #f4eade;
+  color: #4b2d1b;
+  font-family: Bagatela, serif; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -26,5 +28,111 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.menubar {
+  display: none; }
+
+.baggrundsbillede {
+  width: 750px;
+  height: 397px;
+  background-image: url("../Image/mobil_baggrund.jpg");
+  background-size: cover;
+  padding-bottom: 20px; }
+
+.header {
+  max-width: 1280px;
+  min-height: 397px;
+  background-color: rgba(75, 45, 27, 0.7); }
+
+.fa-bars {
+  color: linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f);
+  font-size: 40pt;
+  margin-left: 85%;
+  margin-top: 40px; }
+
+.logomobil {
+  margin: -30px auto 40px auto; }
+
+.overskrift {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  font-size: 60pt;
+  font-weight: 600;
+  margin-top: 50px; }
+
+.redwineknap, .whitewineknap, .rosewineknap {
+  text-align: center;
+  width: 175px;
+  height: 65px;
+  background-color: #4b2d1b;
+  box-shadow: 0 2px 5px #231f1f, 0 3px 7px #231f1f inset;
+  border-radius: 5px;
+  color: linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f);
+  padding-top: 15px;
+  font-size: 25pt;
+  margin-top: 5px; }
+  .redwineknap a, .whitewineknap a, .rosewineknap a {
+    text-decoration: none;
+    color: linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f); }
+
+.CTA-tekst {
+  font-family: "Shree Devanagari 714";
+  font-size: 18pt;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 100px;
+  width: 80%; }
+
+.CTA {
+  color: #878532;
+  font-size: 25pt;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px; }
+
+.rodvine, .hvidvine, .rosevine {
+  width: 486px;
+  height: 316px;
+  background-color: #fff5ed;
+  border: solid 2px linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f);
+  margin-bottom: 300px;
+  margin-left: 18%;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  padding-left: 80px;
+  padding-top: 50px; }
+
+.vinbillede {
+  height: 450px;
+  width: auto;
+  position: absolute;
+  left: 20%;
+  z-index: 1;
+  margin-top: -90px; }
+
+#rodvin {
+  margin-top: 250px; }
+
+.ffh {
+  width: 350px;
+  margin-left: 45px;
+  margin-top: 70px; }
+
+.speciel_tekst {
+  width: 325px;
+  margin-left: 50px; }
+
+.speciel_cta {
+  margin-top: 30px; }
+
+.w {
+  font-family: "Shree Devanagari 714";
+  font-size: 20pt;
+  font-weight: bold; }
+
+.name {
+  font-size: 35pt; }
 
 /*# sourceMappingURL=voresvin.css.map */
