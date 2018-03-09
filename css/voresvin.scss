@@ -210,8 +210,17 @@ $gold: linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f);
 //-------------------------------------------footer mobil---------------------------
 
 .footer{
-
+  background-color: $brown;
+  padding: 15px;
 }
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
