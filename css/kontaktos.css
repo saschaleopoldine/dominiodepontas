@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -25,5 +26,57 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.grid1 {
+  background-color: #f4eade; }
+
+.ctaweb {
+  display: none; }
+
+.menubar {
+  display: none; }
+
+.kontaktos {
+  text-align: center;
+  font-size: 60px; }
+
+.adressen {
+  text-align: center;
+  display: none; }
+
+.åbningstiderne {
+  text-align: center;
+  display: none; }
+
+.vinene {
+  text-align: center;
+  display: none; }
+
+.arrangementerne {
+  text-align: center;
+  display: none; }
+
+.FindOsHer {
+  text-align: center; }
+
+.kontaktos2 .Åbningstider .voresvine .arrangementer {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #f4eade; }
+
+A {
+  text-decoration: none;
+  color: black;
+  text-align: center; }
+
+.Adresse {
+  display: none; }
+
+.medier {
+  text-align: center; }
+
+.socialemedier {
+  text-decoration: none; }
 
 /*# sourceMappingURL=kontaktos.css.map */

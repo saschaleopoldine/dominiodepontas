@@ -46,7 +46,7 @@
     <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/voresvin.scss" rel="stylesheet" type="text/css">
+    <link href="css/voresvin.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +57,16 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 <!---------------------------------------------Header-------------------------------------------->
-<header class="header">
+<header>
+    <div class="baggrundsbillede">
+        <div class="header">
+            <i class="fa fas fa-bars"></i>
+
+            <img class="logomobil" src="Image/logomobil.png"/>
+        </div>
+    </div>
+
+
     <nav class="menubar">
         <ul>
             <li class="forside"><a href="index.html">FORSIDE</a></li>
@@ -67,24 +76,20 @@
             <li class="forside"><a href="#">ARRANGEMENTER</a></li>
             <li class="forside"><a href="kontaktos.html">KONTAKT OS</a></li>
         </ul>
-
-        <i class="fa fas fa-bars"></i>
     </nav>
-
-    <img class="logomobil" src="Image/logomobil.png"/>
 
 </header>
 
-<!-------------------------------------------tekst element-------------------------------------------->
+<!-------------------------------------------tekstelement-------------------------------------------->
 
 
 <section>
     <h1 class="overskrift">VORES VIN</h1>
 
     <div>
-        <div class="redwine"><a href="#rodvin">Rødvin</a></div>
-        <div class="whitewine"><a href="#hvidvin">Hvidvin</a></div>
-        <div class="rosewine"><a href="#rosevin">Rosévin</a></div>
+        <div class="redwineknap"><a href="#rodvin">Rødvin</a></div>
+        <div class="whitewineknap"><a href="#hvidvin">Hvidvin</a></div>
+        <div class="rosewineknap"><a href="#rosevin">Rosévin</a></div>
     </div>
 
     <h2 class="CTA-tekst">Hvis du vil dele din interesse for god vin og mad, og samtidig modtage gode tilbud
@@ -99,88 +104,102 @@
 <!---------------------------------------------Rødvin-------------------------------------------->
 
 <section id="rodvin">
+
+    <i class="fa fas fa-angle-left"></i>
+
     <div class="flex">
-        <div class="redwine">
-            <img alt="Amarone" src="Image/rodvin3.png"/>
-            <p>Rødvin</p>
-            <p>Amarone</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+        <img  class="vinbillede" alt="Amarone" src="Image/rodvin3.png"/>
+        <div class="rodvine">
+            <p class="w">Rødvin</p>
+            <p class="name">Amarone</p>
+            <h2 class="CTA ffh">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
 
-        <div class="redwine">
-            <img alt="Giordano" src="Image/rodvin4.png"/>
-            <p>Rødvin</p>
-            <p>Giordano</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+
+        <img class="vinbillede" alt="Giordano" src="Image/rodvin4.png"/>
+        <div class="rodvine">
+            <p class="w">Rødvin</p>
+            <p class="name">Giordano</p>
+            <h2 class="CTA ffh">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
 
-        <div class="redwine">
-            <img alt="silverboom" src="Image/rodvin1.png"/>
-            <p>Rødvin</p>
-            <p>Silverboom</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+
+        <img class="vinbillede" alt="silverboom" src="Image/rodvin1.png"/>
+        <div class="rodvine">
+            <p class="w">Rødvin</p>
+            <p class="name">Silverboom</p>
+            <h2 class="CTA ffh">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
     </div>
 
     <div class="flex">
-        <div class="redwine">
-            <img alt="Valpolicella Ripasso" src="Image/rodvin2.png"/>
-            <p>Rødvin</p>
-            <p>Valpolicella Ripasso</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+        <img class="vinbillede" alt="Valpolicella Ripasso" src="Image/rodvin2.png"/>
+        <div class="rodvine">
+            <p class="w speciel_tekst">Rødvin</p>
+            <p class="name speciel_tekst">Valpolicella <br> Ripasso</p>
+            <h2 class="CTA ffh speciel_cta">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
 
-        <div class="redwine">
-            <img alt="Vinistella" src="Image/rodvin5.png"/>
-            <p>Rødvin</p>
-            <p>Vinistella</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+
+        <img class="vinbillede" alt="Vinistella" src="Image/rodvin5.png"/>
+        <div class="rodvine">
+            <p class="w">Rødvin</p>
+            <p class="name">Vinistella</p>
+            <h2 class="CTA ffh">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
     </div>
+
+    <i class="fa fas fa-angle-right"></i>
 
 </section>
 
 <!---------------------------------------------Hvidvin-------------------------------------------->
 
 <section id="hvidvin">
+
+    <i class="fa fas fa-angle-left"></i>
+
     <div class="flex">
+        <img class="vinbillede" alt="Anciens" src="Image/hvidvin5.png"/>
         <div class="hvidvine">
-            <img alt="Anciens" src="Image/hvidvin5.png"/>
-            <p>Hvidvin</p>
-            <p>Anciens</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+            <p class="w">Hvidvin</p>
+            <p class="name">Anciens</p>
+            <h2 class="CTA ffh">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
 
-        <div class="hvidvin">
-            <img alt="Chardonnay" src="Image/hvidvin6.png"/>
-            <p>Hvidvin</p>
-            <p>Chardonnay</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+        <img class="vinbillede" alt="Chardonnay" src="Image/hvidvin6.png"/>
+        <div class="hvidvine">
+            <p class="w">Hvidvin</p>
+            <p class="name">Chardonnay</p>
+            <h2 class="CTA ffh">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
 
-        <div class="hvidvin">
-            <img alt="Château Pontac Monplaisir" src="Image/hvidvin2.png"/>
-            <p>Hvidvin</p>
-            <p>Château Pontac Monplaisir</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+        <img class="vinbillede" alt="Château Pontac Monplaisir" src="Image/hvidvin2.png"/>
+        <div class="hvidvine">
+            <p class="w speciel_tekst">Hvidvin</p>
+            <p class="name speciel_tekst">Château Pontac Monplaisir</p>
+            <h2 class="CTA ffh speciel_cta">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
     </div>
+
 
     <div class="flex">
-        <div class="hvidvin">
-            <img alt="Botanicum Ibericum" src="Image/hvidvin1.png"/>
-            <p>Hvidvin</p>
-            <p>Botanicum Ibericum</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+        <img class="vinbillede" alt="Botanicum Ibericum" src="Image/hvidvin1.png"/>
+        <div class="hvidvine">
+            <p class="w speciel_tekst">Hvidvin</p>
+            <p class="name speciel_tekst">Botanicum Ibericum</p>
+            <h2 class="CTA ffh speciel_cta">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
 
-        <div class="redwine">
-            <img alt="Sauvignon" src="Image/hvidvin7.png"/>
-            <p>Rødvin</p>
-            <p>Sauvignon</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+        <img class="vinbillede" alt="Sauvignon" src="Image/hvidvin7.png"/>
+        <div class="hvidvine">
+            <p class="w">Hvidvin</p>
+            <p class="name">Sauvignon</p>
+            <h2 class="CTA ffh">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
     </div>
+
+    <i class="fa fas fa-angle-right"></i>
 
 </section>
 
@@ -188,100 +207,115 @@
 <!---------------------------------------------Rosévin-------------------------------------------->
 
 <section id="rosevin">
+
+    <i class="fa fas fa-angle-left"></i>
+
     <div class="flex">
+        <img class="vinbillede" alt="Domaine de la Garenne" src="Image/rosevin1.png"/>
         <div class="rosevine">
-            <img alt="Domaine de la Garenne" src="Image/rosevin1.png"/>
-            <p>Rosévin</p>
-            <p>Domaine de la Garenne</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+            <p class="w speciel_tekst">Rosévin</p>
+            <p class="name speciel_tekst">Domaine de la Garenne</p>
+            <h2 class="CTA ffh speciel_cta">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
 
+        <img class="vinbillede" alt="Condamine Bertrand" src="Image/rosevin4.png"/>
         <div class="rosevine">
-            <img alt="Condamine Bertrand" src="Image/rosevin4.png"/>
-            <p>Rosévin</p>
-            <p>Condamine Bertrand</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+            <p class="w speciel_tekst">Rosévin</p>
+            <p class="name speciel_tekst">Condamine Bertrand</p>
+            <h2 class="CTA ffh speciel_cta">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
 
+        <img class="vinbillede" alt="Pirosso" src="Image/rosevin5.png"/>
         <div class="rosevine">
-            <img alt="Pirosso" src="Image/rosevin5.png"/>
-            <p>Rosévin</p>
-            <p>Pirosso</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+            <p class="w">Rosévin</p>
+            <p class="name">Pirosso</p>
+            <h2 class="CTA ffh">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
     </div>
 
+
     <div class="flex">
+        <img class="vinbillede" alt="Sancerre" src="Image/rosevin3.png"/>
         <div class="rosevine">
-            <img alt="Sancerre" src="Image/rosevin3.png"/>
-            <p>Rosévin</p>
-            <p>Sancerre</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+            <p class="w">Rosévin</p>
+            <p class="name">Sancerre</p>
+            <h2 class="CTA ffh">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
 
+        <img class="vinbillede" alt="Chateau Fargueirol" src="Image/rosevin2.png"/>
         <div class="rosevine">
-            <img alt="Chateau Fargueirol" src="Image/rosevin2.png"/>
-            <p>Rosévin</p>
-            <p>Chateau Fargueirol</p>
-            <h2 class="CTA">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
+            <p class="w speciel_tekst">Rosévin</p>
+            <p class="name speciel_tekst">Chateau <br> Fargueirol</p>
+            <h2 class="CTA ffh speciel_cta">Find forhandler her <i class="fa fas fa-angle-right"></i></h2>
         </div>
     </div>
+
+    <i class="fa fas fa-angle-right"></i>
 
 </section>
 
 
 
 <!---------------------------------------------Footer-------------------------------------------->
-<footer>
+<footer class="footer">
     <div class="footer">
         <div class="footertekst">
-            <div class="kontaktos">
-                <h1>Kontakt os</h1>
-                <ul>
+            <div class="kontaktos2">
+                <a id="link" href="#"><strong>Kontakt os</strong></a>
+                <p class="display_web">Adresse</p>
+                <ul class="display_web">
                     <li>Tlf.: +45 45 34 56 23</li>
                     <li>E-mail: Dominio@depontas.com</li>
                     <li>Adresse: Benegorri 31395, Navarra, Spanien</li>
                 </ul>
             </div>
-            <div class="Åbningstider">
-                <h1>Åbningstider</h1>
-                <ul>
+
+            <div class="aabningstider">
+                <a class="link" href="#"><strong>Åbningstider</strong></a>
+                <ul class="display_web">
                     <li>Man-Tors: kl 11.00 - 15.00</li>
                     <li>Fredag: kl: 15.00 - 18.00</li>
                     <li>Lørdag: kl: 10.00 - 17.00</li>
                     <li>Søndag: LUKKET</li>
                 </ul>
             </div>
-            <div class="vores vine"></div>
-            <h1>Vores Vine</h1>
-            <ul>
-                <li>Rødvin</li>
-                <li>Hvidvin</li>
-                <li>Rosévin</li>
-            </ul>
+
+            <div class="voresvine">
+                <a class="link" href="#"><strong>Vores Vine</strong></a>
+                <ul class="display_web">
+                    <li>Rødvin</li>
+                    <li>Hvidvin</li>
+                    <li>Rosévin</li>
+                </ul>
+            </div>
+
             <div class="arrangementer">
-                <h1>Arrangementer</h1>
-                <ul>
+                <a class="link" href="#"><strong>Arrangementer</strong></a>
+                <ul class="display_web">
                     <li>Vinsmagning</li>
                     <li>Rundvisning</li>
                     <li>Messer 2018</li>
                 </ul>
             </div>
         </div>
-        <div class="stregMobil"> <img src="Image/stregmobil.png"></div>
-        <div class="stregWEB"> <img src="Image/stregweb.png"></div>
+
+        <div class="stregWEB"><img src="Image/stregweb.png"></div>
+
+
         <div class="socialemedier">
-            <a href="https://www.instagram.com">
+            <a class="link" href="https://www.instagram.com">
                 <div class="instagram2">
-                    <i class="fa fab fa-instagram"></i>
+                    <i class="fa fab fa-instagram fa-4x"></i>
                 </div></a>
-            <a href="https://www.facebook.com">
+
+            <a class="link" href="https://www.facebook.com">
                 <div class="facebook2">
-                    <i class="fa fab fa-facebook-square"></i>
+                    <i class="fa fab fa-facebook-square fa-4x"></i>
                 </div></a>
-            <a href="https://www.youtube.com">
+
+            <a class="link" href="https://www.youtube.com">
                 <div class="youtube2">
-                    <i class="fa fab fa-youtube"></i>
+                    <i class="fa fab fa-youtube fa-4x"></i>
                 </div></a>
         </div>
     </div>
