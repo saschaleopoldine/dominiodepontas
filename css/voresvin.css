@@ -33,15 +33,15 @@ img {
   display: none; }
 
 .baggrundsbillede {
-  width: 750px;
-  height: 397px;
+  width: 100%;
+  height: 450px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px; }
 
 .header {
-  max-width: 1280px;
-  min-height: 397px;
+  width: 100%;
+  height: 450px;
   background-color: rgba(75, 45, 27, 0.7); }
 
 .fa-bars {
@@ -51,7 +51,8 @@ img {
   margin-top: 40px; }
 
 .logomobil {
-  margin: -30px auto 40px auto; }
+  margin: -30px auto 40px auto;
+  padding-bottom: 40px; }
 
 .overskrift {
   display: -webkit-flex;
