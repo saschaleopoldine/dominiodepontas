@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -6,69 +7,45 @@ body {
   margin: 0;
   background-color: #f4eade; }
 
-.baggrund {
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
-  position: fixed; }
+.menubar, .cta {
+  display: none; }
 
-.logo {
-  width: 53.66%;
-  height: 53.56%; }
-
-.menubar {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-gap: 10px 10px;
-  justify-content: space-between;
-  font-family: Bagatela, serif;
-  color: darkgoldenrod;
+.mobilcta {
+  color: #4b2d1b;
+  font-family: "Shree Devanagari 714", serif;
   font-size: large;
-  font-weight: bolder; }
+  font-weight: bolder;
+  text-align: center;
+  margin: 30px;
+  line-height: 22px; }
+
+.mobilcta2 {
+  color: #878532;
+  font-family: Bagatela, serif;
+  font-size: xx-large;
+  text-align: center; }
 
 a:link {
-  color: gold;
+  color: #878532;
   text-decoration-line: none; }
 
 a:visited {
-  color: gold; }
+  color: #878532; }
 
 a:hover {
-  color: #878532;
-  text-decoration-line: underline; }
+  color: gold; }
 
-.item1:nth-of-type(1) {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1; }
-
-.item1:nth-of-type(2) {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1; }
-
-.item1:nth-of-type(3) {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1; }
-
-.item1:nth-of-type(4) {
-  grid-column: 4 / span 1;
-  grid-row: 1 / span 1; }
-
-.item1:nth-of-type(5) {
-  grid-column: 5 / span 1;
-  grid-row: 1 / span 1; }
-
-.item1:nth-of-type(6) {
-  grid-column: 6 / span 1;
-  grid-row: 1 / span 1; }
+.menubar {
+  display: none; }
 
 .billedebokse {
   display: grid;
   grid-template-columns: 3, 1fr;
   grid-template-rows: 1, 1fr;
   justify-content: space-between;
-  grid-gap: -10px;
-  margin: 60px;
+  grid-gap: 100px;
+  padding-left: 95px;
+  margin-top: 25px;
   position: relative;
   z-index: 0; }
 
@@ -77,29 +54,29 @@ a:hover {
   grid-row: 1 / span 1; }
 
 .item2:nth-of-type(2) {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1; }
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1; }
 
 .item2:nth-of-type(3) {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1; }
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1; }
 
 .billedforan {
   display: grid;
   grid-template-columns: 3, 1fr;
-  grid-template-rows: 1, 1fr;
-  grid-gap: 170px 170px;
+  grid-template-rows: 7, 1fr;
+  grid-gap: 70px;
   justify-content: space-between;
   font-family: Bagatela, serif;
   font-size: larger;
   position: absolute;
   z-index: 1;
-  padding-left: 6%;
-  margin-top: -130px; }
+  margin-top: -860px;
+  padding-left: 24%; }
 
 .boks1 {
   grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
+  grid-row: 2 / span 1;
   border: 2px solid gold;
   height: 172px;
   width: 290px;
@@ -110,22 +87,20 @@ a:hover {
   font-size: large; }
 
 .boks2 {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
   border: 2px solid gold;
   height: 172px;
   width: 290px;
-  background-color: #fff5ed;
-  margin-left: 8%; }
+  background-color: #fff5ed; }
 
 .boks3 {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  grid-row: 7 / span 1;
   border: 2px solid gold;
   height: 172px;
   width: 290px;
-  background-color: #fff5ed;
-  margin-left: 7%; }
+  background-color: #fff5ed; }
 
 .item3:nth-of-type(1) {
   grid-column: 1 / span 1;
@@ -138,8 +113,8 @@ a:hover {
   text-align: center; }
 
 .item3:nth-of-type(2) {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
   border: 2px solid gold;
   height: 148px;
   width: 264px;
@@ -148,14 +123,152 @@ a:hover {
   text-align: center; }
 
 .item3:nth-of-type(3) {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
   border: 2px solid gold;
   height: 148px;
   width: 264px;
   padding: 10px;
   margin: 10px auto auto auto;
   text-align: center; }
+
+.baggrundsbillede {
+  width: 100%;
+  height: 450px;
+  background-image: url("../Image/mobil_baggrund.jpg");
+  background-size: cover;
+  padding-bottom: 20px; }
+
+.header {
+  width: 100%;
+  height: 450px;
+  background-color: rgba(75, 45, 27, 0.7); }
+
+.fa-bars {
+  color: gold;
+  font-size: 40pt;
+  margin-left: 85%;
+  margin-top: 40px; }
+
+.logomobil {
+  margin: -30px auto 40px auto;
+  padding-bottom: 40px; }
+
+.streg {
+  width: 453px;
+  margin-top: 140px;
+  padding-left: 100px; }
+
+.vinelementer {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: 3, 1fr;
+  grid-gap: 5px;
+  justify-content: space-between;
+  z-index: 1;
+  position: absolute;
+  margin-top: -4px;
+  margin-right: 200px; }
+
+.item4:nth-of-type(1) {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1; }
+
+.item4:nth-of-type(2) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1; }
+
+.item4:nth-of-type(3) {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1; }
+
+.vintekst {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: 3, 1fr;
+  grid-gap: 170px 170px;
+  justify-content: space-between;
+  z-index: 0;
+  padding-left: 150px; }
+
+.item5:nth-of-type(1) {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1; }
+
+.item5:nth-of-type(2) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1; }
+
+.item5:nth-of-type(3) {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1; }
+
+.boksvin {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  border: 2px solid gold;
+  position: relative;
+  z-index: 0;
+  height: 210px;
+  width: 330px;
+  background-color: #fff5ed;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 70px;
+  font-family: "Shree Devanagari 714", serif;
+  color: #4b2d1b;
+  font-size: small;
+  margin-left: -40px;
+  margin-top: 60px;
+  line-height: 22px; }
+
+.rødvintekst, .hvidvintekst, .rosevintekst {
+  font-family: Bagatela, serif;
+  font-size: xx-large;
+  color: #4b2d1b; }
+
+.seudvalg {
+  font-family: Bagatela, serif;
+  font-size: x-large;
+  color: #878532; }
+
+.boksvin2 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  border: 2px solid gold;
+  position: relative;
+  z-index: 0;
+  height: 210px;
+  width: 330px;
+  background-color: #fff5ed;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 70px;
+  font-family: "Shree Devanagari 714", serif;
+  color: #4b2d1b;
+  font-size: small;
+  margin-left: -40px;
+  margin-top: 5px;
+  line-height: 22px; }
+
+.boksvin3 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  border: 2px solid gold;
+  position: relative;
+  z-index: 0;
+  height: 210px;
+  width: 330px;
+  background-color: #fff5ed;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 70px;
+  font-family: "Shree Devanagari 714", serif;
+  color: #4b2d1b;
+  font-size: small;
+  margin-top: -20px;
+  margin-left: -40px;
+  line-height: 22px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -177,5 +290,160 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+@media screen and (min-width: 1200px) {
+  .baggrundsbillede {
+    display: none; }
+
+  .baggrund {
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: fixed; }
+
+  .logo {
+    width: 53.66%;
+    height: 53.56%; }
+
+  .menubar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px 10px;
+    justify-content: space-between;
+    font-family: Bagatela, serif;
+    color: darkgoldenrod;
+    font-size: large;
+    font-weight: bolder; }
+
+  a:link {
+    color: gold;
+    text-decoration-line: none; }
+
+  a:visited {
+    color: gold; }
+
+  a:hover {
+    color: #878532;
+    text-decoration-line: underline; }
+
+  .item1:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1; }
+
+  .item1:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1; }
+
+  .item1:nth-of-type(3) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1; }
+
+  .item1:nth-of-type(4) {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1; }
+
+  .item1:nth-of-type(5) {
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 1; }
+
+  .item1:nth-of-type(6) {
+    grid-column: 6 / span 1;
+    grid-row: 1 / span 1; }
+
+  .billedebokse {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 1, 1fr;
+    justify-content: space-between;
+    grid-gap: -10px;
+    margin: 60px;
+    position: relative;
+    z-index: 0; }
+
+  .item2:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1; }
+
+  .item2:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1; }
+
+  .item2:nth-of-type(3) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1; }
+
+  .billedforan {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 1, 1fr;
+    grid-gap: 170px 170px;
+    justify-content: space-between;
+    font-family: Bagatela, serif;
+    font-size: larger;
+    position: absolute;
+    z-index: 1;
+    padding-left: 6%;
+    margin-top: -130px; }
+
+  .boks1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    border: 2px solid gold;
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed; }
+
+  .tekst1, .tekst2, .tekst3 {
+    font-family: "Shree Devanagari 714", serif;
+    font-size: large; }
+
+  .boks2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    border: 2px solid gold;
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed;
+    margin-left: 8%; }
+
+  .boks3 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    border: 2px solid gold;
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed;
+    margin-left: 7%; }
+
+  .item3:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    border: 2px solid gold;
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center; }
+
+  .item3:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    border: 2px solid gold;
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center; }
+
+  .item3:nth-of-type(3) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    border: 2px solid gold;
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center; } }
 
 /*# sourceMappingURL=forside.css.map */
