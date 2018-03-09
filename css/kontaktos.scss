@@ -9,6 +9,8 @@ body {
   margin: 0; // Ingen kanter i siden af browser
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
@@ -35,6 +37,81 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
+.grid1{
+  background-color: #f4eade;
+}
+
+// header
+
+
+.ctaweb{
+  display: none;
+}
+.menubar{
+  display: none;
+}
+}
+
+
+//body
+
+.kontaktos{
+  text-align: center;
+  font-size: 60px;
+}
+
+.adressen{
+  text-align: center;
+  display: none;
+}
+.åbningstiderne{
+  text-align: center;
+  display: none;
+}
+.vinene{
+  text-align: center;
+  display: none;
+}
+.arrangementerne{
+  text-align: center;
+  display: none;
+}
+
+
+
+//footer
+
+.FindOsHer{
+  text-align: center;
+}
+
+
+
+.kontaktos2 .Åbningstider .voresvine .arrangementer {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #f4eade;
+
+}
+A{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.Adresse{
+  display: none;
+}
+
+
+.medier{
+  text-align: center;
+}
+
+.socialemedier{
+  text-decoration: none;
+}
+
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
@@ -46,7 +123,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-}
+
+
+
 
 @media print {
   // Alt der gælder for print specifikt

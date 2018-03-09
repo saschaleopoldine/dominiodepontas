@@ -1,9 +1,45 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
   margin: 0; }
+
+a:link {
+  color: gold;
+  text-decoration-line: none; }
+
+a:visited {
+  color: gold; }
+
+a:hover {
+  color: #878532;
+  text-decoration-line: underline; }
+
+.item1:nth-of-type(1) {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(2) {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(3) {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(4) {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(5) {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(6) {
+  grid-column: 6 / span 1;
+  grid-row: 1 / span 1; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -25,5 +61,111 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.grid1 {
+  background-color: #f4eade; }
+
+.menubar {
+  display: none;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px 10px;
+  justify-content: space-between;
+  font-family: Bagatela, serif;
+  color: darkgoldenrod;
+  font-size: large;
+  font-weight: bolder; }
+
+.ctaweb {
+  display: none; }
+
+.kontaktos {
+  text-align: center;
+  font-size: 60px; }
+
+.adressen {
+  text-align: center;
+  display: none; }
+
+.åbningstiderne {
+  text-align: center;
+  display: none; }
+
+.vinene {
+  text-align: center;
+  display: none; }
+
+.arrangementerne {
+  text-align: center;
+  display: none; }
+
+.FindOsHer {
+  text-align: center; }
+
+.kontaktos2 .Åbningstider .voresvine .arrangementer {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #f4eade; }
+
+A {
+  text-decoration: none;
+  color: black;
+  text-align: center; }
+
+.Adresse {
+  display: none; }
+
+.medier {
+  text-align: center; }
+
+.socialemedier {
+  text-decoration: none; }
+
+a:link {
+  color: gold;
+  text-decoration-line: none; }
+
+a:visited {
+  color: gold; }
+
+a:hover {
+  color: #878532;
+  text-decoration-line: underline; }
+
+.item1:nth-of-type(1) {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(2) {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(3) {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(4) {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(5) {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1; }
+
+.item1:nth-of-type(6) {
+  grid-column: 6 / span 1;
+  grid-row: 1 / span 1; }
+
+.menubar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px 10px;
+  justify-content: space-between;
+  font-family: Bagatela, serif;
+  color: darkgoldenrod;
+  font-size: large;
+  font-weight: bolder; }
 
 /*# sourceMappingURL=kontaktos.css.map */
