@@ -7,7 +7,9 @@
 
 body {
   margin: 0; // Ingen kanter i siden af browser
-  background-color: #000000;
+  background-color: #f4eade;
+  color: #4b2d1b;
+  font-family: Bagatela, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,16 +39,179 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-
-$darkbeige: #f4ease;
+//------------------------ variabler --------------------------
+$darkbeige: #f4eade;
 $lightbeige: #fff5ed;
 $brown: #4b2d1b;
 $green: #878532;
-$gold: linear-gradient(to right, #dcc17a, #a18348, #e4c981, #9d7f3f);
+$gold: linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f);
+
+@mixin flex_center{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+//-------------------------------------------Header Mobil---------------------------
+.menubar{
+  display: none;
+}
+
+.baggrundsbillede{
+  width: 100%;
+  height: 450px;
+  background-image: url("../Image/mobil_baggrund.jpg");
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.header{
+  width: 100%;
+  height: 450px;
+  background-color: rgba(75, 45, 27, 0.7);
+}
+
+.fa-bars{
+  color: $gold;
+  font-size: 40pt;
+  margin-left: 85%;
+  margin-top: 40px;
+}
+
+.logomobil{
+  margin: -30px auto 40px auto;
+  padding-bottom: 40px;
+}
+
+
+//-------------------------------------------Tekstelement mobil---------------------------
+
+
+.overskrift{
+ @include flex_center;
+  font-size: 60pt;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+
+.redwineknap, .whitewineknap, .rosewineknap{
+  text-align: center;
+  width: 175px;
+  height: 65px;
+  background-color: $brown;
+  box-shadow: 0 2px 5px #231f1f, 0 3px 7px #231f1f inset;
+  border-radius: 5px;
+  color: $gold;
+  padding-top: 15px;
+  font-size: 25pt;
+  margin-top: 5px;
+  a{
+    text-decoration: none;
+    color: $gold;
+  }
+
+}
+
+.CTA-tekst{
+  font-family: "Shree Devanagari 714";
+  font-size: 18pt;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 100px;
+  width: 80%;
+
+}
+
+.CTA{
+  color: $green;
+  font-size: 25pt;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+//-------------------------------------------Rødvin mobil---------------------------
+
+@mixin vinboks{
+  width: 486px;
+  height: 316px;
+  background-color: $lightbeige;
+  border: solid 2px $gold;
+  margin-bottom: 300px;
+  margin-left: 18%;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+.rodvine, .hvidvine, .rosevine{
+  @include vinboks;
+}
+
+.vinbillede{
+  height: 450px;
+  width: auto;
+  position: absolute;
+  left: 20%;
+  z-index: 1;
+  margin-top: -90px;
+}
+
+#rodvin{
+  margin-top: 250px;
+}
+
+.ffh{
+  width: 350px;
+  margin-left: 45px;
+  margin-top: 70px;
+}
+
+.speciel_tekst{
+  width: 325px;
+  margin-left: 50px;
+}
+
+.speciel_cta{
+  margin-top: 30px;
+}
+
+.w{
+  font-family: "Shree Devanagari 714";
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.name{
+  font-size: 35pt;
+}
+
+
+//-------------------------------------------Hvidvin mobil---------------------------
 
 
 
 
+
+
+//-------------------------------------------Rosévin mobil---------------------------
+
+
+
+
+
+
+
+
+
+//-------------------------------------------footer mobil---------------------------
+
+.footer{
+
+}
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
