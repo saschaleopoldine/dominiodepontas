@@ -508,7 +508,8 @@ a:visited{
 }
 
 .footer{
-padding: 20px;
+  padding: 50px;
+  margin-top: 70px;
 }
 
 
@@ -530,6 +531,7 @@ ul{
 .footertekst{
   @include flex;
   justify-content: space-between;
+  margin-top: 0;
 }
 
 .stregWEB{

@@ -354,7 +354,8 @@ a:visited {
     font-size: 16pt; }
 
   .footer {
-    padding: 20px; }
+    padding: 50px;
+    margin-top: 70px; }
 
   ul {
     list-style-type: none; }
@@ -371,7 +372,8 @@ a:visited {
   .footertekst {
     display: -webkit-flex;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 0; }
 
   .stregWEB {
     width: 90%;
