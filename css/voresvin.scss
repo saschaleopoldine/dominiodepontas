@@ -46,7 +46,31 @@ $brown: #4b2d1b;
 $overlay_mobil: rgba(75, 45, 27, 0.7);
 $overlay_web: rgba(75, 45, 27, 0.23);
 $green: #878532;
-$gold: linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f);
+$gold: guld;
+
+
+@mixin gold{
+  background: -webkit-linear-gradient( #dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient( #dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin bordergold{
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+}
+
 
 @mixin flex_center{
   display: -webkit-flex;
@@ -54,6 +78,7 @@ $gold: linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f);
   justify-content: center;
 }
 
+//-------------------------- redigering af links ------------------
 a:link {
   color: $gold;
   text-decoration-line: none;
@@ -65,19 +90,7 @@ a:visited {
 
 a:hover {
   color: $green;
-  text-decoration-line: underline;
 }
-
-//-------------------------- redigering af links ------------------
-a:link{
-  color: $gold;
-  text-decoration: none;
-}
-
-a:visited{
-  color: $gold;
-}
-
 
 
 //----------------------------------Header Mobil---------------------------
@@ -100,7 +113,7 @@ a:visited{
 }
 
 .fa-bars{
-  color: $gold;
+  @include gold;
   font-size: 40pt;
   margin-left: 85%;
   margin-top: 40px;
@@ -139,16 +152,23 @@ a:visited{
   background-color: $brown;
   box-shadow: 0 2px 5px #231f1f, 0 3px 7px #231f1f inset;
   border-radius: 5px;
-  color: $gold;
   padding-top: 15px;
   font-size: 25pt;
   margin-top: 5px;
   a{
     text-decoration: none;
-    color: $gold;
+    @include gold;
   }
 
 }
+
+
+#club{
+  text-align: center;
+  margin: 50px auto 0 auto;
+  font-size: 40pt;
+}
+
 
 .CTA-tekst{
   font-family: "Shree Devanagari 714";
@@ -174,7 +194,7 @@ a:visited{
   width: 486px;
   height: 316px;
   background-color: $lightbeige;
-  border: solid 2px $gold;
+  @include bordergold;
   margin: 200px auto 200px auto;
   position: relative;
   z-index: 0;
@@ -225,10 +245,13 @@ a:visited{
   font-size: 35pt;
 }
 
+
+
 .break{
   width: 453px;
   margin: 70px auto;
 }
+
 
 
 //----------------------------------------footer mobil---------------------------
@@ -248,6 +271,9 @@ a:visited{
   margin-top: 30px;
 }
 
+.overskrift_f{
+  @include gold;
+}
 
 .stregWEB{
   margin-top: 100px;
@@ -267,6 +293,11 @@ a:visited{
   background-color: $brown;
   width: 60px;
   text-align: center;
+  color: $darkbeige;
+  margin-bottom: 20px;
+  a:hover{
+
+  }
 }
 
 
@@ -318,10 +349,12 @@ a:visited{
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 10px 20px;
   justify-content: space-between;
-  color: $gold;
   font-size: large;
   font-weight: bolder;
   height: 497px;
+  a{
+    @include gold;
+  }
 }
 
 .item1:nth-of-type(1) {
@@ -455,17 +488,17 @@ a:visited{
 }
 
 .webkasser{
-  margin-left: -420px;
+  margin-left: -475px;
 }
 
 .ekstra{
-  margin-left: -380px;
+  margin-left: -410px;
 }
 
 .vinbillede{
-  left: 45px;
+  left: 5px;
   height: 325px;
-  margin-top: 65px;
+  margin-top: -85px;
 }
 
 .w{
@@ -475,6 +508,7 @@ a:visited{
 
 .name{
   font-size: 30pt;
+  color: $brown;
 }
 
 
@@ -505,6 +539,9 @@ a:visited{
   font-family: "Shree Devanagari 714";
   font-weight: lighter;
   font-size: 16pt;
+  a{
+    color: $darkbeige;
+  }
 }
 
 .footer{
@@ -542,19 +579,12 @@ ul{
 .instagram2, .facebook2, .youtube2{
   margin: -30px auto 30px auto;
   width: 100px;
-  color: $lightbeige;
+  color: $darkbeige;
 }
 
 .overskrift_f{
   font-size: 22pt;
 }
-
-
-
-
-
-
-
 
 
 }
