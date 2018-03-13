@@ -39,7 +39,7 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-//------------------------ variabler --------------------------
+//----------------------------- variabler --------------------------
 $darkbeige: #f4eade;
 $lightbeige: #fff5ed;
 $brown: #4b2d1b;
@@ -54,7 +54,21 @@ $gold: linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f);
   justify-content: center;
 }
 
-//------------------ redigering af links ------------------
+a:link {
+  color: $gold;
+  text-decoration-line: none;
+}
+
+a:visited {
+  color: $gold;
+}
+
+a:hover {
+  color: $green;
+  text-decoration-line: underline;
+}
+
+//-------------------------- redigering af links ------------------
 a:link{
   color: $gold;
   text-decoration: none;
@@ -66,8 +80,7 @@ a:visited{
 
 
 
-
-//-------------------------------------------Header Mobil---------------------------
+//----------------------------------Header Mobil---------------------------
 .menubar{
   display: none;
 }
@@ -101,10 +114,7 @@ a:visited{
 
 
 
-
-
-
-//-------------------------------------------Tekstelement mobil---------------------------
+//-----------------------------------Tekstelement mobil---------------------------
 
 
 .overskrift{
@@ -118,6 +128,7 @@ a:visited{
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
+  margin-top: 70px;
 }
 
 
@@ -144,8 +155,8 @@ a:visited{
   font-size: 18pt;
   text-align: center;
   font-weight: 400;
-  margin-top: 100px;
   width: 80%;
+  margin: 100px auto 0 auto;
 
 }
 
@@ -157,7 +168,7 @@ a:visited{
   margin-top: 20px;
 }
 
-//-------------------------------------------Rødvin mobil---------------------------
+//--------------------------------------vin mobil---------------------------
 
 @mixin vinboks{
   width: 486px;
@@ -207,7 +218,7 @@ a:visited{
 .w{
   font-family: "Shree Devanagari 714";
   font-size: 20pt;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .name{
@@ -220,25 +231,7 @@ a:visited{
 }
 
 
-
-//-------------------------------------------Hvidvin mobil---------------------------
-
-
-
-
-
-
-//-------------------------------------------Rosévin mobil---------------------------
-
-
-
-
-
-
-
-
-
-//-------------------------------------------footer mobil---------------------------
+//----------------------------------------footer mobil---------------------------
 
 .footer{
   background-color: $brown;
@@ -280,6 +273,18 @@ a:visited{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
@@ -290,19 +295,18 @@ a:visited{
 
 //--------------------- redigering af links-----------------------
 
-a:link {
-  color: $gold;
-  text-decoration-line: none;
-}
+  a:link {
+    color: $gold;
+    text-decoration-line: none;
+  }
 
-a:visited {
-  color: $gold;
-}
+  a:visited {
+    color: $gold;
+  }
 
-a:hover {
-  color: $green;
-  text-decoration-line: underline;
-}
+  a:hover {
+    color: $green;
+  }
 
 //-------------------------- header Web -------------------------
 
@@ -409,7 +413,7 @@ a:hover {
 }
 
 
-//----------------------------------tekst element----------------------
+//-----------------------------tekst element web ----------------------
 .overskrift{
   margin-bottom: 60px;
 }
@@ -427,26 +431,127 @@ a:hover {
 
 
 
-//----------------------------------vin element----------------------
+//----------------------------------vin web----------------------
 
+.pil{
+  display: none;
+}
 
                                      
 @mixin vinboks{                      
-  width: 298px;
-  height: 171px;
-  background-color: $lightbeige;     
-  border: solid 2px $gold;           
-  margin: 200px auto 200px auto;     
-  position: relative;                
-  z-index: 0;                        
-  text-align: center;                
-  padding-left: 85px;                
-  padding-top: 50px;                 
-}                                    
-                                     
-.rodvine, .hvidvine, .rosevine{      
-  @include vinboks;                  
-}                                    
+  width: 350px;
+  height: 223px;
+  margin: 150px auto 100px auto;
+}
+
+.rodvine, .hvidvine, .rosevine{
+  @include vinboks;
+}
+
+
+.rodvine, .hvidvine, .rosevine {
+  padding-left: 80px;
+  padding-top: 15px;
+}
+
+.webkasser{
+  margin-left: -420px;
+}
+
+.ekstra{
+  margin-left: -380px;
+}
+
+.vinbillede{
+  left: 45px;
+  height: 325px;
+  margin-top: 65px;
+}
+
+.w{
+  font-size: 18pt;
+  font-weight: lighter;
+}
+
+.name{
+  font-size: 30pt;
+}
+
+
+.CTA{
+  font-size: 20pt;
+}
+
+
+.ffh{
+  margin-left: -30px;
+  margin-top: 50px;
+}
+
+.speciel_tekst{
+  margin-left: -29px;
+}
+
+.speciel_cta{
+  margin-top: 0;
+}
+
+
+
+//----------------------------------footer web----------------------
+.display_web{
+  display: inline;
+  color: $darkbeige;
+  font-family: "Shree Devanagari 714";
+  font-weight: lighter;
+  font-size: 16pt;
+}
+
+.footer{
+  padding: 50px;
+  margin-top: 70px;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+.kontaktos2, .aabningstider, .voresvine, .arrangementer{
+  text-align: start;
+  margin-top: -5px;
+  line-height: 40pt;
+}
+
+#linie{
+  line-height: 25pt;
+  margin-top: 10px;
+}
+
+.footertekst{
+  @include flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.stregWEB{
+  width: 90%;
+  margin: 90px auto 30px auto;
+}
+
+.instagram2, .facebook2, .youtube2{
+  margin: -30px auto 30px auto;
+  width: 100px;
+  color: $lightbeige;
+}
+
+.overskrift_f{
+  font-size: 22pt;
+}
+
+
+
+
 
 
 
