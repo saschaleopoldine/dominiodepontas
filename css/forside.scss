@@ -15,6 +15,34 @@ body {
 }
 
 
+//---------------------------------------HEADEREN BILLEDE LOGO-------------------------------------
+
+.baggrundsbillede{                                      
+  width: 100%;                                          
+  height: 450px;                                        
+  background-image: url("../Image/mobil_baggrund.jpg"); 
+  background-size: cover;                               
+  padding-bottom: 20px;                                 
+}                                                       
+                                                        
+.header{                                                
+  width: 100%;                                          
+  height: 450px;                                        
+  background-color: rgba(75, 45, 27, 0.7);              
+}                                                       
+                                                        
+.fa-bars{                                               
+  color: gold;                                          
+  font-size: 40pt;                                      
+  margin-left: 85%;                                     
+  margin-top: 40px;                                     
+}                                                       
+                                                        
+.logomobil{                                             
+  margin: -30px auto 40px auto;                         
+  padding-bottom: 40px;                                 
+}                                                       
+
 .mobilcta {
   color: #4b2d1b;
   font-family: "Shree Devanagari 714", serif;
@@ -50,7 +78,7 @@ a:hover {
 }
 
 
-//BILLEDER/TEKST KASSER 
+//---------------------------------------BILLEDER/TEKST KASSER ØVERST-------------------------------------
 .billedebokse {
   display: grid;
   grid-template-columns: (3, 1fr);
@@ -78,8 +106,7 @@ a:hover {
    grid-row: 3 / span 1;
  }
 
-
- //3 billedetekst foran billederne
+//---------------------------------3 BILLEDTEKST FORAN BILLEDERNE, ØVERST---------------------------------
 
 .billedforan {
   display: grid;
@@ -161,42 +188,16 @@ a:hover {
   text-align: center;
 }
 
-
-.baggrundsbillede{
-  width: 100%;
-  height: 450px;
-  background-image: url("../Image/mobil_baggrund.jpg");
-  background-size: cover;
-  padding-bottom: 20px;
-}
-
-.header{
-  width: 100%;
-  height: 450px;
-  background-color: rgba(75, 45, 27, 0.7);
-}
-
-.fa-bars{
-  color: gold;
-  font-size: 40pt;
-  margin-left: 85%;
-  margin-top: 40px;
-}
-
-.logomobil{
-  margin: -30px auto 40px auto;
-  padding-bottom: 40px;
-}
-
 //mellemstreg
 
 .streg {
   width: 453px;
-  margin-top: 140px;
+  margin-top: 100px;
   padding-left: 100px;
 }
 
-//vinudvalg alle 3
+
+//---------------------------------------VINUDVALG ALLE 3 --------------------------------------------
 
 .vinelementer {
   display: grid;
@@ -251,7 +252,8 @@ a:hover {
 }
 
 
-//Den første boks for rødvin
+//---------------------------------------FØRSTE BOKS RØDVIN--------------------------------------------
+
 .boksvin {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
@@ -285,7 +287,8 @@ a:hover {
   color: #878532;
 }
 
-//Anden boks for hvidvin
+
+//---------------------------------------ANDEN BOKS HVIDVIN--------------------------------------------
 
 .boksvin2 {
   grid-column: 1 / span 1;
@@ -308,8 +311,7 @@ a:hover {
 }
 
 
-
-//Tredje boks for rosevin
+//---------------------------------------TREDJE BOKS ROSEVIN--------------------------------------------
 
 .boksvin3 {
   grid-column: 1 / span 1;
@@ -330,6 +332,167 @@ a:hover {
   margin-left: -40px;
   line-height: 22px;
 }
+
+
+//---------------------------------------3 BOKSE MED TEKST + TEKST INDENI----------------------------------
+
+.besøgos {
+  display: grid;
+  grid-template-columns: (1, 1fr);
+  grid-template-rows: (3, 1fr);
+  grid-gap: 20px;
+}
+
+.item6:nth-of-type(1) {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  border: solid thin black;
+  width: 562px;
+  height: 350px;
+  background-color: #fff5ed;
+  padding-top: 40px;
+  margin-top: 70px;
+  font-size: xx-large;
+  font-family: Bagatela, serif;
+  text-align: center;
+}
+
+.undertekst1 {
+  font-size: x-large;
+  font-family: "Shree Devanagari 714", serif;
+  line-height: 30px;
+  color: #4b2d1b;
+}
+
+
+.boks01 {
+  border: thin solid black;
+  width: 220px;
+  height: 50px;
+  margin-left: 170px;
+  background-color: #f4eade;
+  color: #878532;
+  font-family:Bagatela, serif;
+  padding-top: 7px;
+}
+
+
+.item6:nth-of-type(2) {
+  grid-column: 1 / span 1;   
+  grid-row: 2 / span 1;
+  border: solid thin black;     
+  width: 562px;
+  height: 350px;                
+  background-color: #fff5ed;                
+  padding-top: 40px;            
+  font-size: xx-large;          
+  font-family: Bagatela, serif; 
+  text-align: center;
+}
+
+.textInput {
+  margin-top: 15px;
+  font-size: large;
+  font-family: "Shree Devanagari 714", serif;
+  border: solid thin black;
+  height: 40px;
+  width: 220px;
+  padding-left: 10px;
+}
+
+
+.boks02b {
+  border: thin solid black;   
+  width: 220px;               
+  height: 50px;               
+  margin-left: 170px;         
+  background-color: #f4eade;  
+  color: #878532;             
+  font-family:Bagatela, serif;
+  padding-top: 7px;
+  margin-top: 8px;
+}
+
+
+.undertekst2 {
+  font-size: x-large;                         
+  font-family: "Shree Devanagari 714", serif; 
+  line-height: 30px;                          
+  color: #4b2d1b;                             
+}
+
+
+.item6:nth-of-type(3) {
+  grid-column: 1 / span 1;   
+  grid-row: 3 / span 1;
+  border: solid thin black;     
+  width: 562px;
+  height: 350px;                
+  background-color: #fff5ed;                
+  padding-top: 40px;            
+  font-size: xx-large;          
+  font-family: Bagatela, serif; 
+  text-align: center;           
+}
+
+.undertekst3 {
+  font-size: x-large;
+  font-family: "Shree Devanagari 714", serif;
+  line-height: 30px;
+  color: #4b2d1b;
+}
+
+.boks03b {
+  border: thin solid black;
+  width: 220px;
+  height: 50px;
+  margin-left: 170px;
+  background-color: #f4eade;
+  color: #878532;
+  font-family:Bagatela, serif;
+  padding-top: 7px;
+  margin-top: 8px;
+}
+
+
+//---------------------------------------FOOTEREN--------------------------------------------
+
+.footer{
+  background-color: saddlebrown;
+  padding: 5px 15px 15px 15px;
+}
+
+.display_web{
+  display: none;
+}
+
+.footertekst, .aabningstider, .voresvine, .arrangementer{
+  text-align: center;
+  font-size: 20pt;
+  margin-top: 30px;
+}
+
+
+.stregWEB{
+  margin-top: 100px;
+  z-index: 2;
+  width: 100%;
+}
+
+.socialemedier{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+  margin-top: -35px;
+}
+
+.fa-instagram, .fa-facebook-square, .fa-youtube{
+  background-color: saddlebrown;
+  width: 60px;
+  text-align: center;
+}
+
 
 
 h1, h2, h3, h4, h5, h6 {
