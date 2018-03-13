@@ -156,7 +156,7 @@ a:hover {
 
 .streg {
   width: 453px;
-  margin-top: 140px;
+  margin-top: 100px;
   padding-left: 100px; }
 
 .vinelementer {
@@ -269,6 +269,108 @@ a:hover {
   margin-top: -20px;
   margin-left: -40px;
   line-height: 22px; }
+
+.besøgos {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: 3, 1fr;
+  grid-gap: 20px; }
+
+.item6:nth-of-type(1) {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  border: solid thin black;
+  width: 562px;
+  height: 350px;
+  background-color: #fff5ed;
+  padding-top: 40px;
+  margin-top: 70px;
+  font-size: xx-large;
+  font-family: Bagatela, serif;
+  text-align: center; }
+
+.undertekst1 {
+  font-size: x-large;
+  font-family: "Shree Devanagari 714", serif;
+  line-height: 30px;
+  color: #4b2d1b; }
+
+.boks01 {
+  border: thin solid black;
+  width: 220px;
+  height: 50px;
+  margin-left: 170px;
+  background-color: #f4eade;
+  color: #878532;
+  font-family: Bagatela, serif;
+  padding-top: 7px; }
+
+.item6:nth-of-type(2) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  border: solid thin black;
+  width: 562px;
+  height: 350px;
+  background-color: #fff5ed;
+  padding-top: 40px;
+  font-size: xx-large;
+  font-family: Bagatela, serif;
+  text-align: center; }
+
+.textInput {
+  margin-top: 15px;
+  font-size: large;
+  font-family: "Shree Devanagari 714", serif;
+  border: solid thin black;
+  height: 40px;
+  width: 220px;
+  padding-left: 10px; }
+
+.boks02b {
+  border: thin solid black;
+  width: 220px;
+  height: 50px;
+  margin-left: 170px;
+  background-color: #f4eade;
+  color: #878532;
+  font-family: Bagatela, serif;
+  padding-top: 7px;
+  margin-top: 8px; }
+
+.undertekst2 {
+  font-size: x-large;
+  font-family: "Shree Devanagari 714", serif;
+  line-height: 30px;
+  color: #4b2d1b; }
+
+.item6:nth-of-type(3) {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  border: solid thin black;
+  width: 562px;
+  height: 350px;
+  background-color: #fff5ed;
+  padding-top: 40px;
+  font-size: xx-large;
+  font-family: Bagatela, serif;
+  text-align: center; }
+
+.undertekst3 {
+  font-size: x-large;
+  font-family: "Shree Devanagari 714", serif;
+  line-height: 30px;
+  color: #4b2d1b; }
+
+.boks03b {
+  border: thin solid black;
+  width: 220px;
+  height: 50px;
+  margin-left: 170px;
+  background-color: #f4eade;
+  color: #878532;
+  font-family: Bagatela, serif;
+  padding-top: 7px;
+  margin-top: 8px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
