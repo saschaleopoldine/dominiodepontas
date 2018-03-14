@@ -46,7 +46,14 @@ $brown: #4b2d1b;
 $overlay_mobil: rgba(75, 45, 27, 0.7);
 $overlay_web: rgba(75, 45, 27, 0.23);
 $green: #878532;
-$gold: guld;
+
+
+@mixin green{
+  background: -webkit-linear-gradient( #878532, #878532, #878532, #878532);
+  background: linear-gradient( #878532, #878532, #878532, #878532);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 @mixin gold{
@@ -79,18 +86,6 @@ $gold: guld;
 }
 
 //-------------------------- redigering af links ------------------
-a:link {
-  color: $gold;
-  text-decoration-line: none;
-}
-
-a:visited {
-  color: $gold;
-}
-
-a:hover {
-  color: $green;
-}
 
 
 //----------------------------------Header Mobil---------------------------
@@ -142,6 +137,9 @@ a:hover {
   display: flex;
   justify-content: space-around;
   margin-top: 70px;
+  a:hover{
+    @include green;
+  }
 }
 
 
@@ -165,7 +163,7 @@ a:hover {
 
 #club{
   text-align: center;
-  margin: 50px auto 0 auto;
+  margin: 150px auto 0 auto;
   font-size: 40pt;
 }
 
@@ -176,16 +174,22 @@ a:hover {
   text-align: center;
   font-weight: 400;
   width: 80%;
-  margin: 100px auto 0 auto;
+  margin: 50px auto 0 auto;
 
 }
 
 .CTA{
-  color: $green;
   font-size: 25pt;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  a{
+    color: $green;
+    text-decoration: none;
+  }
+  a:hover{
+   @include gold;
+  }
 }
 
 //--------------------------------------vin mobil---------------------------
@@ -211,9 +215,9 @@ a:hover {
   height: 450px;
   width: auto;
   position: absolute;
-  left: 19%;
+  left: 5px;
   z-index: 1;
-  margin-top: -90px;
+  margin-top: -150px;
 }
 
 #rodvin{
@@ -224,6 +228,13 @@ a:hover {
   width: 350px;
   margin-left: 35px;
   margin-top: 70px;
+  a{                      
+    color: $brown;        
+    text-decoration: none;
+  }                       
+  a:hover{
+    color: $green;
+  }                       
 }
 
 .speciel_tekst{
@@ -326,18 +337,7 @@ a:hover {
 
 //--------------------- redigering af links-----------------------
 
-  a:link {
-    color: $gold;
-    text-decoration-line: none;
-  }
 
-  a:visited {
-    color: $gold;
-  }
-
-  a:hover {
-    color: $green;
-  }
 
 //-------------------------- header Web -------------------------
 
@@ -349,11 +349,14 @@ a:hover {
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 10px 20px;
   justify-content: space-between;
-  font-size: large;
+  font-size: 18pt;
   font-weight: bolder;
   height: 497px;
   a{
     @include gold;
+  }
+  a:hover{
+    @include green
   }
 }
 

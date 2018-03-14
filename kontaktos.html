@@ -56,27 +56,19 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
+<div class="grid1">
 <header>
-    <div class="header">
-        <div class="baggrundsbillede">
-            <div class="header">
-                <i class="fa fas fa-bars"></i>
-
-                <img class="logomobil" src="Image/logomobil.png"/>
+    <header class="header">
+            <div class="menubar">
+                <div class="item1"><a href="index.html"> FORSIDE</a></div>
+                <div class="item1"><a href="voresvin.html">VORES VIN</a></div>
+                <div class="item1"><a href="#">FORHANDLERE</a></div>
+                <div class="item1"><div class="logo"> <img src="Image/logoweb.png"></div></div>
+                <div class="item1"><a href="#">ARRANGEMENTER</a></div>
+                <div class="item1"><a href="kontaktos.html">KONTAKT OS</a></div>
             </div>
-        </div>
 
-        <nav class="menubar">
-            <ul>
-                <li class="forside"><a href="index.html">FORSIDE</a></li>
-                <li class="forside"><a href="#">VORES VIN</a></li>
-                <li class="forside"><a href="#">FORHANDLERE</a></li>
-                <img  class="logoweb" src="Image/logoweb.png"/>
-                <li class="forside"><a href="#">ARRANGEMENTER</a></li>
-                <li class="forside"><a href="kontaktos.html">KONTAKT OS</a></li>
-            </ul>
-        </nav>
-            </div>
+
 
 
         <!-- -------------------------WEB/MOBIL TEKST/CTA ------------------------------------ -->
@@ -86,167 +78,153 @@
             om en rejse for 2 til vores vingård, som ligger i Navarra <br>
             i det nordlige Spanien.
         </p>
-
+        <i class="fa fas fa-bars"></i>
+        <img alt="Logo Dominios de Pontas" class="logomobil" src="Image/logomobil.png" height="328" width="385"/>
         <br><br>
-
+    </header>
 </header>
 <section>
     <div class="kontaktos">
         <p>KONTAKT OS</p></div>
-    <br><br>
-    <div class="streg1"> <img src="Image/mellemstreg.png"></div>
-    <div class="streg2"> <img src="Image/mellemstreg.png"></div>
-    <br><br>
+    <br>
+    <div> <img src="Image/mellemstreg.png"></div>
+    <br>
 
-
-
-    <div class="mapsogkontaktMOBIL">
-        <br><br> <br><br> <br><br><br><br>
-        <div class="googlemaps1">
-            HER SKAL VÆRE GOOGLE MAPS
-            <br><br><br><br> <br><br><br><br>
+    <div class="mapsogkontakt">
+        <div class="googlemaps">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAcQ5bruarH78FMhwrThnFrqkbmjBihYzU'></script><div style='overflow:hidden;height:400px;width:520px;'>
+            <div id='gmap_canvas' style='height:350px; width:395px;'>
+            </div><style>#gmap_canvas img{max-width:none!important;
+            background:none!important}</style></div>
+            <a href='https://mapswebsite.net/de'>https://mapswebsite.net/de</a>
+            <script type='text/javascript'
+                    src='https://embedmaps.com/google-maps-authorization/script.js?id=a6148427f68a08a54161a3003c6fbc842586f3dd'>
+            </script><script type='text/javascript'>function init_map()
+        {var myOptions = {zoom:12,center:new google.maps.LatLng
+            (42.6953909,-1.6760691),mapTypeId:
+            google.maps.MapTypeId.ROADMAP};map =
+            new google.maps.Map(document.getElementById('gmap_canvas'),
+                myOptions);marker = new google.maps.Marker(
+            {map: map,position: new google.maps.LatLng(42.6953909,-1.6760691)}
+        );infowindow = new google.maps.InfoWindow({content:'<strong>Navarra</strong><br>Dannebrovej 22<br>Spanien<br>'}
+        );google.maps.event.addListener(marker, 'click', function()
+        {infowindow.open(map,marker);});infowindow.open(map,marker);
+        }google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
         </div>
-        <br>
-        <div class="kontaktformular1">
+
+        <div class="kontaktformular">
             <div class ="fname"></div>
-            <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn" style="width: 90%">
+            <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn" style="width: 80%">
 
             <div class="DinAdresse"></div>
-            <input type="text" id="lname" name="lastname" placeholder="Din E-mail" style="width: 90%" >
+            <input type="text" id="lname" name="lastname" placeholder="Din E-mail" style="width: 80%" >
 
             <div class="subject">Din besked</div>
-            <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px; width: 90%;"></textarea>
-            <br>
-            <input type="submit" value="Send">
-        </div>
-    </div>
-    <div class="mapsogkontaktWEB">
-        <br><br> <br><br> <br><br><br><br>
-        <div class="googlemaps2">
-            HER SKAL VÆRE GOOGLE MAPS
-            <br><br><br><br> <br><br><br><br>
-        </div>
-        <br>
-        <div class="kontaktformular2">
-            <div class ="fname"></div>
-            <input type="text" id="fname2" name="firstname" placeholder="Dit fulde navn" style="width: 90%">
+            <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px; width: 80%;"></textarea>
 
-            <div class="DinAdresse"></div>
-            <input type="text" id="lname2" name="lastname" placeholder="Din E-mail" style="width: 90%" >
-
-            <div class="subject">Din besked</div>
-            <textarea id="subject2" name="subject" placeholder="Skriv her.." style="height:200px; width: 90%;"></textarea>
-            <br>
             <input type="submit" value="Send">
         </div>
     </div>
 </section>
 <br>
 
-    <div class="streg3"> <img src="Image/mellemstreg.png"></div>
+    <div> <img src="Image/mellemstreg.png"></div>
+
 <section>
+
+
+    <div>
         <div class="FindOsHer">
-            <br>
-            <div class="findosherboks">
+            <div>
                 <h1>Find os her</h1>
             </div>
-            <br>
             <div class="medier">
-                <div class="instagramboks">
-                    <a href="https://www.instagram.com">
-                    <div class="instagram1">
-                <i class="fa fab fa-instagram fa-5x"></i>
-                        <div>Instagram</div></div></a></div>
-                <br>
-
-                <div class="facebookboks">
+                <a href="https://www.instagram.com">
+                    <div class="instagram1"></div>
+                <i class="fa fab fa-instagram fa-4x"></i>
+                    <div>Instagram</div></a>
                 <a href="https://www.facebook.com">
             <div class="facebook1">
-                <i class="fa fab fa-facebook-square fa-5x"></i>
-                <div>Facebook</div></div></a></div>
-                <br>
-         <div class="youtubeboks">
+                <i class="fa fab fa-facebook-square fa-4x"></i>
+                <div>Facebook</div></div></a>
                 <a href="https://www.youtube.com">
             <div class="youtube1">
-                <i class="fa fab fa-youtube fa-5x"></i>
-                <div>Youtube</div>
-            </div></a></div>
+                <i class="fa fab fa-youtube fa-4x"></i>
+                <div>youtube</div>
+            </div></a>
         </div></div>
-</section>
-    <br>
+    </div>
 
-    <footer>
+</section>
+
+
+<footer>
   <div class="footer">
       <div class="footertekst">
-          <div class="Adresse">
+          <div class="kontaktos2">
           <a href="#"><strong>Kontakt os</strong></a>
 
-              <br><br>
-              <div class="adressen">
-                  <a href="#"> Tlf.: +45 45 34 56 23</a>
-                  <br>
-                  <br><a href="#"> E-mail: Dominio@depontas.com</a>
-                  <br>
-                  <a href="#"><br>Adresse: Benegorri 31395, <br>Navarra, Spanien</a>
-              </div>
+              <p class="Adresse">Adresse</p>
+              <ul class="adressen">
+                  <li>Tlf.: +45 45 34 56 23</li>
+                  <li>E-mail: Dominio@depontas.com</li>
+                  <li>Adresse: Benegorri 31395, Navarra, Spanien</li>
+              </ul>
           </div>
 
           <div class="Åbningstider">
-          <a href="#"><strong>Åbningstider</strong></a>
-          <br><br>
-          <p class="åbningstiderne">
-              Man-Tors: kl 11.00 - 15.00
-              <br>
-              <br>Fredag: kl: 15.00 - 18.00
-              <br>
-              <br>Lørdag: kl: 10.00 - 17.00
-              <br>
-              <br>Søndag: LUKKET
-          </p></div>
+              <a href="#"><strong>Åbningstider</strong></a>
+          <ul class="åbningstiderne">
+              <li>Man-Tors: kl 11.00 - 15.00</li>
+              <li>Fredag: kl: 15.00 - 18.00</li>
+              <li>Lørdag: kl: 10.00 - 17.00</li>
+              <li>Søndag: LUKKET</li>
+          </ul>
+          </div>
 
-          <div class="voresvine">
-         <a href="#"><strong>Vores Vine</strong></a>
-          <br>
-          <p class="vinene">
-              <br>
-              <a href="#">Rødvin</a>
-          <br><br>
-              <a href="#">Hvidvin</a>
-          <br><br>
-              <a href="#">Rosévin</a>
-          </p></div>
+        <div class="voresvine">
+         <a href="#"><strong>Vores Vine</strong></a></div>
+          <ul class="vinene">
+              <li>Rødvin</li>
+              <li>Hvidvin</li>
+              <li>Rosévin</li>
+          </ul>
 
-          <div class="arrangementer">
-              <a href="#"><strong>Arrangementer</strong></a>
-          <p class="arrangementerne">
-              <br>
-              <a href="#"> Vinsmagning</a>
-          <br><br>
-              <a href="#">Rundvisning</a>
-          <br><br>
-              <a href="#">Messer 2018</a>
-          </p>
-      </div>
-
-
-  </div>
-  </div>
-        <div class="stregWEB"> <img src="Image/stregweb.png"></div>
-        <div class="socialemedier">
-            <a href="https://www.instagram.com">
-                <div class="instagram2">
-                    <i class="fa fab fa-instagram fa-4x"></i>
-                </div></a>
-            <a href="https://www.facebook.com">
-                <div class="facebook2">
-                    <i class="fa fab fa-facebook-square fa-4x"></i>
-                </div></a>
-            <a href="https://www.youtube.com">
-                <div class="youtube2">
-                    <i class="fa fab fa-youtube fa-4x"></i>
-                </div></a>
+        <div class="arrangementer">
+        <a href="#"><strong>Arrangementer</strong></a>
+              <ul class="arrangementerne">
+                  <li>Vinsmagning</li>
+                <li>Rundvisning</li>
+                <li>Messer 2018</li>
+              </ul>
         </div>
+  </div>
+
+
+      <div class="stregMobil"> <img src="Image/stregmobil.png"></div>
+      <div class="stregWEB"> <img src="Image/stregweb.png"></div>
+
+
+      <div class="socialemedier">
+          <a href="https://www.instagram.com">
+              <div class="instagram2">
+              <i class="fa fab fa-instagram fa-4x"></i>
+          </div></a>
+
+          <a href="https://www.facebook.com">
+              <div class="facebook2">
+              <i class="fa fab fa-facebook-square fa-4x"></i>
+          </div></a>
+
+          <a href="https://www.youtube.com">
+              <div class="youtube2">
+              <i class="fa fab fa-youtube fa-4x"></i>
+          </div></a>
+      </div>
+  </div>
 </footer>
+
 </div>
 </body>
 </html>
