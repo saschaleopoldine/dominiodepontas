@@ -14,7 +14,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
-  font-family: Bagatela, serif;
 }
 
 ul, ol {
@@ -156,68 +155,6 @@ A:hover{
   display: none;
 }
 
-
-.FindOsHer{
-  text-align: center;
-  color: $brown;
-  font-family: Bagatela, serif;
-}
-
-.kontaktos2 .Åbningstider .voresvine .arrangementer {
-  font-size: 25px;
-  text-align: center;
-  color: $darkbeige;
-}
-.adressen{
-  display: none;
-}
-.FindOsHer{
-  color: $brown;
-}
-.findosherboks{
-  background-color: $lightbeige;
-  padding: 20px;
-  color: $brown;
-  font-size: 30px;
-}
-@mixin socialemedierbokse{
-  width: 100%;
-  height: 200px;
-  padding: 60px;
-  background-color: $lightbeige;
-}
-
-.medier {
-  text-align: center;
-  color: $brown;
-  a{
-    text-decoration: none;
-    color: $brown;
-  }
-  a:hover{
-    color: $green;
-  }
-}
-
-.instagramboks{
-  @include socialemedierbokse;
-  a{
-    text-decoration: none;
-    color: $brown;
-  }
-  a:hover{
-    color: $green;
-  }
-}
-.facebookboks{
-  @include socialemedierbokse
-}
-.youtubeboks{
-  @include socialemedierbokse
-}
-.instagram1, .facebook1, .youtube1{
-  color: $brown;
-}
 
 
 
@@ -382,64 +319,8 @@ footer{
     display: none;
   }
 
-
   //body
 
-  .kontaktos{
-    margin-top: 25px;
-  }
-
-  .streg1 {
-    display: contents;
-    margin-left: 30%;
-    margin-right: 30%;
-  }
-  .streg2 {
-    display: none;
-  }
-  .mapsogkontaktMOBIL{
-    display: none;
-  }
-  .mapsogkontaktWEB{
-    display: flex;
-  }
-  .googlemaps2{
-    width: 50%;
-  }
-  .kontaktformular2{
-    width: 50%;
-  }
-  .streg3{
-    display: block;
-    margin-left: 30%;
-    margin-right: 30%;
-  }
-
-  .findosherboks{
-    width: 100%;
-    background-color: $lightbeige;
-  }
-  .medier{
-    display: flex;
-    color: $brown;
-  }
-  a{
-     text-decoration: none;
-     color: $green;
-   }
-  a:hover{
-    color: $green;
-  }
-
-  .fa-facebook-square, .fa-youtube{
-  }
-  .youtube1, .facebook1, .instagram1{
-
-  }
-
-  .facebookboks{
-
-  }
 
   //footer
 
