@@ -23,7 +23,10 @@ body {
   background-color: rgba(75, 45, 27, 0.7); }
 
 .fa-bars {
-  color: gold;
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 40pt;
   margin-left: 85%;
   margin-top: 40px; }
@@ -55,7 +58,10 @@ a:visited {
   color: #878532; }
 
 a:hover {
-  color: gold; }
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .menubar {
   display: none; }
@@ -99,19 +105,42 @@ a:hover {
 .boks1 {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  border: 2px solid gold;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   height: 172px;
   width: 290px;
   background-color: #fff5ed; }
 
 .tekst1, .tekst2, .tekst3 {
   font-family: "Shree Devanagari 714", serif;
-  font-size: large; }
+  font-size: large;
+  color: #4b2d1b; }
 
 .boks2 {
   grid-column: 1 / span 1;
   grid-row: 4 / span 1;
-  border: 2px solid gold;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   height: 172px;
   width: 290px;
   background-color: #fff5ed; }
@@ -119,7 +148,18 @@ a:hover {
 .boks3 {
   grid-column: 1 / span 1;
   grid-row: 7 / span 1;
-  border: 2px solid gold;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   height: 172px;
   width: 290px;
   background-color: #fff5ed; }
@@ -127,32 +167,83 @@ a:hover {
 .item3:nth-of-type(1) {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  border: 2px solid gold;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   height: 148px;
   width: 264px;
   padding: 10px;
   margin: 10px auto auto auto;
   text-align: center; }
+
+.rund {
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .item3:nth-of-type(2) {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  border: 2px solid gold;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   height: 148px;
   width: 264px;
   padding: 10px;
   margin: 10px auto auto auto;
   text-align: center; }
 
+.vin {
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .item3:nth-of-type(3) {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  border: 2px solid gold;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   height: 148px;
   width: 264px;
   padding: 10px;
   margin: 10px auto auto auto;
   text-align: center; }
+
+.events {
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .streg {
   width: 453px;
@@ -206,7 +297,18 @@ a:hover {
 .boksvin {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  border: 2px solid gold;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   position: relative;
   z-index: 0;
   height: 210px;
@@ -220,7 +322,7 @@ a:hover {
   font-size: small;
   margin-left: -40px;
   margin-top: 60px;
-  line-height: 22px; }
+  line-height: 27px; }
 
 .rødvintekst, .hvidvintekst, .rosevintekst {
   font-family: Bagatela, serif;
@@ -235,7 +337,18 @@ a:hover {
 .boksvin2 {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  border: 2px solid gold;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   position: relative;
   z-index: 0;
   height: 210px;
@@ -249,12 +362,23 @@ a:hover {
   font-size: small;
   margin-left: -40px;
   margin-top: 5px;
-  line-height: 22px; }
+  line-height: 27px; }
 
 .boksvin3 {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  border: 2px solid gold;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   position: relative;
   z-index: 0;
   height: 210px;
@@ -268,7 +392,7 @@ a:hover {
   font-size: small;
   margin-top: -20px;
   margin-left: -40px;
-  line-height: 22px; }
+  line-height: 27px; }
 
 .besøgos {
   display: grid;
@@ -279,7 +403,18 @@ a:hover {
 .item6:nth-of-type(1) {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  border: solid thin black;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 562px;
   height: 350px;
   background-color: #fff5ed;
@@ -289,6 +424,12 @@ a:hover {
   font-family: Bagatela, serif;
   text-align: center; }
 
+.kontaktos {
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .undertekst1 {
   font-size: x-large;
   font-family: "Shree Devanagari 714", serif;
@@ -296,7 +437,18 @@ a:hover {
   color: #4b2d1b; }
 
 .boks01 {
-  border: thin solid black;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 220px;
   height: 50px;
   margin-left: 170px;
@@ -308,7 +460,18 @@ a:hover {
 .item6:nth-of-type(2) {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  border: solid thin black;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 562px;
   height: 350px;
   background-color: #fff5ed;
@@ -317,17 +480,45 @@ a:hover {
   font-family: Bagatela, serif;
   text-align: center; }
 
+.nyhed {
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .textInput {
   margin-top: 15px;
   font-size: large;
   font-family: "Shree Devanagari 714", serif;
-  border: solid thin black;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   height: 40px;
   width: 220px;
   padding-left: 10px; }
 
 .boks02b {
-  border: thin solid black;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 220px;
   height: 50px;
   margin-left: 170px;
@@ -346,7 +537,18 @@ a:hover {
 .item6:nth-of-type(3) {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  border: solid thin black;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 562px;
   height: 350px;
   background-color: #fff5ed;
@@ -355,6 +557,12 @@ a:hover {
   font-family: Bagatela, serif;
   text-align: center; }
 
+.forhandler {
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .undertekst3 {
   font-size: x-large;
   font-family: "Shree Devanagari 714", serif;
@@ -362,7 +570,18 @@ a:hover {
   color: #4b2d1b; }
 
 .boks03b {
-  border: thin solid black;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 220px;
   height: 50px;
   margin-left: 170px;
@@ -373,7 +592,7 @@ a:hover {
   margin-top: 8px; }
 
 .footer {
-  background-color: saddlebrown;
+  background-color: #4b2d1b;
   padding: 5px 15px 15px 15px;
   margin-top: 20px; }
 
@@ -384,6 +603,12 @@ a:hover {
   text-align: center;
   font-size: 20pt;
   margin-top: 30px; }
+
+.overskrift_f {
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .stregWEB {
   margin-top: 100px;
@@ -398,9 +623,11 @@ a:hover {
   margin-top: -35px; }
 
 .fa-instagram, .fa-facebook-square, .fa-youtube {
-  background-color: saddlebrown;
+  background-color: #4b2d1b;
   width: 60px;
-  text-align: center; }
+  text-align: center;
+  color: #f4eade;
+  margin-bottom: 20px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -433,10 +660,19 @@ img {
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 10px 20px;
     justify-content: space-between;
-    color: gold;
-    font-size: large;
+    font-size: 18pt;
     font-weight: bolder;
     height: 900px; }
+    .menubar a {
+      background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .menubar a:hover {
+      background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
+      background: linear-gradient(#878532, #878532, #878532, #878532);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
   .item1:nth-of-type(1) {
     grid-column: 1 / span 7;
@@ -519,8 +755,10 @@ img {
     color: #878532; }
 
   a:hover {
-    color: gold;
-    text-decoration-line: underline; }
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
   .billedebokse {
     display: grid;
@@ -560,7 +798,18 @@ img {
   .boks1 {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    border: 2px solid gold;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 172px;
     width: 290px;
     background-color: #fff5ed;
@@ -574,7 +823,18 @@ img {
   .boks2 {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    border: 2px solid gold;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 172px;
     width: 290px;
     background-color: #fff5ed;
@@ -583,7 +843,18 @@ img {
   .boks3 {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
-    border: 2px solid gold;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 172px;
     width: 290px;
     background-color: #fff5ed;
@@ -592,7 +863,18 @@ img {
   .item3:nth-of-type(1) {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    border: 2px solid gold;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 148px;
     width: 264px;
     padding: 10px;
@@ -602,7 +884,18 @@ img {
   .item3:nth-of-type(2) {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    border: 2px solid gold;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 148px;
     width: 264px;
     padding: 10px;
@@ -612,7 +905,18 @@ img {
   .item3:nth-of-type(3) {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
-    border: 2px solid gold;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 148px;
     width: 264px;
     padding: 10px;
@@ -621,7 +925,7 @@ img {
 
   .streg {
     margin-left: 420px;
-    margin-top: 180px;
+    margin-top: 200px;
     margin-bottom: 100px; }
 
   .vinelementer {
@@ -671,7 +975,18 @@ img {
   .boksvin {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    border: 2px solid gold;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     position: relative;
     z-index: 0;
     height: 210px;
@@ -695,12 +1010,26 @@ img {
   .seudvalg {
     font-family: Bagatela, serif;
     font-size: x-large;
-    color: #878532; }
+    background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
+    background: linear-gradient(#878532, #878532, #878532, #878532);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
   .boksvin2 {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    border: 2px solid gold;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     position: relative;
     z-index: 0;
     height: 210px;
@@ -718,7 +1047,18 @@ img {
   .boksvin3 {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
-    border: 2px solid gold;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     position: relative;
     z-index: 0;
     height: 210px;
@@ -743,7 +1083,18 @@ img {
   .item6:nth-of-type(1) {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    border: solid thin black;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     width: 400px;
     height: 350px;
     background-color: #fff5ed;
@@ -752,8 +1103,13 @@ img {
     margin-left: 50px;
     font-size: xx-large;
     font-family: Bagatela, serif;
-    text-align: center;
-    color: gold; }
+    text-align: center; }
+
+  .kontaktos {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
   .undertekst1 {
     font-size: x-large;
@@ -762,7 +1118,18 @@ img {
     color: #4b2d1b; }
 
   .boks01 {
-    border: thin solid black;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     width: 220px;
     height: 50px;
     margin-left: 80px;
@@ -774,7 +1141,18 @@ img {
   .item6:nth-of-type(2) {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    border: solid thin black;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     width: 400px;
     height: 350px;
     background-color: #fff5ed;
@@ -784,17 +1162,45 @@ img {
     text-align: center;
     color: gold; }
 
+  .nyhed {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
   .textInput {
     margin-top: 15px;
     font-size: large;
     font-family: "Shree Devanagari 714", serif;
-    border: solid thin black;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 40px;
     width: 220px;
     padding-left: 10px; }
 
   .boks02b {
-    border: thin solid black;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     width: 220px;
     height: 50px;
     margin-left: 90px;
@@ -813,7 +1219,18 @@ img {
   .item6:nth-of-type(3) {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
-    border: solid thin black;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     width: 400px;
     height: 350px;
     background-color: #fff5ed;
@@ -823,6 +1240,12 @@ img {
     text-align: center;
     color: gold; }
 
+  .forhandler {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
   .undertekst3 {
     font-size: x-large;
     font-family: "Shree Devanagari 714", serif;
@@ -831,7 +1254,18 @@ img {
     padding-bottom: 25px; }
 
   .boks03b {
-    border: thin solid black;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     width: 220px;
     height: 50px;
     margin-left: 90px;
@@ -839,6 +1273,50 @@ img {
     color: #878532;
     font-family: Bagatela, serif;
     padding-top: 7px;
-    margin-top: 8px; } }
+    margin-top: 8px; }
+
+  .display_web {
+    display: inline;
+    color: #f4eade;
+    font-family: "Shree Devanagari 714", serif;
+    font-weight: lighter;
+    font-size: 16pt; }
+    .display_web a {
+      color: #f4eade; }
+
+  .footer {
+    padding: 50px;
+    margin-top: 70px; }
+
+  ul {
+    list-style-type: none; }
+
+  .kontaktos2, .aabningstider, .voresvine, .arrangementer {
+    text-align: start;
+    margin-top: -5px;
+    line-height: 40pt; }
+
+  #linie {
+    line-height: 25pt;
+    margin-top: 10px; }
+
+  .footertekst {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 0; }
+
+  .stregWEB {
+    width: 90%;
+    margin: 90px auto 30px auto; }
+
+  .instagram2, .facebook2, .youtube2 {
+    margin: -30px auto 30px auto;
+    width: 100px;
+    color: #f4eade; }
+
+  .overskrift_f {
+    font-size: 22pt; } }
 
 /*# sourceMappingURL=forside.css.map */
