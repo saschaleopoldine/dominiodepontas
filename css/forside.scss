@@ -574,14 +574,6 @@ a:hover {
 }
 
 
-
-
-
-
-
-
-
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
@@ -901,15 +893,16 @@ a:hover {
   text-align: center;                                                   
 }
 
-.streg {
-  margin-left: 420px;
-  margin-top: 120px;
-  margin-bottom: 120px;
-}
-
 
   //---------------------------------VINBILLEDER WEB-------------------------------------
-.flex{
+
+  .streg2 {
+   margin-bottom: 45px;
+    margin-top: 152px;
+    margin-left: 450px;  
+  }                      
+
+  .flex{
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
@@ -919,7 +912,7 @@ a:hover {
 .rodvine{
   width: 350px;
   height: 223px;
-  margin: 150px auto 100px auto;
+  margin: 100px auto 100px auto;
   background-color: $lightbeige;  
   @include bordergold;              
   position: relative;             
@@ -1106,6 +1099,11 @@ a:hover {
   margin-top: 8px;                                                 
 }
 
+.streg1 {
+ margin-bottom: 150px;
+  margin-top: 60px;
+  margin-left: 450px;
+}
 
 //--------------------------------FOOTER WEB ------------------------------------
 
