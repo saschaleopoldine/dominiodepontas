@@ -14,16 +14,58 @@ body {
   display: none;
 }
 
+  $darkbeige: #f4eade;
+  $lightbeige: #fff5ed;
+  $brown: #4b2d1b;
+  $overlay_mobil: rgba(75, 45, 27, 0.7);
+  $overlay_web: rgba(75, 45, 27, 0.23);
+  $green: #878532;
+  $gold: guld;
+
+ @mixin green{
+   background: -webkit-linear-gradient( #878532, #878532, #878532, #878532);
+   background: linear-gradient( #878532, #878532, #878532, #878532);
+   -webkit-background-clip: text;                                            
+   -webkit-text-fill-color: transparent;                                     
+ }                                                                           
+ 
+ @mixin gold{
+   background: -webkit-linear-gradient( #dcc17a, #a18348, #e4c981, #9d7f3f);
+   background: linear-gradient( #dcc17a, #a18348, #e4c981, #9d7f3f);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ @mixin bordergold{
+   border-left: 2px solid #e4c982;
+   border-right: 2px solid #9d7f3f;
+   border-radius: 5px;
+   background-position: 0 0, 0 100%;
+   background-repeat: no-repeat;
+   -webkit-background-size: 100% 2px;
+   -moz-background-size: 100% 2px;
+   background-size: 100% 2px;
+   background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+   background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+   background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+ }
+ 
+ @mixin flex_center{
+   display: -webkit-flex;
+   display: flex;
+   justify-content: center;
+ }
 
 //---------------------------------------HEADEREN BILLEDE LOGO-------------------------------------
 
 .baggrundsbillede{                                      
-  width: 100%;                                          
-  height: 450px;                                        
-  background-image: url("../Image/mobil_baggrund.jpg"); 
-  background-size: cover;                               
-  padding-bottom: 20px;                                 
-}                                                       
+  width: 100%;
+  height: 450px;
+  background-image: url("../Image/mobil_baggrund.jpg");
+  background-size: cover;
+  padding-bottom: 20px;
+}
                                                         
 .header{                                                
   width: 100%;                                          
@@ -31,8 +73,8 @@ body {
   background-color: rgba(75, 45, 27, 0.7);              
 }                                                       
                                                         
-.fa-bars{                                               
-  color: gold;                                          
+.fa-bars{
+  @include gold;
   font-size: 40pt;                                      
   margin-left: 85%;                                     
   margin-top: 40px;                                     
@@ -70,11 +112,12 @@ a:visited {
 }
 
 a:hover {
-  color: gold;
+  @include gold;
 }
 
 .menubar {
   display: none;
+
 }
 
 
@@ -125,7 +168,7 @@ a:hover {
 .boks1 {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  border: 2px solid gold;
+  @include bordergold;
   height: 172px;
   width: 290px;
   background-color: #fff5ed;
@@ -134,12 +177,13 @@ a:hover {
 .tekst1, .tekst2, .tekst3 {
   font-family: "Shree Devanagari 714", serif;
   font-size: large;
+  color: #4b2d1b;
 }
 
 .boks2 {                                 
   grid-column: 1 / span 1;
   grid-row: 4 / span 1;
-  border: 2px solid gold;
+  @include bordergold;
   height: 172px;
   width: 290px;
   background-color: #fff5ed;
@@ -148,7 +192,7 @@ a:hover {
 .boks3 {
   grid-column: 1 / span 1;
   grid-row: 7 / span 1;
-  border: 2px solid gold;
+  @include bordergold;
   height: 172px;
   width: 290px;
   background-color: #fff5ed;
@@ -157,19 +201,22 @@ a:hover {
 .item3:nth-of-type(1) {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  border: 2px solid gold;
+  @include bordergold;
   height: 148px;
   width: 264px;
   padding: 10px;
   margin: 10px auto auto auto;
   text-align: center;
+}
 
+.rund {
+  @include gold;
 }
 
 .item3:nth-of-type(2) {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  border: 2px solid gold;
+  @include bordergold;
   height: 148px;
   width: 264px;
   padding: 10px;
@@ -177,16 +224,27 @@ a:hover {
   text-align: center;
 }
 
+.vin {
+  @include gold;
+}
+
+
 .item3:nth-of-type(3) {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  border: 2px solid gold;
+  @include bordergold;
   height: 148px;
   width: 264px;
   padding: 10px;
   margin: 10px auto auto auto;
   text-align: center;
 }
+
+.events {
+  @include gold;
+}
+
+
 
 //mellemstreg
 
@@ -257,7 +315,7 @@ a:hover {
 .boksvin {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  border: 2px solid gold;
+  @include bordergold;
   position: relative;
   z-index: 0;
   height: 210px;
@@ -271,7 +329,7 @@ a:hover {
   font-size: small;
   margin-left: -40px;
   margin-top: 60px;
-  line-height: 22px;
+  line-height: 27px;
   
 }
 
@@ -293,7 +351,7 @@ a:hover {
 .boksvin2 {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  border: 2px solid gold;
+  @include bordergold;
   position: relative;
   z-index: 0;
   height: 210px;
@@ -307,7 +365,7 @@ a:hover {
   font-size: small;
   margin-left: -40px;
   margin-top: 5px;
-  line-height: 22px;
+  line-height: 27px;
 }
 
 
@@ -316,7 +374,7 @@ a:hover {
 .boksvin3 {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  border: 2px solid gold;
+  @include bordergold;
   position: relative;
   z-index: 0;
   height: 210px;
@@ -330,7 +388,7 @@ a:hover {
   font-size: small;
   margin-top: -20px;
   margin-left: -40px;
-  line-height: 22px;
+  line-height: 27px;
 }
 
 
@@ -346,7 +404,7 @@ a:hover {
 .item6:nth-of-type(1) {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  border: solid thin black;
+  @include bordergold;
   width: 562px;
   height: 350px;
   background-color: #fff5ed;
@@ -355,6 +413,10 @@ a:hover {
   font-size: xx-large;
   font-family: Bagatela, serif;
   text-align: center;
+}
+
+.kontaktos {
+  @include gold;
 }
 
 .undertekst1 {
@@ -366,7 +428,7 @@ a:hover {
 
 
 .boks01 {
-  border: thin solid black;
+  @include bordergold;
   width: 220px;
   height: 50px;
   margin-left: 170px;
@@ -380,7 +442,7 @@ a:hover {
 .item6:nth-of-type(2) {
   grid-column: 1 / span 1;   
   grid-row: 2 / span 1;
-  border: solid thin black;     
+  @include bordergold;
   width: 562px;
   height: 350px;                
   background-color: #fff5ed;                
@@ -390,11 +452,15 @@ a:hover {
   text-align: center;
 }
 
+.nyhed {
+  @include gold;
+}
+
 .textInput {
   margin-top: 15px;
   font-size: large;
   font-family: "Shree Devanagari 714", serif;
-  border: solid thin black;
+  @include bordergold;
   height: 40px;
   width: 220px;
   padding-left: 10px;
@@ -402,7 +468,7 @@ a:hover {
 
 
 .boks02b {
-  border: thin solid black;   
+  @include bordergold;
   width: 220px;               
   height: 50px;               
   margin-left: 170px;         
@@ -425,7 +491,7 @@ a:hover {
 .item6:nth-of-type(3) {
   grid-column: 1 / span 1;   
   grid-row: 3 / span 1;
-  border: solid thin black;     
+  @include bordergold;
   width: 562px;
   height: 350px;                
   background-color: #fff5ed;                
@@ -433,6 +499,10 @@ a:hover {
   font-size: xx-large;          
   font-family: Bagatela, serif; 
   text-align: center;           
+}
+
+.forhandler {
+  @include gold;
 }
 
 .undertekst3 {
@@ -443,7 +513,7 @@ a:hover {
 }
 
 .boks03b {
-  border: thin solid black;
+  @include bordergold;
   width: 220px;
   height: 50px;
   margin-left: 170px;
@@ -458,7 +528,7 @@ a:hover {
 //---------------------------------------FOOTEREN--------------------------------------------
 
 .footer{
-  background-color: saddlebrown;
+  background-color: $brown;
   padding: 5px 15px 15px 15px;
   margin-top: 20px;
 }
@@ -473,6 +543,9 @@ a:hover {
   margin-top: 30px;
 }
 
+.overskrift_f{
+  @include gold;
+}
 
 .stregWEB{
   margin-top: 100px;
@@ -489,10 +562,22 @@ a:hover {
 }
 
 .fa-instagram, .fa-facebook-square, .fa-youtube{
-  background-color: saddlebrown;
+  background-color: $brown;
   width: 60px;
   text-align: center;
+  color: $darkbeige;
+  margin-bottom: 20px;
+  a:hover{
+
+  }
 }
+
+
+
+
+
+
+
 
 
 
@@ -543,18 +628,24 @@ img {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 //------------------------------MENUBAR WEB ----------------------------------------
 
-.menubar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-gap: 10px 20px;
-  justify-content: space-between;
-  color: gold;
-  font-size: large;
-  font-weight: bolder;
-  height: 900px;
-}
+  .menubar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px 20px;
+    justify-content: space-between;
+    font-size: 18pt;
+    font-weight: bolder;
+    height: 900px;
+    a {
+      @include gold;
+    }
+    a:hover {
+      @include green;
+    }
+  }
 
+  
 .item1:nth-of-type(1) {
   grid-column: 1 / span 7;
   grid-row: 1 / span 1;
@@ -640,21 +731,18 @@ img {
 
 //---------------------------------LINKS------------------------------------------
 
-a:link {
-  color: #878532;
-  text-decoration-line: none;
-}
-                                                                        
-a:visited {
-  color: #878532;
-}
-a:hover {
-  color: gold;
-  text-decoration-line: underline;
-}
-
-
-
+a:link {                         
+  color: #878532;                
+  text-decoration-line: none;    
+}                                
+                                 
+a:visited {                      
+  color: #878532;                
+}                                
+                                 
+a:hover {                        
+  @include gold;                 
+}                                
 //-------------------------------CTA KNAP WEB (MANGLER)--------------------------------------
 
                                                                         
@@ -706,7 +794,7 @@ a:hover {
 .boks1 {                                                                
   grid-column: 1 / span 1;                                              
   grid-row: 1 / span 1;                                                 
-  border: 2px solid gold;                                               
+  @include bordergold;
   height: 172px;                                                        
   width: 290px;                                                         
   background-color: #fff5ed;
@@ -722,7 +810,7 @@ a:hover {
 .boks2 {                                                                
   grid-column: 2 / span 1;                                              
   grid-row: 1 / span 1;                                                 
-  border: 2px solid gold;                                               
+  @include bordergold;
   height: 172px;                                                        
   width: 290px;                                                         
   background-color: #fff5ed;
@@ -732,7 +820,7 @@ a:hover {
 .boks3 {                                                                
   grid-column: 3 / span 1;                                              
   grid-row: 1 / span 1;                                                 
-  border: 2px solid gold;                                               
+  @include bordergold;
   height: 172px;                                                        
   width: 290px;                                                         
   background-color: #fff5ed;
@@ -742,7 +830,7 @@ a:hover {
 .item3:nth-of-type(1) {                                                 
   grid-column: 1 / span 1;                                              
   grid-row: 1 / span 1;                                                 
-  border: 2px solid gold;                                               
+  @include bordergold;
   height: 148px;                                                        
   width: 264px;                                                         
   padding: 10px;                                                        
@@ -754,7 +842,7 @@ a:hover {
 .item3:nth-of-type(2) {                                                 
   grid-column: 2 / span 1;                                              
   grid-row: 1 / span 1;                                                 
-  border: 2px solid gold;                                               
+  @include bordergold;
   height: 148px;                                                        
   width: 264px;                                                         
   padding: 10px;                                                        
@@ -765,7 +853,7 @@ a:hover {
 .item3:nth-of-type(3) {                                                 
   grid-column: 3 / span 1;                                              
   grid-row: 1 / span 1;                                                 
-  border: 2px solid gold;                                               
+  @include bordergold;
   height: 148px;                                                        
   width: 264px;                                                         
   padding: 10px;                                                        
@@ -775,7 +863,7 @@ a:hover {
 
 .streg {
   margin-left: 420px;
-  margin-top: 180px;
+  margin-top: 200px;
   margin-bottom: 100px;
 }
 
@@ -836,7 +924,7 @@ a:hover {
 .boksvin {                                               
   grid-column: 1 / span 1;                                                                                        
   grid-row: 1 / span 1;                                  
-  border: 2px solid gold;                                
+  @include bordergold;
   position: relative;                                    
   z-index: 0;                                            
   height: 210px;
@@ -863,13 +951,13 @@ a:hover {
 .seudvalg {                                              
   font-family: Bagatela, serif;                          
   font-size: x-large;                                    
-  color: #878532;                                        
+  @include green;
 }                                                        
 
 .boksvin2 {                                                     
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
-  border: 2px solid gold;                                       
+  @include bordergold;
   position: relative;                                           
   z-index: 0;                                                   
   height: 210px;
@@ -879,7 +967,7 @@ a:hover {
   padding-top: 30px;
   padding-left: 70px;
   font-family: "Shree Devanagari 714", serif;                   
-  color: #4b2d1b;                                               
+  color: #4b2d1b;
   font-size: small;
   margin-top: 90px;
   line-height: 22px;                                            
@@ -889,7 +977,7 @@ a:hover {
 .boksvin3 {                                                     
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
-  border: 2px solid gold;                                       
+  @include bordergold;
   position: relative;                                           
   z-index: 0;                                                   
   height: 210px;                                                
@@ -917,7 +1005,7 @@ a:hover {
 .item6:nth-of-type(1) {                                            
   grid-column: 1 / span 1;                                         
   grid-row: 1 / span 1;                                            
-  border: solid thin black;                                        
+  @include bordergold;
   width: 400px;
   height: 350px;                                                   
   background-color: #fff5ed;                                       
@@ -927,8 +1015,11 @@ a:hover {
   font-size: xx-large;                                             
   font-family: Bagatela, serif;                                    
   text-align: center;
-  color: gold;
-}                                                                  
+}
+
+.kontaktos {
+  @include gold;
+}
                                                                    
 .undertekst1 {                                                     
   font-size: x-large;                                              
@@ -939,7 +1030,7 @@ a:hover {
                                                                    
                                                                    
 .boks01 {                                                          
-  border: thin solid black;                                        
+  @include bordergold;
   width: 220px;                                                    
   height: 50px;                                                    
   margin-left: 80px;
@@ -953,7 +1044,7 @@ a:hover {
 .item6:nth-of-type(2) {                                            
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
-  border: solid thin black;                                        
+  @include bordergold;
   width: 400px;
   height: 350px;                                                   
   background-color: #fff5ed;                                       
@@ -962,13 +1053,16 @@ a:hover {
   font-family: Bagatela, serif;                                    
   text-align: center;
   color: gold;
-}                                                                  
+}
+.nyhed {
+  @include gold;
+}
                                                                    
 .textInput {                                                       
   margin-top: 15px;                                                
   font-size: large;                                                  
   font-family: "Shree Devanagari 714", serif;                      
-  border: solid thin black;                                        
+  @include bordergold;
   height: 40px;                                                    
   width: 220px;                                                    
   padding-left: 10px;                                              
@@ -976,7 +1070,7 @@ a:hover {
                                                                    
                                                                    
 .boks02b {                                                         
-  border: thin solid black;                                        
+  @include bordergold;
   width: 220px;                                                    
   height: 50px;                                                    
   margin-left: 90px;
@@ -999,7 +1093,7 @@ a:hover {
 .item6:nth-of-type(3) {                                            
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
-  border: solid thin black;                                        
+  @include bordergold;
   width: 400px;
   height: 350px;                                                   
   background-color: #fff5ed;                                       
@@ -1008,7 +1102,12 @@ a:hover {
   font-family: Bagatela, serif;                                    
   text-align: center;
   color: gold;
-}                                                                  
+}
+
+
+.forhandler {
+  @include gold;
+}
                                                                    
 .undertekst3 {                                                     
   font-size: x-large;                                              
@@ -1019,12 +1118,12 @@ a:hover {
 }                                                                  
                                                                    
 .boks03b {                                                         
-  border: thin solid black;                                        
+  @include bordergold;
   width: 220px;                                                    
   height: 50px;                                                    
   margin-left: 90px;
   background-color: #f4eade;                                       
-  color: #878532;                                                  
+  color: #878532;
   font-family:Bagatela, serif;                                     
   padding-top: 7px;                                                
   margin-top: 8px;                                                 
@@ -1033,11 +1132,58 @@ a:hover {
 
 //--------------------------------FOOTER WEB ------------------------------------
 
+.display_web{
+  display: inline;
+  color: $darkbeige;
+  font-family: "Shree Devanagari 714", serif;
+  font-weight: lighter;
+  font-size: 16pt;
+  a{
+    color: $darkbeige;
+  }
+}
+
+.footer{
+  padding: 50px;
+  margin-top: 70px;
+}
 
 
+ul{
+  list-style-type: none;
+}
 
+.kontaktos2, .aabningstider, .voresvine, .arrangementer{
+  text-align: start;
+  margin-top: -5px;
+  line-height: 40pt;
+}
 
+#linie{
+  line-height: 25pt;
+  margin-top: 10px;
+}
 
+.footertekst{
+  @include flex_center;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.stregWEB{
+  width: 90%;
+  margin: 90px auto 30px auto;
+}
+
+.instagram2, .facebook2, .youtube2{
+  margin: -30px auto 30px auto;
+  width: 100px;
+  color: #f4eade;
+}
+
+.overskrift_f{
+  font-size: 22pt;
+}
 
 
 
