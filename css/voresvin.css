@@ -30,7 +30,7 @@ img {
   height: auto; }
 
 a:link {
-  color: guld;
+    color: guld;
   text-decoration-line: none; }
 
 a:visited {
@@ -145,9 +145,9 @@ a:hover {
   height: 450px;
   width: auto;
   position: absolute;
-  left: 5px;
+  left: 19%;
   z-index: 1;
-  margin-top: -150px; }
+  margin-top: -90px; }
 
 #rodvin {
   margin-top: 50px; }
