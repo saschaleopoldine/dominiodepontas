@@ -11,7 +11,7 @@ body {
   font-family: Bagatela, serif;
 }
 
-.menubar, .flex {
+.menubar {
   display: none;
 }
 
@@ -76,7 +76,7 @@ body {
                                                         
 .fa-bars{
   @include gold;
-  font-size: 40pt;                                      
+  font-size: 40pt;
   margin-left: 85%;                                     
   margin-top: 40px;                                     
 }                                                       
@@ -116,212 +116,208 @@ a:hover {
   @include gold;
 }
 
-.menubar {
-  display: none;
-
-}
-
 //-----------------------------------CTA MEDLEMSKAB JQUERY-----------------------------
 
-.email {                                                                                                
-  margin-top: 200px;                                                                                    
-}                                                                                                       
-                                                                                                        
-.knappen {                                                                                              
-  margin-top: -10px;                                                                                    
-  a:link {                                                                                              
-    color: #878532;                                                                                     
-    text-decoration-line: none;                                                                         
-  }                                                                                                     
-  a:visited {                                                                                           
-    color: #878532;                                                                                     
-  }                                                                                                     
-  a:hover {                                                                                             
-    color: gold;                                                                                        
-  }                                                                                                     
-}                                                                                                       
-                                                                                                        
-h2 {                                                                                                    
-  font-size: larger;                                                                                    
-  text-align: center;                                                                                   
-  font-family: Bagatela, serif;                                                                         
-  color: #4b2d1b;                                                                                       
-}                                                                                                       
-                                                                                                        
-hr {                                                                                                    
-  margin-top: -15px;                                                                                    
-}                                                                                                       
-                                                                                                        
-.tekst1 {                                                                                               
-  text-align: left;                                                                                     
-  font-family: "Shree Devanagari 714", serif;                                                           
-  font-size: small;                                                                                     
-  line-height: 17px;                                                                                    
-  color: #4b2d1b;                                                                                       
-}                                                                                                       
-                                                                                                        
-.tekst2 {                                                                                               
-  font-family: "Shree Devanagari 714", serif;                                                           
-  font-size: small;                                                                                     
-}                                                                                                       
-                                                                                                        
-.bokskvinde, .boksmand {
-  border: thin solid black;                                                                             
-  width: 80px;                                                                                          
-  height: 25px;                                                                                         
-  background-color: #f4eade;                                                                            
-  font-family: "Shree Devanagari 714", serif;                                                           
-  font-size: small;                                                                                     
-  text-align: center;                                                                                   
-  padding: 2px;                                                                                         
-  a:link {                                                                                              
-    color: black;                                                                                       
-    text-decoration-line: none;                                                                         
-  }                                                                                                     
-  a:visited {                                                                                           
-    color: black;                                                                                       
-  }                                                                                                     
-  a:hover {                                                                                             
-    color: gold;                                                                                        
-  }                                                                                                     
-}                                                                                                       
-                                                                                                        
-.mand{
-  margin-top: -25px;                                                                                    
-  margin-left: 90px;                                                                                    
-}                                                                                                       
-                                                                                                        
-.kontaktop {                                                                                            
-  display: grid;                                                                                        
-  grid-template-columns: (2, 1fr);                                                                      
-  grid-template-rows: (5, 1fr);                                                                         
-  grid-gap: 30px;                                                                                       
-  margin-top: -20px;                                                                                    
-  font-family: "Shree Devanagari 714", serif;                                                           
-  font-size: small;                                                                                     
-}                                                                                                       
-                                                                                                        
-.item8:nth-of-type(1) {                                                                                 
-  grid-column: 1 / span 1;                                                                              
-  grid-row: 2 / span 1;                                                                                 
-}                                                                                                       
-                                                                                                        
-.textInput {                                                                                            
-  height: 40px;                                                                                         
-  width: 140px;                                                                                         
-  font-size: medium;                                                                                    
-  font-family: "Shree Devanagari 714", serif;                                                           
-}                                                                                                       
-                                                                                                        
-.item8:nth-of-type(2) {                                                                                 
-  grid-column: 2 / span 1;                                                                              
-  grid-row: 2 / span 1;                                                                                 
-}                                                                                                       
-                                                                                                        
-.item8:nth-of-type(3) {                                                                                 
-  grid-column: 1 / span 1;                                                                              
-  grid-row: 3 / span 1;                                                                                 
-}                                                                                                       
-                                                                                                        
-.item8:nth-of-type(4) {                                                                                 
-  grid-column: 2 / span 1;                                                                              
-  grid-row: 3 / span 1;                                                                                 
-}                                                                                                       
-                                                                                                        
-.item8:nth-of-type(5) {                                                                                 
-  grid-column: 1 / span 1;                                                                              
-  grid-row: 4 / span 1;                                                                                 
-}                                                                                                       
-                                                                                                        
-.item8:nth-of-type(6) {                                                                                 
-  grid-column: 2 / span 1;                                                                              
-  grid-row: 4 / span 1;                                                                                 
-}                                                                                                       
-                                                                                                        
-.item8:nth-of-type(7) {                                                                                 
-  grid-column: 1 / span 1;                                                                              
-  grid-row: 6 / span 1;                                                                                 
-  border: thin solid black;                                                                             
-  height: 40px;                                                                                         
-  width: 140px;                                                                                         
-  text-align: center;                                                                                   
-  padding-top: 12px;                                                                                    
-  font-size: medium;                                                                                    
-  a:link {                                                                                              
-    color: black;                                                                                       
-    text-decoration-line: none;                                                                         
-  }                                                                                                     
-  a:visited {                                                                                           
-    color: black;                                                                                       
-  }                                                                                                     
-  a:hover {                                                                                             
-    color: gold;                                                                                        
-  }                                                                                                     
-}                                                                                                       
-                                                                                                        
-.luksiden { //knappen der lukker siden, skrift                                                          
- font-size: medium;                                                                                     
-  a:link {                                                                                              
-   color: black;                                                                                        
- }                                                                                                      
- a:visited {                                                                                            
-   color: black;                                                                                        
- }                                                                                                      
- a:hover {                                                                                              
-   color: gold;
- }                                                                                                      
-}                                                                                                       
-                                                                                                        
-.popup { //sådan så den skygger hele skærmen i baggrunden                                               
-  width:100%;                                                                                           
-  height:100%;                                                                                          
-  display:none; //Så selve pop up ikke dukker op, medmindre man klikker                                 
-  position:fixed;                                                                                       
-  top:0;                                                                                                
-  left:0;                                                                                               
-  background:rgba(0,0,0,0.75);                                                                          
-}                                                                                                       
-/* Inner */                                                                                             
-.popup-inner { //rediger tekst osv. her                                                                 
-  width:400px; //Pop up feltet - angivet bredde                                                         
-  height: 700px; //højden                                                                               
-  padding:20px;                                                                                         
-  position:absolute; //gør at indholdet rykker 50%ned og til venstre.                                   
-  top:50%;                                                                                              
-  left:50%;                                                                                             
-  -webkit-transform:translate(-50%, -50%); //Denne her rykker den -50% til venstre                      
-  //af sin bredde og ned -50% af højden. Dette gør at den er responsiv.                                 
-  transform:translate(-50%, -50%);                                                                      
-  border-radius:3px;                                                                                    
-  box-shadow:0 2px 6px rgba(0,0,0,1);//skygge til boksen                                                
-  background:#fff;                                                                                      
-}                                                                                                       
-/* Close Button */                                                                                      
-.popup-close {                                                                                          
-  width:30px; //lukikonet --> bredde                                                                    
-  height:30px;                                                                                          
-  padding-top:4px;                                                                                      
-  display:inline-block;                                                                                 
-  position:absolute;                                                                                    
-  top:0;                                                                                                
-  right:0;                                                                                              
-  -webkit-transform:translate(50%, -50%); //gør det samme som overstående.                              
-  transform:translate(50%, -50%);                                                                       
-  border-radius:1000px; //knappens radius (så den bliver cirkelformet)                                  
-  background:black;                                                                                     
-  text-decoration-line: none;                                                                           
-  font-family: Bagatela, serif; // lukkeknappens skrift type                                            
-  font-size:20px; //lukkeknappens skriftstørrelse                                                       
-  text-align:center; //placering af "tekst" da x er et bogstav                                          
-  line-height:100%; //linjetættelse                                                                     
-  color:#fff; //farve af bogstavet x                                                                    
-}                                                                                                       
-.popup-close:hover {                                                                                    
-  color: $green; //farve af x når man kører musen henover
-  text-decoration-line:none;                                                                            
-}                                                                                                       
-                                                                                                        
-
+.email {                                                                       
+  margin-top: 200px;                                                           
+}                                                                              
+                                                                               
+.knappen {                                                                     
+  margin-top: -10px;                                                           
+  a:link {                                                                     
+    color: #878532;                                                            
+    text-decoration-line: none;                                                
+  }                                                                            
+  a:visited {                                                                  
+    color: #878532;                                                            
+  }                                                                            
+  a:hover {                                                                    
+    color: gold;                                                               
+  }                                                                            
+}                                                                              
+                                                                               
+h2 {                                                                           
+  font-size: larger;                                                           
+  text-align: center;                                                          
+  font-family: Bagatela, serif;                                                
+  color: #4b2d1b;                                                              
+}                                                                              
+                                                                               
+hr {                                                                           
+  margin-top: -15px;                                                           
+}                                                                              
+                                                                               
+.tekst1 {                                                                      
+  text-align: left;                                                            
+  font-family: "Shree Devanagari 714", serif;                                  
+  font-size: small;                                                            
+  line-height: 17px;                                                           
+  color: #4b2d1b;                                                              
+}                                                                              
+                                                                               
+.titel1 {
+  font-family: "Shree Devanagari 714", serif;                                  
+  font-size: small;                                                            
+}                                                                              
+                                                                               
+.bokskvinde, .boksmand {                                                       
+  border: thin solid black;                                                    
+  width: 80px;                                                                 
+  height: 25px;                                                                
+  background-color: #f4eade;                                                   
+  font-family: "Shree Devanagari 714", serif;                                  
+  font-size: small;                                                            
+  text-align: center;                                                          
+  padding: 2px;                                                                
+  a:link {                                                                     
+    color: black;                                                              
+    text-decoration-line: none;                                                
+  }                                                                            
+  a:visited {                                                                  
+    color: black;                                                              
+  }                                                                            
+  a:hover {                                                                    
+    color: gold;                                                               
+  }                                                                            
+}                                                                              
+                                                                               
+.mand{                                                                         
+  margin-top: -25px;                                                           
+  margin-left: 90px;                                                           
+}                                                                              
+                                                                               
+.kontaktop {                                                                   
+  display: grid;                                                               
+  grid-template-columns: (2, 1fr);                                             
+  grid-template-rows: (5, 1fr);                                                
+  grid-gap: 30px;                                                              
+  margin-top: -20px;                                                           
+  font-family: "Shree Devanagari 714", serif;                                  
+  font-size: small;                                                            
+}                                                                              
+                                                                               
+.item8:nth-of-type(1) {                                                        
+  grid-column: 1 / span 1;                                                     
+  grid-row: 2 / span 1;                                                        
+}                                                                              
+                                                                               
+.textInput {                                                                   
+  height: 40px;                                                                
+  width: 140px;                                                                
+  font-size: medium;                                                           
+  font-family: "Shree Devanagari 714", serif;                                  
+}                                                                              
+                                                                               
+.item8:nth-of-type(2) {                                                        
+  grid-column: 2 / span 1;                                                     
+  grid-row: 2 / span 1;                                                        
+}                                                                              
+                                                                               
+.item8:nth-of-type(3) {                                                        
+  grid-column: 1 / span 1;                                                     
+  grid-row: 3 / span 1;                                                        
+}                                                                              
+                                                                               
+.item8:nth-of-type(4) {                                                        
+  grid-column: 2 / span 1;                                                     
+  grid-row: 3 / span 1;                                                        
+}                                                                              
+                                                                               
+.item8:nth-of-type(5) {                                                        
+  grid-column: 1 / span 1;                                                     
+  grid-row: 4 / span 1;                                                        
+}                                                                              
+                                                                               
+.item8:nth-of-type(6) {                                                        
+  grid-column: 2 / span 1;                                                     
+  grid-row: 4 / span 1;                                                        
+}                                                                              
+                                                                               
+.item8:nth-of-type(7) {                                                        
+  grid-column: 1 / span 1;                                                     
+  grid-row: 6 / span 1;                                                        
+  border: thin solid black;                                                    
+  height: 40px;                                                                
+  width: 140px;                                                                
+  text-align: center;                                                          
+  padding-top: 12px;                                                           
+  font-size: medium;                                                           
+  a:link {                                                                     
+    color: black;                                                              
+    text-decoration-line: none;                                                
+  }                                                                            
+  a:visited {                                                                  
+    color: black;                                                              
+  }                                                                            
+  a:hover {                                                                    
+    color: gold;                                                               
+  }                                                                            
+}                                                                              
+                                                                               
+.luksiden { //knappen der lukker siden, skrift                                 
+ font-size: medium;                                                            
+  a:link {                                                                     
+   color: black;                                                               
+ }                                                                             
+ a:visited {                                                                   
+   color: black;                                                               
+ }                                                                             
+ a:hover {                                                                     
+   color: gold;                                                                
+ }                                                                             
+}                                                                              
+                                                                               
+.popup { //sådan så den skygger hele skærmen i baggrunden                      
+  width:100%;                                                                  
+  height:100%;                                                                 
+  z-index: 12;                                                                 
+  display:none; //Så selve pop up ikke dukker op, medmindre man klikker        
+  position:fixed;                                                              
+  top:0;                                                                       
+  left:0;                                                                      
+  background:rgba(0,0,0,0.75);                                                 
+}                                                                              
+                                                                               
+/* Inner */                                                                    
+.popup-inner { //rediger tekst osv. her                                        
+  width:400px; //Pop up feltet - angivet bredde                                
+  height: 700px; //højden                                                      
+  padding:20px;                                                                
+  position:absolute; //gør at indholdet rykker 50%ned og til venstre.          
+  top:50%;                                                                     
+  left:50%;                                                                    
+  -webkit-transform:translate(-50%, -50%); //Denne her rykker den -50% til vens
+  //af sin bredde og ned -50% af højden. Dette gør at den er responsiv.        
+  transform:translate(-50%, -50%);                                             
+  border-radius:3px;                                                           
+  box-shadow:0 2px 6px rgba(0,0,0,1);//skygge til boksen                       
+  background:#fff;                                                             
+}                                                                              
+                                                                               
+/* Close Button */                                                             
+.popup-close {                                                                 
+  width:30px; //lukikonet --> bredde                                           
+  height:30px;                                                                 
+  padding-top:4px;                                                             
+  display:inline-block;                                                        
+  position:absolute;                                                           
+  top:0;                                                                       
+  right:0;                                                                     
+  -webkit-transform:translate(50%, -50%); //gør det samme som overstående.     
+  transform:translate(50%, -50%);                                              
+  border-radius:1000px; //knappens radius (så den bliver cirkelformet)         
+  background:black;                                                            
+  text-decoration-line: none;                                                  
+  font-family: Bagatela, serif; // lukkeknappens skrift type                   
+  font-size:20px; //lukkeknappens skriftstørrelse                              
+  text-align:center; //placering af "tekst" da x er et bogstav                 
+  line-height:100%; //linjetættelse                                            
+  color:#fff; //farve af bogstavet x                                           
+}                                                                              
+.popup-close:hover {                                                           
+  color: $green; //farve af x når man kører musen henover                      
+  text-decoration-line:none;                                                   
+}                                                                              
 //---------------------------------------BILLEDER/TEKST KASSER ØVERST-------------------------------------
 .billedebokse {
   display: grid;
@@ -449,150 +445,89 @@ hr {
 
 //mellemstreg
 
-.streg {
+.streg2 {
   width: 453px;
-  margin-top: 100px;
+  margin-top: 150px;
   padding-left: 100px;
 }
 
 
 //---------------------------------------VINUDVALG ALLE 3 --------------------------------------------
 
-.vinelementer {
-  display: grid;
-  grid-template-columns: (1, 1fr);
-  grid-template-rows: (3, 1fr);
-  grid-gap: 5px;
-  justify-content: space-between;
-  z-index: 1;
-  position: absolute;
-  margin-top: -4px;
-  margin-right: 200px;
-}
+ @mixin vinboks{
+   width: 486px;
+   height: 316px;
+   background-color: $lightbeige;
+   @include bordergold;
+   margin: 200px auto 200px auto;
+   position: relative;
+   z-index: 0;
+   text-align: center;
+   padding-left: 85px;
+   padding-top: 50px;
+ }
 
-.item4:nth-of-type(1) {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-}
+ .rodvine, .hvidvine, .rosevine{
+   @include vinboks;
+ }
+ 
+ .vinbillede{
+   height: 480px;
+   width: auto;
+   position: absolute;
+   left: -120px;
+   z-index: 1;
+   margin-top: -120px;
+ }
 
-.item4:nth-of-type(2) {
-  grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
-}
-
-.item4:nth-of-type(3) {
-  grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
-}
-
-.vintekst {
-  display: grid;
-  grid-template-columns: (1, 1fr);
-  grid-template-rows: (3, 1fr);
-  grid-gap: 170px 170px;
-  justify-content: space-between;
-  z-index: 0;
-  padding-left: 150px;
-}
-
-.item5:nth-of-type(1) {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-}
-
-.item5:nth-of-type(2) {
-  grid-column: 1 / span 1;    
-  grid-row: 2 / span 1;
-}
-
-.item5:nth-of-type(3) {
-  grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
-}
-
-
-//---------------------------------------FØRSTE BOKS RØDVIN--------------------------------------------
-
-.boksvin {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-  @include bordergold;
-  position: relative;
-  z-index: 0;
-  height: 210px;
-  width: 330px;
-  background-color: #fff5ed;
-  text-align: center;
-  padding-top: 30px;
-  padding-left: 70px;
-  font-family: "Shree Devanagari 714", serif;
-  color: #4b2d1b;
-  font-size: small;
-  margin-left: -40px;
-  margin-top: 60px;
-  line-height: 27px;
-  
-}
-
-.rødvintekst, .hvidvintekst, .rosevintekst {
-  font-family: Bagatela, serif;
-  font-size: xx-large;
-  color: #4b2d1b;
-}
-
-.seudvalg {
-  font-family: Bagatela, serif;
-  font-size: x-large;
-  color: #878532;
-}
-
-
-//---------------------------------------ANDEN BOKS HVIDVIN--------------------------------------------
-
-.boksvin2 {
-  grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
-  @include bordergold;
-  position: relative;
-  z-index: 0;
-  height: 210px;
-  width: 330px;
-  background-color: #fff5ed;
-  text-align: center;
-  padding-top: 30px;
-  padding-left: 70px;
-  font-family: "Shree Devanagari 714", serif;
-  color: #4b2d1b;
-  font-size: small;
-  margin-left: -40px;
-  margin-top: 5px;
-  line-height: 27px;
-}
-
-
-//---------------------------------------TREDJE BOKS ROSEVIN--------------------------------------------
-
-.boksvin3 {
-  grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
-  @include bordergold;
-  position: relative;
-  z-index: 0;
-  height: 210px;
-  width: 330px;
-  background-color: #fff5ed;
-  text-align: center;
-  padding-top: 30px;
-  padding-left: 70px;
-  font-family: "Shree Devanagari 714", serif;
-  color: #4b2d1b;
-  font-size: small;
-  margin-top: -20px;
-  margin-left: -40px;
-  line-height: 27px;
-}
-
-
+ .hvid, .rose {
+   height: 550px;
+   margin-top: -170px;
+ }
+ 
+ #rodvin{
+   margin-top: 50px;
+ }
+ 
+ .ffh{
+   width: 350px;
+   margin-left: 35px;
+   margin-top: 70px;
+   a{                      
+     color: $brown;        
+     text-decoration: none;
+   }                       
+   a:hover{
+     color: $green;
+   }                       
+ }
+ 
+ .speciel_tekst{
+   width: 325px;
+   margin-left: 45px;
+ }
+ 
+ .speciel_cta{
+   margin-top: 30px;
+ }
+ 
+ .w{
+   font-family: "Shree Devanagari 714", serif;
+   font-size: 20pt;
+   font-weight: lighter;
+ }
+ 
+ .name{
+   font-size: 35pt;
+ }
+ 
+ .streg1 {
+   width: 453px;          
+   margin-top: 120px;
+   margin-bottom: 120px;
+   padding-left: 100px;   
+   
+ }
 //---------------------------------------3 BOKSE MED TEKST + TEKST INDENI----------------------------------
 
 .besøgos {
@@ -606,7 +541,7 @@ hr {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   @include bordergold;
-  width: 562px;
+  width: 536px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -644,7 +579,7 @@ hr {
   grid-column: 1 / span 1;   
   grid-row: 2 / span 1;
   @include bordergold;
-  width: 562px;
+  width: 536px;
   height: 350px;                
   background-color: #fff5ed;                
   padding-top: 40px;            
@@ -680,6 +615,17 @@ hr {
   margin-top: 8px;
 }
 
+.textInputbokse {                                
+  margin-top: 15px;                              
+  font-size: large;                              
+  font-family: "Shree Devanagari 714", serif;    
+  @include bordergold;                           
+  height: 40px;                                  
+  width: 220px;                                  
+  padding-left: 10px;
+  margin-left: 25px;
+}                                                
+
 
 .undertekst2 {
   font-size: x-large;                         
@@ -693,7 +639,7 @@ hr {
   grid-column: 1 / span 1;   
   grid-row: 3 / span 1;
   @include bordergold;
-  width: 562px;
+  width: 536px;
   height: 350px;                
   background-color: #fff5ed;                
   padding-top: 40px;            
@@ -858,7 +804,7 @@ hr {
   color: #4b2d1b;                                                                             
 }                                                                                             
                                                                                               
-.tekst2 {                                                                                     
+.titel1 {
   font-family: "Shree Devanagari 714", serif;                                                 
   font-size: small;                                                                           
 }                                                                                             
