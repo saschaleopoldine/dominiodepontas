@@ -85,8 +85,6 @@ $green: #878532;
   justify-content: center;
 }
 
-//-------------------------- redigering af links ------------------
-
 
 //----------------------------------Header Mobil---------------------------
 .menubar{
@@ -99,6 +97,7 @@ $green: #878532;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px;
+  position: absolute;
 }
 
 .header{
@@ -121,6 +120,42 @@ $green: #878532;
 
 
 
+#menubaggrund{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(75, 45, 27, 0.98);
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  padding-top: 225px;
+  padding-bottom: 60%;
+  z-index: 5;
+  position: absolute;
+}
+
+.fa-times{
+ @include gold;
+  font-size: 40pt;
+  z-index: 3;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -190px;
+}
+
+
+li{
+  padding-bottom: 30px;
+  font-size: 25pt;
+  text-align: center;
+  list-style: none;
+  a{
+    text-decoration: none;
+    @include gold;
+  }
+}
+
+
+
 
 //-----------------------------------Tekstelement mobil---------------------------
 
@@ -129,7 +164,7 @@ $green: #878532;
  @include flex_center;
   font-size: 60pt;
   font-weight: 600;
-  margin-top: 50px;
+  padding-top: 500px;
 }
 
 #knapper{
@@ -137,6 +172,7 @@ $green: #878532;
   display: flex;
   justify-content: space-around;
   margin-top: 70px;
+
   a:hover{
     @include green;
   }
@@ -157,14 +193,13 @@ $green: #878532;
     text-decoration: none;
     @include gold;
   }
-
 }
 
 
 #club{
   text-align: center;
-  margin: 150px auto 0 auto;
-  font-size: 40pt;
+  margin: 130px auto 0 auto;
+  font-size: 35pt;
 }
 
 
@@ -174,7 +209,7 @@ $green: #878532;
   text-align: center;
   font-weight: 400;
   width: 80%;
-  margin: 50px auto 0 auto;
+  margin: 25px auto 0 auto;
 
 }
 
@@ -193,6 +228,9 @@ $green: #878532;
 }
 
 //--------------------------------------vin mobil---------------------------
+.webvin{
+  display: none;
+}
 
 @mixin vinboks{
   width: 486px;
@@ -205,6 +243,9 @@ $green: #878532;
   text-align: center;
   padding-left: 85px;
   padding-top: 50px;
+  a{
+    text-decoration: none;
+  }
 }
 
 .rodvine, .hvidvine, .rosevine{
@@ -218,6 +259,9 @@ $green: #878532;
   left: 5px;
   z-index: 1;
   margin-top: -150px;
+  a:hover{
+    transform: scale(1);
+  }
 }
 
 #rodvin{
@@ -228,13 +272,7 @@ $green: #878532;
   width: 350px;
   margin-left: 35px;
   margin-top: 70px;
-  a{                      
-    color: $brown;        
-    text-decoration: none;
-  }                       
-  a:hover{
-    color: $green;
-  }                       
+  color: $green;
 }
 
 .speciel_tekst{
@@ -254,7 +292,116 @@ $green: #878532;
 
 .name{
   font-size: 35pt;
+  a{
+    color: $brown;
+  }
 }
+
+
+//slideshow et
+
+#slideshow{
+  height: 500px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+#slideshow div{
+  position: absolute; //gør at alle billederne er placeret i samme hjørne og dermed placeret bag hinanden.
+}
+
+.active{
+  z-index: 99;
+}
+
+.prev, .next{
+  cursor: pointer;
+  font-size: 50pt;
+}
+
+.prev{
+  margin: 325px 300px 0 0;
+}
+
+.next{
+  margin: 325px 0 0 300px;
+}
+
+
+
+//slideshow to
+
+#slideshow_to{
+  height: 500px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+#slideshow_to div{
+  position: absolute; //gør at alle billederne er placeret i samme hjørne og dermed placeret bag hinanden.
+}
+
+.active{
+  z-index: 99;
+}
+
+.prev_to, .next_to{
+  cursor: pointer;
+  font-size: 50pt;
+}
+
+.prev_to{
+  margin: 325px 300px 0 0;
+}
+
+.next_to{
+  margin: 325px 0 0 300px;
+}
+
+
+
+
+
+
+//slideshow tre
+
+#slideshow_tre{
+  height: 500px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+#slideshow_tre div{
+  position: absolute; //gør at alle billederne er placeret i samme hjørne og dermed placeret bag hinanden.
+}
+
+.active{
+  z-index: 99;
+}
+
+.prev_tre, .next_tre{
+  cursor: pointer;
+  font-size: 50pt;
+}
+
+.prev_tre{
+  margin: 325px 300px 0 0;
+}
+
+.next_tre{
+  margin: 325px 0 0 300px;
+}
+
+
+
+
+
 
 
 
@@ -341,7 +488,9 @@ $green: #878532;
 
 //-------------------------- header Web -------------------------
 
-
+#menubaggrund{
+  display: none;
+}
 
 .menubar {
   display: grid;
@@ -451,6 +600,7 @@ $green: #878532;
 
 //-----------------------------tekst element web ----------------------
 .overskrift{
+  padding-top: 100px;
   margin-bottom: 60px;
 }
 
@@ -464,18 +614,22 @@ $green: #878532;
   justify-content: space-around;
 }
 
-
+.CTA-tekst{
+ margin-top: 40px;
+}
 
 
 //----------------------------------vin web----------------------
-
-.pil{
+.mobilvin{
   display: none;
 }
 
+.webvin{
+  display: inline;
+}
                                      
 @mixin vinboks{                      
-  width: 350px;
+  width: 370px;
   height: 223px;
   margin: 150px auto 100px auto;
 }
@@ -487,11 +641,11 @@ $green: #878532;
 
 .rodvine, .hvidvine, .rosevine {
   padding-left: 80px;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .webkasser{
-  margin-left: -475px;
+  margin-left: -430px;
 }
 
 .ekstra{
@@ -501,7 +655,7 @@ $green: #878532;
 .vinbillede{
   left: 5px;
   height: 325px;
-  margin-top: -85px;
+  margin-top: -90px;
 }
 
 .w{
@@ -511,7 +665,6 @@ $green: #878532;
 
 .name{
   font-size: 30pt;
-  color: $brown;
 }
 
 
@@ -561,6 +714,9 @@ ul{
   text-align: start;
   margin-top: -5px;
   line-height: 40pt;
+  a{
+    text-decoration: none;
+  }
 }
 
 #linie{
