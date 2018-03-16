@@ -99,14 +99,14 @@ li {
   justify-content: center;
   font-size: 60pt;
   font-weight: 600;
-  margin-top: 50px; }
+  padding-top: 500px; }
 
 #knapper {
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   margin-top: 70px; }
-  a:hover {
+  #knapper a:hover {
     background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
     background: linear-gradient(#878532, #878532, #878532, #878532);
     -webkit-background-clip: text;
@@ -151,8 +151,10 @@ li {
     color: #878532;
     text-decoration: none; }
   .CTA a:hover {
-    @include gold;
-  }
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .webvin {
   display: none; }
@@ -189,9 +191,8 @@ li {
   left: 5px;
   z-index: 1;
   margin-top: -150px; }
-  a:hover {
-    transform: scale(1);
-  }
+  .vinbillede a:hover {
+    transform: scale(1); }
 
 #rodvin {
   margin-top: 50px; }
@@ -200,9 +201,7 @@ li {
   width: 350px;
   margin-left: 35px;
   margin-top: 70px;
-  margin-top: 70px;
-  color: #878532;
-}
+  color: #878532; }
 
 .speciel_tekst {
   width: 325px;
@@ -344,12 +343,12 @@ li {
     font-size: 18pt;
     font-weight: bolder;
     height: 497px; }
-    a {
+    .menubar a {
       background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
       background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    a:hover {
+    .menubar a:hover {
       background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
       background: linear-gradient(#878532, #878532, #878532, #878532);
       -webkit-background-clip: text;
