@@ -81,12 +81,12 @@ img {
   margin-left: 38%;
   margin-top: -190px; }
 
-li {
+#menubaggrund li {
   padding-bottom: 30px;
   font-size: 25pt;
   text-align: center;
   list-style: none; }
-  li a {
+  #menubaggrund li a {
     text-decoration: none;
     background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
     background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
@@ -494,37 +494,47 @@ li {
     margin-top: 0; }
 
   .display_web {
-    display: inline;
+    display: block;
     color: #f4eade;
+    text-align: start;
+    font-size: 18pt;
     font-family: "Shree Devanagari 714", serif;
     font-weight: lighter;
-    font-size: 16pt; }
+    line-height: 40pt; }
     .display_web a {
-      color: #f4eade; }
+      color: #f4eade;
+      text-decoration: none; }
+    .display_web a:hover {
+      background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
+      background: linear-gradient(#878532, #878532, #878532, #878532);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .display_web li {
+      list-style-type: none; }
 
   .footer {
     padding: 50px;
     margin-top: 70px; }
 
-  ul {
-    list-style-type: none; }
-
   .kontaktos2, .aabningstider, .voresvine, .arrangementer {
-    text-align: start;
     margin-top: -5px;
-    line-height: 40pt; }
-    .kontaktos2 a, .aabningstider a, .voresvine a, .arrangementer a {
-      text-decoration: none; }
+    text-align: start; }
 
   #linie {
-    line-height: 25pt;
+    line-height: 30pt;
     margin-top: 10px; }
 
   .footertekst {
     display: -webkit-flex;
     display: flex;
+    justify-content: center;
     justify-content: space-between;
     margin-top: 0; }
+
+  .overskrift_f {
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 30px; }
 
   .stregWEB {
     width: 90%;

@@ -143,7 +143,7 @@ $green: #878532;
 }
 
 
-li{
+#menubaggrund li{
   padding-bottom: 30px;
   font-size: 25pt;
   text-align: center;
@@ -453,9 +453,6 @@ li{
   text-align: center;
   color: $darkbeige;
   margin-bottom: 20px;
-  a:hover{
-
-  }
 }
 
 
@@ -481,9 +478,6 @@ li{
   display: -webkit-flex;
   display: flex;
 }
-
-//--------------------- redigering af links-----------------------
-
 
 
 //-------------------------- header Web -------------------------
@@ -690,13 +684,22 @@ li{
 
 //----------------------------------footer web----------------------
 .display_web{
-  display: inline;
+  display: block;
   color: $darkbeige;
+  text-align: start;
+  font-size: 18pt;
   font-family: "Shree Devanagari 714", serif;
   font-weight: lighter;
-  font-size: 16pt;
+  line-height: 40pt;
   a{
     color: $darkbeige;
+    text-decoration: none;
+  }
+  a:hover{
+    @include green
+  }
+  li{
+    list-style-type: none;
   }
 }
 
@@ -705,36 +708,31 @@ li{
   margin-top: 70px;
 }
 
-
-ul{
-  list-style-type: none;
-}
-
 .kontaktos2, .aabningstider, .voresvine, .arrangementer{
-  text-align: start;
   margin-top: -5px;
-  line-height: 40pt;
-  a{
-    text-decoration: none;
-  }
+  text-align: start;
 }
 
 #linie{
-  line-height: 25pt;
+  line-height: 30pt;
   margin-top: 10px;
 }
 
 .footertekst{
-  @include flex;
+  @include flex_center;
   justify-content: space-between;
   margin-top: 0;
 }
 
+.overskrift_f{
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 
 
 
-
-
+  
 .stregWEB{
   width: 90%;
   margin: 90px auto 30px auto;
