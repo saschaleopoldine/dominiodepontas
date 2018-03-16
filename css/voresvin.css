@@ -99,14 +99,14 @@ li {
   justify-content: center;
   font-size: 60pt;
   font-weight: 600;
-  padding-top: 500px; }
+  margin-top: 50px; }
 
 #knapper {
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   margin-top: 70px; }
-  #knapper a:hover {
+  a:hover {
     background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
     background: linear-gradient(#878532, #878532, #878532, #878532);
     -webkit-background-clip: text;
@@ -135,7 +135,7 @@ li {
   font-size: 35pt; }
 
 .CTA-tekst {
-  font-family: "Shree Devanagari 714";
+  font-family: "Shree Devanagari 714", serif;
   font-size: 18pt;
   text-align: center;
   font-weight: 400;
@@ -151,10 +151,8 @@ li {
     color: #878532;
     text-decoration: none; }
   .CTA a:hover {
-    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
-    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    @include gold;
+  }
 
 .webvin {
   display: none; }
@@ -191,8 +189,9 @@ li {
   left: 5px;
   z-index: 1;
   margin-top: -150px; }
-  .vinbillede a:hover {
-    transform: scale(1); }
+  a:hover {
+    transform: scale(1);
+  }
 
 #rodvin {
   margin-top: 50px; }
@@ -201,7 +200,9 @@ li {
   width: 350px;
   margin-left: 35px;
   margin-top: 70px;
-  color: #878532; }
+  margin-top: 70px;
+  color: #878532;
+}
 
 .speciel_tekst {
   width: 325px;
@@ -211,7 +212,7 @@ li {
   margin-top: 30px; }
 
 .w {
-  font-family: "Shree Devanagari 714";
+  font-family: "Shree Devanagari 714", serif;
   font-size: 20pt;
   font-weight: lighter; }
 
@@ -343,12 +344,12 @@ li {
     font-size: 18pt;
     font-weight: bolder;
     height: 497px; }
-    .menubar a {
+    a {
       background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
       background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    .menubar a:hover {
+    a:hover {
       background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
       background: linear-gradient(#878532, #878532, #878532, #878532);
       -webkit-background-clip: text;
@@ -496,7 +497,7 @@ li {
   .display_web {
     display: inline;
     color: #f4eade;
-    font-family: "Shree Devanagari 714";
+    font-family: "Shree Devanagari 714", serif;
     font-weight: lighter;
     font-size: 16pt; }
     .display_web a {
