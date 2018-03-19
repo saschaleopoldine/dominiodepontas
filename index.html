@@ -34,11 +34,11 @@
     <link href="css/forside.css" rel="stylesheet" type="text/css">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
 
 <!-- ----------------------------HEADER WEB------------------------------------------- -->
 
-</head>
+<head>
 <body>
 <div class="baggrundsbillede">
     <div class="header">
@@ -63,16 +63,7 @@
 </header>
 
 
-<!-- -------------------------WEB/MOBIL TEKST/CTA ------------------------------------ -->
-
-    <p class="cta">Som medlem modtager du tilbud og rabatter,<br>
-            og så har du mulighed for at være med i konkurrencen <br>
-            om en rejse for 2 til vores vingård, som ligger <br> i Navarra
-            i det nordlige Spanien.
-        </p>
-<div class="cta"><a href="#">Bliv medlem her></a></div>
-
-</div>
+<!-- -------------------------WEB/MOBIL TEKST/CTA MEDLEMKNAP ------------------------------------ -->
 
 <p class="mobilcta">Som medlem modtager du tilbud og rabatter,<br>
     og så har du mulighed for at være med i konkurrencen <br>
@@ -80,8 +71,46 @@
     i det nordlige Spanien.
 </p>
 
-<div class="mobilcta2"><a href="kontaktos.html">Bliv medlem her ></a></div>
+<div class="mobilcta2"><a class="knap" data-popup-open="popup-1" href="#">Bliv medlem her ></a></div>
+<!-- datapopup er en funktion der gør at når man trypper på knappen, dukker et boks frem -->
+<div class="popup" data-popup="popup-1">
+    <!--Selve boksen der kommer frem, hvad der skal stå i den. Styles i css. -->
+    <div class="popup-inner"><br>
+        <h2>UDFYLD TILMELDING</h2><br>
+        <hr><br>
+        <div class="tekst1">Som medlem har du mulighed for bl.a. rabatter, tilbud
+            og konkurrencer. Udfyld nedstående, og oplev disse fordele.Vi glæder os til at byde dig velkommen.</div>
+        <br><br>
+        <div class="titel1">TITEL*</div>
+        <div class="bokskvinde"><a href="#">KVINDE</a></div>
+        <div class="boksmand mand"><a href="#">MAND</a></div>
+        <br><br>
+        <div class="kontaktop">
 
+            <div class="item8">FORNAVN*
+                <div class="fornavn"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">EFTERNAVN*
+                <div class="efternavn"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">FØDSELSDATO*
+                <div class="fødsels"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">E-MAIL*
+                <div class="mail"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">POST NR*
+                <div class="post"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">MOBILTELEFONNR*
+                <div class="mobilnr"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8"><a href="#"><b>SEND</b></a></div></div>
+        <br>
+        <div class="luksiden"><a data-popup-close="popup-1" href="#">Luk siden</a></div> <!--knappen der lukker siden ned -->
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a> <!--krydset oppe i siden der lukker -->
+    </div>
+</div>
 
 
 <!-- -------------------------------BILLEDE BOKSE/TEKST ØVERST -------------------------- -->
@@ -94,62 +123,64 @@
 
 <div class="billedforan">
     <div class="boks1">
-    <div class="item3"><b>RUNDVISNING</b> <br><br> <p class="tekst1">Kom rundt og se hvordan <br>
+    <div class="item3"><div class="rund"><b>RUNDVISNING</b></div><br> <p class="tekst1">Kom rundt og se hvordan <br>
     vi brygger vores vin, ved blot et enkelt klik <a href="#">her</a></p></div></div>
 
     <div class="boks2">
-    <div class="item3"><b>VINSMAGNING</b> <br><br><p class="tekst2">Kom forbi og smag vores vin,
+    <div class="item3"><div class="vin"><b>VINSMAGNING</b></div><br><p class="tekst2">Kom forbi og smag vores vin,
     og oplev en hel ny verden. Se vores udvalg <a href="voresvin.html">her</a></p></div></div>
 
     <div class="boks3">
-    <div class="item3"><b>EVENTS</b><br><br> <p class="tekst3">Der er forskellige events du kan
+    <div class="item3"><div class="events"><b>EVENTS</b></div><br><p class="tekst3">Der er forskellige events du kan
     deltage til. Klik <a href="#"> her</a> for at se mere </p></div></div>
 </div>
-
-<div class="streg"><img src="Image/mellemstreg.png"></div>
 
 
 <!-- --------------------------------- VINBILLEDER/TEKST -------------------------------- -->
 
-<div class="vinelementer">
-    <div class="item4"><img src="Image/rødvin.png"></div>
-    <div class="item4"><img src="Image/hvidvin.png"></div>
-    <div class="item4"><img src="Image/rosévin.png"></div>
+<div class="streg2"><img src="Image/mellemstreg.png"></div>
+
+<div class="flex">
+    <div class="rodvine">
+        <a href="#"><img  class="vinbillede" alt="Rødvin" src="Image/rødvin.png"/></a>
+        <p class="w">Rødvin</p>
+        <a href="#"><p class="name">Rødvin</p></a>
+        <a href="#"><h2 class="CTA ffh">Se vores udvalg her <i class="fa fas fa-angle-right"></i></h2></a>
+    </div>
+
+    <div class="rodvine">
+        <a href="#"><img class="vinbillede hvid" alt="Hvidvin" src="Image/hvidvin.png"/></a>
+        <p class="w">Hvidvin</p>
+        <a href="#"><p class="name">Hvidvin</p></a>
+        <a href="#"><h2 class="CTA ffh">Se vores udvalg her <i class="fa fas fa-angle-right"></i></h2></a>
+    </div>
+
+
+    <div class="rodvine">
+        <a href="#"><img class="vinbillede rose" alt="Rosevin" src="Image/rosévin.png"/></a>
+        <p class="w">Rosévin</p>
+        <a href="#"><p class="name">Rosévin</p></a>
+        <a href="#"><h2 class="CTA ffh">Se vores udvalg her <i class="fa fas fa-angle-right"></i></h2></a>
+    </div>
 </div>
-
-<div class="vintekst">
-    <div class="boksvin">
-    <div class="item5">Dominio de Pontas <br><p class="rødvintekst">Rødvin</p>
-        <p class="seudvalg"><br><br><br><a href="voresvin.html">Se vores udvalg her ></a></p></div></div>
-
-    <div class="boksvin2">
-    <div class="item5">Dominio de Pontas <p class="hvidvintekst">Hvidvin</p>
-        <p class="seudvalg"><br><br><br><a href="voresvin.html">Se vores udvalg her ></a></p> </div></div>
-
-    <div class="boksvin3">
-    <div class="item5">Dominio de Pontas <p class="rosevintekst">Rosévin</p>
-        <p class="seudvalg"><br><br><br><a href="voresvin.html">Se vores udvalg her ></a></p></div></div>
-</div>
-
-
 <!-- --------------------------- 3 TEKSTBOKSE ------------------------------- -->
 
-<div class="streg"><img src="Image/mellemstreg.png"></div>
+<div class="streg1"><img src="Image/mellemstreg.png"></div>
 
 
 <div class="besøgos">
-    <div class="item6">Kontakt os <br><p class="undertekst1"><br>Hvis du vil vide mere, så <br>
+    <div class="item6"><div class="kontaktos">Kontakt os</div><p class="undertekst1"><br>Hvis du vil vide mere, så <br>
     står vi til rådighed, og kan <br>kontaktes uanset tid.</p><br>
         <div class="boks01"><a href="kontaktos.html">Læs mere her</a></div></div>
 
-    <div class="item6">Nyhedsbrev <br><p class="undertekst2"><br>Tilmeld dig her,
+    <div class="item6"><div class="nyhed">Nyhedsbrev</div><p class="undertekst2"><br>Tilmeld dig her,
         og få <br>de informationer du har <br>brug for.</p>
-        <div class="boks02"><input class="textInput" type="text" placeholder="Din email"></div>
+        <div class="boks02"><input class="textInputbokse" type="text" placeholder="Din email"></div>
         <div class="boks02b"><a href="kontaktos.html">Tilmeld</a></div></div>
 
-    <div class="item6">Forhandler <br><p class="undertekst3"><br>Klik her for
+    <div class="item6"><div class="forhandler">Forhandler</div><p class="undertekst3"><br>Klik her for
         at få en <br>oversigt over vores produkter.</p>
-        <div class="boks03"><input class="textInput" type="text" placeholder="Dit postnr"></div>
+        <div class="boks03"><input class="textInputbokse" type="text" placeholder="Dit postnr"></div>
         <div class="boks03b"><a href="kontaktos.html">Find</a></div></div>
 </div>
 
@@ -223,7 +254,32 @@
 </footer>
 
 
+<!-- ------------------------------JQUERY SCRIPT TIL POPUP VINDUE ----------------------------- -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+
+//----- Det der åbner boksen op
+        $('[data-popup-open]').on('click', function(e)  { //når man trykker på knappen skal den have en funktion
+            var targeted_popup_class = jQuery(this).attr('data-popup-open'); //variable af alle popup(attribut)
+            $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+            //når der klikkes på knappen, fader boksen ind i en hastighed 350. Her finder den popup med data
+            //popup værdien af popup-1, og skal fade ind 350 milisec.
+            e.preventDefault(); //skal tilføjes, hvis det skulle være at linket ikke virker.
+        });
+
+        //----- Den funktion der lukker siden
+        $('[data-popup-close]').on('click', function(e)  { //når der klikkes på luk siden knappen, skal der ske noget
+            var targeted_popup_class = jQuery(this).attr('data-popup-close'); //finde værdien for luk knappen.
+            $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350); //fader ud istedet for ind.
+            e.preventDefault();
+        });
+    });
+</script>
 
 </body>
 </html>
+
+
+<!--POP UP: http://inspirationalpixels.com/tutorials/custom-popup-modal#step-html -->
