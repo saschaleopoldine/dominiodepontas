@@ -68,11 +68,11 @@
 
     <div id="menubaggrund">
         <ul>
-            <li><a href="#">FORSIDE</a></li>
-            <li><a href="#">VORES VIN</a></li>
+            <li><a href="index.html">FORSIDE</a></li>
+            <li><a href="voresvin.html">VORES VIN</a></li>
             <li><a href="#">FORHANDLERE</a></li>
             <li><a href="#">ARRANGEMANTER</a></li>
-            <li><a href="#">KONTAKT OS</a></li>
+            <li><a href="kontaktos.html">KONTAKT OS</a></li>
         </ul>
         <i class="fa fas fa-times"></i>
     </div>
@@ -250,7 +250,7 @@
             <h2 class="CTA ffh speciel_cta"><a href="#">Find forhandler her <i class="fa fas fa-angle-right"></i></a></h2>
         </div>
 
-        <div class="hvidvine ekstra">
+        <div class="hvidvine ekstra" id="last_to">
             <a href="#"><img class="vinbillede" alt="Sauvignon" src="Image/hvidvin7.png"/></a>
             <p class="w">Hvidvin</p>
             <p class="name"><a href="#">Sauvignon</a></p>
@@ -482,6 +482,12 @@
         /* ---------------- mobil menubar ------------------ */
         $(".fa-bars").click(function (e) {
             $("#menubaggrund").slideDown(1000);
+            $("#menubaggrund").css({
+                "display": "-webkit-flex",
+                "display": "flex",
+                "justify-content": "center",
+                "height": "100%"
+            });
         });
 
         $(".fa-times").click(function (e) {
@@ -530,7 +536,7 @@
 
 
 
-        /*--------------- Slideshow to(rodvin) -------------*/
+        /*--------------- Slideshow to(hvidvin) -------------*/
         $(".prev_to").click(function (e) {
             var active = $("#slideshow_to").find(".active"); /*denne variabel bliver lavet, for at den hurtigere kan finde vejen hen til det første billede*/
 

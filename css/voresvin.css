@@ -60,11 +60,8 @@ img {
 
 #menubaggrund {
   width: 100%;
-  height: 100%;
   background-color: rgba(75, 45, 27, 0.98);
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
+  display: none;
   padding-top: 225px;
   padding-bottom: 60%;
   z-index: 5;
