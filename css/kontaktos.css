@@ -75,13 +75,36 @@ A:hover {
 .mapsogkontaktMOBIL {
   display: block; }
 
+.kontaktformularmobil {
+  justify-content: center;
+  margin-left: 8%; }
+
+.skrivtilosmobil {
+  text-align: center; }
+
+.mobilknap {
+  width: 100px;
+  height: 40px;
+  justify-content: end;
+  margin-left: 30%;
+  margin-right: 10%;
+  margin-top: 5%; }
+
 .kontaktos {
   text-align: center;
   font-size: 40px;
   color: #4b2d1b; }
 
-.fnamemobil {
-  padding: 10px; }
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
+
+.googlemaps {
+  text-align: center; }
+
+.kontaktformular2 {
+  display: none; }
 
 .arrangementer {
   margin-top: 20px; }
@@ -190,7 +213,7 @@ footer {
 
 .footertekst {
   width: 100%;
-  height: 250px;
+  height: 262px;
   color: #f4eade;
   text-align: center;
   padding: 35px;
@@ -327,17 +350,50 @@ footer {
   .streg2 {
     display: none; }
 
-  .mapsogkontaktMOBIL {
+  .kontaktformularmobil {
     display: none; }
 
-  .mapsogkontaktWEB {
-    display: flex; }
+  .googleflex {
+    display: flex;
+    font-size: 40px;
+    text-align: right; }
 
-  .googlemaps2 {
-    width: 50%; }
+  .googlemaps {
+    width: 50%;
+    margin: 10px;
+    font-size: 30px; }
+
+  #lname2 {
+    border-radius: 8px;
+    font-size: 20px; }
+
+  #fname2 {
+    border-radius: 8px;
+    font-size: 20px; }
+
+  #subject2 {
+    border-radius: 8px;
+    font-size: 20px; }
+
+  .sendknap {
+    width: 80px;
+    height: 40px;
+    justify-content: end;
+    margin-right: 7px; }
+
+  #map {
+    width: 100%;
+    height: 420px;
+    background-color: grey; }
+
+  .skrivtilos {
+    text-align: center; }
 
   .kontaktformular2 {
-    width: 50%; }
+    display: block;
+    width: 50%;
+    margin: 10px;
+    font-size: 30px; }
 
   .streg3 {
     display: block;

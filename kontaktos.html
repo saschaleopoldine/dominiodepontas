@@ -46,7 +46,7 @@
     <meta name="copyright" content="Information om copyright">
     <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC797quRNWIzc71cy2Ay6lB4bdxVfPentg&callback=myMap"></script>
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/kontaktos.css" rel="stylesheet" type="text/css">
 
@@ -99,62 +99,60 @@
     <br><br>
     <div class="streg1"> <img src="Image/mellemstreg.png"></div>
     <div class="streg2"> <img src="Image/mellemstreg.png"></div>
-    <br><br>
 
 
-    <div class="mapsogkontaktMOBIL">
-        <br><br> <br><br> <br><br><br><br>
-        <div class="googlemaps1">
-            <h1>Google Map</h1>
 
 
-            <br><br><br><br> <br><br><br><br>
-        </div>
         <br>
         <div class="kontaktformularmobil">
+            <h1 class="skrivtilosmobil">Skriv til os</h1>
             <div class ="fnamemobil"></div>
-            <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn" style="width: 90%;height: 30px;">
+            <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn" style="width: 90%;height: 40px;">
             <div class="DinAdressemobil"></div>
-            <input type="text" id="lname" name="lastname" placeholder="Din E-mail" style="width: 90%;height: 30px;" >
+            <input type="text" id="lname" name="lastname" placeholder="Din E-mail" style="width: 90%;height: 40px;" >
             <div class="subjectmobil">Din besked</div>
             <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px; width: 90%;"></textarea>
             <br>
-            <button type="submit" value="Send">Send</button>
+            <button class="mobilknap" type="submit" value="Send">Send</button>
         </div>
-    </div>
-    <div class="mapsogkontaktWEB">
-        <br><br> <br><br> <br><br><br><br>
-        <div class="googlemaps2">
-            <h1>Google Map</h1>
+    <br><br>
+        <div class="googleflex">
+        <div class="googlemaps">
 
-            <div id="googlemaps2" style="width: 100%; height:400px;"></div>
+            <h1>Find vej</h1>
+            <div id="map"></div>
 
             <script>
-                function myMap(e) {
-                    var mapProp= {
-                        center:new google.maps.LatLng(51.508742,-0.120850),
-                        zoom:5,
-                    };
-                    var map=new google.maps.Map(document.getElementById("googlemaps2"),mapProp);
+                function initMap() {
+                    var uluru = {lat: 42.5813446 , lng: -1.6115208999999595};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 10,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
                 }
             </script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
-            <br><br><br><br> <br><br><br><br>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC797quRNWIzc71cy2Ay6lB4bdxVfPentg&callback=initMap">
+            </script>
         </div>
+
+
         <br>
         <div class="kontaktformular2">
+            <h1 class="skrivtilos"> Skriv til os</h1>
             <div class ="fname"></div>
-            <input type="text" id="fname2" name="firstname" placeholder="Dit fulde navn" style="width: 90%;height: 30px;">
-
+            <input type="text" id="fname2" name="firstname" placeholder="Dit fulde navn" style="width: 90%;height: 45px;">
+            <br><br>
             <div class="DinAdresse"></div>
-            <input type="text" id="lname2" name="lastname" placeholder="Din E-mail" style="width: 90%;height: 30px;" >
-
-            <div class="subject">Din besked</div>
-            <textarea id="subject2" name="subject" placeholder="Skriv her.." style="height:200px; width: 90%;"></textarea>
+            <input type="text" id="lname2" name="lastname" placeholder="Din E-mail" style="width: 90%;height: 45px;" >
+            <br><br>
+            <div class="subject"></div>
+            <textarea id="subject2" name="subject" placeholder="Skriv her.." style="height:240px; width: 90%;"></textarea>
             <br>
-            <button type="submit" value="Send">Send</button>
+            <button class="sendknap" type="submit" value="Send">Send</button>
         </div>
     </div>
 </section>
