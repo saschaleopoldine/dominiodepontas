@@ -29,16 +29,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-a:link {
-    color: guld;
-  text-decoration-line: none; }
-
-a:visited {
-  color: guld; }
-
-a:hover {
-  color: #878532; }
-
 .menubar {
   display: none; }
 
@@ -47,7 +37,8 @@ a:hover {
   height: 450px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  position: absolute; }
 
 .header {
   width: 100%;
@@ -67,19 +58,56 @@ a:hover {
   margin: -30px auto 40px auto;
   padding-bottom: 40px; }
 
+#menubaggrund {
+  width: 100%;
+  background-color: rgba(75, 45, 27, 0.98);
+  display: none;
+  padding-top: 225px;
+  padding-bottom: 60%;
+  z-index: 5;
+  position: absolute; }
+
+.fa-times {
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40pt;
+  z-index: 3;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -190px; }
+
+#menubaggrund li {
+  padding-bottom: 30px;
+  font-size: 25pt;
+  text-align: center;
+  list-style: none; }
+  #menubaggrund li a {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
 .overskrift {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
   font-size: 60pt;
   font-weight: 600;
-  margin-top: 50px; }
+  padding-top: 500px; }
 
 #knapper {
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   margin-top: 70px; }
+  #knapper a:hover {
+    background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
+    background: linear-gradient(#878532, #878532, #878532, #878532);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .redwineknap, .whitewineknap, .rosewineknap {
   text-align: center;
@@ -100,8 +128,8 @@ a:hover {
 
 #club {
   text-align: center;
-  margin: 50px auto 0 auto;
-  font-size: 40pt; }
+  margin: 130px auto 0 auto;
+  font-size: 35pt; }
 
 .CTA-tekst {
   font-family: "Shree Devanagari 714", serif;
@@ -109,14 +137,24 @@ a:hover {
   text-align: center;
   font-weight: 400;
   width: 80%;
-  margin: 100px auto 0 auto; }
+  margin: 25px auto 0 auto; }
 
 .CTA {
-  color: #878532;
   font-size: 25pt;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 40px; }
+  .CTA a {
+    color: #878532;
+    text-decoration: none; }
+  .CTA a:hover {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.webvin {
+  display: none; }
 
 .rodvine, .hvidvine, .rosevine {
   width: 486px;
@@ -140,6 +178,8 @@ a:hover {
   text-align: center;
   padding-left: 85px;
   padding-top: 50px; }
+  .rodvine a, .hvidvine a, .rosevine a {
+    text-decoration: none; }
 
 .vinbillede {
   height: 450px;
@@ -148,6 +188,8 @@ a:hover {
   left: 5px;
   z-index: 1;
   margin-top: -150px; }
+  .vinbillede a:hover {
+    transform: scale(1); }
 
 #rodvin {
   margin-top: 50px; }
@@ -155,7 +197,8 @@ a:hover {
 .ffh {
   width: 350px;
   margin-left: 35px;
-  margin-top: 70px; }
+  margin-top: 70px;
+  color: #878532; }
 
 .speciel_tekst {
   width: 325px;
@@ -171,6 +214,77 @@ a:hover {
 
 .name {
   font-size: 35pt; }
+  .name a {
+    color: #4b2d1b; }
+
+#slideshow {
+  height: 500px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px; }
+
+#slideshow div {
+  position: absolute; }
+
+.active {
+  z-index: 99; }
+
+.prev, .next {
+  cursor: pointer;
+  font-size: 50pt; }
+
+.prev {
+  margin: 325px 300px 0 0; }
+
+.next {
+  margin: 325px 0 0 300px; }
+
+#slideshow_to {
+  height: 500px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px; }
+
+#slideshow_to div {
+  position: absolute; }
+
+.active {
+  z-index: 99; }
+
+.prev_to, .next_to {
+  cursor: pointer;
+  font-size: 50pt; }
+
+.prev_to {
+  margin: 325px 300px 0 0; }
+
+.next_to {
+  margin: 325px 0 0 300px; }
+
+#slideshow_tre {
+  height: 500px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px; }
+
+#slideshow_tre div {
+  position: absolute; }
+
+.active {
+  z-index: 99; }
+
+.prev_tre, .next_tre {
+  cursor: pointer;
+  font-size: 50pt; }
+
+.prev_tre {
+  margin: 325px 300px 0 0; }
+
+.next_tre {
+  margin: 325px 0 0 300px; }
 
 .break {
   width: 453px;
@@ -214,15 +328,8 @@ a:hover {
   margin-bottom: 20px; }
 
 @media screen and (min-width: 1200px) {
-  a:link {
-    color: guld;
-    text-decoration-line: none; }
-
-  a:visited {
-    color: guld; }
-
-  a:hover {
-    color: #878532; }
+  #menubaggrund {
+    display: none; }
 
   .menubar {
     display: grid;
@@ -230,12 +337,17 @@ a:hover {
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 10px 20px;
     justify-content: space-between;
-    font-size: large;
+    font-size: 18pt;
     font-weight: bolder;
     height: 497px; }
     .menubar a {
       background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
       background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .menubar a:hover {
+      background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
+      background: linear-gradient(#878532, #878532, #878532, #878532);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
@@ -317,6 +429,7 @@ a:hover {
     display: none; }
 
   .overskrift {
+    padding-top: 100px;
     margin-bottom: 60px; }
 
   .CTA-tekst {
@@ -328,20 +441,26 @@ a:hover {
     display: flex;
     justify-content: space-around; }
 
-  .pil {
+  .CTA-tekst {
+    margin-top: 40px; }
+
+  .mobilvin {
     display: none; }
 
+  .webvin {
+    display: inline; }
+
   .rodvine, .hvidvine, .rosevine {
-    width: 350px;
+    width: 370px;
     height: 223px;
     margin: 150px auto 100px auto; }
 
   .rodvine, .hvidvine, .rosevine {
     padding-left: 80px;
-    padding-top: 15px; }
+    padding-top: 25px; }
 
   .webkasser {
-    margin-left: -475px; }
+    margin-left: -430px; }
 
   .ekstra {
     margin-left: -410px; }
@@ -349,15 +468,14 @@ a:hover {
   .vinbillede {
     left: 5px;
     height: 325px;
-    margin-top: -85px; }
+    margin-top: -90px; }
 
   .w {
     font-size: 18pt;
     font-weight: lighter; }
 
   .name {
-    font-size: 30pt;
-    color: #4b2d1b; }
+    font-size: 30pt; }
 
   .CTA {
     font-size: 20pt; }
@@ -373,35 +491,47 @@ a:hover {
     margin-top: 0; }
 
   .display_web {
-    display: inline;
+    display: block;
     color: #f4eade;
+    text-align: start;
+    font-size: 18pt;
     font-family: "Shree Devanagari 714", serif;
     font-weight: lighter;
-    font-size: 16pt; }
+    line-height: 40pt; }
     .display_web a {
-      color: #f4eade; }
+      color: #f4eade;
+      text-decoration: none; }
+    .display_web a:hover {
+      background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
+      background: linear-gradient(#878532, #878532, #878532, #878532);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .display_web li {
+      list-style-type: none; }
 
   .footer {
     padding: 50px;
     margin-top: 70px; }
 
-  ul {
-    list-style-type: none; }
-
   .kontaktos2, .aabningstider, .voresvine, .arrangementer {
-    text-align: start;
     margin-top: -5px;
-    line-height: 40pt; }
+    text-align: start; }
 
   #linie {
-    line-height: 25pt;
+    line-height: 30pt;
     margin-top: 10px; }
 
   .footertekst {
     display: -webkit-flex;
     display: flex;
+    justify-content: center;
     justify-content: space-between;
     margin-top: 0; }
+
+  .overskrift_f {
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 30px; }
 
   .stregWEB {
     width: 90%;
