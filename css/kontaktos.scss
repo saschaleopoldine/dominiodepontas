@@ -119,6 +119,7 @@ A:hover{
 
 .skrivtilosmobil{
   text-align: center;
+  font-size: 25px;
 }
 .mobilknap{
   width: 100px;
@@ -127,6 +128,7 @@ A:hover{
   margin-left: 30%;
   margin-right: 10%;
   margin-top: 5%;
+  font-size: 15px;
 
 }
 
@@ -145,6 +147,7 @@ A:hover{
 }
 .googlemaps{
   text-align: center;
+  font-size: 20px;
 }
 
 .kontaktformular2{
@@ -302,10 +305,26 @@ footer{
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+  .streg1 {
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .streg2 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+  .streg1 {
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .streg2 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -463,6 +482,7 @@ footer{
     height: 40px;
     justify-content: end;
     margin-right: 7px;
+    font-size: 20px;
   }
 
   #map {
