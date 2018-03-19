@@ -46,13 +46,12 @@
     <meta name="copyright" content="Information om copyright">
     <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/kontaktos.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
 </head>
 
@@ -103,12 +102,10 @@
     <br><br>
 
 
-
     <div class="mapsogkontaktMOBIL">
         <br><br> <br><br> <br><br><br><br>
         <div class="googlemaps1">
             <h1>Google Map</h1>
-
 
 
             <br><br><br><br> <br><br><br><br>
@@ -116,15 +113,13 @@
         <br>
         <div class="kontaktformularmobil">
             <div class ="fnamemobil"></div>
-            <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn" style="width: 90%">
-
+            <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn" style="width: 90%;height: 30px;">
             <div class="DinAdressemobil"></div>
-            <input type="text" id="lname" name="lastname" placeholder="Din E-mail" style="width: 90%" >
-
+            <input type="text" id="lname" name="lastname" placeholder="Din E-mail" style="width: 90%;height: 30px;" >
             <div class="subjectmobil">Din besked</div>
             <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px; width: 90%;"></textarea>
             <br>
-            <input type="submit" value="Send">
+            <button type="submit" value="Send">Send</button>
         </div>
     </div>
     <div class="mapsogkontaktWEB">
@@ -151,15 +146,15 @@
         <br>
         <div class="kontaktformular2">
             <div class ="fname"></div>
-            <input type="text" id="fname2" name="firstname" placeholder="Dit fulde navn" style="width: 90%">
+            <input type="text" id="fname2" name="firstname" placeholder="Dit fulde navn" style="width: 90%;height: 30px;">
 
             <div class="DinAdresse"></div>
-            <input type="text" id="lname2" name="lastname" placeholder="Din E-mail" style="width: 90%" >
+            <input type="text" id="lname2" name="lastname" placeholder="Din E-mail" style="width: 90%;height: 30px;" >
 
             <div class="subject">Din besked</div>
             <textarea id="subject2" name="subject" placeholder="Skriv her.." style="height:200px; width: 90%;"></textarea>
             <br>
-            <input type="submit" value="Send">
+            <button type="submit" value="Send">Send</button>
         </div>
     </div>
 </section>
