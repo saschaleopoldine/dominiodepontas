@@ -1116,7 +1116,7 @@ img {
     background-color: #fff5ed;
     margin-left: 40px; }
 
-  .tekst1, .tekst2, .tekst3 {
+  .tekst11, .tekst2, .tekst3 {
     font-family: "Shree Devanagari 714", serif;
     font-size: large;
     color: #4b2d1b; }
@@ -1284,10 +1284,18 @@ img {
     color: #4b2d1b; }
 
   .CTA {
-    font-size: 20pt; }
-    .CTA a {
-      color: #878532;
-      text-decoration: none; }
+    font-size: x-large; }
+    .CTA a:link {
+      background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
+      background: linear-gradient(#878532, #878532, #878532, #878532);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration-line: none; }
+    .CTA a:visited {
+      background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
+      background: linear-gradient(#878532, #878532, #878532, #878532);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
     .CTA a:hover {
       background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
       background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);

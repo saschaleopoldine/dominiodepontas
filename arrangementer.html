@@ -42,6 +42,7 @@
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
     <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/simple-calendar.css" />
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/arrangementer.css" rel="stylesheet" type="text/css">
@@ -64,6 +65,20 @@
             </div>
         </div>
 
+        <div id="menubaggrund">
+            <ul>
+                <li><a href="index.html">FORSIDE</a></li>
+                <li><a href="voresvin.html">VORES VIN</a></li>
+                <li><a href="#">FORHANDLERE</a></li>
+                <li><a href="#">ARRANGEMANTER</a></li>
+                <li><a href="kontaktos.html">KONTAKT OS</a></li>
+            </ul>
+            <i class="fa fas fa-times"></i>
+        </div>
+
+
+
+
         <div class="menubar">
             <div class="item1"></div>
             <div class="item1"><a href="index.html"> FORSIDE</a></div>
@@ -77,32 +92,20 @@
             <div class="item1"><img src="Image/stregmobil.png" height="3" width="752"/></div>
         </div>
     </div>
-
-
-    <!-- -------------------------WEB/MOBIL TEKST/CTA ------------------------------------ -->
-
-    <p class="ctaweb">Som medlem modtager du tilbud og rabatter,<br>
-        og så har du mulighed for at være med i konkurrencen <br>
-        om en rejse for 2 til vores vingård, som ligger i Navarra <br>
-        i det nordlige Spanien.
-    </p>
-
-    <br><br>
-
 </header>
 
+
+
+<!---------------------------Tekst element------------------------------------ -->
+
+
 <section>
-    <br><br>
-    <div class="streg1"> <img src="Image/mellemstreg.png"></div>
-    <div class="streg2"> <img src="Image/mellemstreg.png"></div>
-    <br><br>
+<h1 class="overskrift">ARRANGEMENTER</h1>
+    <p class="content">fkekfefefkwofekoekfpwoekfsokefokefokefekfokef
+    ofkoekfoekfoskfokefokef
+    wfepfkpkfpsokfpokefposepf</p>
 
 
-
-
-
-
-    <div class="streg3"> <img src="Image/mellemstreg.png"></div>
 
 
 
@@ -111,83 +114,124 @@
 
 
 
+<!------------------------------Kalender------------------------------------ -->
 
+<section>
+    <div id="container"></div>
+</section>
 
+<!-------------------------------Footer------------------------------------ -->
 
+<footer class="footer">
+    <div class="footertekst">
+        <div class="kontaktos2">
+            <a class="overskrift_f" href="kontaktos.html">Kontakt os</a>
+            <br>
+            <ul class="display_web">
+                <li>Tlf.: <a href="#">+45 45 34 56 23</a></li>
+                <li>E-mail: <a href="#">Dominio@depontas.com</a></li>
+                <li id="linie">Adresse:<br>
+                    <a href="#">Benegorri 31395,<br>
+                        Navarra, Spanien</a></li>
+            </ul>
+        </div>
 
+        <div class="aabningstider">
+            <a class="overskrift_f" href="kontaktos.html">Åbningstider</a>
+            <ul class="display_web">
+                <li>Man-Tors: kl 11.00 - 15.00</li>
+                <li>Fredag: kl: 15.00 - 18.00</li>
+                <li>Lørdag: kl: 10.00 - 17.00</li>
+                <li>Søndag: LUKKET</li>
+            </ul>
+        </div>
 
-<footer>
-    <div class="footer">
-        <div class="footertekst">
-            <div class="Adresse">
-                <div class="adresseoverskrift"><a href="#"><strong>Kontakt os</strong></a></div>
+        <div class="voresvine">
+            <a class="overskrift_f" href="voresvin.html">Vores Vine</a>
+            <ul class="display_web">
+                <li><a href="voresvin.html">Rødvin</a></li>
+                <li><a href="voresvin.html">Hvidvin</a></li>
+                <li><a href="voresvin.html">Rosévin</a></li>
+            </ul>
+        </div>
 
-                <br><br>
-                <div class="adressen">
-                    <a href="#"> Tlf.: +45 45 34 56 23</a>
-                    <br>
-                    <br><a href="#"> E-mail: Dominio@depontas.com</a>
-                    <br>
-                    <a href="#"><br>Adresse: Benegorri 31395, <br>Navarra, Spanien</a>
-                </div>
-            </div>
-
-            <div class="Åbningstider">
-                <div class="åbningstideroverskrift"><a href="#"><strong>Åbningstider</strong></a></div>
-                <br><br>
-                <p class="åbningstiderne">
-                    Man-Tors: kl 11.00 - 15.00
-                    <br>
-                    <br>Fredag: kl: 15.00 - 18.00
-                    <br>
-                    <br>Lørdag: kl: 10.00 - 17.00
-                    <br>
-                    <br>Søndag: LUKKET
-                </p></div>
-
-            <div class="voresvine">
-                <div class="voresvineoverskrift"><a href="#"><strong>Vores Vine</strong></a></div>
-                <br>
-                <p class="vinene">
-                    <br>
-                    <a href="#">Rødvin</a>
-                    <br><br>
-                    <a href="#">Hvidvin</a>
-                    <br><br>
-                    <a href="#">Rosévin</a>
-                </p></div>
-
-            <div class="arrangementer">
-                <div class="arrangementeroverskrift"><a href="#"><strong>Arrangementer</strong></a></div>
-                <p class="arrangementerne">
-                    <br><br>
-                    <a href="#"> Vinsmagning</a>
-                    <br><br>
-                    <a href="#">Rundvisning</a>
-                    <br><br>
-                    <a href="#">Messer 2018</a>
-                </p>
-            </div>
-
-
+        <div class="arrangementer">
+            <a class="overskrift_f" href="#">Arrangementer</a>
+            <ul class="display_web">
+                <li><a href="#">Vinsmagning</a></li>
+                <li><a href="#">Rundvisning</a></li>
+                <li><a href="#">Messer 2018</a></li>
+            </ul>
         </div>
     </div>
-    <div class="stregWEB"> <img src="Image/stregweb.png"></div>
+
+    <div class="stregWEB"><img src="Image/stregweb.png"></div>
+
+
     <div class="socialemedier">
-        <a href="https://www.instagram.com">
+        <a class="link" href="https://www.instagram.com">
             <div class="instagram2">
                 <i class="fa fab fa-instagram fa-4x"></i>
             </div></a>
-        <a href="https://www.facebook.com">
+
+        <a class="link" href="https://www.facebook.com">
             <div class="facebook2">
                 <i class="fa fab fa-facebook-square fa-4x"></i>
             </div></a>
-        <a href="https://www.youtube.com">
+
+        <a class="link" href="https://www.youtube.com">
             <div class="youtube2">
                 <i class="fa fab fa-youtube fa-4x"></i>
             </div></a>
     </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.simple-calendar.js"></script>
+
+
+
+
+<script>
+    $(document).ready(function (e) {
+
+        /* ---------------- mobil menubar ------------------ */
+        $(".fa-bars").click(function (e) {
+            $("#menubaggrund").slideDown(1000);
+            $("#menubaggrund").css({
+                "display": "-webkit-flex",
+                "display": "flex",
+                "justify-content": "center",
+                "height": "100%"
+            });
+        });
+
+        $(".fa-times").click(function (e) {
+            $("#menubaggrund").slideUp(1000);
+
+        });
+
+        /* ---------------- Events kalender ----------------- */
+        /* Plugin fået fra: https://github.com/brospars/simple-calendar */
+        $("#container").simpleCalendar({
+            //Defaults options below
+            months: ['januar','februar','marts','april','maj','juni','juli','august','september','oktober','november','december'], //string of months starting from january
+            days: ['søndag','mandag','tirsdag','onsdag','torsdag','fredag','lørdag'], //string of days starting from sunday
+            minDate : "YYYY-MM-DD", // minimum date
+            maxDate : "YYYY-MM-DD", // maximum date
+            insertEvent: true, // can insert events
+            displayEvent: true, // display existing event
+            fixedStartDay: true, // Week begin always by monday
+            event: [
+
+            ], //List of event
+            insertCallback : function(){} // Callback when an event is added to the calendar
+        });
+
+
+    });
+</script>
+
 </body>
 </html>
 

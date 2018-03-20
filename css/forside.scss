@@ -234,7 +234,7 @@ hr {
 }                                                                              
                                                                                
 .item8:nth-of-type(7) {                                                        
-  grid-column: 1 / span 1;                                                     
+  grid-column: 1 / span 1;
   grid-row: 6 / span 1;                                                        
   border: thin solid black;                                                    
   height: 40px;                                                                
@@ -1165,7 +1165,7 @@ a:hover {
   margin-left: 40px;
 }                                                                       
                                                                         
-.tekst1, .tekst2, .tekst3 {                                             
+.tekst11, .tekst2, .tekst3 {
   font-family: "Shree Devanagari 714", serif;                           
   font-size: large;
   color: #4b2d1b;
@@ -1284,16 +1284,19 @@ a:hover {
   font-size: 30pt;
   color: $brown;
 }
-  
-.CTA{
-  font-size: 20pt;
-   a{                          
-     color: $green;            
-     text-decoration: none;    
-   }                           
-   a:hover{                    
-     @include gold;            
-   }                           
+
+.CTA {
+  font-size: x-large;
+  a:link {
+    @include green;
+    text-decoration-line: none;
+  }
+  a:visited {
+    @include green;
+  }
+  a:hover {
+    @include gold;
+  }
 }
 
   //--------------------------------3 ELEMENTER TEKST WEB------------------------------------
