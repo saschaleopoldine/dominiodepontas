@@ -46,35 +46,45 @@
     <meta name="copyright" content="Information om copyright">
     <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC797quRNWIzc71cy2Ay6lB4bdxVfPentg&callback=myMap"></script>
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/kontaktos.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
 <header>
-    <div class="header">
-        <div class="baggrundsbillede">
-            <div class="header">
-                <i class="fa fas fa-bars"></i>
+    <div class="baggrundsbillede">
+        <div class="header">
+            <i class="fa fas fa-bars"></i>
 
-                <img class="logomobil" src="Image/logomobil.png"/>
-            </div>
+            <a href="index.html"><img class="logomobil" src="Image/logomobil.png"/></a>
         </div>
+    </div>
 
-        <div class="menubar">
+    <div id="menubaggrund">
+        <ul>
+            <li><a href="index.html">FORSIDE</a></li>
+            <li><a href="voresvin.html">VORES VIN</a></li>
+            <li><a href="#">FORHANDLERE</a></li>
+            <li><a href="arrangementer.html">ARRANGEMANTER</a></li>
+            <li><a href="kontaktos.html">KONTAKT OS</a></li>
+        </ul>
+        <i class="fa fas fa-times"></i>
+    </div>
+
+
+    <div class="menubar">
             <div class="item1"></div>
             <div class="item1"><a href="index.html"> FORSIDE</a></div>
             <div class="item1"><a href="voresvin.html">VORES VIN</a></div>
             <div class="item1"><a href="#">FORHANDLERE</a></div>
             <div class="item1"><a href="index.html"><div class="logo"><img src="Image/VectorSmartObject_e914067d-b11a-4615-b426-44a1c9e9317e.png"></div></a></div>
-            <div class="item1"><a href="#">ARRANGEMENTER</a></div>
+            <div class="item1"><a href="arrangementer.html">ARRANGEMENTER</a></div>
             <div class="item1"><a href="kontaktos.html">KONTAKT OS</a></div>
             <div class="item1"></div>
             <div class="item1"><img src="Image/stregmobil.png" height="3" width="752"/></div>
@@ -98,79 +108,84 @@
     <div class="kontaktos">
         <p>KONTAKT OS</p></div>
     <br><br>
-    <div class="streg1"> <img src="Image/mellemstreg.png"></div>
-    <div class="streg2"> <img src="Image/mellemstreg.png"></div>
-    <br><br>
+    <div class="streg1"> <img src="Image/mellemstreg.png" height="3" width="350"></div>
+    <div class="streg2"> <img src="Image/mellemstreg.png" height="3" width="350"></div>
 
 
 
-    <div class="mapsogkontaktMOBIL">
-        <br><br> <br><br> <br><br><br><br>
-        <div class="googlemaps1">
-            <h1>Google Map</h1>
 
-
-
-            <br><br><br><br> <br><br><br><br>
-        </div>
         <br>
         <div class="kontaktformularmobil">
+            <h1 class="skrivtilosmobil">Skriv til os</h1>
             <div class ="fnamemobil"></div>
-            <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn" style="width: 90%">
-
-            <div class="DinAdressemobil"></div>
-            <input type="text" id="lname" name="lastname" placeholder="Din E-mail" style="width: 90%" >
-
+            <input type="text" id="fname" name="firstname" placeholder="Dit fulde navn" style="width: 90%;height: 40px;">
+            <div class="DinAdressemobil"></div> <br>
+            <input type="text" id="lname" name="lastname" placeholder="Din E-mail" style="width: 90%;height: 40px;" >
             <div class="subjectmobil">Din besked</div>
             <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px; width: 90%;"></textarea>
             <br>
-            <input type="submit" value="Send">
+            <button class="mobilknap" type="submit" value="Send">Send</button>
         </div>
-    </div>
-    <div class="mapsogkontaktWEB">
-        <br><br> <br><br> <br><br><br><br>
-        <div class="googlemaps2">
-            <h1>Google Map</h1>
+    <br><br>
+        <div class="googleflex">
+        <div class="googlemaps">
 
-            <div id="googlemaps2" style="width: 100%; height:400px;"></div>
+            <h1>Find vej</h1>
+            <div id="map"></div>
 
             <script>
-                function myMap(e) {
-                    var mapProp= {
-                        center:new google.maps.LatLng(51.508742,-0.120850),
-                        zoom:5,
-                    };
-                    var map=new google.maps.Map(document.getElementById("googlemaps2"),mapProp);
+                function initMap() {
+                    var uluru = {lat: 42.5813446 , lng: -1.6115208999999595};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 10,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
                 }
             </script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
-            <br><br><br><br> <br><br><br><br>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC797quRNWIzc71cy2Ay6lB4bdxVfPentg&callback=initMap">
+            </script>
         </div>
+
+
         <br>
         <div class="kontaktformular2">
+            <h1 class="skrivtilos"> Skriv til os</h1>
             <div class ="fname"></div>
-            <input type="text" id="fname2" name="firstname" placeholder="Dit fulde navn" style="width: 90%">
-
+            <input type="text" id="fname2" name="firstname" placeholder="Dit fulde navn" style="width: 90%;height: 45px;">
+            <br><br>
             <div class="DinAdresse"></div>
-            <input type="text" id="lname2" name="lastname" placeholder="Din E-mail" style="width: 90%" >
-
-            <div class="subject">Din besked</div>
-            <textarea id="subject2" name="subject" placeholder="Skriv her.." style="height:200px; width: 90%;"></textarea>
+            <input type="text" id="lname2" name="lastname" placeholder="Din E-mail" style="width: 90%;height: 45px;" >
+            <br><br>
+            <div class="subject"></div>
+            <textarea id="subject2" name="subject" placeholder="Skriv her.." style="height:240px; width: 90%;"></textarea>
             <br>
-            <input type="submit" value="Send">
+            <button class="sendknap" type="submit" value="Send">Send</button>
         </div>
     </div>
 </section>
 <br>
 
-<div class="streg3"> <img src="Image/mellemstreg.png"></div>
+<div class="streg3"> <img src="Image/mellemstreg.png"height="3" width="350"></div>
 <section>
     <div class="FindOsHer">
         <br>
         <div class="findosherboks">
             <h1>Find os her</h1>
+        </div>
+        <div class="mereinfo">
+            <br>
+            <h1>Tag med til vinsmagning!</h1> <br>
+            <p>
+                Gården holder massere af spændende arrangementer året rundt, så find en dato der passer dig
+                <br><br> Du kan bl.a meget snart få mulighed for at få en privat rundtur i vores vinkælder
+                <br><br>
+                <a href="arrangementer.html"><strong>klik her for at se vores kalender</strong></a>
+
+            </p>
         </div>
         <br>
         <div class="medier">
@@ -269,7 +284,30 @@
             </div></a>
     </div>
 </footer>
-</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function (e) {
+
+        /* ---------------- mobil menubar ------------------ */
+        $(".fa-bars").click(function (e) {
+            $("#menubaggrund").slideDown(1000);
+            $("#menubaggrund").css({
+                "display": "-webkit-flex",
+                "display": "flex",
+                "justify-content": "center",
+                "height": "100%","z-index": "99"
+            });
+        });
+
+        $(".fa-times").click(function (e) {
+            $("#menubaggrund").slideUp(1000);
+
+        });
+    });
+
+</script>
+    </body>
 </html>
 
 
