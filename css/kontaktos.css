@@ -97,7 +97,9 @@ A:hover {
     -webkit-text-fill-color: transparent; }
 
 .streg1 {
-  display: block; }
+  display: block;
+  margin-right: 4%;
+  margin-left: 4%; }
 
 .streg2 {
   display: none; }
@@ -117,7 +119,10 @@ A:hover {
 
 .skrivtilosmobil {
   text-align: center;
-  font-size: 25px; }
+  font-size: 25px;
+  width: 350px;
+  display: -webkit-flex;
+  justify-content: center; }
 
 .mobilknap {
   width: 100px;
