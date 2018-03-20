@@ -75,6 +75,7 @@ A:hover{
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px;
+  position: absolute;
 }
 
 .header{
@@ -84,7 +85,7 @@ A:hover{
 }
 
 .fa-bars{
-  color: $gold;
+  @include gold;
   font-size: 40pt;
   margin-left: 85%;
   margin-top: 40px;
@@ -96,9 +97,47 @@ A:hover{
 }
 
 
+
+#menubaggrund{
+  width: 100%;
+  background-color: rgba(75, 45, 27, 0.98);
+  display: none;
+  padding-top: 225px;
+  padding-bottom: 60%;
+  z-index: 5;
+  position: absolute;
+}
+
+.fa-times{
+  @include gold;
+  font-size: 40pt;
+  z-index: 3;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -190px;
+}
+
+
+#menubaggrund li{
+  padding-bottom: 30px;
+  font-size: 25pt;
+  text-align: center;
+  list-style: none;
+  a{
+    text-decoration: none;
+    @include gold;
+  }
+}
+
+
+
+
+
+
+
 //body
 .streg1{
-  display: contents;
+  display: block;
 }
 .streg2{
   display: none;
@@ -129,7 +168,7 @@ A:hover{
   margin-right: 10%;
   margin-top: 5%;
   font-size: 15px;
-
+  z-index: 99;
 }
 
 
@@ -137,6 +176,7 @@ A:hover{
   text-align: center;
   font-size: 40px;
   color: $brown;
+  margin-top: 450px;
 }
 
 //maps
@@ -439,7 +479,6 @@ footer{
     margin-top: 25px;
     font-size: 60pt;
     font-weight: 600;
-    font-family: Bagatela,Serif;
   }
 
   .streg1 {
@@ -522,15 +561,7 @@ footer{
     color: $green;
   }
 
-  .fa-facebook-square, .fa-youtube{
-  }
-  .youtube1, .facebook1, .instagram1{
 
-  }
-
-  .facebookboks{
-
-  }
 
   //footer
 

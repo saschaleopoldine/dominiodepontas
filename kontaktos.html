@@ -58,16 +58,27 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 <header>
-    <div class="header">
-        <div class="baggrundsbillede">
-            <div class="header">
-                <i class="fa fas fa-bars"></i>
+    <div class="baggrundsbillede">
+        <div class="header">
+            <i class="fa fas fa-bars"></i>
 
-                <img class="logomobil" src="Image/logomobil.png"/>
-            </div>
+            <a href="index.html"><img class="logomobil" src="Image/logomobil.png"/></a>
         </div>
+    </div>
 
-        <div class="menubar">
+    <div id="menubaggrund">
+        <ul>
+            <li><a href="index.html">FORSIDE</a></li>
+            <li><a href="voresvin.html">VORES VIN</a></li>
+            <li><a href="#">FORHANDLERE</a></li>
+            <li><a href="arrangementer.html">ARRANGEMANTER</a></li>
+            <li><a href="kontaktos.html">KONTAKT OS</a></li>
+        </ul>
+        <i class="fa fas fa-times"></i>
+    </div>
+
+
+    <div class="menubar">
             <div class="item1"></div>
             <div class="item1"><a href="index.html"> FORSIDE</a></div>
             <div class="item1"><a href="voresvin.html">VORES VIN</a></div>
@@ -97,8 +108,8 @@
     <div class="kontaktos">
         <p>KONTAKT OS</p></div>
     <br><br>
-    <div class="streg1"> <img src="Image/mellemstreg.png"></div>
-    <div class="streg2"> <img src="Image/mellemstreg.png"></div>
+    <div class="streg1"> <img src="Image/mellemstreg.png" height="3" width="350"></div>
+    <div class="streg2"> <img src="Image/mellemstreg.png" height="3" width="350"></div>
 
 
 
@@ -158,7 +169,7 @@
 </section>
 <br>
 
-<div class="streg3"> <img src="Image/mellemstreg.png"></div>
+<div class="streg3"> <img src="Image/mellemstreg.png"height="3" width="350"></div>
 <section>
     <div class="FindOsHer">
         <br>
@@ -273,7 +284,30 @@
             </div></a>
     </div>
 </footer>
-</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function (e) {
+
+        /* ---------------- mobil menubar ------------------ */
+        $(".fa-bars").click(function (e) {
+            $("#menubaggrund").slideDown(1000);
+            $("#menubaggrund").css({
+                "display": "-webkit-flex",
+                "display": "flex",
+                "justify-content": "center",
+                "height": "100%","z-index": "99"
+            });
+        });
+
+        $(".fa-times").click(function (e) {
+            $("#menubaggrund").slideUp(1000);
+
+        });
+    });
+
+</script>
+    </body>
 </html>
 
 
