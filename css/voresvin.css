@@ -94,9 +94,8 @@ img {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  font-size: 60pt;
-  font-weight: 600;
-  padding-top: 500px; }
+  font-size: 50pt;
+  font-weight: 600; }
 
 #knapper {
   display: -webkit-flex;

@@ -9,6 +9,7 @@ body {
   margin: 0; // Ingen kanter i siden af browser
   background-color: #f4eade;
   font-family: Bagatela, serif;
+  color: #4b2d1b;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,17 +38,24 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
+
+//----------------------------- variabler --------------------------
 $darkbeige: #f4eade;
 $lightbeige: #fff5ed;
 $brown: #4b2d1b;
-$green: #878532;
-$gold: linear-gradient(right, #dcc17a, #a18348, #e4c981, #9d7f3f);
 $overlay_mobil: rgba(75, 45, 27, 0.7);
 $overlay_web: rgba(75, 45, 27, 0.23);
+$green: #878532;
 
-@mixin lightbeige{
-  color: $lightbeige;
+
+@mixin green{
+  background: -webkit-linear-gradient( #878532, #878532, #878532, #878532);
+  background: linear-gradient( #878532, #878532, #878532, #878532);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+
 @mixin gold{
   background: -webkit-linear-gradient( #dcc17a, #a18348, #e4c981, #9d7f3f);
   background: linear-gradient( #dcc17a, #a18348, #e4c981, #9d7f3f);
@@ -55,16 +63,32 @@ $overlay_web: rgba(75, 45, 27, 0.23);
   -webkit-text-fill-color: transparent;
 }
 
-A:hover{
-  color: $green;
+@mixin bordergold{
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
 }
 
 
-// header
-.ctaweb{
-  display: none;
+@mixin flex_center{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
 }
 
+
+
+
+// -------------------------------- mobil header --------------------------
 .menubar{
   display: none;
 }
@@ -75,16 +99,17 @@ A:hover{
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px;
+  position: absolute;
 }
 
 .header{
   width: 100%;
   height: 450px;
-  background-color: rgba(75, 45, 27, 0.7);
+  background-color: $overlay_mobil;
 }
 
 .fa-bars{
-  color: $gold;
+  @include gold;
   font-size: 40pt;
   margin-left: 85%;
   margin-top: 40px;
@@ -96,138 +121,134 @@ A:hover{
 }
 
 
-//body
-.streg1{
-  display: contents;
-}
-.streg2{
-  display: none;
-}
-.streg3{
-  display: none;
-}
-.mapsogkontaktWEB{
-  display: none;
-}
-.mapsogkontaktMOBIL{
-  display: contents;
-}
-.kontaktos{
-  text-align: center;
-  font-size: 40px;
-  color: $brown;
-}
 
-
-//footer
-.arrangementer{
-  margin-top: 20px;
-}
-
-.adresseoverskrift{
-  @include gold;
-}
-
-.åbningstideroverskrift{
-  @include gold
-}
-.voresvineoverskrift{
-  @include gold;
-}
-.arrangementeroverskrift{
-  @include gold;
-}
-
-.adressen{
-  text-align: center;
-  display: none;
-}
-.åbningstiderne{
-  text-align: center;
-  display: none;
-}
-.vinene{
-  text-align: center;
-  display: none;
-}
-.arrangementerne{
-  text-align: center;
-  display: none;
-}
-
-
-
-
-footer{
-  background-color: $brown;
+#menubaggrund{
   width: 100%;
-  height: 330px;
+  background-color: rgba(75, 45, 27, 0.98);
+  display: none;
+  padding-top: 225px;
+  padding-bottom: 60%;
+  z-index: 5;
+  position: absolute;
 }
 
-.footertekst{
-  width: 100%;
-  height: 250px;
-  color: $darkbeige;
-  text-align: center;
-  padding: 35px;
-  font-size: 25px;
-  text-decoration: none;
-}
-
-
-.socialemedier{
-  display: flex;
-  background-color: $brown;
-  color: $lightbeige;
-  display: flex;
-  justify-content: space-around;
+.fa-times{
+  @include gold;
+  font-size: 40pt;
   z-index: 3;
-  margin-top: -35px;
-  a{
-    text-decoration:none;
-  }
-  a:hover{
-    color: $green;
-  }
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -190px;
+}
 
-  .fa-instagram, .fa-facebook-square, .fa-youtube{
-    background-color: $brown;
-    width: 60px;
-    text-align: center;
-    color: $darkbeige;
+
+#menubaggrund li{
+  padding-bottom: 30px;
+  font-size: 25pt;
+  text-align: center;
+  list-style: none;
+  a{
+    text-decoration: none;
+    @include gold;
   }
 }
+
+
+//--------------------------- tekstelement mobil ---------------------------
+.overskrift{
+  @include flex_center;
+  font-size: 45pt;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+.content{
+  font-family: "Shree Devanagari 714", serif;
+  font-size: 18pt;
+  text-align: center;
+  font-weight: 400;
+  width: 80%;
+  margin: 25px auto 100px auto;
+}
+
+
+//--------------------------- kalender mobil ---------------------------
+
+
+//---------------------------- footer mobil ------------------------------
+.footer{
+  background-color: $brown;
+  padding: 5px 15px 15px 15px;
+}
+
+.display_web{
+  display: none;
+}
+
+.footertekst, .aabningstider, .voresvine, .arrangementer{
+  text-align: center;
+  font-size: 20pt;
+  margin-top: 30px;
+}
+
+.overskrift_f{
+  @include gold;
+}
+
 .stregWEB{
   margin-top: 100px;
   z-index: 2;
   width: 100%;
 }
 
-
-
-@media screen and (min-width: 768px) {
-  // Alt der ændres i tablet stående fra mobil
+.socialemedier{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+  margin-top: -35px;
 }
 
-@media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
+.fa-instagram, .fa-facebook-square, .fa-youtube{
+  background-color: $brown;
+  width: 60px;
+  text-align: center;
+  color: $darkbeige;
+  margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 
-  //menubar
+  //------------------------------- header web -------------------------
+  #menubaggrund{
+    display: none;
+  }
+
   .menubar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 10px 20px;
     justify-content: space-between;
-    font-size: large;
+    font-size: 18pt;
     font-weight: bolder;
     height: 497px;
     a{
       @include gold;
+    }
+    a:hover{
+      @include green
     }
   }
 
@@ -319,139 +340,76 @@ footer{
     display: none;
   }
 
-  //body
-  .streg1 {
+
+
+
+  //--------------------------- tekstelement web ---------------------------
+  .overskrift{
+    padding-top: 100px;
+    margin-bottom: 60px;
+  }
+
+
+
+  //--------------------------- kalender web ---------------------------
+
+
+
+
+
+
+
+
+
+
+
+  // ----------------------------- footer web -------------------------
+  .display_web{
     display: block;
-    margin-left: 30%;
-    margin-right: 30%;
+    color: $darkbeige;
+    text-align: start;
+    font-size: 18pt;
+    font-family: "Shree Devanagari 714", serif;
+    font-weight: lighter;
+    line-height: 40pt;
+    a{
+      color: $darkbeige;
+      text-decoration: none;
+    }
+    a:hover{
+      @include green
+    }
+    li{
+      list-style-type: none;
+    }
   }
-  .streg2 {
-    display: none;
-  }
-  .streg3{
-    display: block;
-    margin-left: 30%;
-    margin-right: 30%;
+
+  .footer{
+    padding: 50px;
+    margin-top: 70px;
   }
 
+  .kontaktos2, .aabningstider, .voresvine, .arrangementer{
+    margin-top: -5px;
+    text-align: start;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //footer
-
+  #linie{
+    line-height: 30pt;
+    margin-top: 10px;
+  }
 
   .footertekst{
-    display: flex;
+    @include flex_center;
     justify-content: space-between;
-    color: $darkbeige;
-    margin: 10px;
-    text-decoration: none;
-  }
-
-  .Adresse{
-    text-align: left;
-    display: block;
-    width: 28%;
-  }
-  .adressen{
-    display: block;
-    font-size: 18px;
-    text-align: left;
-    a{
-      text-decoration: none;
-      color: $darkbeige;
-    }
-    a:hover{
-      color: $green;
-    }
-  }
-
-  .Åbningstider{
-    text-align: left;
-    display: block;
-    width: 28%;
-  }
-  .åbningstiderne{
-    display: block;
-    font-size: 18px;
-    text-align: left;
-    text-decoration: none;
-  }
-
-  .voresvine{
-    text-align: left;
-    width: 23%;
-  }
-
-  .vinene{
-    display: block;
-    font-size: 20px;
-    text-align: left;
-    a{
-      text-decoration: none;
-      color: $darkbeige;
-    }
-    a:hover{
-      color: $green;
-    }
-  }
-
-  .arrangementer{
-    display: block;
     margin-top: 0;
-    font-size: 25px;
-    text-align: left;
-    width: 18%;
   }
 
-  .arrangementerne{
-    display: block;
-    font-size: 20px;
-    text-align: left;
-    a{
-      text-decoration: none;
-      color: $darkbeige;
-    }
-    a:hover{
-      color: $green;
-    }
+  .overskrift_f{
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 30px;
   }
-  .socialemedier{
-    a:hover{
-      color: $green;
-    }
-  }
-
-  .stregWEB{
-    margin-top: 100px;
-    z-index: 2;
-    width: 100%;
-    margin-left: 7%;
-    margin-right: 5%;
-  }
-
 
 }
 
-
-
-
-
-
-
-
-@media print {
-  // Alt der gælder for print specifikt
-}
