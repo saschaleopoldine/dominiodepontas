@@ -12,7 +12,7 @@ body {
   display: none; }
 
 .baggrundsbillede {
-  width: 585px;
+  width: 375px;
   height: 450px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
@@ -20,7 +20,7 @@ body {
   position: absolute; }
 
 .header {
-  width: 585px;
+  width: 375px;
   height: 450px;
   background-color: rgba(75, 45, 27, 0.7); }
 
@@ -38,7 +38,7 @@ body {
   padding-bottom: 40px; }
 
 #menubaggrund {
-  width: 585px;
+  width: 375px;
   height: 100vh;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
@@ -75,7 +75,6 @@ body {
   font-family: "Shree Devanagari 714", serif;
   font-size: large;
   font-weight: bolder;
-  margin-left: 150px;
   text-align: center;
   padding-top: 500px;
   line-height: 22px; }
@@ -158,18 +157,19 @@ hr {
   display: grid;
   grid-template-columns: 2fr, 1fr;
   grid-template-rows: 5fr, 1fr;
-  grid-gap: 30px;
+  grid-gap: 10px;
   margin-top: -20px;
   font-family: "Shree Devanagari 714", serif;
-  font-size: small; }
+  font-size: 12px; }
 
 .item8:nth-of-type(1) {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1; }
 
 .textInput {
-  height: 40px;
-  width: 140px;
+  height: 27px;
+  width: 80px;
+  border: solid thin black;
   font-size: medium;
   font-family: "Shree Devanagari 714", serif; }
 
@@ -195,13 +195,13 @@ hr {
 
 .item8:nth-of-type(7) {
   grid-column: 1 / span 1;
-  grid-row: 6 / span 1;
+  grid-row: 7 / span 1;
   border: thin solid black;
-  height: 40px;
-  width: 140px;
+  height: 27px;
+  width: 80px;
   text-align: center;
-  padding-top: 12px;
-  font-size: medium; }
+  padding-top: 5px;
+  font-size: 12px; }
   .item8:nth-of-type(7) a:link {
     color: black;
     text-decoration-line: none; }
@@ -231,8 +231,8 @@ hr {
 
 /* Inner */
 .popup-inner {
-  width: 400px;
-  height: 700px;
+  width: 280px;
+  height: 560px;
   padding: 20px;
   position: absolute;
   top: 50%;
@@ -269,12 +269,11 @@ hr {
 
 .billedebokse {
   display: grid;
-  grid-template-columns: 3fr, 1fr;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 3fr, 1fr;
   justify-content: space-between;
   grid-gap: 100px;
-  padding-left: 95px;
-  margin-top: 40px;
+  margin: 20px;
   position: relative;
   z-index: 0; }
 
@@ -301,7 +300,7 @@ hr {
   position: absolute;
   z-index: 1;
   margin-top: -860px;
-  padding-left: 24%; }
+  padding-left: 40px; }
 
 .boks1 {
   grid-column: 1 / span 1;
@@ -447,13 +446,13 @@ hr {
   -webkit-text-fill-color: transparent; }
 
 .streg2 {
-  width: 453px;
+  width: 375px;
   margin-top: 150px;
-  padding-left: 100px; }
+  padding-left: 20px; }
 
 .rodvine, .hvidvine, .rosevine {
-  width: 486px;
-  height: 316px;
+  width: 370px;
+  height: 310px;
   background-color: #fff5ed;
   border-left: 2px solid #e4c982;
   border-right: 2px solid #9d7f3f;
@@ -490,8 +489,8 @@ hr {
   margin-top: 50px; }
 
 .ffh {
-  width: 350px;
-  margin-left: 35px;
+  width: 200px;
+  margin-left: 20px;
   margin-top: 70px; }
   .ffh a {
     color: #4b2d1b;
@@ -515,10 +514,10 @@ hr {
   font-size: 35pt; }
 
 .streg1 {
-  width: 453px;
-  margin-top: 120px;
-  margin-bottom: 120px;
-  padding-left: 100px; }
+  width: 375px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  padding-left: 20px; }
 
 .besøgos {
   display: grid;
@@ -541,7 +540,7 @@ hr {
   background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
-  width: 572px;
+  width: 375px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -577,7 +576,7 @@ hr {
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family: Bagatela, serif;
@@ -598,7 +597,7 @@ hr {
   background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
-  width: 572px;
+  width: 375px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -647,7 +646,7 @@ hr {
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family: Bagatela, serif;
@@ -673,7 +672,7 @@ hr {
   height: 40px;
   width: 220px;
   padding-left: 10px;
-  margin-left: 25px; }
+  margin-left: 20px; }
 
 .undertekst2 {
   font-size: x-large;
@@ -696,7 +695,7 @@ hr {
   background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
-  width: 572px;
+  width: 375px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -731,7 +730,7 @@ hr {
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family: Bagatela, serif;

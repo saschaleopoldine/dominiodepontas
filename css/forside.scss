@@ -61,7 +61,7 @@ body {
 //---------------------------------------HEADEREN BILLEDE LOGO-------------------------------------
 
 .baggrundsbillede{                                      
-  width: 585px;
+  width: 375px;
   height: 450px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
@@ -70,7 +70,7 @@ body {
 }
                                                         
 .header{                                                
-  width: 585px;
+  width: 375px;
   height: 450px;
   background-color: rgba(75, 45, 27, 0.7);              
 }                                                       
@@ -87,7 +87,7 @@ body {
   padding-bottom: 40px;
 }
 #menubaggrund{
-  width: 585px;
+  width: 375px;
   height: 100vh;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
@@ -124,7 +124,6 @@ body {
   font-family: "Shree Devanagari 714", serif;
   font-size: large;
   font-weight: bolder;
-  margin-left: 150px;
   text-align: center;
   padding-top: 500px;
   line-height: 22px;
@@ -225,10 +224,10 @@ hr {
   display: grid;                                                               
   grid-template-columns: (2fr, 1fr);
   grid-template-rows: (5fr, 1fr);
-  grid-gap: 30px;                                                              
+  grid-gap: 10px;
   margin-top: -20px;                                                           
   font-family: "Shree Devanagari 714", serif;                                  
-  font-size: small;                                                            
+  font-size: 12px;
 }                                                                              
                                                                                
 .item8:nth-of-type(1) {                                                        
@@ -237,8 +236,9 @@ hr {
 }                                                                              
                                                                                
 .textInput {                                                                   
-  height: 40px;                                                                
-  width: 140px;                                                                
+  height: 27px;
+  width: 80px;
+  border: solid thin black;
   font-size: medium;                                                           
   font-family: "Shree Devanagari 714", serif;                                  
 }                                                                              
@@ -270,13 +270,13 @@ hr {
                                                                                
 .item8:nth-of-type(7) {                                                        
   grid-column: 1 / span 1;
-  grid-row: 6 / span 1;                                                        
+  grid-row: 7 / span 1;
   border: thin solid black;                                                    
-  height: 40px;                                                                
-  width: 140px;                                                                
+  height: 27px;
+  width: 80px;
   text-align: center;                                                          
-  padding-top: 12px;                                                           
-  font-size: medium;                                                           
+  padding-top: 5px;
+  font-size: 12px;
   a:link {                                                                     
     color: black;                                                              
     text-decoration-line: none;                                                
@@ -315,8 +315,8 @@ hr {
                                                                                
 /* Inner */                                                                    
 .popup-inner { //rediger tekst osv. her                                        
-  width:400px; //Pop up feltet - angivet bredde                                
-  height: 700px; //højden                                                      
+  width:280px; //Pop up feltet - angivet bredde
+  height: 560px; //højden
   padding:20px;                                                                
   position:absolute; //gør at indholdet rykker 50%ned og til venstre.          
   top:50%;                                                                     
@@ -356,12 +356,11 @@ hr {
 //---------------------------------------BILLEDER/TEKST KASSER ØVERST-------------------------------------
 .billedebokse {
   display: grid;
-  grid-template-columns: (3fr, 1fr);
-  grid-template-rows: (1fr, 1fr);
+  grid-template-columns: (1fr, 1fr);
+  grid-template-rows: (3fr, 1fr);
   justify-content: space-between;
   grid-gap: 100px;
-  padding-left: 95px;
-  margin-top: 40px;
+  margin: 20px;
   position: relative;
   z-index: 0;
 }
@@ -394,7 +393,7 @@ hr {
   position: absolute;
   z-index: 1;
   margin-top: -860px;
-  padding-left: 24%;
+  padding-left: 40px;
 }
 
 .boks1 {
@@ -481,17 +480,17 @@ hr {
 //mellemstreg
 
 .streg2 {
-  width: 453px;
+  width: 375px;
   margin-top: 150px;
-  padding-left: 100px;
+  padding-left: 20px;
 }
 
 
 //---------------------------------------VINUDVALG ALLE 3 --------------------------------------------
 
  @mixin vinboks{
-   width: 486px;
-   height: 316px;
+   width: 370px;
+   height: 310px;
    background-color: $lightbeige;
    @include bordergold;
    margin: 200px auto 200px auto;
@@ -525,8 +524,8 @@ hr {
  }
  
  .ffh{
-   width: 350px;
-   margin-left: 35px;
+   width: 200px;
+   margin-left: 20px;
    margin-top: 70px;
    a{                      
      color: $brown;        
@@ -557,10 +556,10 @@ hr {
  }
  
  .streg1 {
-   width: 453px;          
-   margin-top: 120px;
-   margin-bottom: 120px;
-   padding-left: 100px;   
+   width: 375px;
+   margin-top: 90px;
+   margin-bottom: 90px;
+   padding-left: 20px;
    
  }
 //---------------------------------------3 BOKSE MED TEKST + TEKST INDENI----------------------------------
@@ -576,7 +575,7 @@ hr {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   @include bordergold;
-  width: 572px;
+  width: 375px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -602,7 +601,7 @@ hr {
   @include bordergold;
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family:Bagatela, serif;
@@ -614,7 +613,7 @@ hr {
   grid-column: 1 / span 1;   
   grid-row: 2 / span 1;
   @include bordergold;
-  width: 572px;
+  width: 375px;
   height: 350px;                
   background-color: #fff5ed;                
   padding-top: 40px;            
@@ -642,7 +641,7 @@ hr {
   @include bordergold;
   width: 220px;               
   height: 50px;               
-  margin-left: 170px;         
+  margin-left: 75px;
   background-color: #f4eade;  
   color: #878532;             
   font-family:Bagatela, serif;
@@ -658,7 +657,7 @@ hr {
   height: 40px;                                  
   width: 220px;                                  
   padding-left: 10px;
-  margin-left: 25px;
+  margin-left: 20px;
 }                                                
 
 
@@ -674,7 +673,7 @@ hr {
   grid-column: 1 / span 1;   
   grid-row: 3 / span 1;
   @include bordergold;
-  width: 572px;
+  width: 375px;
   height: 350px;                
   background-color: #fff5ed;                
   padding-top: 40px;            
@@ -698,7 +697,7 @@ hr {
   @include bordergold;
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family:Bagatela, serif;
