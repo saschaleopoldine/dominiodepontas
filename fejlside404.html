@@ -27,6 +27,7 @@
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
     <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
+
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/fejlside404.css" rel="stylesheet" type="text/css">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
@@ -34,6 +35,33 @@
 </head>
 <!-- i <body> har man alt indhold på siden -->
 <body>
+
+<section id="error">
+    <img id="animation" alt="væltet vinglas, som spilder rødvin" src="Image/wine_error.png" height="720" width="767"/>
+
+    <h1 id="fejl">Fejl 404</h1>
+    <p id="sorry">Der er desværre opstået en fejl.</p>
+    <p class="content">
+        Men man skal ikke græde over spilt vin - vi har mere af det.
+        <br><br>
+        Vi undersøger fejlen hurtigst muligt, men du kan meget nemt komme tilbage til <a href="index.html">forsiden her</a>.
+    </p>
+    <img id="break" src="Image/mellemstreg.png" height="17" width="498"/>
+
+    <div id="boks">
+        <p id="help">Skriv til os!</p>
+        <input type="text" id="help_write" placeholder="Skriv her.." >
+        <button class="mobilknap" type="submit" value="Send"><a href="#">Send</a></button>
+    </div>
+
+
+
+
+</section>
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
     $(document).ready(function (e) {
