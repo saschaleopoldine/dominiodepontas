@@ -1,1 +1,2 @@
-ErrorDocument 404 "test"
+ErrorDocument 404 /fejlside404.html
+
