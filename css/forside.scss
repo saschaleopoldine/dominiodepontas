@@ -62,7 +62,7 @@ body {
 
 .baggrundsbillede{                                      
   width: 375px;
-  height: 450px;
+  height: 200px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px;
@@ -71,20 +71,21 @@ body {
                                                         
 .header{                                                
   width: 375px;
-  height: 450px;
+  height: 200px;
   background-color: rgba(75, 45, 27, 0.7);              
 }                                                       
                                                         
 .fa-bars{
   @include gold;
-  font-size: 40pt;
+  font-size: 20pt;
   margin-left: 85%;                                     
-  margin-top: 40px;                                     
+  margin-top: 20px;
 }                                                       
                                                         
 .logomobil{                                             
-  margin: -30px auto 40px auto;                         
+  margin: -20px auto 40px auto;
   padding-bottom: 40px;
+  width: 45%;
 }
 #menubaggrund{
   width: 375px;
@@ -125,7 +126,7 @@ body {
   font-size: large;
   font-weight: bolder;
   text-align: center;
-  padding-top: 500px;
+  padding-top: 260px;
   line-height: 22px;
 }
 
