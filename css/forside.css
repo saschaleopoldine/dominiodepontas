@@ -12,7 +12,7 @@ body {
   display: none; }
 
 .baggrundsbillede {
-  width: 100%;
+  width: 585px;
   height: 450px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
@@ -20,7 +20,7 @@ body {
   position: absolute; }
 
 .header {
-  width: 100%;
+  width: 585px;
   height: 450px;
   background-color: rgba(75, 45, 27, 0.7); }
 
@@ -38,7 +38,7 @@ body {
   padding-bottom: 40px; }
 
 #menubaggrund {
-  width: 100%;
+  width: 585px;
   height: 100vh;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
@@ -75,6 +75,7 @@ body {
   font-family: "Shree Devanagari 714", serif;
   font-size: large;
   font-weight: bolder;
+  margin-left: 150px;
   text-align: center;
   padding-top: 500px;
   line-height: 22px; }
@@ -243,7 +244,7 @@ hr {
   background: #fff; }
 
 /* Close Button */
-.popup-close {
+.closebutton {
   width: 30px;
   height: 30px;
   padding-top: 4px;
@@ -740,7 +741,8 @@ hr {
 .footer {
   background-color: #4b2d1b;
   padding: 5px 15px 15px 15px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  width: 375px; }
 
 .display_web {
   display: none; }
