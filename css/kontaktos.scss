@@ -237,10 +237,8 @@ A:active{
 .mobilknap{
   width: 100px;
   height: 40px;
-  justify-content: end;
-  margin-left: 30%;
-  margin-right: 10%;
   margin-top: 5%;
+  margin-left: 60%;
   font-size: 15px;
   z-index: 99;
   cursor: pointer;
@@ -653,6 +651,7 @@ footer{
     border-radius: 8px;
     font-size: 20px;
   }
+
   #subject2{
     border-radius: 8px;
     font-size: 20px;
@@ -660,7 +659,6 @@ footer{
   .sendknap{
     width: 80px;
     height: 40px;
-    justify-content: end;
     margin-right: 7px;
     font-size: 20px;
   }
