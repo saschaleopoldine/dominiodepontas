@@ -9,6 +9,7 @@ body {
   margin: 0; // Ingen kanter i siden af browser
   background-color: #f4eade;
   font-family: Bagatela, serif;
+  color: #4b2d1b;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,9 +55,29 @@ $overlay_web: rgba(75, 45, 27, 0.23);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@mixin bordergold{
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+}
 
 A:hover{
   color: $green;
+}
+A:link{
+  color: $brown;
+}
+A:active{
+  color: $brown;
 }
 
 
@@ -134,6 +155,55 @@ A:hover{
 
 
 //body
+
+
+.kontakttekst{
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+.kontaktmuligheder a{
+  text-decoration: none;
+  color: $brown;
+}
+@mixin box{
+  width: 80%;
+  height: 55px;
+  color: $brown;
+  background-color: $lightbeige;
+  @include bordergold;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 10px;
+}
+.box1{
+  @include box;
+  margin-left: 10%;
+  .nummer2{
+    display: none;
+  }
+  font-size: 11px;
+}
+.box2{
+  @include box;
+  margin-left: 10%;
+  font-size: 9.5px;
+  .email2{
+    display: none;
+  }
+}
+.box3{
+  @include box;
+  margin-left: 10%;
+  font-size: 8px;
+  .skrivformular{
+    display: none;
+  }
+}
+
+
+
+
 .streg1{
   display: block;
   margin-right: 4%;
@@ -154,6 +224,7 @@ A:hover{
 .kontaktformularmobil{
   justify-content: center;
   margin-left: 8%;
+  border-radius: 8px;
 }
 
 .skrivtilosmobil{
@@ -477,17 +548,84 @@ footer{
   }
 
   //body
-
   .kontaktos{
     margin-top: 25px;
     font-size: 60pt;
     font-weight: 600;
   }
 
+  .kontakttekst{
+    font-size: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+  }
+  .kontaktmuligheder{
+    display: flex;
+    margin-right: 7%;
+    font-size: 30px;
+    a{
+      text-decoration: none;
+      color: $brown;
+    }
+  }
+  @mixin boxWEB{
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+  }
+  .box1{
+    @include boxWEB;
+    .fa-phone{
+      font-size: 40px;
+    }
+    .nummer1{
+      display: none;
+    }
+    .nummer2 {
+      display: block;
+      font-size: 30px;
+      .span1{
+        font-size: 20px;
+      }
+    }
+  }
+  .box2{
+    @include boxWEB;
+    .fa-envelope{
+      font-size: 40px;
+    }
+    .email1{
+      display: none;
+    }
+    .email2{
+      display: block;
+      font-size: 28px;
+      .span2{
+        font-size: 25px;
+      }
+    }
+  }
+  .box3{
+    @include boxWEB;
+    padding: 15px;
+    font-size: 10px;
+    .span3{
+      display: none;
+    }
+    .skrivformular{
+      display: block;
+      font-size: 27px;
+      margin: 6%;
+    }
+  }
+
+
   .streg1 {
     display: block;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 35%;
+    margin-right: 20%;
   }
   .streg2 {
     display: none;
@@ -500,7 +638,6 @@ footer{
     display: flex;
     font-size: 40px;
     text-align: right;
-
   }
   .googlemaps{
     width: 50%;
@@ -543,14 +680,19 @@ footer{
   }
   .streg3{
     display: block;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 35%;
+    margin-right: 20%;
+    justify-content: center;
+    margin-bottom: 3%;
   }
 
   .findosherboks{
     width: 100%;
     background-color: $lightbeige;
     font-size: 35pt;
+  }
+  .mereinfo{
+    font-size: 30px;
   }
   .medier{
     display: flex;

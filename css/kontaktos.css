@@ -6,7 +6,8 @@
 body {
   margin: 0;
   background-color: #f4eade;
-  font-family: Bagatela, serif; }
+  font-family: Bagatela, serif;
+  color: #4b2d1b; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -31,6 +32,12 @@ img {
 
 A:hover {
   color: #878532; }
+
+A:link {
+  color: #4b2d1b; }
+
+A:active {
+  color: #4b2d1b; }
 
 .ctaweb {
   display: none; }
@@ -96,6 +103,90 @@ A:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
+.kontakttekst {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px; }
+
+.kontaktmuligheder a {
+  text-decoration: none;
+  color: #4b2d1b; }
+
+.box1 {
+  width: 80%;
+  height: 55px;
+  color: #4b2d1b;
+  background-color: #fff5ed;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 10px;
+  margin-left: 10%;
+  font-size: 11px; }
+  .box1 .nummer2 {
+    display: none; }
+
+.box2 {
+  width: 80%;
+  height: 55px;
+  color: #4b2d1b;
+  background-color: #fff5ed;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 10px;
+  margin-left: 10%;
+  font-size: 9.5px; }
+  .box2 .email2 {
+    display: none; }
+
+.box3 {
+  width: 80%;
+  height: 55px;
+  color: #4b2d1b;
+  background-color: #fff5ed;
+  border-left: 2px solid #e4c982;
+  border-right: 2px solid #9d7f3f;
+  border-radius: 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 2px;
+  -moz-background-size: 100% 2px;
+  background-size: 100% 2px;
+  background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+  background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 10px;
+  margin-left: 10%;
+  font-size: 8px; }
+  .box3 .skrivformular {
+    display: none; }
+
 .streg1 {
   display: block;
   margin-right: 4%;
@@ -115,7 +206,8 @@ A:hover {
 
 .kontaktformularmobil {
   justify-content: center;
-  margin-left: 8%; }
+  margin-left: 8%;
+  border-radius: 8px; }
 
 .skrivtilosmobil {
   text-align: center;
@@ -403,10 +495,68 @@ footer {
     font-size: 60pt;
     font-weight: 600; }
 
+  .kontakttekst {
+    font-size: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%; }
+
+  .kontaktmuligheder {
+    display: flex;
+    margin-right: 7%;
+    font-size: 30px; }
+    .kontaktmuligheder a {
+      text-decoration: none;
+      color: #4b2d1b; }
+
+  .box1 {
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    padding: 10px; }
+    .box1 .fa-phone {
+      font-size: 40px; }
+    .box1 .nummer1 {
+      display: none; }
+    .box1 .nummer2 {
+      display: block;
+      font-size: 30px; }
+      .box1 .nummer2 .span1 {
+        font-size: 20px; }
+
+  .box2 {
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    padding: 10px; }
+    .box2 .fa-envelope {
+      font-size: 40px; }
+    .box2 .email1 {
+      display: none; }
+    .box2 .email2 {
+      display: block;
+      font-size: 28px; }
+      .box2 .email2 .span2 {
+        font-size: 25px; }
+
+  .box3 {
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    padding: 15px;
+    font-size: 10px; }
+    .box3 .span3 {
+      display: none; }
+    .box3 .skrivformular {
+      display: block;
+      font-size: 27px;
+      margin: 6%; }
+
   .streg1 {
     display: block;
-    margin-left: 30%;
-    margin-right: 30%; }
+    margin-left: 35%;
+    margin-right: 20%; }
 
   .streg2 {
     display: none; }
@@ -459,13 +609,18 @@ footer {
 
   .streg3 {
     display: block;
-    margin-left: 30%;
-    margin-right: 30%; }
+    margin-left: 35%;
+    margin-right: 20%;
+    justify-content: center;
+    margin-bottom: 3%; }
 
   .findosherboks {
     width: 100%;
     background-color: #fff5ed;
     font-size: 35pt; }
+
+  .mereinfo {
+    font-size: 30px; }
 
   .medier {
     display: flex;
