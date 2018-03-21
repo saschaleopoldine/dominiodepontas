@@ -122,6 +122,7 @@ $green: #878532;
 
 #menubaggrund{
   width: 100%;
+  height: 100vh;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
   padding-top: 225px;
@@ -154,7 +155,7 @@ $green: #878532;
 
 
 
-//-----------------------------------Tekstelement mobil---------------------------
+//-----------------------------------Tekstelementer mobil---------------------------
 
 
 .overskrift{
@@ -195,12 +196,11 @@ $green: #878532;
 
 #club{
   text-align: center;
-  margin: 130px auto 0 auto;
   font-size: 35pt;
 }
 
 
-.CTA-tekst{
+.intro_tekst{
   font-family: "Shree Devanagari 714", serif;
   font-size: 18pt;
   text-align: center;
@@ -210,7 +210,7 @@ $green: #878532;
 
 }
 
-.CTA{
+.mobilcta2, .CTA{
   font-size: 25pt;
   font-weight: bold;
   text-align: center;
@@ -223,6 +223,16 @@ $green: #878532;
    @include gold;
   }
 }
+
+
+#boks{
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  background-color: #fff5ed;
+}
+
+
 
 //--------------------------------------vin mobil---------------------------
 .webvin{
@@ -401,7 +411,207 @@ $green: #878532;
   margin: 70px auto;
 }
 
+//----------------------------------tilmeldningsblanket mobil ----------------------
+.email {
+  margin-top: 200px;
+}
 
+.knappen {
+  margin-top: -10px;
+  a:link {
+    color: #878532;
+    text-decoration-line: none;
+  }
+  a:visited {
+    color: #878532;
+  }
+  a:hover {
+    color: gold;
+  }
+}
+
+h2 {
+  font-size: larger;
+  text-align: center;
+  font-family: Bagatela, serif;
+  color: #4b2d1b;
+}
+
+hr {
+  margin-top: -15px;
+}
+
+.tekst1 {
+  text-align: left;
+  font-family: "Shree Devanagari 714", serif;
+  font-size: small;
+  line-height: 17px;
+  color: #4b2d1b;
+}
+
+.titel1 {
+  font-family: "Shree Devanagari 714", serif;
+  font-size: small;
+}
+
+.bokskvinde, .boksmand {
+  border: thin solid black;
+  width: 80px;
+  height: 25px;
+  background-color: #f4eade;
+  font-family: "Shree Devanagari 714", serif;
+  font-size: small;
+  text-align: center;
+  padding: 2px;
+  a:link {
+    color: black;
+    text-decoration-line: none;
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: gold;
+  }
+}
+
+.mand{
+  margin-top: -25px;
+  margin-left: 90px;
+}
+
+.kontaktop {
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  grid-template-rows: (5, 1fr);
+  grid-gap: 30px;
+  margin-top: -20px;
+  font-family: "Shree Devanagari 714", serif;
+  font-size: small;
+}
+
+.item8:nth-of-type(1) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.textInput {
+  height: 40px;
+  width: 140px;
+  font-size: medium;
+  font-family: "Shree Devanagari 714", serif;
+}
+
+.item8:nth-of-type(2) {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.item8:nth-of-type(3) {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.item8:nth-of-type(4) {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.item8:nth-of-type(5) {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.item8:nth-of-type(6) {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.item8:nth-of-type(7) {
+  grid-column: 1 / span 1;
+  grid-row: 6 / span 1;
+  border: thin solid black;
+  height: 40px;
+  width: 140px;
+  text-align: center;
+  padding-top: 12px;
+  font-size: medium;
+  a:link {
+    color: black;
+    text-decoration-line: none;
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: gold;
+  }
+}
+
+.luksiden { //knappen der lukker siden, skrift
+  font-size: medium;
+  a:link {
+    color: black;
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: gold;
+  }
+}
+
+.popup { //sådan så den skygger hele skærmen i baggrunden
+  width:100%;
+  height:100%;
+  z-index: 100;
+  display:none; //Så selve pop up ikke dukker op, medmindre man klikker
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.75);
+}
+
+/* Inner */
+.popup-inner { //rediger tekst osv. her
+  width:400px; //Pop up feltet - angivet bredde
+  height: 700px; //højden
+  padding:20px;
+  position:absolute; //gør at indholdet rykker 50%ned og til venstre.
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%); //Denne her rykker den -50% til vens
+  //af sin bredde og ned -50% af højden. Dette gør at den er responsiv.
+  transform:translate(-50%, -50%);
+  border-radius:3px;
+  box-shadow:0 2px 6px rgba(0,0,0,1);//skygge til boksen
+  background:#fff;
+}
+
+/* Close Button */
+.popup-close {
+  width:30px; //lukikonet --> bredde
+  height:30px;
+  padding-top:4px;
+  display:inline-block;
+  position:absolute;
+  top:0;
+  right:0;
+  -webkit-transform:translate(50%, -50%); //gør det samme som overstående.
+  transform:translate(50%, -50%);
+  border-radius:1000px; //knappens radius (så den bliver cirkelformet)
+  background:black;
+  text-decoration-line: none;
+  font-family: Bagatela, serif; // lukkeknappens skrift type
+  font-size:20px; //lukkeknappens skriftstørrelse
+  text-align:center; //placering af "tekst" da x er et bogstav
+  line-height:100%; //linjetættelse
+  color:#fff; //farve af bogstavet x
+}
+.popup-close:hover {
+  color: $green; //farve af x når man kører musen henover
+  text-decoration-line:none;
+}
 
 //----------------------------------------footer mobil---------------------------
 
@@ -599,12 +809,11 @@ $green: #878532;
   justify-content: space-around;
 }
 
-.CTA-tekst{
- margin-top: 40px;
-}
 
 
-//----------------------------------vin web----------------------
+
+
+  //----------------------------------vin web----------------------
 .mobilvin{
   display: none;
 }
