@@ -404,11 +404,11 @@ Denne produktion er gået i arv for at vedligeholde den velsmagende saft af drue
         Vi garanterer nyhedsbreve med information, arrangementer og tilbud.
     </h2>
 
-    <div class="mobilcta2"><a class="knap" data-popup-open="popup-1" href="#">Bliv medlem her ></a></div>
+    <div class="mobilcta2"><a class="knap" href="#">Bliv medlem her ></a></div>
 </div>
 
 <!--tilmeldningsblanket-->
-<div class="popup" data-popup="popup-1">
+<div class="popup">
     <!--Selve boksen der kommer frem, hvad der skal stå i den. Styles i css. -->
     <div class="popup-inner"><br>
         <h2>UDFYLD TILMELDING</h2><br>
@@ -442,8 +442,8 @@ Denne produktion er gået i arv for at vedligeholde den velsmagende saft af drue
 
             <div class="item8"><a href="#"><b>SEND</b></a></div></div>
         <br>
-        <div class="luksiden"><a data-popup-close="popup-1" href="#">Luk siden</a></div> <!--knappen der lukker siden ned -->
-        <a class="popup-close" data-popup-close="popup-1" href="#">x</a> <!--krydset oppe i siden der lukker -->
+        <div class="luksiden"><a class="closebutton2" href="#">Luk siden</a></div> <!--knappen der lukker siden ned -->
+        <a  class="closebutton" href="#">x</a> <!--krydset oppe i siden der lukker -->
     </div>
 </div>
 </section>
@@ -653,21 +653,20 @@ Denne produktion er gået i arv for at vedligeholde den velsmagende saft af drue
 
         /*--------------- Tilmelding af klub -------------*/
         /*----- Det der åbner boksen op -------*/
-        $('[data-popup-open]').on('click', function(e)  { //når man trykker på knappen skal den have en funktion
-            var targeted_popup_class = jQuery(this).attr('data-popup-open'); //variable af alle popup(attribut)
-            $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+        $(".mobilcta2").on('click', function(e)  { //når man trykker på knappen skal den have en funktion
+            $(".popup").fadeIn(350);
             //når der klikkes på knappen, fader boksen ind i en hastighed 350. Her finder den popup med data
             //popup værdien af popup-1, og skal fade ind 350 milisec.
-            e.preventDefault(); //skal tilføjes, hvis det skulle være at linket ikke virker.
         });
 
         /*----- Den funktion der lukker siden ------*/
-        $('[data-popup-close]').on('click', function(e)  { //når der klikkes på luk siden knappen, skal der ske noget
-            var targeted_popup_class = jQuery(this).attr('data-popup-close'); //finde værdien for luk knappen.
-            $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350); //fader ud istedet for ind.
-            e.preventDefault();
+        $(".closebutton").on('click', function(e)  { //når der klikkes på luk siden knappen, skal der ske noget
+            $(".popup").fadeOut(350); //fader ud istedet for ind.
         });
 
+        $(".closebutton2").on('click', function(e)  { //når der klikkes på luk siden knappen, skal der ske noget
+            $(".popup").fadeOut(350); //fader ud istedet for ind.
+        });
     });
 
 </script>
