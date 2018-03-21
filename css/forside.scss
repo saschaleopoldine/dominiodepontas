@@ -66,6 +66,7 @@ body {
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px;
+  position: absolute;
 }
                                                         
 .header{                                                
@@ -83,8 +84,40 @@ body {
                                                         
 .logomobil{                                             
   margin: -30px auto 40px auto;                         
-  padding-bottom: 40px;                                 
-}                                                       
+  padding-bottom: 40px;
+}
+#menubaggrund{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(75, 45, 27, 0.98);
+  display: none;
+  padding-top: 225px;
+  padding-bottom: 60%;
+  z-index: 5;
+  position: absolute;
+}
+
+.fa-times{
+  @include gold;
+  font-size: 40pt;
+  z-index: 3;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -190px;
+}
+
+
+#menubaggrund li{
+  padding-bottom: 30px;
+  font-size: 25pt;
+  text-align: center;
+  list-style: none;
+  a{
+    text-decoration: none;
+    @include gold;
+  }
+}
+
 
 .mobilcta {
   color: #4b2d1b;
@@ -92,7 +125,7 @@ body {
   font-size: large;
   font-weight: bolder;
   text-align: center;
-  margin: 30px;
+  padding-top: 500px;
   line-height: 22px;
 }
 
@@ -101,6 +134,7 @@ body {
   font-family: Bagatela, serif;
   font-size: xx-large;
   text-align: center;
+  margin-top: 20px;
 }
 
 a:link {
@@ -119,11 +153,11 @@ a:hover {
 //-----------------------------------CTA MEDLEMSKAB JQUERY-----------------------------
 
 .email {                                                                       
-  margin-top: 200px;                                                           
-}                                                                              
-                                                                               
-.knappen {                                                                     
-  margin-top: -10px;                                                           
+  margin-top: 200px;
+}
+
+.knappen {
+  margin-top: -10px;
   a:link {                                                                     
     color: #878532;                                                            
     text-decoration-line: none;                                                
@@ -270,11 +304,11 @@ hr {
 .popup { //sådan så den skygger hele skærmen i baggrunden                      
   width:100%;                                                                  
   height:100%;                                                                 
-  z-index: 12;                                                                 
+  z-index: 12;
   display:none; //Så selve pop up ikke dukker op, medmindre man klikker        
   position:fixed;                                                              
   top:0;                                                                       
-  left:0;                                                                      
+  left:0;
   background:rgba(0,0,0,0.75);                                                 
 }                                                                              
                                                                                
@@ -285,7 +319,7 @@ hr {
   padding:20px;                                                                
   position:absolute; //gør at indholdet rykker 50%ned og til venstre.          
   top:50%;                                                                     
-  left:50%;                                                                    
+  left:50%;
   -webkit-transform:translate(-50%, -50%); //Denne her rykker den -50% til vens
   //af sin bredde og ned -50% af højden. Dette gør at den er responsiv.        
   transform:translate(-50%, -50%);                                             
@@ -299,8 +333,8 @@ hr {
   width:30px; //lukikonet --> bredde                                           
   height:30px;                                                                 
   padding-top:4px;                                                             
-  display:inline-block;                                                        
-  position:absolute;                                                           
+  display:inline-block;
+  position:absolute;
   top:0;                                                                       
   right:0;                                                                     
   -webkit-transform:translate(50%, -50%); //gør det samme som overstående.     
@@ -326,7 +360,7 @@ hr {
   justify-content: space-between;
   grid-gap: 100px;
   padding-left: 95px;
-  margin-top: 25px;
+  margin-top: 40px;
   position: relative;
   z-index: 0;
 }
@@ -371,7 +405,7 @@ hr {
   background-color: #fff5ed;
 }
 
-.tekst1, .tekst2, .tekst3 {
+.tekst11, .tekst2, .tekst3 {
   font-family: "Shree Devanagari 714", serif;
   font-size: large;
   color: #4b2d1b;
@@ -541,7 +575,7 @@ hr {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   @include bordergold;
-  width: 536px;
+  width: 572px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -579,7 +613,7 @@ hr {
   grid-column: 1 / span 1;   
   grid-row: 2 / span 1;
   @include bordergold;
-  width: 536px;
+  width: 572px;
   height: 350px;                
   background-color: #fff5ed;                
   padding-top: 40px;            
@@ -639,7 +673,7 @@ hr {
   grid-column: 1 / span 1;   
   grid-row: 3 / span 1;
   @include bordergold;
-  width: 536px;
+  width: 572px;
   height: 350px;                
   background-color: #fff5ed;                
   padding-top: 40px;            
