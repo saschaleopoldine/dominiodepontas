@@ -33,16 +33,16 @@ img {
   display: none; }
 
 .baggrundsbillede {
-  width: 100%;
-  height: 450px;
+  width: 100vw;
+  height: 200px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px;
   position: absolute; }
 
 .header {
-  width: 100%;
-  height: 450px;
+  width: 100vw;
+  height: 200px;
   background-color: rgba(75, 45, 27, 0.7); }
 
 .fa-bars {
@@ -50,13 +50,14 @@ img {
   background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 40pt;
+  font-size: 20pt;
   margin-left: 85%;
-  margin-top: 40px; }
+  margin-top: 20px; }
 
 .logomobil {
-  margin: -30px auto 40px auto;
-  padding-bottom: 40px; }
+  margin: -20px auto 40px auto;
+  padding-bottom: 40px;
+  width: 45%; }
 
 #menubaggrund {
   width: 100%;
@@ -95,15 +96,23 @@ img {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  font-size: 50pt;
+  font-size: 35pt;
   font-weight: 600;
-  padding-top: 500px; }
+  padding-top: 230px; }
+
+.intro_tekst {
+  font-family: "Shree Devanagari 714", serif;
+  font-size: 10pt;
+  text-align: center;
+  font-weight: 400;
+  width: 80%;
+  margin: 25px auto 0 auto; }
 
 #knapper {
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
-  margin-top: 70px; }
+  margin-top: 50px; }
   #knapper a:hover {
     background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
     background: linear-gradient(#878532, #878532, #878532, #878532);
@@ -112,13 +121,13 @@ img {
 
 .redwineknap, .whitewineknap, .rosewineknap {
   text-align: center;
-  width: 175px;
-  height: 65px;
+  width: 85px;
+  height: 40px;
   background-color: #4b2d1b;
   box-shadow: 0 2px 5px #231f1f, 0 3px 7px #231f1f inset;
   border-radius: 5px;
-  padding-top: 15px;
-  font-size: 25pt;
+  padding-top: 10px;
+  font-size: 16pt;
   margin-top: 5px; }
   .redwineknap a, .whitewineknap a, .rosewineknap a {
     text-decoration: none;
@@ -129,25 +138,17 @@ img {
 
 #club {
   text-align: center;
-  font-size: 35pt; }
+  font-size: 20pt; }
 
-.intro_tekst {
-  font-family: "Shree Devanagari 714", serif;
-  font-size: 18pt;
-  text-align: center;
-  font-weight: 400;
-  width: 80%;
-  margin: 25px auto 0 auto; }
-
-.mobilcta2, .CTA {
-  font-size: 25pt;
+.mobilcta2 {
+  font-size: 15pt;
   font-weight: bold;
   text-align: center;
   margin-top: 40px; }
-  .mobilcta2 a, .CTA a {
+  .mobilcta2 a {
     color: #878532;
     text-decoration: none; }
-  .mobilcta2 a:hover, .CTA a:hover {
+  .mobilcta2 a:hover {
     background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
     background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
     -webkit-background-clip: text;
@@ -157,14 +158,15 @@ img {
   width: 100%;
   height: auto;
   padding: 40px 0;
+  margin-top: 100px;
   background-color: #fff5ed; }
 
 .webvin {
   display: none; }
 
 .rodvine, .hvidvine, .rosevine {
-  width: 486px;
-  height: 316px;
+  width: 300px;
+  height: 183px;
   background-color: #fff5ed;
   border-left: 2px solid #e4c982;
   border-right: 2px solid #9d7f3f;
@@ -178,57 +180,68 @@ img {
   background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
-  margin: 200px auto 200px auto;
+  margin: 100px auto 200px auto;
   position: relative;
   z-index: 0;
   text-align: center;
-  padding-left: 85px;
-  padding-top: 50px; }
+  padding-left: 70px;
+  padding-top: 25px; }
   .rodvine a, .hvidvine a, .rosevine a {
     text-decoration: none; }
 
 .vinbillede {
-  height: 450px;
+  height: 300px;
   width: auto;
   position: absolute;
   left: 5px;
   z-index: 1;
-  margin-top: -150px; }
-  .vinbillede a:hover {
-    transform: scale(1); }
+  margin-top: -100px; }
 
 #rodvin {
   margin-top: 50px; }
 
 .ffh {
-  width: 350px;
-  margin-left: 35px;
-  margin-top: 70px;
-  color: #878532; }
+  width: 195px;
+  color: #878532;
+  margin-left: 20px;
+  margin-top: 25px; }
 
-.speciel_tekst {
-  width: 325px;
-  margin-left: 45px; }
+.CTA {
+  font-size: 15pt;
+  font-weight: bold;
+  text-align: center; }
+  .CTA a {
+    color: #878532;
+    text-decoration: none; }
+  .CTA a:hover {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .speciel_cta {
-  margin-top: 30px; }
+  margin-top: 0; }
+
+.speciel_tekst {
+  width: 200px;
+  margin-left: 10px;
+  margin-bottom: 10px; }
 
 .w {
   font-family: "Shree Devanagari 714", serif;
-  font-size: 20pt;
+  font-size: 15pt;
   font-weight: lighter; }
 
 .name {
-  font-size: 35pt; }
+  font-size: 20pt; }
   .name a {
     color: #4b2d1b; }
 
 #slideshow {
-  height: 500px;
+  height: 300px;
   display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  margin-bottom: 200px; }
+  justify-content: center; }
 
 #slideshow div {
   position: absolute; }
@@ -238,20 +251,19 @@ img {
 
 .prev, .next {
   cursor: pointer;
-  font-size: 50pt; }
+  font-size: 45pt; }
 
 .prev {
-  margin: 325px 300px 0 0; }
+  margin: 160px 160px 0 0; }
 
 .next {
-  margin: 325px 0 0 300px; }
+  margin: 160px 0 0 160px; }
 
 #slideshow_to {
-  height: 500px;
+  height: 300px;
   display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  margin-bottom: 200px; }
+  justify-content: center; }
 
 #slideshow_to div {
   position: absolute; }
@@ -261,20 +273,19 @@ img {
 
 .prev_to, .next_to {
   cursor: pointer;
-  font-size: 50pt; }
+  font-size: 45pt; }
 
 .prev_to {
-  margin: 325px 300px 0 0; }
+  margin: 160px 160px 0 0; }
 
 .next_to {
-  margin: 325px 0 0 300px; }
+  margin: 160px 0 0 160px; }
 
 #slideshow_tre {
-  height: 500px;
+  height: 300px;
   display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  margin-bottom: 200px; }
+  justify-content: center; }
 
 #slideshow_tre div {
   position: absolute; }
@@ -284,17 +295,17 @@ img {
 
 .prev_tre, .next_tre {
   cursor: pointer;
-  font-size: 50pt; }
+  font-size: 45pt; }
 
 .prev_tre {
-  margin: 325px 300px 0 0; }
+  margin: 160px 160px 0 0; }
 
 .next_tre {
-  margin: 325px 0 0 300px; }
+  margin: 160px 0 0 160px; }
 
 .break {
-  width: 453px;
-  margin: 70px auto; }
+  width: 300px;
+  margin: 150px auto 100px auto; }
 
 .email {
   margin-top: 200px; }
@@ -330,7 +341,7 @@ hr {
   font-size: small; }
 
 .bokskvinde, .boksmand {
-  border: thin solid black;
+  border: solid thin #fff5ed;
   width: 80px;
   height: 25px;
   background-color: #f4eade;
@@ -338,13 +349,14 @@ hr {
   font-size: small;
   text-align: center;
   padding: 2px; }
-  .bokskvinde a:link, .boksmand a:link {
-    color: black;
+  .bokskvinde a, .boksmand a {
+    color: #4b2d1b;
     text-decoration-line: none; }
-  .bokskvinde a:visited, .boksmand a:visited {
-    color: black; }
   .bokskvinde a:hover, .boksmand a:hover {
-    color: gold; }
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .mand {
   margin-top: -25px;
@@ -361,17 +373,20 @@ hr {
 
 .item8:nth-of-type(1) {
   grid-column: 1 / span 1;
-  grid-row: 2 / span 1; }
+  grid-row: 2 / span 1;
+  margin-top: -20px; }
 
 .textInput {
   height: 40px;
   width: 140px;
   font-size: medium;
-  font-family: "Shree Devanagari 714", serif; }
+  font-family: "Shree Devanagari 714", serif;
+  border: solid thin #f4eade; }
 
 .item8:nth-of-type(2) {
   grid-column: 2 / span 1;
-  grid-row: 2 / span 1; }
+  grid-row: 2 / span 1;
+  margin-top: -20px; }
 
 .item8:nth-of-type(3) {
   grid-column: 1 / span 1;
@@ -392,28 +407,32 @@ hr {
 .item8:nth-of-type(7) {
   grid-column: 1 / span 1;
   grid-row: 6 / span 1;
-  border: thin solid black;
+  background-color: #878532;
+  border-radius: 3px;
   height: 40px;
-  width: 140px;
+  width: 100px;
   text-align: center;
-  padding-top: 12px;
-  font-size: medium; }
-  .item8:nth-of-type(7) a:link {
-    color: black;
+  padding-top: 11px;
+  font-size: medium;
+  margin-top: -40px; }
+  .item8:nth-of-type(7) a {
+    color: #4b2d1b;
     text-decoration-line: none; }
-  .item8:nth-of-type(7) a:visited {
-    color: black; }
   .item8:nth-of-type(7) a:hover {
-    color: gold; }
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .luksiden {
   font-size: medium; }
-  .luksiden a:link {
-    color: black; }
-  .luksiden a:visited {
-    color: black; }
+  .luksiden a {
+    color: #4b2d1b; }
   .luksiden a:hover {
-    color: gold; }
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .popup {
   width: 100%;
@@ -427,8 +446,8 @@ hr {
 
 /* Inner */
 .popup-inner {
-  width: 400px;
-  height: 700px;
+  width: 350px;
+  height: 625px;
   padding: 20px;
   position: absolute;
   top: 50%;
@@ -437,7 +456,7 @@ hr {
   transform: translate(-50%, -50%);
   border-radius: 3px;
   box-shadow: 0 2px 6px black;
-  background: #fff; }
+  background: #fff5ed; }
 
 /* Close Button */
 .closebutton {
@@ -451,13 +470,13 @@ hr {
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   border-radius: 1000px;
-  background: black;
+  background-color: #4b2d1b;
   text-decoration-line: none;
   font-family: Bagatela, serif;
   font-size: 20px;
   text-align: center;
   line-height: 100%;
-  color: #fff; }
+  color: #f4eade; }
 
 .popup-close:hover {
   color: #878532;
@@ -472,7 +491,7 @@ hr {
 
 .footertekst, .aabningstider, .voresvine, .arrangementer {
   text-align: center;
-  font-size: 20pt;
+  font-size: 14pt;
   margin-top: 30px; }
 
 .overskrift_f {
@@ -482,24 +501,49 @@ hr {
   -webkit-text-fill-color: transparent; }
 
 .stregWEB {
-  margin-top: 100px;
+  margin: 60px auto 0 auto;
   z-index: 2;
-  width: 100%; }
+  width: 350px; }
 
 .socialemedier {
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   z-index: 3;
-  margin-top: -35px; }
+  margin-top: -30px; }
 
 .fa-instagram, .fa-facebook-square, .fa-youtube {
   background-color: #4b2d1b;
   width: 60px;
   text-align: center;
   color: #f4eade;
-  margin-bottom: 20px; }
+  margin-bottom: 15px;
+  font-size: 50px; }
 
+@media screen and (min-width: 768px) {
+  .baggrundsbillede, .header {
+    height: 400px; }
+
+  .logomobil {
+    margin-top: -10px; }
+
+  .fa-bars {
+    font-size: 30pt;
+    margin-top: 40px; }
+
+  .overskrift {
+    padding-top: 450px;
+    font-size: 40pt; }
+
+  .intro_tekst {
+    font-size: 14pt; }
+
+  .redwineknap, .whitewineknap, .rosewineknap {
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 20pt;
+    margin-top: 5px; } }
 @media screen and (min-width: 1200px) {
   #menubaggrund {
     display: none; }
@@ -603,7 +647,13 @@ hr {
 
   .overskrift {
     padding-top: 50px;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    font-size: 50pt; }
+
+  .intro_tekst {
+    font-size: 16pt;
+    margin-top: 0;
+    margin-bottom: 80px; }
 
   .CTA-tekst {
     margin: 100px auto 50px auto;
@@ -645,20 +695,30 @@ hr {
     font-weight: lighter; }
 
   .name {
-    font-size: 30pt; }
+    font-size: 25pt; }
 
   .CTA {
-    font-size: 20pt; }
+    font-size: 18pt; }
 
   .ffh {
-    margin-left: -30px;
+    margin-left: 20px;
+    width: 250px;
     margin-top: 50px; }
 
   .speciel_tekst {
-    margin-left: -29px; }
+    margin-left: 10px;
+    width: 250px; }
 
   .speciel_cta {
     margin-top: 0; }
+
+  #club {
+    font-size: 20pt;
+    margin-bottom: 20px; }
+
+  .mobilcta2 {
+    margin-top: -30px;
+    font-size: 20px; }
 
   .display_web {
     display: block;
@@ -702,6 +762,12 @@ hr {
     font-size: 18pt;
     font-weight: bold;
     margin-bottom: 30px; }
+
+  .fa-instagram, .fa-facebook-square, .fa-youtube {
+    font-size: 50pt; }
+
+  .socialemedier {
+    margin-top: -40px; }
 
   .stregWEB {
     width: 90%;
