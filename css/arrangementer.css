@@ -105,6 +105,36 @@ img {
   font-weight: 400;
   width: 80%;
   margin: 25px auto 100px auto; }
+  .content a {
+    text-decoration: none;
+    color: #4b2d1b; }
+  .content a:hover {
+    font-weight: 600; }
+
+.link_a {
+  color: #878532 !important; }
+
+.break {
+  width: 453px;
+  margin: 70px auto 100px auto; }
+
+#events_muligheder {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  font-family: "Shree Devanagari 714", Serif;
+  font-size: 16pt;
+  padding-left: 30px; }
+  #events_muligheder a {
+    text-decoration: none;
+    color: #4b2d1b; }
+  #events_muligheder a:hover {
+    color: #878532;
+    font-weight: 600; }
+
+.arrangementer_1 {
+  width: 40%;
+  margin: 0 auto 100px auto; }
 
 .footer {
   background-color: #4b2d1b;
@@ -247,6 +277,13 @@ img {
   .overskrift {
     padding-top: 100px;
     margin-bottom: 60px; }
+
+  .content {
+    text-align: justify; }
+
+  .arrangementer_1 {
+    padding-left: 100px;
+    font-size: 18pt; }
 
   .display_web {
     display: block;
