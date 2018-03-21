@@ -34,7 +34,6 @@
     <link href="css/forside.css" rel="stylesheet" type="text/css">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
 
 <!-- ----------------------------HEADER WEB------------------------------------------- -->
 
@@ -43,9 +42,19 @@
 <div class="baggrundsbillede">
     <div class="header">
         <i class="fa fas fa-bars"></i>
-
         <img class="logomobil" src="Image/logomobil.png"/>
     </div>
+</div>
+
+<div id="menubaggrund">
+    <ul>
+        <li><a href="index.html">FORSIDE</a></li>
+        <li><a href="voresvin.html">VORES VIN</a></li>
+        <li><a href="#">FORHANDLERE</a></li>
+        <li><a href="arrangementer.html">ARRANGEMENTER</a></li>
+        <li><a href="kontaktos.html">KONTAKT OS</a></li>
+    </ul>
+    <i class="fa fas fa-times"></i>
 </div>
 
 <div class="menubar">
@@ -222,7 +231,7 @@
         </div>
 
         <div class="arrangementer">
-            <a class="overskrift_f" href="#"><strong>Arrangementer</strong></a>
+            <a class="overskrift_f" href="arrangementer.html"><strong>Arrangementer</strong></a>
             <ul class="display_web">
                 <li>Vinsmagning</li>
                 <li>Rundvisning</li>
@@ -258,7 +267,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
     $(function() {
-
 //----- Det der åbner boksen op
         $('[data-popup-open]').on('click', function(e)  { //når man trykker på knappen skal den have en funktion
             var targeted_popup_class = jQuery(this).attr('data-popup-open'); //variable af alle popup(attribut)
@@ -275,6 +283,28 @@
             e.preventDefault();
         });
     });
+</script>
+
+<script>
+    $(document).ready(function (e) {
+
+        /* ---------------- mobil menubar ------------------ */
+        $(".fa-bars").click(function (e) {
+            $("#menubaggrund").slideDown(1000);
+            $("#menubaggrund").css({
+                "display": "-webkit-flex",
+                "display": "flex",
+                "justify-content": "center",
+                "height": "100%","z-index": "99"
+            });
+        });
+
+        $(".fa-times").click(function (e) {
+            $("#menubaggrund").slideUp(1000);
+
+        });
+    });
+
 </script>
 
 </body>
