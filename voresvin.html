@@ -93,25 +93,22 @@
     </div>
 </header>
 
-<!-------------------------------------------tekstelement-------------------------------------------->
-
+<!-------------------------------------------tekstelement-top-------------------------------------------->
 
 <section>
     <h1 class="overskrift">VORES VIN</h1>
+
+
+    <h2 class="intro_tekst">Søger du den perfekte rødvin, hvidvin eller rosévin, kan du finde den her.
+        Vores vin bliver produceret i Nordspanien på vindruer som er dyrket
+        i et økologisk landbrug med nøje udvalgte  sorter for at kvalitetssikre alle vores vine.
+        Vi har vinen til enhver smag og lejlighed. </h2>
 
     <div id="knapper">
         <div class="redwineknap"><a href="#rodvin">Rødvin</a></div>
         <div class="whitewineknap"><a href="#hvidvin">Hvidvin</a></div>
         <div class="rosewineknap"><a href="#rosevin">Rosévin</a></div>
     </div>
-
-
-    <p id="club">Dominio de Pontas klub</p>
-    <h2 class="CTA-tekst">Hvis du vil dele din interesse for god vin og mad, og samtidig modtage gode tilbud
-        - så tilbyder vi dig et medlemskab. Vi garanterer nyhedsbreve fyldt med ugentlig updates,
-        hvor du bliver en del af familien.</h2>
-
-    <p class="CTA"><a href="#">Bliv medlem her  > </a></p>
 
 </section>
 
@@ -407,6 +404,61 @@
 
 
 
+<!-------------------------------------------tekstelement-bund-------------------------------------------->
+<section>
+<div id="boks">
+    <p id="club">Dominio de Pontas klub</p>
+    <h2 class="intro_tekst">Hvis du vil dele din interesse for god vin og mad,
+        og samtidig modtage gode tilbud - så tilmeld dig vores vinklub og bliv en del af familien.
+        Vi garanterer nyhedsbreve med information, arrangementer og tilbud.
+    </h2>
+
+    <div class="mobilcta2"><a class="knap" data-popup-open="popup-1" href="#">Bliv medlem her ></a></div>
+</div>
+
+<!--tilmeldningsblanket-->
+<div class="popup" data-popup="popup-1">
+    <!--Selve boksen der kommer frem, hvad der skal stå i den. Styles i css. -->
+    <div class="popup-inner"><br>
+        <h2>UDFYLD TILMELDING</h2><br>
+        <hr><br>
+        <div class="tekst1">Som medlem har du mulighed for bl.a. rabatter, tilbud
+            og konkurrencer. Udfyld nedstående, og oplev disse fordele.Vi glæder os til at byde dig velkommen.</div>
+        <br><br>
+        <div class="titel1">TITEL*</div>
+        <div class="bokskvinde"><a href="#">KVINDE</a></div>
+        <div class="boksmand mand"><a href="#">MAND</a></div>
+        <br><br>
+        <div class="kontaktop">
+
+            <div class="item8">FORNAVN*
+                <div class="fornavn"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">EFTERNAVN*
+                <div class="efternavn"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">FØDSELSDATO*
+                <div class="fødsels"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">E-MAIL*
+                <div class="mail"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">POST NR*
+                <div class="post"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8">MOBILTELEFONNR*
+                <div class="mobilnr"><input class="textInput" type="text" placeholder=""></div></div>
+
+            <div class="item8"><a href="#"><b>SEND</b></a></div></div>
+        <br>
+        <div class="luksiden"><a data-popup-close="popup-1" href="#">Luk siden</a></div> <!--knappen der lukker siden ned -->
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a> <!--krydset oppe i siden der lukker -->
+    </div>
+</div>
+</section>
+
+
+
 <!---------------------------------------------Footer-------------------------------------------->
 <footer class="footer">
     <div class="footertekst">
@@ -442,11 +494,11 @@
         </div>
 
         <div class="arrangementer">
-            <a class="overskrift_f" href="#">Arrangementer</a>
+            <a class="overskrift_f" href="arrangementer.html">Arrangementer</a>
             <ul class="display_web">
-                <li><a href="#">Vinsmagning</a></li>
-                <li><a href="#">Rundvisning</a></li>
-                <li><a href="#">Messer 2018</a></li>
+                <li><a href="arrangementer.html">Vinsmagning</a></li>
+                <li><a href="arrangementer.html">Rundvisning</a></li>
+                <li><a href="arrangementer.html">Messer 2018</a></li>
             </ul>
         </div>
     </div>
@@ -606,6 +658,23 @@
                 active.removeClass("active");
                 active.next("div").addClass("active");
             }
+        });
+
+        /*--------------- Tilmelding af klub -------------*/
+        /*----- Det der åbner boksen op -------*/
+        $('[data-popup-open]').on('click', function(e)  { //når man trykker på knappen skal den have en funktion
+            var targeted_popup_class = jQuery(this).attr('data-popup-open'); //variable af alle popup(attribut)
+            $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+            //når der klikkes på knappen, fader boksen ind i en hastighed 350. Her finder den popup med data
+            //popup værdien af popup-1, og skal fade ind 350 milisec.
+            e.preventDefault(); //skal tilføjes, hvis det skulle være at linket ikke virker.
+        });
+
+        /*----- Den funktion der lukker siden ------*/
+        $('[data-popup-close]').on('click', function(e)  { //når der klikkes på luk siden knappen, skal der ske noget
+            var targeted_popup_class = jQuery(this).attr('data-popup-close'); //finde værdien for luk knappen.
+            $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350); //fader ud istedet for ind.
+            e.preventDefault();
         });
 
     });

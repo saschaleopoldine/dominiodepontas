@@ -124,6 +124,7 @@ $green: #878532;
 
 #menubaggrund{
   width: 100%;
+  height: 100vh;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
   padding-top: 225px;
@@ -190,10 +191,9 @@ $green: #878532;
 #events_muligheder{
   display: -webkit-flex;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   font-family: "Shree Devanagari 714", Serif;
   font-size: 16pt;
-  padding-left: 30px;
   a{
     text-decoration: none;
     color: $brown;
@@ -205,8 +205,11 @@ $green: #878532;
 }
 
 .arrangementer_1{
-  width: 40%;
-  margin: 0 auto 100px auto;
+  width: 300px;
+  background-color: $lightbeige;
+  padding: 15px 0 15px 15px;
+  margin-bottom: 80px;
+  @include bordergold
 }
 
 
@@ -392,7 +395,7 @@ $green: #878532;
   }
 
   .arrangementer_1{
-    padding-left: 100px;
+    width: 400px;
     font-size: 18pt;
   }
 
