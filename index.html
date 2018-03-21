@@ -81,15 +81,16 @@ Dominio de Pontas til ét af de fornemste vin. ">
 
 <!-- -------------------------WEB/MOBIL TEKST/CTA MEDLEMKNAP ------------------------------------ -->
 <section>
-<p class="mobilcta">Som medlem modtager du tilbud og rabatter,<br>
-    og så har du mulighed for at være med i konkurrencen <br>
-    om en rejse for 2 til vores vingård, som ligger <br> i Navarra
+<p class="mobilcta">
+    Som medlem modtager du tilbud og rabatter, og så har du
+    mulighed for at være med i konkurrencen om en rejse for 2 til vores vingård, som ligger i Navarra
     i det nordlige Spanien.
 </p>
 
-<div class="mobilcta2"><a class="knap" data-popup-open="popup-1" href="#">Bliv medlem her ></a></div>
-<!-- datapopup er en funktion der gør at når man trypper på knappen, dukker et boks frem -->
-<div class="popup" data-popup="popup-1">
+<div class="mobilcta2"><a class="knap" href="#">Bliv medlem her ></a></div>
+<!--  funktion der gør at når man trypper på knappen, dukker et boks frem -->
+    <!--tilmeldings blanket -->
+<div class="popup">
     <!--Selve boksen der kommer frem, hvad der skal stå i den. Styles i css. -->
     <div class="popup-inner"><br>
         <h2>UDFYLD TILMELDING</h2><br>
@@ -123,8 +124,8 @@ Dominio de Pontas til ét af de fornemste vin. ">
 
             <div class="item8"><a href="#"><b>SEND</b></a></div></div>
         <br>
-        <div class="luksiden"><a data-popup-close="popup-1" href="#">Luk siden</a></div> <!--knappen der lukker siden ned -->
-        <a class="popup-close" data-popup-close="popup-1" href="#">x</a> <!--krydset oppe i siden der lukker -->
+        <div class="luksiden"><a class="closebutton2" href="#">Luk siden</a></div> <!--knappen der lukker siden ned -->
+        <a class="closebutton" href="#">x</a> <!--krydset oppe i siden der lukker -->
     </div>
 </div>
 </section>
@@ -279,21 +280,17 @@ Dominio de Pontas til ét af de fornemste vin. ">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
-    $(function() {
-//----- Det der åbner boksen op
-        $('[data-popup-open]').on('click', function(e)  { //når man trykker på knappen skal den have en funktion
-            var targeted_popup_class = jQuery(this).attr('data-popup-open'); //variable af alle popup(attribut)
-            $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-            //når der klikkes på knappen, fader boksen ind i en hastighed 350. Her finder den popup med data
-            //popup værdien af popup-1, og skal fade ind 350 milisec.
-            e.preventDefault(); //skal tilføjes, hvis det skulle være at linket ikke virker.
+    $(document).ready(function (e) {
+        /*----- Det der åbner boksen op -------*/
+        $(".mobilcta2").on('click', function(e)  {
+            $(".popup").fadeIn(350);
         });
-
-        //----- Den funktion der lukker siden
-        $('[data-popup-close]').on('click', function(e)  { //når der klikkes på luk siden knappen, skal der ske noget
-            var targeted_popup_class = jQuery(this).attr('data-popup-close'); //finde værdien for luk knappen.
-            $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350); //fader ud istedet for ind.
-            e.preventDefault();
+        /*----- Den funktion der lukker siden ------*/
+        $(".closebutton").on('click', function(e)  {
+            $(".popup").fadeOut(350);
+        });
+        $(".closebutton2").on('click', function(e)  {
+            $(".popup").fadeOut(350);
         });
     });
 </script>

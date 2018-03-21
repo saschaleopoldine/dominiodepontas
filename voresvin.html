@@ -652,20 +652,17 @@ Denne produktion er gået i arv for at vedligeholde den velsmagende saft af drue
         });
 
         /*--------------- Tilmelding af klub -------------*/
+
         /*----- Det der åbner boksen op -------*/
-        $(".mobilcta2").on('click', function(e)  { //når man trykker på knappen skal den have en funktion
+        $(".mobilcta2").on('click', function(e)  {
             $(".popup").fadeIn(350);
-            //når der klikkes på knappen, fader boksen ind i en hastighed 350. Her finder den popup med data
-            //popup værdien af popup-1, og skal fade ind 350 milisec.
         });
-
         /*----- Den funktion der lukker siden ------*/
-        $(".closebutton").on('click', function(e)  { //når der klikkes på luk siden knappen, skal der ske noget
-            $(".popup").fadeOut(350); //fader ud istedet for ind.
+        $(".closebutton").on('click', function(e)  {
+            $(".popup").fadeOut(350);
         });
-
-        $(".closebutton2").on('click', function(e)  { //når der klikkes på luk siden knappen, skal der ske noget
-            $(".popup").fadeOut(350); //fader ud istedet for ind.
+        $(".closebutton2").on('click', function(e)  {
+            $(".popup").fadeOut(350);
         });
     });
 
