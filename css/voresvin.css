@@ -318,7 +318,10 @@ img {
   .knappen a:visited {
     color: #878532; }
   .knappen a:hover {
-    color: gold; }
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 h2 {
   font-size: larger;

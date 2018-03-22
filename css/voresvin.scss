@@ -429,7 +429,7 @@ $green: #878532;
     color: #878532;
   }
   a:hover {
-    color: gold;
+    @include gold;
   }
 }
 
