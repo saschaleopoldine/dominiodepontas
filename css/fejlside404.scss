@@ -124,16 +124,86 @@ img {
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
-}
+  #animation{
+    width: 60%;
+    margin: 0 80px 0 auto;
+    transform: rotate(350deg);
+  }
 
-@media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
+  #fejl{
+    margin: -140px 450px 70px auto;
+  }
+
+  .content, #sorry{
+    margin-left: 80px;
+  }
+
+  #sorry{
+    margin-top: -30px;
+  }
+
+  #break{
+    width: 50%;
+  }
+
+  #help_write{
+  margin-left: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-}
+  #animation{
+    width: 40%;
+    margin: 0 80px 0 auto;
+    transform: rotate(350deg);
+  }
 
-@media print {
-  // Alt der gælder for print specifikt
+  #fejl{
+    margin: -140px 500px 70px auto;
+    font-size: 50pt;
+  }
+
+  .content, #sorry{
+    margin-left: 80px;
+  }
+
+  #sorry{
+    margin-top: -30px;
+    font-size: 25pt;
+  }
+
+  .content{
+    font-size: 16pt;
+  }
+
+  #break{
+    width: 30%;
+  }
+
+  #boks{
+    padding: 20px 0;
+    height: 120px;
+  }
+
+  #help{
+    font-size: 18pt;
+    width: 200px;
+  }
+
+  #help_write{
+    margin-left: 60px;
+    height: 40px;
+    font-size: 15pt;
+  }
+
+  .mobilknap{
+    height: 40px;
+    width: 150px;
+    font-size: 15pt;
+    padding: 0 5px;
+  }
+
+
+
 }
