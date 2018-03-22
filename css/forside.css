@@ -39,8 +39,8 @@ body {
   width: 45%; }
 
 #menubaggrund {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
   padding-top: 225px;
@@ -299,20 +299,20 @@ hr {
 
 .billedforan {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  grid-gap: 70px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
   justify-content: space-between;
   font-family: Bagatela, serif;
   font-size: larger;
   position: absolute;
   z-index: 1;
-  margin-top: -860px;
+  margin-top: -800px;
   padding-left: 40px; }
 
 .boks1 {
   grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 1 / span 1;
   border-left: 2px solid #e4c982;
   border-right: 2px solid #9d7f3f;
   border-radius: 5px;
@@ -331,12 +331,12 @@ hr {
 
 .tekst11, .tekst2, .tekst3 {
   font-family: "Shree Devanagari 714", serif;
-  font-size: large;
+  font-size: 10pt;
   color: #4b2d1b; }
 
 .boks2 {
   grid-column: 1 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
   border-left: 2px solid #e4c982;
   border-right: 2px solid #9d7f3f;
   border-radius: 5px;
@@ -351,11 +351,12 @@ hr {
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   height: 172px;
   width: 290px;
+  margin-top: -35px;
   background-color: #fff5ed; }
 
 .boks3 {
   grid-column: 1 / span 1;
-  grid-row: 7 / span 1;
+  grid-row: 5 / span 1;
   border-left: 2px solid #e4c982;
   border-right: 2px solid #9d7f3f;
   border-radius: 5px;
@@ -370,7 +371,8 @@ hr {
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   height: 172px;
   width: 290px;
-  background-color: #fff5ed; }
+  background-color: #fff5ed;
+  margin-top: -70px; }
 
 .item3:nth-of-type(1) {
   grid-column: 1 / span 1;
@@ -454,9 +456,8 @@ hr {
   -webkit-text-fill-color: transparent; }
 
 .streg2 {
-  width: 375px;
-  margin-top: 150px;
-  padding-left: 20px; }
+  width: 300px;
+  margin: 150px auto 100px auto; }
 
 .rodvine, .hvidvine, .rosevine {
   width: 370px;
@@ -474,7 +475,7 @@ hr {
   background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
-  margin: 200px auto 200px auto;
+  margin: 150px auto 200px auto;
   position: relative;
   z-index: 0;
   text-align: center;
@@ -497,7 +498,7 @@ hr {
   margin-top: 50px; }
 
 .ffh, .CTA {
-  width: 320px;
+  width: 290px;
   margin-top: 70px;
   margin-left: -10px; }
   .ffh a, .CTA a {
@@ -524,10 +525,8 @@ hr {
   color: #4b2d1b; }
 
 .streg1 {
-  width: 375px;
-  margin-top: 90px;
-  margin-bottom: 90px;
-  padding-left: 20px; }
+  width: 300px;
+  margin: 150px auto 100px auto; }
 
 .besøgos {
   display: grid;
@@ -554,7 +553,7 @@ hr {
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
-  margin-top: 70px;
+  margin-top: 50px;
   font-size: xx-large;
   font-family: Bagatela, serif;
   text-align: center; }
@@ -566,7 +565,7 @@ hr {
   -webkit-text-fill-color: transparent; }
 
 .undertekst1 {
-  font-size: x-large;
+  font-size: large;
   font-family: "Shree Devanagari 714", serif;
   line-height: 30px;
   color: #4b2d1b; }
@@ -682,10 +681,10 @@ hr {
   height: 40px;
   width: 220px;
   padding-left: 10px;
-  margin-left: 20px; }
+  margin-left: 2px; }
 
 .undertekst2 {
-  font-size: x-large;
+  font-size: large;
   font-family: "Shree Devanagari 714", serif;
   line-height: 30px;
   color: #4b2d1b; }
@@ -709,6 +708,7 @@ hr {
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
+  margin-top: -50px;
   font-size: xx-large;
   font-family: Bagatela, serif;
   text-align: center; }
@@ -720,7 +720,7 @@ hr {
   -webkit-text-fill-color: transparent; }
 
 .undertekst3 {
-  font-size: x-large;
+  font-size: large;
   font-family: "Shree Devanagari 714", serif;
   line-height: 30px;
   color: #4b2d1b; }
@@ -750,15 +750,14 @@ hr {
 .footer {
   background-color: #4b2d1b;
   padding: 5px 15px 15px 15px;
-  margin-top: 20px;
-  width: 375px; }
+  margin-top: -50px; }
 
 .display_web {
   display: none; }
 
 .footertekst, .aabningstider, .voresvine, .arrangementer {
   text-align: center;
-  font-size: 20pt;
+  font-size: 14pt;
   margin-top: 30px; }
 
 .overskrift_f {
@@ -768,23 +767,24 @@ hr {
   -webkit-text-fill-color: transparent; }
 
 .stregWEB {
-  margin-top: 100px;
+  margin: 60px auto 0 auto;
   z-index: 2;
-  width: 100%; }
+  width: 350px; }
 
 .socialemedier {
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   z-index: 3;
-  margin-top: -35px; }
+  margin-top: -30px; }
 
 .fa-instagram, .fa-facebook-square, .fa-youtube {
   background-color: #4b2d1b;
   width: 60px;
   text-align: center;
   color: #f4eade;
-  margin-bottom: 20px; }
+  margin-bottom: 15px;
+  font-size: 50px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -1078,10 +1078,9 @@ img {
     grid-template-rows: repeat(3, 1fr);
     justify-content: space-between;
     grid-gap: 100px;
-    padding-left: 150px;
-    padding-top: 40px;
     position: relative;
-    z-index: 0; }
+    z-index: 0;
+    margin-left: 210px; }
 
   .item2:nth-of-type(1) {
     grid-column: 1 / span 1;
@@ -1098,19 +1097,19 @@ img {
   .billedforan {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-gap: 70px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
     justify-content: space-between;
     font-family: Bagatela, serif;
     font-size: larger;
     position: absolute;
     z-index: 1;
-    margin-top: -860px;
-    padding-left: 210px; }
+    margin-top: -800px;
+    padding-left: 40px; }
 
   .boks1 {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
     border-left: 2px solid #e4c982;
     border-right: 2px solid #9d7f3f;
     border-radius: 5px;
@@ -1129,12 +1128,12 @@ img {
 
   .tekst11, .tekst2, .tekst3 {
     font-family: "Shree Devanagari 714", serif;
-    font-size: large;
+    font-size: 10pt;
     color: #4b2d1b; }
 
   .boks2 {
-    grid-column: 1 / span 1;
-    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
     border-left: 2px solid #e4c982;
     border-right: 2px solid #9d7f3f;
     border-radius: 5px;
@@ -1149,11 +1148,12 @@ img {
     background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 172px;
     width: 290px;
+    margin-top: -35px;
     background-color: #fff5ed; }
 
   .boks3 {
-    grid-column: 1 / span 1;
-    grid-row: 7 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1;
     border-left: 2px solid #e4c982;
     border-right: 2px solid #9d7f3f;
     border-radius: 5px;
@@ -1168,10 +1168,11 @@ img {
     background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 172px;
     width: 290px;
-    background-color: #fff5ed; }
+    background-color: #fff5ed;
+    margin-top: -70px; }
 
   .item3:nth-of-type(1) {
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     border-left: 2px solid #e4c982;
     border-right: 2px solid #9d7f3f;
@@ -1198,7 +1199,7 @@ img {
     -webkit-text-fill-color: transparent; }
 
   .item3:nth-of-type(2) {
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     grid-row: 2 / span 1;
     border-left: 2px solid #e4c982;
     border-right: 2px solid #9d7f3f;
@@ -1225,7 +1226,7 @@ img {
     -webkit-text-fill-color: transparent; }
 
   .item3:nth-of-type(3) {
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     grid-row: 3 / span 1;
     border-left: 2px solid #e4c982;
     border-right: 2px solid #9d7f3f;
@@ -1253,8 +1254,7 @@ img {
 
   .streg2 {
     width: 500px;
-    margin-top: 160px;
-    padding-left: 150px; }
+    margin: 150px auto 100px auto; }
 
   .rodvine, .hvidvine, .rosevine {
     width: 620px;
@@ -1272,7 +1272,7 @@ img {
     background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
     background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
     background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
-    margin: 200px auto 200px auto;
+    margin: 100px auto 200px auto;
     position: relative;
     z-index: 0;
     text-align: center;
@@ -1295,7 +1295,7 @@ img {
     margin-top: 50px; }
 
   .ffh {
-    margin-left: 190px;
+    margin-left: 130px;
     margin-top: 70px;
     font-size: 20pt; }
     .ffh a {
@@ -1321,9 +1321,7 @@ img {
 
   .streg1 {
     width: 500px;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    padding-left: 200px; }
+    margin: 150px auto 100px auto; }
 
   .besøgos {
     display: grid;
@@ -1544,46 +1542,7 @@ img {
     font-family: Bagatela, serif;
     padding-top: 7px;
     margin-top: 8px;
-    font-size: 20pt; }
-
-  .footer {
-    background-color: #4b2d1b;
-    padding: 5px 15px 15px 15px;
-    margin-top: 20px;
-    width: 768px; }
-
-  .display_web {
-    display: none; }
-
-  .footertekst, .aabningstider, .voresvine, .arrangementer {
-    text-align: center;
-    font-size: 20pt;
-    margin-top: 30px; }
-
-  .overskrift_f {
-    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
-    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-
-  .stregWEB {
-    margin-top: 100px;
-    z-index: 2;
-    width: 100%; }
-
-  .socialemedier {
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-around;
-    z-index: 3;
-    margin-top: -35px; }
-
-  .fa-instagram, .fa-facebook-square, .fa-youtube {
-    background-color: #4b2d1b;
-    width: 60px;
-    text-align: center;
-    color: #f4eade;
-    margin-bottom: 20px; } }
+    font-size: 20pt; } }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .baggrundsbillede, .vinelementer, .vintekst {
     display: none; }
@@ -1851,9 +1810,10 @@ img {
     margin-left: -100px; }
 
   .mobilcta {
-    margin-top: -570px;
     position: absolute;
     z-index: 4;
+    padding-top: 0;
+    width: 500px;
     font-weight: bolder;
     text-align: left;
     font-family: "Shree Devanagari 714", serif;
@@ -1862,10 +1822,12 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: larger;
-    line-height: 29px; }
+    line-height: 29px;
+    margin-top: -480px;
+    margin-left: 30px; }
 
   .mobilcta2 {
-    margin-top: -380px;
+    margin-top: -560px;
     position: absolute;
     z-index: 4;
     font-size: 20pt;
@@ -1890,7 +1852,7 @@ img {
     grid-template-rows: repeat(1, 1fr);
     position: relative;
     z-index: 0;
-    margin-right: 90px;
+    margin-left: 20px;
     margin-top: 70px; }
 
   .item2:nth-of-type(1) {
@@ -1915,9 +1877,9 @@ img {
     font-size: larger;
     position: absolute;
     z-index: 1;
-    padding-left: 6%;
     margin-top: -130px;
-    color: gold; }
+    color: gold;
+    line-height: 20px; }
 
   .boks1 {
     grid-column: 1 / span 1;
@@ -1936,12 +1898,11 @@ img {
     background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 172px;
     width: 290px;
-    background-color: #fff5ed;
-    margin-left: 40px; }
+    background-color: #fff5ed; }
 
   .tekst11, .tekst2, .tekst3 {
     font-family: "Shree Devanagari 714", serif;
-    font-size: large;
+    font-size: medium;
     color: #4b2d1b; }
 
   .boks2 {
@@ -1961,8 +1922,8 @@ img {
     background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 172px;
     width: 290px;
-    background-color: #fff5ed;
-    margin-left: -10px; }
+    margin-top: 0;
+    background-color: #fff5ed; }
 
   .boks3 {
     grid-column: 3 / span 1;
@@ -1981,8 +1942,8 @@ img {
     background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
     height: 172px;
     width: 290px;
-    background-color: #fff5ed;
-    margin-left: -5px; }
+    margin: 0 0 0 -20px;
+    background-color: #fff5ed; }
 
   .item3:nth-of-type(1) {
     grid-column: 1 / span 1;
@@ -2002,7 +1963,6 @@ img {
     height: 148px;
     width: 264px;
     padding: 10px;
-    margin: 10px auto auto auto;
     text-align: center; }
 
   .item3:nth-of-type(2) {
@@ -2023,7 +1983,6 @@ img {
     height: 148px;
     width: 264px;
     padding: 10px;
-    margin: 10px auto auto auto;
     text-align: center; }
 
   .item3:nth-of-type(3) {
@@ -2044,13 +2003,12 @@ img {
     height: 148px;
     width: 264px;
     padding: 10px;
-    margin: 10px auto auto auto;
     text-align: center; }
 
   .streg2 {
     margin-bottom: 45px;
     margin-top: 152px;
-    margin-left: 450px; }
+    margin-left: 400px; }
 
   .flex {
     display: -webkit-flex;
@@ -2094,7 +2052,7 @@ img {
 
   .ffh {
     width: 350px;
-    margin-left: -30px;
+    margin-left: 5px;
     margin-top: 50px; }
 
   .w {
@@ -2125,11 +2083,13 @@ img {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
+  .streg1 {
+    margin: 0 auto 0 auto; }
+
   .besøgos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 2px; }
+    grid-template-rows: repeat(1, 1fr); }
 
   .item6:nth-of-type(1) {
     grid-column: 1 / span 1;
@@ -2151,7 +2111,6 @@ img {
     background-color: #fff5ed;
     padding-top: 40px;
     margin-top: -1px;
-    margin-left: 50px;
     font-size: xx-large;
     font-family: Bagatela, serif;
     text-align: center; }
@@ -2163,9 +2122,9 @@ img {
     -webkit-text-fill-color: transparent; }
 
   .undertekst1 {
-    font-size: x-large;
+    font-size: large;
     font-family: "Shree Devanagari 714", serif;
-    line-height: 30px;
+    line-height: 25px;
     color: #4b2d1b; }
 
   .boks01 {
@@ -2211,7 +2170,8 @@ img {
     font-size: xx-large;
     font-family: Bagatela, serif;
     text-align: center;
-    color: gold; }
+    color: gold;
+    margin-right: 80px; }
 
   .nyhed {
     background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
@@ -2239,6 +2199,9 @@ img {
     width: 220px;
     padding-left: 10px; }
 
+  .fs {
+    margin-top: 45px; }
+
   .boks02b {
     border-left: 2px solid #e4c982;
     border-right: 2px solid #9d7f3f;
@@ -2262,9 +2225,9 @@ img {
     margin-top: 8px; }
 
   .undertekst2 {
-    font-size: x-large;
+    font-size: large;
     font-family: "Shree Devanagari 714", serif;
-    line-height: 30px;
+    line-height: 25px;
     color: #4b2d1b; }
 
   .item6:nth-of-type(3) {
@@ -2289,7 +2252,9 @@ img {
     font-size: xx-large;
     font-family: Bagatela, serif;
     text-align: center;
-    color: gold; }
+    color: gold;
+    margin-top: 0;
+    margin-left: -60px; }
 
   .forhandler {
     background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
@@ -2298,9 +2263,9 @@ img {
     -webkit-text-fill-color: transparent; }
 
   .undertekst3 {
-    font-size: x-large;
+    font-size: large;
     font-family: "Shree Devanagari 714", serif;
-    line-height: 30px;
+    line-height: 25px;
     color: #4b2d1b;
     padding-bottom: 25px; }
 
@@ -2332,28 +2297,34 @@ img {
     margin-left: 450px; }
 
   .display_web {
-    display: inline;
+    display: block;
     color: #f4eade;
+    text-align: start;
+    font-size: 18pt;
     font-family: "Shree Devanagari 714", serif;
     font-weight: lighter;
-    font-size: 16pt; }
+    line-height: 40pt; }
     .display_web a {
-      color: #f4eade; }
+      color: #f4eade;
+      text-decoration: none; }
+    .display_web a:hover {
+      background: -webkit-linear-gradient(#878532, #878532, #878532, #878532);
+      background: linear-gradient(#878532, #878532, #878532, #878532);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .display_web li {
+      list-style-type: none; }
 
   .footer {
     padding: 50px;
     margin-top: 70px; }
 
-  ul {
-    list-style-type: none; }
-
   .kontaktos2, .aabningstider, .voresvine, .arrangementer {
-    text-align: start;
     margin-top: -5px;
-    line-height: 40pt; }
+    text-align: start; }
 
   #linie {
-    line-height: 25pt;
+    line-height: 30pt;
     margin-top: 10px; }
 
   .footertekst {
@@ -2362,6 +2333,17 @@ img {
     justify-content: center;
     justify-content: space-between;
     margin-top: 0; }
+
+  .overskrift_f {
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 30px; }
+
+  .fa-instagram, .fa-facebook-square, .fa-youtube {
+    font-size: 50pt; }
+
+  .socialemedier {
+    margin-top: -40px; }
 
   .stregWEB {
     width: 90%;
