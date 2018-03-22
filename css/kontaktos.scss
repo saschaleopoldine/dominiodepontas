@@ -125,7 +125,7 @@ A:active{
   padding-top: 225px;
   padding-bottom: 60%;
   z-index: 5;
-  position: absolute;
+  position: fixed;
 }
 
 .fa-times{
@@ -375,27 +375,30 @@ A:active{
 footer{
   background-color: $brown;
   width: 100%;
-  height: 330px;
+  height: 340px;
+  padding: 5px 15px 15px 15px;
 }
 
 .footertekst{
   width: 100%;
-  height: 262px;
+  height: 200px;
   color: $darkbeige;
   text-align: center;
   padding: 35px;
-  font-size: 25px;
+  font-size: 14pt;
   text-decoration: none;
 }
 
 
 .socialemedier{
   display: flex;
+  height: 20px;
   background-color: $brown;
   color: $lightbeige;
   display: flex;
   justify-content: space-around;
   z-index: 3;
+  font-size: 11px;
   margin-top: -35px;
   a{
     text-decoration:none;
@@ -406,7 +409,8 @@ footer{
 
   .fa-instagram, .fa-facebook-square, .fa-youtube{
     background-color: $brown;
-    width: 60px;
+    width: 50px;
+    margin-top: 10px;
     text-align: center;
     color: $darkbeige;
   }
@@ -811,6 +815,8 @@ footer{
     }
   }
   .socialemedier{
+    font-size: 12px;
+
     a:hover{
       color: $green;
     }

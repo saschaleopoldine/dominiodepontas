@@ -80,7 +80,7 @@ A:active {
   padding-top: 225px;
   padding-bottom: 60%;
   z-index: 5;
-  position: absolute; }
+  position: fixed; }
 
 .fa-times {
   background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
@@ -352,24 +352,27 @@ A:active {
 footer {
   background-color: #4b2d1b;
   width: 100%;
-  height: 330px; }
+  height: 340px;
+  padding: 5px 15px 15px 15px; }
 
 .footertekst {
   width: 100%;
-  height: 262px;
+  height: 200px;
   color: #f4eade;
   text-align: center;
   padding: 35px;
-  font-size: 25px;
+  font-size: 14pt;
   text-decoration: none; }
 
 .socialemedier {
   display: flex;
+  height: 20px;
   background-color: #4b2d1b;
   color: #fff5ed;
   display: flex;
   justify-content: space-around;
   z-index: 3;
+  font-size: 11px;
   margin-top: -35px; }
   .socialemedier a {
     text-decoration: none; }
@@ -377,7 +380,8 @@ footer {
     color: #878532; }
   .socialemedier .fa-instagram, .socialemedier .fa-facebook-square, .socialemedier .fa-youtube {
     background-color: #4b2d1b;
-    width: 60px;
+    width: 50px;
+    margin-top: 10px;
     text-align: center;
     color: #f4eade; }
 
@@ -718,8 +722,10 @@ footer {
     .arrangementerne a:hover {
       color: #878532; }
 
-  .socialemedier a:hover {
-    color: #878532; }
+  .socialemedier {
+    font-size: 12px; }
+    .socialemedier a:hover {
+      color: #878532; }
 
   .stregWEB {
     margin-top: 99px;

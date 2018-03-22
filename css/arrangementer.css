@@ -33,16 +33,16 @@ img {
   display: none; }
 
 .baggrundsbillede {
-  width: 100%;
-  height: 450px;
+  width: 100vw;
+  height: 200px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px;
   position: absolute; }
 
 .header {
-  width: 100%;
-  height: 450px;
+  width: 100vw;
+  height: 200px;
   background-color: rgba(75, 45, 27, 0.7); }
 
 .fa-bars {
@@ -50,38 +50,39 @@ img {
   background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 40pt;
+  font-size: 20pt;
   margin-left: 85%;
-  margin-top: 40px; }
+  margin-top: 20px; }
 
 .logomobil {
-  margin: -30px auto 40px auto;
-  padding-bottom: 40px; }
+  margin: -20px auto 40px auto;
+  padding-bottom: 40px;
+  width: 45%; }
 
 #menubaggrund {
   width: 100%;
   height: 100vh;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
-  padding-top: 225px;
+  padding-top: 150px;
   padding-bottom: 60%;
-  z-index: 5;
-  position: absolute; }
+  z-index: 99;
+  position: fixed; }
 
 .fa-times {
   background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
   background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 40pt;
+  font-size: 20pt;
   z-index: 3;
   position: absolute;
   margin-left: 38%;
-  margin-top: -190px; }
+  margin-top: -130px; }
 
 #menubaggrund li {
   padding-bottom: 30px;
-  font-size: 25pt;
+  font-size: 20pt;
   text-align: center;
   list-style: none; }
   #menubaggrund li a {
@@ -95,17 +96,17 @@ img {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  font-size: 45pt;
+  font-size: 30pt;
   font-weight: 600;
-  padding-top: 40px; }
+  padding-top: 50px; }
 
 .content {
   font-family: "Shree Devanagari 714", serif;
-  font-size: 18pt;
+  font-size: 12pt;
   text-align: center;
   font-weight: 400;
-  width: 80%;
-  margin: 25px auto 100px auto; }
+  width: 85%;
+  margin: 25px auto 50px auto; }
   .content a {
     text-decoration: none;
     color: #4b2d1b; }
@@ -116,15 +117,12 @@ img {
   color: #878532 !important; }
 
 .break {
-  width: 453px;
-  margin: 70px auto 100px auto; }
+  width: 300px;
+  margin: 0 auto 30px auto; }
 
 #events_muligheder {
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-around;
   font-family: "Shree Devanagari 714", Serif;
-  font-size: 16pt; }
+  font-size: 12pt; }
   #events_muligheder a {
     text-decoration: none;
     color: #4b2d1b; }
@@ -136,7 +134,7 @@ img {
   width: 300px;
   background-color: #fff5ed;
   padding: 15px 0 15px 15px;
-  margin-bottom: 80px;
+  margin: 0 auto 80px auto;
   border-left: 2px solid #e4c982;
   border-right: 2px solid #9d7f3f;
   border-radius: 5px;
@@ -187,6 +185,42 @@ img {
   color: #f4eade;
   margin-bottom: 20px; }
 
+@media screen and (min-width: 768px) {
+  .baggrundsbillede, .header {
+    height: 400px; }
+
+  .logomobil {
+    margin-top: -10px; }
+
+  .fa-bars {
+    font-size: 30pt;
+    margin-top: 40px; }
+
+  .overskrift {
+    padding-top: 50px;
+    font-size: 40pt; }
+
+  .intro_tekst {
+    font-size: 14pt; }
+
+  .redwineknap, .whitewineknap, .rosewineknap {
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 20pt;
+    margin-top: 5px; }
+
+  #events_muligheder {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16pt; } }
+@media screen and (min-width: 768px) {
+  .break {
+    margin-bottom: 50px; }
+
+  .content {
+    font-size: 14pt; } }
 @media screen and (min-width: 1200px) {
   #menubaggrund {
     display: none; }
@@ -289,11 +323,19 @@ img {
     display: none; }
 
   .overskrift {
-    padding-top: 100px;
+    padding-top: 150px;
     margin-bottom: 60px; }
 
   .content {
-    text-align: justify; }
+    text-align: center;
+    width: 900px;
+    font-size: 18pt; }
+
+  #events_muligheder {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16pt; }
 
   .arrangementer_1 {
     width: 400px;

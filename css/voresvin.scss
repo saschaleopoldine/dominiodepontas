@@ -330,7 +330,7 @@ $green: #878532;
 }
 
 .active{
-  z-index: 99;
+  z-index: 75;
 }
 
 .prev, .next{
@@ -362,7 +362,7 @@ $green: #878532;
 }
 
 .active{
-  z-index: 99;
+  z-index: 75;
 }
 
 .prev_to, .next_to{
@@ -397,7 +397,7 @@ $green: #878532;
 }
 
 .active{
-  z-index: 99;
+  z-index: 75;
 }
 
 .prev_tre, .next_tre{
@@ -859,8 +859,6 @@ hr {
   @include flex;
   justify-content: space-around;
 }
-
-
 
 
 
