@@ -136,7 +136,9 @@ A:active {
   padding: 10px;
   font-size: 10px;
   margin-left: 10%;
-  font-size: 11px; }
+  margin-top: 20px;
+  text-align: center;
+  font-size: 8pt; }
   .box1 .nummer2 {
     display: none; }
 
@@ -161,7 +163,8 @@ A:active {
   padding: 10px;
   font-size: 10px;
   margin-left: 10%;
-  font-size: 9.5px; }
+  font-size: 6pt;
+  text-align: center; }
   .box2 .email2 {
     display: none; }
 
@@ -186,14 +189,15 @@ A:active {
   padding: 10px;
   font-size: 10px;
   margin-left: 10%;
-  font-size: 8px; }
+  font-size: 6pt;
+  text-align: center; }
   .box3 .skrivformular {
     display: none; }
 
 .streg1 {
   display: block;
-  margin-right: 4%;
-  margin-left: 4%; }
+  width: 300px;
+  margin: 0 auto 0 auto; }
 
 .streg2 {
   display: none; }
@@ -215,9 +219,8 @@ A:active {
 .skrivtilosmobil {
   text-align: center;
   font-size: 25px;
-  width: 350px;
-  display: -webkit-flex;
-  justify-content: center; }
+  width: 300px;
+  margin: 0 auto 0 auto; }
 
 .mobilknap {
   width: 100px;
@@ -230,7 +233,7 @@ A:active {
 
 .kontaktos {
   text-align: center;
-  font-size: 40px;
+  font-size: 35pt;
   color: #4b2d1b;
   margin-top: 190px; }
 
@@ -313,6 +316,14 @@ A:active {
 
 .mereinfo {
   font-family: "Shree Devanagari 714", Serif; }
+  .mereinfo a {
+    color: #878532;
+    text-decoration: none; }
+  .mereinfo a:hover {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .medier {
   text-align: center;
@@ -409,8 +420,28 @@ footer {
     font-size: 30pt;
     margin-top: 40px; }
 
+  .kontakttekst {
+    width: 80%;
+    margin: 0 auto 0 auto; }
+
+  .box1, .box2, .box3 {
+    height: 60px;
+    width: 400px;
+    margin: 5px auto; }
+
+  .box1 {
+    margin-top: 40px; }
+
+  .box3 {
+    margin-bottom: 40px; }
+
   .kontaktos {
-    margin-top: 400px; } }
+    margin-top: 400px; }
+
+  .mereinfo {
+    font-size: 16pt;
+    width: 80%;
+    margin: 0 auto 0 auto; } }
 @media screen and (min-width: 992px) {
   .streg1 {
     display: block;
@@ -420,6 +451,9 @@ footer {
   .streg2 {
     display: none; } }
 @media screen and (min-width: 1200px) {
+  .skrivtilosmobil {
+    display: none; }
+
   .menubar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -514,18 +548,20 @@ footer {
 
   .kontaktos {
     margin-top: 25px;
-    font-size: 60pt;
+    font-size: 50pt;
     font-weight: 600; }
 
+  .streg1 img {
+    margin-left: 40px; }
+
   .kontakttekst {
-    font-size: 30px;
-    margin-left: 5%;
-    margin-right: 5%;
+    font-size: 16pt;
+    margin: 0 auto;
     padding: 5%; }
 
   .kontaktmuligheder {
     display: flex;
-    margin-right: 7%;
+    margin: 0 auto;
     font-size: 30px; }
     .kontaktmuligheder a {
       text-decoration: none;
@@ -535,7 +571,9 @@ footer {
     height: 200px;
     width: 25%;
     text-align: center;
-    padding: 10px; }
+    padding: 10px;
+    margin-top: 0;
+    padding-top: 20px; }
     .box1 .fa-phone {
       font-size: 40px; }
     .box1 .nummer1 {
@@ -550,7 +588,9 @@ footer {
     height: 200px;
     width: 25%;
     text-align: center;
-    padding: 10px; }
+    padding: 10px;
+    margin-top: 0;
+    padding-top: 20px; }
     .box2 .fa-envelope {
       font-size: 40px; }
     .box2 .email1 {
@@ -566,7 +606,9 @@ footer {
     width: 25%;
     text-align: center;
     padding: 10px;
+    margin-top: 0;
     padding: 15px;
+    padding-top: 20px;
     font-size: 10px; }
     .box3 .span3 {
       display: none; }
@@ -594,7 +636,7 @@ footer {
   .googlemaps {
     width: 50%;
     margin: 10px;
-    font-size: 30px; }
+    font-size: 20pt; }
 
   #lname2 {
     border-radius: 8px;
@@ -626,7 +668,7 @@ footer {
     display: block;
     width: 50%;
     margin: 10px;
-    font-size: 30px; }
+    font-size: 20pt; }
 
   .streg3 {
     display: block;
@@ -638,10 +680,10 @@ footer {
   .findosherboks {
     width: 100%;
     background-color: #fff5ed;
-    font-size: 35pt; }
+    font-size: 25pt; }
 
   .mereinfo {
-    font-size: 30px;
+    font-size: 16pt;
     font-family: "Shree Devanagari 714", Serif;
     padding: 10px;
     margin-left: 10%;
