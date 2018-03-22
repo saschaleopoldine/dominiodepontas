@@ -152,8 +152,7 @@ a:hover {
 }
 
 //-----------------------------------CTA MEDLEMSKAB JQUERY-----------------------------
-
- .email {
+.email {
   margin-top: 200px;
 }
 
@@ -172,10 +171,10 @@ a:hover {
 }
 
 h2 {
-  font-size: x-large;
+  font-size: larger;
   text-align: center;
   font-family: Bagatela, serif;
-  color: $green;
+  color: #4b2d1b;
 }
 
 hr {
@@ -221,7 +220,7 @@ hr {
 .kontaktop {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-gap: 30px;
   margin-top: -20px;
   font-family: "Shree Devanagari 714", serif;
@@ -230,8 +229,7 @@ hr {
 
 .item8:nth-of-type(1) {
   grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
-  margin-top: -20px;
+  grid-row: 1 / span 1;
 }
 
 .textInput {
@@ -244,33 +242,32 @@ hr {
 
 .item8:nth-of-type(2) {
   grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
-  margin-top: -20px;
+  grid-row: 1 / span 1;
 }
 
 .item8:nth-of-type(3) {
   grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .item8:nth-of-type(4) {
   grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .item8:nth-of-type(5) {
   grid-column: 1 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .item8:nth-of-type(6) {
   grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .item8:nth-of-type(7) {
   grid-column: 1 / span 1;
-  grid-row: 6 / span 1;
+  grid-row: 4 / span 1;
   background-color: $green;
   border-radius: 3px;
   height: 40px;
@@ -278,7 +275,6 @@ hr {
   text-align: center;
   padding-top: 11px;
   font-size: medium;
-  margin-top: -40px;
   a{
     color: $brown;
     text-decoration-line: none;
@@ -349,6 +345,11 @@ hr {
   color: $green; //farve af x når man kører musen henover
   text-decoration-line:none;
 }
+
+.luksiden{
+  margin-top: -30px;
+}
+
 
 //---------------------------------------BILLEDER/TEKST KASSER ØVERST-------------------------------------
 .billedebokse {
