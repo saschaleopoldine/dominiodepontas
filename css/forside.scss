@@ -88,14 +88,14 @@ body {
   width: 45%;
 }
 #menubaggrund{
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
   padding-top: 225px;
   padding-bottom: 60%;
   z-index: 5;
-  position: absolute;
+  position: fixed;
 }
 
 .fa-times{
@@ -172,10 +172,10 @@ a:hover {
 }
 
 h2 {
-  font-size: larger;
+  font-size: x-large;
   text-align: center;
   font-family: Bagatela, serif;
-  color: #4b2d1b;
+  color: $green;
 }
 
 hr {
@@ -381,21 +381,21 @@ hr {
 
 .billedforan {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  grid-gap: 70px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
   justify-content: space-between;
   font-family: Bagatela, serif;
   font-size: larger;
   position: absolute;
   z-index: 1;
-  margin-top: -860px;
+  margin-top: -800px;
   padding-left: 40px;
 }
 
 .boks1 {
   grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 1 / span 1;
   @include bordergold;
   height: 172px;
   width: 290px;
@@ -404,26 +404,28 @@ hr {
 
 .tekst11, .tekst2, .tekst3 {
   font-family: "Shree Devanagari 714", serif;
-  font-size: large;
+  font-size: 10pt;
   color: #4b2d1b;
 }
 
 .boks2 {                                 
   grid-column: 1 / span 1;
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
   @include bordergold;
   height: 172px;
   width: 290px;
+  margin-top: -35px;
   background-color: #fff5ed;
 }
 
 .boks3 {
   grid-column: 1 / span 1;
-  grid-row: 7 / span 1;
+  grid-row: 5 / span 1;
   @include bordergold;
   height: 172px;
   width: 290px;
   background-color: #fff5ed;
+  margin-top: -70px;
 }
 
 .item3:nth-of-type(1) {
@@ -472,14 +474,11 @@ hr {
   @include gold;
 }
 
-
-
 //mellemstreg
 
 .streg2 {
-  width: 375px;
-  margin-top: 150px;
-  padding-left: 20px;
+  width: 300px;
+  margin: 150px auto 100px auto;
 }
 
 
@@ -490,7 +489,7 @@ hr {
    height: 310px;
    background-color: $lightbeige;
    @include bordergold;
-   margin: 200px auto 200px auto;
+   margin: 150px auto 200px auto;
    position: relative;
    z-index: 0;
    text-align: center;
@@ -520,12 +519,12 @@ hr {
    margin-top: 50px;
  }
  
- .ffh{
-   width: 200px;
-   margin-left: 20px;
+ .ffh, .CTA{
+   width: 290px;
    margin-top: 70px;
+   margin-left: -10px;
    a{                      
-     color: $brown;        
+     color: $green;
      text-decoration: none;
    }                       
    a:hover{
@@ -546,17 +545,17 @@ hr {
    font-family: "Shree Devanagari 714", serif;
    font-size: 20pt;
    font-weight: lighter;
+   color: $brown;
  }
  
  .name{
    font-size: 35pt;
+   color: $brown;
  }
  
  .streg1 {
-   width: 375px;
-   margin-top: 90px;
-   margin-bottom: 90px;
-   padding-left: 20px;
+   width: 300px;
+   margin: 150px auto 100px auto;
    
  }
 //---------------------------------------3 BOKSE MED TEKST + TEKST INDENI----------------------------------
@@ -576,7 +575,7 @@ hr {
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
-  margin-top: 70px;
+  margin-top: 50px;
   font-size: xx-large;
   font-family: Bagatela, serif;
   text-align: center;
@@ -587,7 +586,7 @@ hr {
 }
 
 .undertekst1 {
-  font-size: x-large;
+  font-size: large;
   font-family: "Shree Devanagari 714", serif;
   line-height: 30px;
   color: #4b2d1b;
@@ -613,7 +612,7 @@ hr {
   width: 375px;
   height: 350px;                
   background-color: #fff5ed;                
-  padding-top: 40px;            
+  padding-top: 40px;
   font-size: xx-large;          
   font-family: Bagatela, serif; 
   text-align: center;
@@ -654,12 +653,12 @@ hr {
   height: 40px;                                  
   width: 220px;                                  
   padding-left: 10px;
-  margin-left: 20px;
+  margin-left: 2px;
 }                                                
 
 
 .undertekst2 {
-  font-size: x-large;                         
+  font-size: large;
   font-family: "Shree Devanagari 714", serif; 
   line-height: 30px;                          
   color: #4b2d1b;                             
@@ -673,7 +672,8 @@ hr {
   width: 375px;
   height: 350px;                
   background-color: #fff5ed;                
-  padding-top: 40px;            
+  padding-top: 40px;
+  margin-top: -50px;
   font-size: xx-large;          
   font-family: Bagatela, serif; 
   text-align: center;           
@@ -684,7 +684,7 @@ hr {
 }
 
 .undertekst3 {
-  font-size: x-large;
+  font-size: large;
   font-family: "Shree Devanagari 714", serif;
   line-height: 30px;
   color: #4b2d1b;
@@ -708,8 +708,7 @@ hr {
 .footer{
   background-color: $brown;
   padding: 5px 15px 15px 15px;
-  margin-top: 20px;
-  width: 375px;
+  margin-top: -50px;
 }
 
 .display_web{
@@ -718,7 +717,7 @@ hr {
 
 .footertekst, .aabningstider, .voresvine, .arrangementer{
   text-align: center;
-  font-size: 20pt;
+  font-size: 14pt;
   margin-top: 30px;
 }
 
@@ -727,9 +726,10 @@ hr {
 }
 
 .stregWEB{
-  margin-top: 100px;
+  margin: 60px auto 0 auto;
   z-index: 2;
-  width: 100%;
+  width: 350px;
+
 }
 
 .socialemedier{
@@ -737,7 +737,7 @@ hr {
   display: flex;
   justify-content: space-around;
   z-index: 3;
-  margin-top: -35px;
+  margin-top: -30px;
 }
 
 .fa-instagram, .fa-facebook-square, .fa-youtube{
@@ -745,11 +745,10 @@ hr {
   width: 60px;
   text-align: center;
   color: $darkbeige;
-  margin-bottom: 20px;
-  a:hover{
-
-  }
+  margin-bottom: 15px;
+  font-size: 50px;
 }
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -897,7 +896,7 @@ img {
     font-size: larger;
     text-align: center;
     font-family: Bagatela, serif;
-    color: #4b2d1b;
+    color: $green;
   }
 
   hr {
@@ -1081,10 +1080,9 @@ img {
     grid-template-rows: repeat(3, 1fr);
     justify-content: space-between;
     grid-gap: 100px;
-    padding-left: 150px;
-    padding-top: 40px;
     position: relative;
     z-index: 0;
+    margin-left: 210px;
   }
 
   .item2:nth-of-type(1) {
@@ -1107,20 +1105,20 @@ img {
   .billedforan {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-gap: 70px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
     justify-content: space-between;
     font-family: Bagatela, serif;
     font-size: larger;
     position: absolute;
     z-index: 1;
-    margin-top: -860px;
-    padding-left: 210px;
+    margin-top: -800px;
+    padding-left: 40px;
   }
 
   .boks1 {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
     @include bordergold;
     height: 172px;
     width: 290px;
@@ -1129,30 +1127,32 @@ img {
 
   .tekst11, .tekst2, .tekst3 {
     font-family: "Shree Devanagari 714", serif;
-    font-size: large;
+    font-size: 10pt;
     color: #4b2d1b;
   }
 
   .boks2 {
-    grid-column: 1 / span 1;
-    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
     @include bordergold;
     height: 172px;
     width: 290px;
+    margin-top: -35px;
     background-color: #fff5ed;
   }
 
   .boks3 {
-    grid-column: 1 / span 1;
-    grid-row: 7 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1;
     @include bordergold;
     height: 172px;
     width: 290px;
     background-color: #fff5ed;
+    margin-top: -70px;
   }
 
   .item3:nth-of-type(1) {
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     @include bordergold;
     height: 148px;
@@ -1167,7 +1167,7 @@ img {
   }
 
   .item3:nth-of-type(2) {
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     grid-row: 2 / span 1;
     @include bordergold;
     height: 148px;
@@ -1183,7 +1183,7 @@ img {
 
 
   .item3:nth-of-type(3) {
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     grid-row: 3 / span 1;
     @include bordergold;
     height: 148px;
@@ -1197,13 +1197,11 @@ img {
     @include gold;
   }
 
-
   //mellemstreg
 
   .streg2 {
     width: 500px;
-    margin-top: 160px;
-    padding-left: 150px;
+    margin: 150px auto 100px auto;
   }
 
   //---------------------------------------VINUDVALG ALLE 3 --------------------------------------------
@@ -1213,7 +1211,7 @@ img {
     height: 310px;
     background-color: $lightbeige;
     @include bordergold;
-    margin: 200px auto 200px auto;
+    margin: 100px auto 200px auto;
     position: relative;
     z-index: 0;
     text-align: center;
@@ -1244,11 +1242,11 @@ img {
   }
 
   .ffh{
-    margin-left: 190px;
+    margin-left: 130px;
     margin-top: 70px;
     font-size: 20pt;
     a{
-      color: $brown;
+      color: $green;
       text-decoration: none;
     }
     a:hover{
@@ -1278,9 +1276,7 @@ img {
 
   .streg1 {
     width: 500px;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    padding-left: 200px;
+    margin: 150px auto 100px auto;
 
   }
 
@@ -1434,51 +1430,7 @@ img {
 
   //---------------------------------------FOOTEREN--------------------------------------------
 
-  .footer{
-    background-color: $brown;
-    padding: 5px 15px 15px 15px;
-    margin-top: 20px;
-    width: 768px;
-  }
 
-  .display_web{
-    display: none;
-  }
-
-  .footertekst, .aabningstider, .voresvine, .arrangementer{
-    text-align: center;
-    font-size: 20pt;
-    margin-top: 30px;
-  }
-
-  .overskrift_f{
-    @include gold;
-  }
-
-  .stregWEB{
-    margin-top: 100px;
-    z-index: 2;
-    width: 100%;
-  }
-
-  .socialemedier{
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-around;
-    z-index: 3;
-    margin-top: -35px;
-  }
-
-  .fa-instagram, .fa-facebook-square, .fa-youtube{
-    background-color: $brown;
-    width: 60px;
-    text-align: center;
-    color: $darkbeige;
-    margin-bottom: 20px;
-    a:hover{
-
-    }
-}
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
@@ -1514,9 +1466,9 @@ img {
 
   h2 {
     font-size: larger;
-    text-align: center;
+    text-align: left;
     font-family: Bagatela, serif;
-    color: #4b2d1b;
+    color: $green;
   }
 
   hr {
@@ -1800,19 +1752,22 @@ img {
   }
 
   .mobilcta {
-    margin-top: -570px;
     position: absolute;
     z-index: 4;
+    padding-top: 0;
+    width: 500px;
     font-weight: bolder;
     text-align: left;
     font-family: "Shree Devanagari 714", serif;
     @include gold;
     font-size: larger;
     line-height: 29px;
+    margin-top: -480px;
+    margin-left: 30px;
   }
 
   .mobilcta2 {
-    margin-top: -380px;
+    margin-top: -560px;
     position: absolute;
     z-index: 4;
     font-size: 20pt;
@@ -1842,7 +1797,7 @@ img {
     grid-template-rows: repeat(1, 1fr);
     position: relative;
     z-index: 0;
-    margin-right: 90px;
+    margin-left: 20px;
     margin-top: 70px;
   }
 
@@ -1873,9 +1828,9 @@ img {
     font-size: larger;
     position: absolute;
     z-index: 1;
-    padding-left: 6%;
     margin-top: -130px;
     color: gold;
+    line-height: 20px;
   }
 
   .boks1 {
@@ -1885,12 +1840,11 @@ img {
     height: 172px;
     width: 290px;
     background-color: #fff5ed;
-    margin-left: 40px;
   }
 
   .tekst11, .tekst2, .tekst3 {
     font-family: "Shree Devanagari 714", serif;
-    font-size: large;
+    font-size: medium;
     color: #4b2d1b;
   }
 
@@ -1900,8 +1854,8 @@ img {
     @include bordergold;
     height: 172px;
     width: 290px;
+    margin-top: 0;
     background-color: #fff5ed;
-    margin-left: -10px;
   }
 
   .boks3 {
@@ -1910,8 +1864,8 @@ img {
     @include bordergold;
     height: 172px;
     width: 290px;
+    margin: 0 0 0 -20px;
     background-color: #fff5ed;
-    margin-left: -5px;
   }
 
   .item3:nth-of-type(1) {
@@ -1921,7 +1875,6 @@ img {
     height: 148px;
     width: 264px;
     padding: 10px;
-    margin: 10px auto auto auto;
     text-align: center;
 
   }
@@ -1933,7 +1886,6 @@ img {
     height: 148px;
     width: 264px;
     padding: 10px;
-    margin: 10px auto auto auto;
     text-align: center;
   }
 
@@ -1944,7 +1896,6 @@ img {
     height: 148px;
     width: 264px;
     padding: 10px;
-    margin: 10px auto auto auto;
     text-align: center;
   }
 
@@ -1953,7 +1904,7 @@ img {
   .streg2 {
     margin-bottom: 45px;
     margin-top: 152px;
-    margin-left: 450px;
+    margin-left: 400px;
   }
 
   .flex {
@@ -1991,7 +1942,7 @@ img {
 
   .ffh {
     width: 350px;
-    margin-left: -30px;
+    margin-left: 5px;
     margin-top: 50px;
   }
 
@@ -2021,11 +1972,15 @@ img {
   }
 
   //--------------------------------3 ELEMENTER TEKST WEB------------------------------------
+
+  .streg1 {
+    margin: 0 auto 0 auto;
+  }
+
   .besøgos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 2px;
+    grid-template-rows: repeat(1, 1fr);
   }
 
   .item6:nth-of-type(1) {
@@ -2037,7 +1992,6 @@ img {
     background-color: #fff5ed;
     padding-top: 40px;
     margin-top: -1px;
-    margin-left: 50px;
     font-size: xx-large;
     font-family: Bagatela, serif;
     text-align: center;
@@ -2048,9 +2002,9 @@ img {
   }
 
   .undertekst1 {
-    font-size: x-large;
+    font-size: large;
     font-family: "Shree Devanagari 714", serif;
-    line-height: 30px;
+    line-height: 25px;
     color: #4b2d1b;
   }
 
@@ -2077,6 +2031,7 @@ img {
     font-family: Bagatela, serif;
     text-align: center;
     color: gold;
+    margin-right: 80px;
   }
   .nyhed {
     @include gold;
@@ -2092,6 +2047,10 @@ img {
     padding-left: 10px;
   }
 
+  .fs {
+    margin-top: 45px;
+  }
+
   .boks02b {
     @include bordergold;
     width: 220px;
@@ -2105,9 +2064,9 @@ img {
   }
 
   .undertekst2 {
-    font-size: x-large;
+    font-size: large;
     font-family: "Shree Devanagari 714", serif;
-    line-height: 30px;
+    line-height: 25px;
     color: #4b2d1b;
   }
 
@@ -2123,6 +2082,8 @@ img {
     font-family: Bagatela, serif;
     text-align: center;
     color: gold;
+    margin-top: 0;
+    margin-left: -60px;
   }
 
   .forhandler {
@@ -2130,9 +2091,9 @@ img {
   }
 
   .undertekst3 {
-    font-size: x-large;
+    font-size: large;
     font-family: "Shree Devanagari 714", serif;
-    line-height: 30px;
+    line-height: 25px;
     color: #4b2d1b;
     padding-bottom: 25px;
   }
@@ -2157,60 +2118,79 @@ img {
 
   //--------------------------------FOOTER WEB ------------------------------------
 
-  .display_web {
-    display: inline;
+  .display_web{
+    display: block;
     color: $darkbeige;
+    text-align: start;
+    font-size: 18pt;
     font-family: "Shree Devanagari 714", serif;
     font-weight: lighter;
-    font-size: 16pt;
-    a {
+    line-height: 40pt;
+    a{
       color: $darkbeige;
+      text-decoration: none;
+    }
+    a:hover{
+      @include green
+    }
+    li{
+      list-style-type: none;
     }
   }
 
-  .footer {
+  .footer{
     padding: 50px;
     margin-top: 70px;
   }
 
-  ul {
-    list-style-type: none;
-  }
-
-  .kontaktos2, .aabningstider, .voresvine, .arrangementer {
-    text-align: start;
+  .kontaktos2, .aabningstider, .voresvine, .arrangementer{
     margin-top: -5px;
-    line-height: 40pt;
+    text-align: start;
   }
 
-  #linie {
-    line-height: 25pt;
+  #linie{
+    line-height: 30pt;
     margin-top: 10px;
   }
 
-  .footertekst {
+  .footertekst{
     @include flex_center;
     justify-content: space-between;
     margin-top: 0;
   }
 
-  .stregWEB {
+  .overskrift_f{
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+
+  .fa-instagram, .fa-facebook-square, .fa-youtube{
+    font-size: 50pt;
+  }
+
+  .socialemedier{
+    margin-top: -40px;
+  }
+
+  .stregWEB{
     width: 90%;
     margin: 90px auto 30px auto;
   }
 
-  .instagram2, .facebook2, .youtube2 {
+  .instagram2, .facebook2, .youtube2{
     margin: -30px auto 30px auto;
     width: 100px;
-    color: #f4eade;
+    color: $darkbeige;
   }
 
-  .overskrift_f {
+  .overskrift_f{
     font-size: 22pt;
   }
 
-}
 
+}
 
 
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
