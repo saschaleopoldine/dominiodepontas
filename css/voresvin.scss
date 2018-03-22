@@ -854,7 +854,12 @@ hr {
 
 
   //----------------------------------vin web----------------------
-.mobilvin{
+
+.break{
+  width: 500px;
+}
+
+  .mobilvin{
   display: none;
 }
 
@@ -924,7 +929,7 @@ hr {
 
 
 #club{
-  font-size: 20pt;
+  font-size: 25pt;
   margin-bottom: 20px;
 }
 
@@ -933,6 +938,10 @@ hr {
   font-size: 20px;
 }
 
+
+  .knap{
+    font-size: 20pt;
+  }
 
 //----------------------------------footer web----------------------
 .display_web{
