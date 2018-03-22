@@ -124,25 +124,25 @@ $green: #878532;
   height: 100vh;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
-  padding-top: 225px;
+  padding-top: 150px;
   padding-bottom: 60%;
-  z-index: 5;
-  position: absolute;
+  z-index: 99;
+  position: fixed;
 }
 
 .fa-times{
  @include gold;
-  font-size: 40pt;
+  font-size: 20pt;
   z-index: 3;
   position: absolute;
   margin-left: 38%;
-  margin-top: -190px;
+  margin-top: -130px;
 }
 
 
 #menubaggrund li{
   padding-bottom: 30px;
-  font-size: 25pt;
+  font-size: 20pt;
   text-align: center;
   list-style: none;
   a{
@@ -330,7 +330,7 @@ $green: #878532;
 }
 
 .active{
-  z-index: 99;
+  z-index: 75;
 }
 
 .prev, .next{
@@ -362,7 +362,7 @@ $green: #878532;
 }
 
 .active{
-  z-index: 99;
+  z-index: 75;
 }
 
 .prev_to, .next_to{
@@ -397,7 +397,7 @@ $green: #878532;
 }
 
 .active{
-  z-index: 99;
+  z-index: 75;
 }
 
 .prev_tre, .next_tre{
@@ -487,8 +487,8 @@ hr {
 
 .kontaktop {
   display: grid;
-  grid-template-columns: (2, 1fr);
-  grid-template-rows: (5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-gap: 30px;
   margin-top: -20px;
   font-family: "Shree Devanagari 714", serif;
@@ -859,8 +859,6 @@ hr {
   @include flex;
   justify-content: space-around;
 }
-
-
 
 
 
