@@ -95,7 +95,7 @@ body {
   padding-top: 225px;
   padding-bottom: 60%;
   z-index: 5;
-  position: absolute;
+  position: fixed;
 }
 
 .fa-times{
@@ -172,10 +172,10 @@ a:hover {
 }
 
 h2 {
-  font-size: larger;
+  font-size: x-large;
   text-align: center;
   font-family: Bagatela, serif;
-  color: #4b2d1b;
+  color: $green;
 }
 
 hr {
@@ -520,12 +520,12 @@ hr {
    margin-top: 50px;
  }
  
- .ffh{
-   width: 200px;
-   margin-left: 20px;
+ .ffh, .CTA{
+   width: 320px;
    margin-top: 70px;
+   margin-left: -10px;
    a{                      
-     color: $brown;        
+     color: $green;
      text-decoration: none;
    }                       
    a:hover{
@@ -546,10 +546,12 @@ hr {
    font-family: "Shree Devanagari 714", serif;
    font-size: 20pt;
    font-weight: lighter;
+   color: $brown;
  }
  
  .name{
    font-size: 35pt;
+   color: $brown;
  }
  
  .streg1 {
@@ -897,7 +899,7 @@ img {
     font-size: larger;
     text-align: center;
     font-family: Bagatela, serif;
-    color: #4b2d1b;
+    color: $green;
   }
 
   hr {
@@ -1248,7 +1250,7 @@ img {
     margin-top: 70px;
     font-size: 20pt;
     a{
-      color: $brown;
+      color: $green;
       text-decoration: none;
     }
     a:hover{
@@ -1514,9 +1516,9 @@ img {
 
   h2 {
     font-size: larger;
-    text-align: center;
+    text-align: left;
     font-family: Bagatela, serif;
-    color: #4b2d1b;
+    color: $green;
   }
 
   hr {

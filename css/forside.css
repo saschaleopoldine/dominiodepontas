@@ -46,7 +46,7 @@ body {
   padding-top: 225px;
   padding-bottom: 60%;
   z-index: 5;
-  position: absolute; }
+  position: fixed; }
 
 .fa-times {
   background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
@@ -114,10 +114,10 @@ a:hover {
     color: gold; }
 
 h2 {
-  font-size: larger;
+  font-size: x-large;
   text-align: center;
   font-family: Bagatela, serif;
-  color: #4b2d1b; }
+  color: #878532; }
 
 hr {
   margin-top: -15px; }
@@ -496,14 +496,14 @@ hr {
 #rodvin {
   margin-top: 50px; }
 
-.ffh {
-  width: 200px;
-  margin-left: 20px;
-  margin-top: 70px; }
-  .ffh a {
-    color: #4b2d1b;
+.ffh, .CTA {
+  width: 320px;
+  margin-top: 70px;
+  margin-left: -10px; }
+  .ffh a, .CTA a {
+    color: #878532;
     text-decoration: none; }
-  .ffh a:hover {
+  .ffh a:hover, .CTA a:hover {
     color: #878532; }
 
 .speciel_tekst {
@@ -516,10 +516,12 @@ hr {
 .w {
   font-family: "Shree Devanagari 714", serif;
   font-size: 20pt;
-  font-weight: lighter; }
+  font-weight: lighter;
+  color: #4b2d1b; }
 
 .name {
-  font-size: 35pt; }
+  font-size: 35pt;
+  color: #4b2d1b; }
 
 .streg1 {
   width: 375px;
@@ -912,7 +914,7 @@ img {
     font-size: larger;
     text-align: center;
     font-family: Bagatela, serif;
-    color: #4b2d1b; }
+    color: #878532; }
 
   hr {
     margin-top: -15px; }
@@ -1297,7 +1299,7 @@ img {
     margin-top: 70px;
     font-size: 20pt; }
     .ffh a {
-      color: #4b2d1b;
+      color: #878532;
       text-decoration: none; }
     .ffh a:hover {
       color: #878532; }
@@ -1601,9 +1603,9 @@ img {
 
   h2 {
     font-size: larger;
-    text-align: center;
+    text-align: left;
     font-family: Bagatela, serif;
-    color: #4b2d1b; }
+    color: #878532; }
 
   hr {
     margin-top: -15px; }
