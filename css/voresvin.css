@@ -247,7 +247,7 @@ img {
   position: absolute; }
 
 .active {
-  z-index: 99; }
+  z-index: 75; }
 
 .prev, .next {
   cursor: pointer;
@@ -269,7 +269,7 @@ img {
   position: absolute; }
 
 .active {
-  z-index: 99; }
+  z-index: 75; }
 
 .prev_to, .next_to {
   cursor: pointer;
@@ -291,7 +291,7 @@ img {
   position: absolute; }
 
 .active {
-  z-index: 99; }
+  z-index: 75; }
 
 .prev_tre, .next_tre {
   cursor: pointer;

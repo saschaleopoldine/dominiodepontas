@@ -1,11 +1,13 @@
 .calendar {
   position: relative;
   overflow: hidden;
+  width: 95%;
   text-transform: capitalize;
   text-align: center;
   font-size: 15px;
   color: #4b2d1b;
-  margin: 0 70px 50px 70px }
+  margin: 0 auto;
+}
   .calendar a {
     text-decoration: none;
     color: inherit; }
@@ -41,8 +43,8 @@
     font-size: 18pt;
     font-weight: 600; }
   .calendar td {
-    padding: 0.8em 0.1em;
-    font-size: 18pt;
+    padding: 10px 0.1em;
+    font-size: 15pt;
     font-family: "Shree Devanagari 714", Serif;}
   .calendar .day {
     display: inline-block;
@@ -75,3 +77,14 @@
     border-radius: 50%;
     background: #fff5ed;
     transform: translate(-50%, -50%); }
+
+
+
+@media screen and (min-width: 1200px) {
+  .calendar{
+    width: 85%;}
+    .calendar td{
+      font-size: 18pt;
+    }
+
+}
