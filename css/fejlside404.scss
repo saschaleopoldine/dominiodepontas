@@ -38,6 +38,12 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+@mixin gold {
+  background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 #error{
   margin: 10px 10px;
@@ -110,14 +116,14 @@ img {
   height: 30.5px;
   border: none;
   a:link {
-    color: #4b2d1b;
+    color: #fff5ed;
     text-decoration: none;
   }
   a:visited {
     color: #4b2d1b;
   }
   a:hover{
-    color: gold;
+    @include gold;
     cursor: pointer;
   }
 }
@@ -155,12 +161,12 @@ img {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
   #animation{
     width: 40%;
-    margin: 0 80px 0 auto;
+    margin: 100px 80px 0 auto;
     transform: rotate(350deg);
   }
 
   #fejl{
-    margin: -140px 500px 70px auto;
+    margin: -200px 500px 70px auto;
     font-size: 50pt;
   }
 
@@ -192,7 +198,7 @@ img {
   }
 
   #help_write{
-    margin-left: 60px;
+    margin-left: 80px;
     height: 40px;
     font-size: 15pt;
   }
