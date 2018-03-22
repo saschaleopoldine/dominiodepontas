@@ -9,43 +9,59 @@
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Dominio de Pontas</title>
+    <title>Forside - Dominio de Pontas</title>
     <!-- En kort beskrivelser af indholdet på siden -->
-    <meta name="description" content="Max ca. 170-200 karakterer - 600px">
+    <meta name="description" content=
+            "Dominio de Pontas producerer vin i et økologisk landbrug til en hver smag
+og lejlighed. Vinen bliver produceret i Navarra i Nordspanien, og har eksisteret siden 1889. Den
+historiske vin bliver brygget på den traditionelle måde der foregik i de 19. århundrede. Druerne
+hænger og overmodner, hvorefter den velduftende, søde saft presses til vin. Dette er med til at
+gøre Dominio de Pontas til ét af de fornemste vin.">
     <!-- indsæt de keywords du har fundet frem til-->
-    <meta name="keywords" content="Få unikke og relevante (Skal gå igen på siden)">
-    <meta property="og:title" content="titel">
+    <meta name="keywords" content="vin, vingård, Nordspanien, de bedste spanske vine">
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Dominio de Pontas">
     <meta property="og:type" content="website">
     <!-- hvad du specifikt designer til -->
     <meta property="og:url" content="http://www.domain.dk">
     <!-- Hele adressen skal med. -->
     <meta property="og:image" content="https://www.domain.dk/img.jpg">
     <!-- Hele adressen skal med. -->
-    <meta property="og:description" content="Beskrivelse">
+    <meta property="og:description" content="Dominio de Pontas producerer vin i et økologisk landbrug til en hver smag
+og lejlighed. Vinen bliver produceret i Navarra i Nordspanien, og har eksisteret siden 1889 .... gøre
+Dominio de Pontas til ét af de fornemste vin. ">
     <!-- Skal være en sælgende tekst, da vi gerne vil have brugerne til at trykke ind på linket. -->
     <meta property="og:locale" content="da_DK">
     <!-- Så man kan se hvilke brugere siden har relevans for.-->
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
-    <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
     <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/forside.css" rel="stylesheet" type="text/css">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://use.fontawesome.com/4574f88dc3.js"></script>
+
 
 <!-- ----------------------------HEADER WEB------------------------------------------- -->
-
-<head>
 <body>
+<header>
 <div class="baggrundsbillede">
     <div class="header">
         <i class="fa fas fa-bars"></i>
-
-        <img class="logomobil" src="Image/logomobil.png"/>
+        <img alt="Dominio de Pontas logo" class="logomobil" src="Image/logomobil.png"/>
     </div>
+</div>
+
+<div id="menubaggrund">
+    <ul>
+        <li><a href="index.html">FORSIDE</a></li>
+        <li><a href="voresvin.html">VORES VIN</a></li>
+        <li><a href="#">FORHANDLERE</a></li>
+        <li><a href="arrangementer.html">ARRANGEMENTER</a></li>
+        <li><a href="kontaktos.html">KONTAKT OS</a></li>
+    </ul>
+    <i class="fa fas fa-times"></i>
 </div>
 
 <div class="menubar">
@@ -53,27 +69,27 @@
     <div class="item1"><a href="index.html"> FORSIDE</a></div>
     <div class="item1"><a href="voresvin.html">VORES VIN</a></div>
     <div class="item1"><a href="#">FORHANDLERE</a></div>
-    <div class="item1"><div class="logo"><img src="Image/VectorSmartObject_e914067d-b11a-4615-b426-44a1c9e9317e.png"></div></div>
+    <div class="item1"><div class="logo"><img alt="Dominio de Pontas logo" src="Image/VectorSmartObject_e914067d-b11a-4615-b426-44a1c9e9317e.png"></div></div>
     <div class="item1"><a href="#">ARRANGEMENTER</a></div>
     <div class="item1"><a href="kontaktos.html">KONTAKT OS</a></div>
     <div class="item1"></div>
-    <div class="item1"><img src="Image/stregmobil.png" height="3" width="752"/></div>
-    <div class="item1"><img src="Image/stregmobil.png" height="3" width="752"/></div>
+    <div class="item1"><img alt="understreg" src="Image/stregmobil.png" height="3" width="752"/></div>
+    <div class="item1"><img alt="understreg" src="Image/stregmobil.png" height="3" width="752"/></div>
 </div>
 </header>
 
-
 <!-- -------------------------WEB/MOBIL TEKST/CTA MEDLEMKNAP ------------------------------------ -->
-
-<p class="mobilcta">Som medlem modtager du tilbud og rabatter,<br>
-    og så har du mulighed for at være med i konkurrencen <br>
-    om en rejse for 2 til vores vingård, som ligger <br> i Navarra
+<section>
+<p class="mobilcta">
+    Som medlem modtager du tilbud og rabatter, og så har du
+    mulighed for at være med i konkurrencen om en rejse for 2 til vores vingård, som ligger i Navarra
     i det nordlige Spanien.
 </p>
 
-<div class="mobilcta2"><a class="knap" data-popup-open="popup-1" href="#">Bliv medlem her ></a></div>
-<!-- datapopup er en funktion der gør at når man trypper på knappen, dukker et boks frem -->
-<div class="popup" data-popup="popup-1">
+<div class="mobilcta2"><a class="knap" href="#">Bliv medlem her ></a></div>
+<!--  funktion der gør at når man trypper på knappen, dukker et boks frem -->
+    <!--tilmeldings blanket -->
+<div class="popup">
     <!--Selve boksen der kommer frem, hvad der skal stå i den. Styles i css. -->
     <div class="popup-inner"><br>
         <h2>UDFYLD TILMELDING</h2><br>
@@ -104,21 +120,21 @@
 
             <div class="item8">MOBILTELEFONNR*
                 <div class="mobilnr"><input class="textInput" type="text" placeholder=""></div></div>
-
+<br>
             <div class="item8"><a href="#"><b>SEND</b></a></div></div>
         <br>
-        <div class="luksiden"><a data-popup-close="popup-1" href="#">Luk siden</a></div> <!--knappen der lukker siden ned -->
-        <a class="popup-close" data-popup-close="popup-1" href="#">x</a> <!--krydset oppe i siden der lukker -->
+        <div class="luksiden"><a class="closebutton2" href="#">Luk siden</a></div> <!--knappen der lukker siden ned -->
+        <a class="closebutton" href="#">x</a> <!--krydset oppe i siden der lukker -->
     </div>
 </div>
-
+</section>
 
 <!-- -------------------------------BILLEDE BOKSE/TEKST ØVERST -------------------------- -->
-
+<section>
 <div class="billedebokse">
-    <div class="item2"><div class="rundvisning"><img src="Image/tour.jpg" width="370px" height="263px"></div> </div>
-    <div class="item2"><div class="wine"><img src="Image/tastingwine.jpg" width="370px" height="263px"></div> </div>
-    <div class="item2"><div class="events"><img src="Image/events.jpg" width="370px" height="263px"></div> </div>
+    <div class="item2"><div class="rundvisning"><img alt="billede af vinkælderen" src="Image/tour.jpg"></div> </div>
+    <div class="item2"><div class="wine"><img alt="kvinde til et vinsmagningsevent" src="Image/tastingwine.jpg"></div> </div>
+    <div class="item2"><div class="events"><img alt="Et dækket bord som er klar til event" src="Image/events.jpg"></div> </div>
 </div>
 
 <div class="billedforan">
@@ -134,15 +150,17 @@
     <div class="item3"><div class="events"><b>EVENTS</b></div><br><p class="tekst3">Der er forskellige events du kan
     deltage til. Klik <a href="#"> her</a> for at se mere </p></div></div>
 </div>
+</section>
+
 
 
 <!-- --------------------------------- VINBILLEDER/TEKST -------------------------------- -->
-
-<div class="streg2"><img src="Image/mellemstreg.png"></div>
+<section>
+<div class="streg2"><img alt="mellemstreg" src="Image/mellemstreg.png"></div>
 
 <div class="flex">
     <div class="rodvine">
-        <a href="#"><img  class="vinbillede" alt="Rødvin" src="Image/rødvin.png"/></a>
+        <a href="#"><img  class="vinbillede" alt="Rødvin" src="Image/rodvin10.png"/></a>
         <p class="w">Rødvin</p>
         <a href="#"><p class="name">Rødvin</p></a>
         <a href="voresvin.html"><h2 class="CTA ffh">Se vores udvalg her > </h2></a>
@@ -162,9 +180,12 @@
         <a href="#"><h2 class="CTA ffh">Se vores udvalg her ></h2></a>
     </div>
 </div>
-<!-- --------------------------- 3 TEKSTBOKSE ------------------------------- -->
+</section>
 
-<div class="streg1"><img src="Image/mellemstreg.png"></div>
+
+<!-- --------------------------- 3 TEKSTBOKSE ------------------------------- -->
+<section>
+<div class="streg1"><img alt="mellemstreg" src="Image/mellemstreg.png"></div>
 
 
 <div class="besøgos">
@@ -182,12 +203,12 @@
         <div class="boks03"><input class="textInputbokse" type="text" placeholder="Dit postnr"></div>
         <div class="boks03b"><a href="kontaktos.html">Find</a></div></div>
 </div>
+</section>
+
 
 
 
 <!-- --------------------------- FOOTER ---------------------------------- -->
-
-
 <footer class="footer">
     <div class="footertekst">
         <div class="kontaktos2">
@@ -222,7 +243,7 @@
         </div>
 
         <div class="arrangementer">
-            <a class="overskrift_f" href="#"><strong>Arrangementer</strong></a>
+            <a class="overskrift_f" href="arrangementer.html"><strong>Arrangementer</strong></a>
             <ul class="display_web">
                 <li>Vinsmagning</li>
                 <li>Rundvisning</li>
@@ -231,7 +252,7 @@
         </div>
     </div>
 
-    <div class="stregWEB"><img src="Image/stregweb.png"></div>
+    <div class="stregWEB"><img alt="streg der forbinder de tre Sociale medier" src="Image/stregweb.png"></div>
 
 
     <div class="socialemedier">
@@ -257,26 +278,42 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
-    $(function() {
-
-//----- Det der åbner boksen op
-        $('[data-popup-open]').on('click', function(e)  { //når man trykker på knappen skal den have en funktion
-            var targeted_popup_class = jQuery(this).attr('data-popup-open'); //variable af alle popup(attribut)
-            $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-            //når der klikkes på knappen, fader boksen ind i en hastighed 350. Her finder den popup med data
-            //popup værdien af popup-1, og skal fade ind 350 milisec.
-            e.preventDefault(); //skal tilføjes, hvis det skulle være at linket ikke virker.
+    $(document).ready(function (e) {
+        /*----- Det der åbner boksen op -------*/
+        $(".mobilcta2").on('click', function(e)  {
+            $(".popup").fadeIn(350);
         });
-
-        //----- Den funktion der lukker siden
-        $('[data-popup-close]').on('click', function(e)  { //når der klikkes på luk siden knappen, skal der ske noget
-            var targeted_popup_class = jQuery(this).attr('data-popup-close'); //finde værdien for luk knappen.
-            $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350); //fader ud istedet for ind.
-            e.preventDefault();
+        /*----- Den funktion der lukker siden ------*/
+        $(".closebutton").on('click', function(e)  {
+            $(".popup").fadeOut(350);
+        });
+        $(".closebutton2").on('click', function(e)  {
+            $(".popup").fadeOut(350);
         });
     });
 </script>
 
+<script>
+    $(document).ready(function (e) {
+
+        /* ---------------- mobil menubar ------------------ */
+        $(".fa-bars").click(function (e) {
+            $("#menubaggrund").slideDown(1000);
+            $("#menubaggrund").css({
+                "display": "-webkit-flex",
+                "display": "flex",
+                "justify-content": "center",
+                "height": "100%","z-index": "99"
+            });
+        });
+
+        $(".fa-times").click(function (e) {
+            $("#menubaggrund").slideUp(1000);
+
+        });
+    });
+
+</script>
 </body>
 </html>
 

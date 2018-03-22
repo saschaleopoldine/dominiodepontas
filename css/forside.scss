@@ -61,46 +61,81 @@ body {
 //---------------------------------------HEADEREN BILLEDE LOGO-------------------------------------
 
 .baggrundsbillede{                                      
-  width: 100%;
-  height: 450px;
+  width: 375px;
+  height: 200px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px;
+  position: absolute;
 }
                                                         
 .header{                                                
-  width: 100%;                                          
-  height: 450px;                                        
+  width: 375px;
+  height: 200px;
   background-color: rgba(75, 45, 27, 0.7);              
 }                                                       
                                                         
 .fa-bars{
   @include gold;
-  font-size: 40pt;
+  font-size: 20pt;
   margin-left: 85%;                                     
-  margin-top: 40px;                                     
+  margin-top: 20px;
 }                                                       
                                                         
 .logomobil{                                             
-  margin: -30px auto 40px auto;                         
-  padding-bottom: 40px;                                 
-}                                                       
+  margin: -20px auto 40px auto;
+  padding-bottom: 40px;
+  width: 45%;
+}
+#menubaggrund{
+  width: 375px;
+  height: 100vh;
+  background-color: rgba(75, 45, 27, 0.98);
+  display: none;
+  padding-top: 225px;
+  padding-bottom: 60%;
+  z-index: 5;
+  position: absolute;
+}
+
+.fa-times{
+  @include gold;
+  font-size: 40pt;
+  z-index: 3;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -190px;
+}
+
+
+#menubaggrund li{
+  padding-bottom: 30px;
+  font-size: 25pt;
+  text-align: center;
+  list-style: none;
+  a{
+    text-decoration: none;
+    @include gold;
+  }
+}
+
 
 .mobilcta {
   color: #4b2d1b;
   font-family: "Shree Devanagari 714", serif;
-  font-size: large;
+  font-size: medium;
   font-weight: bolder;
   text-align: center;
-  margin: 30px;
+  padding-top: 260px;
   line-height: 22px;
 }
 
 .mobilcta2 {
   color: #878532;
   font-family: Bagatela, serif;
-  font-size: xx-large;
+  font-size: 18pt;
   text-align: center;
+  margin-top: 20px;
 }
 
 a:link {
@@ -118,215 +153,211 @@ a:hover {
 
 //-----------------------------------CTA MEDLEMSKAB JQUERY-----------------------------
 
-.email {                                                                       
-  margin-top: 200px;                                                           
-}                                                                              
-                                                                               
-.knappen {                                                                     
-  margin-top: -10px;                                                           
-  a:link {                                                                     
-    color: #878532;                                                            
-    text-decoration-line: none;                                                
-  }                                                                            
-  a:visited {                                                                  
-    color: #878532;                                                            
-  }                                                                            
-  a:hover {                                                                    
-    color: gold;                                                               
-  }                                                                            
-}                                                                              
-                                                                               
-h2 {                                                                           
-  font-size: larger;                                                           
-  text-align: center;                                                          
-  font-family: Bagatela, serif;                                                
-  color: #4b2d1b;                                                              
-}                                                                              
-                                                                               
-hr {                                                                           
-  margin-top: -15px;                                                           
-}                                                                              
-                                                                               
-.tekst1 {                                                                      
-  text-align: left;                                                            
-  font-family: "Shree Devanagari 714", serif;                                  
-  font-size: small;                                                            
-  line-height: 17px;                                                           
-  color: #4b2d1b;                                                              
-}                                                                              
-                                                                               
+ .email {
+  margin-top: 200px;
+}
+
+.knappen {
+  margin-top: -10px;
+  a:link {
+    color: #878532;
+    text-decoration-line: none;
+  }
+  a:visited {
+    color: #878532;
+  }
+  a:hover {
+    color: gold;
+  }
+}
+
+h2 {
+  font-size: larger;
+  text-align: center;
+  font-family: Bagatela, serif;
+  color: #4b2d1b;
+}
+
+hr {
+  margin-top: -15px;
+}
+
+.tekst1 {
+  text-align: left;
+  font-family: "Shree Devanagari 714", serif;
+  font-size: small;
+  line-height: 17px;
+  color: #4b2d1b;
+}
+
 .titel1 {
-  font-family: "Shree Devanagari 714", serif;                                  
-  font-size: small;                                                            
-}                                                                              
-                                                                               
-.bokskvinde, .boksmand {                                                       
-  border: thin solid black;                                                    
-  width: 80px;                                                                 
-  height: 25px;                                                                
-  background-color: #f4eade;                                                   
-  font-family: "Shree Devanagari 714", serif;                                  
-  font-size: small;                                                            
-  text-align: center;                                                          
-  padding: 2px;                                                                
-  a:link {                                                                     
-    color: black;                                                              
-    text-decoration-line: none;                                                
-  }                                                                            
-  a:visited {                                                                  
-    color: black;                                                              
-  }                                                                            
-  a:hover {                                                                    
-    color: gold;                                                               
-  }                                                                            
-}                                                                              
-                                                                               
-.mand{                                                                         
-  margin-top: -25px;                                                           
-  margin-left: 90px;                                                           
-}                                                                              
-                                                                               
-.kontaktop {                                                                   
-  display: grid;                                                               
-  grid-template-columns: (2, 1fr);                                             
-  grid-template-rows: (5, 1fr);                                                
-  grid-gap: 30px;                                                              
-  margin-top: -20px;                                                           
-  font-family: "Shree Devanagari 714", serif;                                  
-  font-size: small;                                                            
-}                                                                              
-                                                                               
-.item8:nth-of-type(1) {                                                        
-  grid-column: 1 / span 1;                                                     
-  grid-row: 2 / span 1;                                                        
-}                                                                              
-                                                                               
-.textInput {                                                                   
-  height: 40px;                                                                
-  width: 140px;                                                                
-  font-size: medium;                                                           
-  font-family: "Shree Devanagari 714", serif;                                  
-}                                                                              
-                                                                               
-.item8:nth-of-type(2) {                                                        
-  grid-column: 2 / span 1;                                                     
-  grid-row: 2 / span 1;                                                        
-}                                                                              
-                                                                               
-.item8:nth-of-type(3) {                                                        
-  grid-column: 1 / span 1;                                                     
-  grid-row: 3 / span 1;                                                        
-}                                                                              
-                                                                               
-.item8:nth-of-type(4) {                                                        
-  grid-column: 2 / span 1;                                                     
-  grid-row: 3 / span 1;                                                        
-}                                                                              
-                                                                               
-.item8:nth-of-type(5) {                                                        
-  grid-column: 1 / span 1;                                                     
-  grid-row: 4 / span 1;                                                        
-}                                                                              
-                                                                               
-.item8:nth-of-type(6) {                                                        
-  grid-column: 2 / span 1;                                                     
-  grid-row: 4 / span 1;                                                        
-}                                                                              
-                                                                               
-.item8:nth-of-type(7) {                                                        
+  font-family: "Shree Devanagari 714", serif;
+  font-size: small;
+}
+
+.bokskvinde, .boksmand {
+  border: solid thin $lightbeige;
+  width: 80px;
+  height: 25px;
+  background-color: #f4eade;
+  font-family: "Shree Devanagari 714", serif;
+  font-size: small;
+  text-align: center;
+  padding: 2px;
+  a {
+    color: $brown;
+    text-decoration-line: none;
+  }
+  a:hover {
+    @include gold
+  }
+}
+
+.mand{
+  margin-top: -25px;
+  margin-left: 90px;
+}
+
+.kontaktop {
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  grid-template-rows: (5, 1fr);
+  grid-gap: 30px;
+  margin-top: -20px;
+  font-family: "Shree Devanagari 714", serif;
+  font-size: small;
+}
+
+.item8:nth-of-type(1) {
   grid-column: 1 / span 1;
-  grid-row: 6 / span 1;                                                        
-  border: thin solid black;                                                    
-  height: 40px;                                                                
-  width: 140px;                                                                
-  text-align: center;                                                          
-  padding-top: 12px;                                                           
-  font-size: medium;                                                           
-  a:link {                                                                     
-    color: black;                                                              
-    text-decoration-line: none;                                                
-  }                                                                            
-  a:visited {                                                                  
-    color: black;                                                              
-  }                                                                            
-  a:hover {                                                                    
-    color: gold;                                                               
-  }                                                                            
-}                                                                              
-                                                                               
-.luksiden { //knappen der lukker siden, skrift                                 
- font-size: medium;                                                            
-  a:link {                                                                     
-   color: black;                                                               
- }                                                                             
- a:visited {                                                                   
-   color: black;                                                               
- }                                                                             
- a:hover {                                                                     
-   color: gold;                                                                
- }                                                                             
-}                                                                              
-                                                                               
-.popup { //sådan så den skygger hele skærmen i baggrunden                      
-  width:100%;                                                                  
-  height:100%;                                                                 
-  z-index: 12;                                                                 
-  display:none; //Så selve pop up ikke dukker op, medmindre man klikker        
-  position:fixed;                                                              
-  top:0;                                                                       
-  left:0;                                                                      
-  background:rgba(0,0,0,0.75);                                                 
-}                                                                              
-                                                                               
-/* Inner */                                                                    
-.popup-inner { //rediger tekst osv. her                                        
-  width:400px; //Pop up feltet - angivet bredde                                
-  height: 700px; //højden                                                      
-  padding:20px;                                                                
-  position:absolute; //gør at indholdet rykker 50%ned og til venstre.          
-  top:50%;                                                                     
-  left:50%;                                                                    
+  grid-row: 2 / span 1;
+  margin-top: -20px;
+}
+
+.textInput {
+  height: 40px;
+  width: 140px;
+  font-size: medium;
+  font-family: "Shree Devanagari 714", serif;
+  border: solid thin $darkbeige;
+}
+
+.item8:nth-of-type(2) {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  margin-top: -20px;
+}
+
+.item8:nth-of-type(3) {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.item8:nth-of-type(4) {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.item8:nth-of-type(5) {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.item8:nth-of-type(6) {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.item8:nth-of-type(7) {
+  grid-column: 1 / span 1;
+  grid-row: 6 / span 1;
+  background-color: $green;
+  border-radius: 3px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  padding-top: 11px;
+  font-size: medium;
+  margin-top: -40px;
+  a{
+    color: $brown;
+    text-decoration-line: none;
+  }
+  a:hover {
+    @include gold;
+  }
+}
+
+.luksiden { //knappen der lukker siden, skrift
+  font-size: medium;
+  a{
+    color: $brown;
+  }
+  a:hover {
+    @include gold;
+  }
+}
+
+.popup { //sådan så den skygger hele skærmen i baggrunden
+  width:100%;
+  height:100%;
+  z-index: 100;
+  display:none; //Så selve pop up ikke dukker op, medmindre man klikker
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.75);
+}
+
+/* Inner */
+.popup-inner { //rediger tekst osv. her
+  width: 350px; //Pop up feltet - angivet bredde
+  height: 625px; //højden
+  padding:20px;
+  position:absolute; //gør at indholdet rykker 50%ned og til venstre.
+  top:50%;
+  left:50%;
   -webkit-transform:translate(-50%, -50%); //Denne her rykker den -50% til vens
-  //af sin bredde og ned -50% af højden. Dette gør at den er responsiv.        
-  transform:translate(-50%, -50%);                                             
-  border-radius:3px;                                                           
-  box-shadow:0 2px 6px rgba(0,0,0,1);//skygge til boksen                       
-  background:#fff;                                                             
-}                                                                              
-                                                                               
-/* Close Button */                                                             
-.popup-close {                                                                 
-  width:30px; //lukikonet --> bredde                                           
-  height:30px;                                                                 
-  padding-top:4px;                                                             
-  display:inline-block;                                                        
-  position:absolute;                                                           
-  top:0;                                                                       
-  right:0;                                                                     
-  -webkit-transform:translate(50%, -50%); //gør det samme som overstående.     
-  transform:translate(50%, -50%);                                              
-  border-radius:1000px; //knappens radius (så den bliver cirkelformet)         
-  background:black;                                                            
-  text-decoration-line: none;                                                  
-  font-family: Bagatela, serif; // lukkeknappens skrift type                   
-  font-size:20px; //lukkeknappens skriftstørrelse                              
-  text-align:center; //placering af "tekst" da x er et bogstav                 
-  line-height:100%; //linjetættelse                                            
-  color:#fff; //farve af bogstavet x                                           
-}                                                                              
-.popup-close:hover {                                                           
-  color: $green; //farve af x når man kører musen henover                      
-  text-decoration-line:none;                                                   
-}                                                                              
+  //af sin bredde og ned -50% af højden. Dette gør at den er responsiv.
+  transform:translate(-50%, -50%);
+  border-radius:3px;
+  box-shadow:0 2px 6px rgba(0,0,0,1);//skygge til boksen
+  background: $lightbeige;
+}
+
+/* Close Button */
+.closebutton {
+  width:30px; //lukikonet --> bredde
+  height:30px;
+  padding-top:4px;
+  display:inline-block;
+  position:absolute;
+  top:0;
+  right:0;
+  -webkit-transform:translate(50%, -50%); //gør det samme som overstående.
+  transform:translate(50%, -50%);
+  border-radius:1000px; //knappens radius (så den bliver cirkelformet)
+  background-color: $brown;
+  text-decoration-line: none;
+  font-family: Bagatela, serif; // lukkeknappens skrift type
+  font-size:20px; //lukkeknappens skriftstørrelse
+  text-align:center; //placering af "tekst" da x er et bogstav
+  line-height:100%; //linjetættelse
+  color: $darkbeige; //farve af bogstavet x
+}
+.popup-close:hover {
+  color: $green; //farve af x når man kører musen henover
+  text-decoration-line:none;
+}
+
 //---------------------------------------BILLEDER/TEKST KASSER ØVERST-------------------------------------
 .billedebokse {
   display: grid;
-  grid-template-columns: (3, 1fr);
-  grid-template-rows: (1, 1fr);
+  grid-template-columns: (1fr, 1fr);
+  grid-template-rows: (3fr, 1fr);
   justify-content: space-between;
   grid-gap: 100px;
-  padding-left: 95px;
-  margin-top: 25px;
+  margin: 20px;
   position: relative;
   z-index: 0;
 }
@@ -350,8 +381,8 @@ hr {
 
 .billedforan {
   display: grid;
-  grid-template-columns: (3, 1fr);
-  grid-template-rows: (7, 1fr);
+  grid-template-columns: (3fr, 1fr);
+  grid-template-rows: (7fr, 1fr);
   grid-gap: 70px;
   justify-content: space-between;
   font-family: Bagatela, serif;
@@ -359,7 +390,7 @@ hr {
   position: absolute;
   z-index: 1;
   margin-top: -860px;
-  padding-left: 24%;
+  padding-left: 40px;
 }
 
 .boks1 {
@@ -371,7 +402,7 @@ hr {
   background-color: #fff5ed;
 }
 
-.tekst1, .tekst2, .tekst3 {
+.tekst11, .tekst2, .tekst3 {
   font-family: "Shree Devanagari 714", serif;
   font-size: large;
   color: #4b2d1b;
@@ -446,17 +477,17 @@ hr {
 //mellemstreg
 
 .streg2 {
-  width: 453px;
+  width: 375px;
   margin-top: 150px;
-  padding-left: 100px;
+  padding-left: 20px;
 }
 
 
 //---------------------------------------VINUDVALG ALLE 3 --------------------------------------------
 
  @mixin vinboks{
-   width: 486px;
-   height: 316px;
+   width: 370px;
+   height: 310px;
    background-color: $lightbeige;
    @include bordergold;
    margin: 200px auto 200px auto;
@@ -490,8 +521,8 @@ hr {
  }
  
  .ffh{
-   width: 350px;
-   margin-left: 35px;
+   width: 200px;
+   margin-left: 20px;
    margin-top: 70px;
    a{                      
      color: $brown;        
@@ -522,18 +553,18 @@ hr {
  }
  
  .streg1 {
-   width: 453px;          
-   margin-top: 120px;
-   margin-bottom: 120px;
-   padding-left: 100px;   
+   width: 375px;
+   margin-top: 90px;
+   margin-bottom: 90px;
+   padding-left: 20px;
    
  }
 //---------------------------------------3 BOKSE MED TEKST + TEKST INDENI----------------------------------
 
 .besøgos {
   display: grid;
-  grid-template-columns: (1, 1fr);
-  grid-template-rows: (3, 1fr);
+  grid-template-columns: (1fr, 1fr);
+  grid-template-rows: (3fr, 1fr);
   grid-gap: 20px;
 }
 
@@ -541,7 +572,7 @@ hr {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   @include bordergold;
-  width: 536px;
+  width: 375px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -567,7 +598,7 @@ hr {
   @include bordergold;
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family:Bagatela, serif;
@@ -579,7 +610,7 @@ hr {
   grid-column: 1 / span 1;   
   grid-row: 2 / span 1;
   @include bordergold;
-  width: 536px;
+  width: 375px;
   height: 350px;                
   background-color: #fff5ed;                
   padding-top: 40px;            
@@ -607,7 +638,7 @@ hr {
   @include bordergold;
   width: 220px;               
   height: 50px;               
-  margin-left: 170px;         
+  margin-left: 75px;
   background-color: #f4eade;  
   color: #878532;             
   font-family:Bagatela, serif;
@@ -623,7 +654,7 @@ hr {
   height: 40px;                                  
   width: 220px;                                  
   padding-left: 10px;
-  margin-left: 25px;
+  margin-left: 20px;
 }                                                
 
 
@@ -639,7 +670,7 @@ hr {
   grid-column: 1 / span 1;   
   grid-row: 3 / span 1;
   @include bordergold;
-  width: 536px;
+  width: 375px;
   height: 350px;                
   background-color: #fff5ed;                
   padding-top: 40px;            
@@ -663,7 +694,7 @@ hr {
   @include bordergold;
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family:Bagatela, serif;
@@ -678,6 +709,7 @@ hr {
   background-color: $brown;
   padding: 5px 15px 15px 15px;
   margin-top: 20px;
+  width: 375px;
 }
 
 .display_web{
@@ -748,8 +780,704 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  
   // Alt der ændres i tablet stående fra mobil
+
+  // ---------------------------Header Ipad ----------------------------
+
+  .baggrundsbillede{
+    width: 768px;
+    height: 400px;
+    background-image: url("../Image/mobil_baggrund.jpg");
+    background-size: cover;
+    padding-bottom: 20px;
+    position: absolute;
+  }
+
+  .header{
+    width: 768px;
+    height: 400px;
+    background-color: rgba(75, 45, 27, 0.7);
+  }
+
+  .fa-bars{
+    @include gold;
+    font-size: 30pt;
+    margin-left: 85%;
+    margin-top: 40px;
+  }
+
+  .logomobil{
+    margin: -20px auto 40px auto;
+    padding-bottom: 40px;
+    width: 45%;
+  }
+  #menubaggrund{
+    width: 768px;
+    height: 100vh;
+    background-color: rgba(75, 45, 27, 0.98);
+    display: none;
+    padding-top: 225px;
+    padding-bottom: 60%;
+    z-index: 5;
+    position: absolute;
+  }
+
+  .fa-times{
+    @include gold;
+    font-size: 40pt;
+    z-index: 3;
+    position: absolute;
+    margin-left: 38%;
+    margin-top: -190px;
+  }
+
+
+  #menubaggrund li{
+    padding-bottom: 30px;
+    font-size: 25pt;
+    text-align: center;
+    list-style: none;
+    a{
+      text-decoration: none;
+      @include gold;
+    }
+  }
+
+  //------------------POPUP  IPAD -----------------------------------------
+
+  .mobilcta {
+    color: #4b2d1b;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: 16pt;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 470px;
+    line-height: 22px;
+  }
+
+  .mobilcta2 {
+    color: #878532;
+    font-family: Bagatela, serif;
+    font-size: 25pt;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  a:link {
+    color: #878532;
+    text-decoration-line: none;
+  }
+
+  a:visited {
+    color: #878532;
+  }
+
+  a:hover {
+    @include gold;
+  }
+  .email {
+    margin-top: 200px;
+  }
+
+  .knappen {
+    margin-top: -10px;
+    a:link {
+      color: #878532;
+      text-decoration-line: none;
+    }
+    a:visited {
+      color: #878532;
+    }
+    a:hover {
+      color: gold;
+    }
+  }
+
+  h2 {
+    font-size: larger;
+    text-align: center;
+    font-family: Bagatela, serif;
+    color: #4b2d1b;
+  }
+
+  hr {
+    margin-top: -15px;
+  }
+
+  .tekst1 {
+    text-align: left;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+    line-height: 17px;
+    color: #4b2d1b;
+  }
+
+  .titel1 {
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+  }
+
+  .bokskvinde, .boksmand {
+    border: solid thin $lightbeige;
+    width: 80px;
+    height: 25px;
+    background-color: #f4eade;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+    text-align: center;
+    padding: 2px;
+    a {
+      color: $brown;
+      text-decoration-line: none;
+    }
+    a:hover {
+      @include gold
+    }
+  }
+
+  .mand{
+    margin-top: -25px;
+    margin-left: 90px;
+  }
+
+  .kontaktop {
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (5, 1fr);
+    grid-gap: 30px;
+    margin-top: -20px;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+  }
+
+  .item8:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin-top: -20px;
+  }
+
+  .textInput {
+    height: 40px;
+    width: 140px;
+    font-size: medium;
+    font-family: "Shree Devanagari 714", serif;
+    border: solid thin $darkbeige;
+  }
+
+  .item8:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    margin-top: -20px;
+  }
+
+  .item8:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .item8:nth-of-type(4) {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .item8:nth-of-type(5) {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .item8:nth-of-type(6) {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .item8:nth-of-type(7) {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    background-color: $green;
+    border-radius: 3px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    padding-top: 11px;
+    font-size: medium;
+    margin-top: -40px;
+    a{
+      color: $brown;
+      text-decoration-line: none;
+    }
+    a:hover {
+      @include gold;
+    }
+  }
+
+  .luksiden { //knappen der lukker siden, skrift
+    font-size: medium;
+    a{
+      color: $brown;
+    }
+    a:hover {
+      @include gold;
+    }
+  }
+
+  .popup { //sådan så den skygger hele skærmen i baggrunden
+    width:100%;
+    height:100%;
+    z-index: 100;
+    display:none; //Så selve pop up ikke dukker op, medmindre man klikker
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.75);
+  }
+
+  /* Inner */
+  .popup-inner { //rediger tekst osv. her
+    width: 350px; //Pop up feltet - angivet bredde
+    height: 625px; //højden
+    padding:20px;
+    position:absolute; //gør at indholdet rykker 50%ned og til venstre.
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%); //Denne her rykker den -50% til vens
+    //af sin bredde og ned -50% af højden. Dette gør at den er responsiv.
+    transform:translate(-50%, -50%);
+    border-radius:3px;
+    box-shadow:0 2px 6px rgba(0,0,0,1);//skygge til boksen
+    background: $lightbeige;
+  }
+
+  /* Close Button */
+  .closebutton {
+    width:30px; //lukikonet --> bredde
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0;
+    right:0;
+    -webkit-transform:translate(50%, -50%); //gør det samme som overstående.
+    transform:translate(50%, -50%);
+    border-radius:1000px; //knappens radius (så den bliver cirkelformet)
+    background-color: $brown;
+    text-decoration-line: none;
+    font-family: Bagatela, serif; // lukkeknappens skrift type
+    font-size:20px; //lukkeknappens skriftstørrelse
+    text-align:center; //placering af "tekst" da x er et bogstav
+    line-height:100%; //linjetættelse
+    color: $darkbeige; //farve af bogstavet x
+  }
+  .popup-close:hover {
+    color: $green; //farve af x når man kører musen henover
+    text-decoration-line:none;
+  }
+
+
+//-------------------------BILLEDER TIL IPAD ØVERST ------------------------
+
+  .billedebokse {
+    display: grid;
+    grid-template-columns: (1fr, 1fr);
+    grid-template-rows: (3fr, 1fr);
+    justify-content: space-between;
+    grid-gap: 100px;
+    padding-left: 150px;
+    padding-top: 40px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .item2:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .item2:nth-of-type(2) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .item2:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  //---------------------------------3 BILLEDTEKST FORAN BILLEDERNE, ØVERST---------------------------------
+
+  .billedforan {
+    display: grid;
+    grid-template-columns: (3fr, 1fr);
+    grid-template-rows: (7fr, 1fr);
+    grid-gap: 70px;
+    justify-content: space-between;
+    font-family: Bagatela, serif;
+    font-size: larger;
+    position: absolute;
+    z-index: 1;
+    margin-top: -860px;
+    padding-left: 210px;
+  }
+
+  .boks1 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    @include bordergold;
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed;
+  }
+
+  .tekst11, .tekst2, .tekst3 {
+    font-family: "Shree Devanagari 714", serif;
+    font-size: large;
+    color: #4b2d1b;
+  }
+
+  .boks2 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    @include bordergold;
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed;
+  }
+
+  .boks3 {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+    @include bordergold;
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed;
+  }
+
+  .item3:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center;
+  }
+
+  .rund {
+    @include gold;
+  }
+
+  .item3:nth-of-type(2) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    @include bordergold;
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center;
+  }
+
+  .vin {
+    @include gold;
+  }
+
+
+  .item3:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    @include bordergold;
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center;
+  }
+
+  .events {
+    @include gold;
+  }
+
+
+  //mellemstreg
+
+  .streg2 {
+    width: 500px;
+    margin-top: 160px;
+    padding-left: 150px;
+  }
+
+  //---------------------------------------VINUDVALG ALLE 3 --------------------------------------------
+
+  @mixin vinboks{
+    width: 620px;
+    height: 310px;
+    background-color: $lightbeige;
+    @include bordergold;
+    margin: 200px auto 200px auto;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    padding-left: 85px;
+    padding-top: 50px;
+  }
+
+  .rodvine, .hvidvine, .rosevine{
+    @include vinboks;
+  }
+
+  .vinbillede{
+    height: 480px;
+    width: auto;
+    position: absolute;
+    left: -120px;
+    z-index: 1;
+    margin-top: -120px;
+  }
+
+  .hvid, .rose {
+    height: 550px;
+    margin-top: -170px;
+  }
+
+  #rodvin{
+    margin-top: 50px;
+  }
+
+  .ffh{
+    margin-left: 190px;
+    margin-top: 70px;
+    font-size: 20pt;
+    a{
+      color: $brown;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $green;
+    }
+  }
+
+  .speciel_tekst{
+    width: 325px;
+    margin-left: 45px;
+  }
+
+  .speciel_cta{
+    margin-top: 30px;
+  }
+
+  .w{
+    font-family: "Shree Devanagari 714", serif;
+    font-size: 20pt;
+    font-weight: lighter;
+  }
+
+  .name{
+    font-size: 40pt;
+
+  }
+
+  .streg1 {
+    width: 500px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-left: 200px;
+
+  }
+
+  //---------------------------------------3 BOKSE MED TEKST + TEKST INDENI----------------------------------
+
+  .besøgos {
+    display: grid;
+    grid-template-columns: (1fr, 1fr);
+    grid-template-rows: (3fr, 1fr);
+    grid-gap: 20px;
+  }
+
+  .item6:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    width: 768px;
+    height: 400px;
+    background-color: #fff5ed;
+    padding-top: 40px;
+    margin-top: 40px;
+    font-size: 40pt;
+    font-family: Bagatela, serif;
+    text-align: center;
+  }
+
+  .kontaktos {
+    @include gold;
+  }
+
+  .undertekst1 {
+    font-size: x-large;
+    font-family: "Shree Devanagari 714", serif;
+    line-height: 30px;
+    color: #4b2d1b;
+  }
+
+
+  .boks01 {
+    @include bordergold;
+    width: 220px;
+    height: 50px;
+    margin-left: 270px;
+    background-color: #f4eade;
+    color: #878532;
+    font-size: 20pt;
+    font-family:Bagatela, serif;
+    padding-top: 7px;
+  }
+
+
+  .item6:nth-of-type(2) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    @include bordergold;
+    width: 768px;
+    height: 400px;
+    background-color: #fff5ed;
+    padding-top: 40px;
+    font-size: 40pt;
+    font-family: Bagatela, serif;
+    text-align: center;
+  }
+
+  .nyhed {
+    @include gold;
+  }
+
+  .bokse{
+    margin-top: 15px;
+    font-size: large;
+    font-family: "Shree Devanagari 714", serif;
+    @include bordergold;
+    height: 40px;
+    width: 220px;
+    padding-left: 10px;
+  }
+
+
+  .boks02b {
+    @include bordergold;
+    width: 220px;
+    height: 50px;
+    margin-left: 270px;
+    background-color: #f4eade;
+    color: #878532;
+    font-family:Bagatela, serif;
+    padding-top: 7px;
+    margin-top: 8px;
+    font-size: 20pt;
+
+  }
+
+  .textInputbokse {
+    margin-top: 15px;
+    font-size: 10pt;
+    font-family: "Shree Devanagari 714", serif;
+    @include bordergold;
+    height: 40px;
+    width: 220px;
+    padding-left: 10px;
+    margin-left: 2px;
+  }
+
+
+  .undertekst2 {
+    font-size: x-large;
+    font-family: "Shree Devanagari 714", serif;
+    line-height: 30px;
+    color: #4b2d1b;
+  }
+
+
+  .item6:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    @include bordergold;
+    width: 768px;
+    height: 400px;
+    background-color: #fff5ed;
+    padding-top: 40px;
+    font-size: 40pt;
+    font-family: Bagatela, serif;
+    text-align: center;
+  }
+
+  .forhandler {
+    @include gold;
+  }
+
+  .undertekst3 {
+    font-size: x-large;
+    font-family: "Shree Devanagari 714", serif;
+    line-height: 30px;
+    color: #4b2d1b;
+  }
+
+  .boks03b {
+    @include bordergold;
+    width: 220px;
+    height: 50px;
+    margin-left: 270px;
+    background-color: #f4eade;
+    color: #878532;
+    font-family:Bagatela, serif;
+    padding-top: 7px;
+    margin-top: 8px;
+    font-size: 20pt;
+  }
+
+
+  //---------------------------------------FOOTEREN--------------------------------------------
+
+  .footer{
+    background-color: $brown;
+    padding: 5px 15px 15px 15px;
+    margin-top: 20px;
+    width: 768px;
+  }
+
+  .display_web{
+    display: none;
+  }
+
+  .footertekst, .aabningstider, .voresvine, .arrangementer{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 30px;
+  }
+
+  .overskrift_f{
+    @include gold;
+  }
+
+  .stregWEB{
+    margin-top: 100px;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .socialemedier{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+    margin-top: -35px;
+  }
+
+  .fa-instagram, .fa-facebook-square, .fa-youtube{
+    background-color: $brown;
+    width: 60px;
+    text-align: center;
+    color: $darkbeige;
+    margin-bottom: 20px;
+    a:hover{
+
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -758,218 +1486,217 @@ img {
 
 @media screen and (min-width: 1200px) {
 
-
- //---------------------------- ALT WEB --------------------------------------------
+  //---------------------------- ALT WEB --------------------------------------------
 
   .baggrundsbillede, .vinelementer, .vintekst {
-  display: none;
-}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-//------------------------------jquery popup WEB ----------------------------------------
+    display: none;
+  }
 
-.email {                                                                                      
-  margin-top: 200px;                                                                            
-}                                                                                             
-                                                                                              
-.knappen {                                                                                    
-  margin-top: -10px;                                                                          
-  a:link {                                                                                    
-    color: #878532;                                                                           
-    text-decoration-line: none;                                                               
-  }                                                                                           
-  a:visited {                                                                                 
-    color: #878532;                                                                           
-  }                                                                                           
-  a:hover {                                                                                   
-    color: gold;                                                                              
-  }                                                                                           
-}                                                                                             
-                                                                                              
-h2 {                                                                                          
-  font-size: larger;                                                                          
-  text-align: center;                                                                         
-  font-family: Bagatela, serif;                                                               
-  color: #4b2d1b;                                                                             
-}                                                                                             
-                                                                                              
-hr {                                                                                          
-  margin-top: -15px;                                                                          
-}                                                                                             
-                                                                                              
-.tekst1 {                                                                                     
-  text-align: left;                                                                           
-  font-family: "Shree Devanagari 714", serif;                                                 
-  font-size: small;                                                                           
-  line-height: 17px;                                                                          
-  color: #4b2d1b;                                                                             
-}                                                                                             
-                                                                                              
-.titel1 {
-  font-family: "Shree Devanagari 714", serif;                                                 
-  font-size: small;                                                                           
-}                                                                                             
-                                                                                              
-.bokskvinde, .boksmand {                                                                      
-  border: thin solid black;                                                                   
-  width: 80px;                                                                                
-  height: 25px;                                                                               
-  background-color: #f4eade;                                                                  
-  font-family: "Shree Devanagari 714", serif;                                                 
-  font-size: small;                                                                           
-  text-align: center;                                                                         
-  padding: 2px;                                                                               
-  a:link {                                                                                    
-    color: black;                                                                             
-    text-decoration-line: none;                                                               
-  }                                                                                           
-  a:visited {                                                                                 
-    color: black;                                                                             
-  }                                                                                           
-  a:hover {                                                                                   
-    color: gold;                                                                              
-  }                                                                                           
-}                                                                                             
-                                                                                              
-.mand{                                                                                        
-  margin-top: -25px;                                                                          
-  margin-left: 90px;                                                                          
-}                                                                                             
-                                                                                              
-.kontaktop {                                                                                  
-  display: grid;                                                                              
-  grid-template-columns: (2, 1fr);                                                            
-  grid-template-rows: (5, 1fr);                                                               
-  grid-gap: 30px;                                                                             
-  margin-top: -20px;                                                                          
-  font-family: "Shree Devanagari 714", serif;                                                 
-  font-size: small;                                                                           
-}                                                                                             
-                                                                                              
-.item8:nth-of-type(1) {                                                                       
-  grid-column: 1 / span 1;                                                                    
-  grid-row: 2 / span 1;                                                                       
-}                                                                                             
-                                                                                              
-.textInput {                                                                                  
-  height: 40px;                                                                               
-  width: 140px;                                                                               
-  font-size: medium;                                                                          
-  font-family: "Shree Devanagari 714", serif;                                                 
-}                                                                                             
-                                                                                              
-.item8:nth-of-type(2) {                                                                       
-  grid-column: 2 / span 1;                                                                    
-  grid-row: 2 / span 1;                                                                       
-}                                                                                             
-                                                                                              
-.item8:nth-of-type(3) {                                                                       
-  grid-column: 1 / span 1;                                                                    
-  grid-row: 3 / span 1;                                                                       
-}                                                                                             
-                                                                                              
-.item8:nth-of-type(4) {                                                                       
-  grid-column: 2 / span 1;                                                                    
-  grid-row: 3 / span 1;                                                                       
-}                                                                                             
-                                                                                              
-.item8:nth-of-type(5) {                                                                       
-  grid-column: 1 / span 1;                                                                    
-  grid-row: 4 / span 1;                                                                       
-}                                                                                             
-                                                                                              
-.item8:nth-of-type(6) {                                                                       
-  grid-column: 2 / span 1;                                                                    
-  grid-row: 4 / span 1;                                                                       
-}                                                                                             
-                                                                                              
-.item8:nth-of-type(7) {                                                                       
-  grid-column: 1 / span 1;                                                                    
-  grid-row: 6 / span 1;                                                                       
-  border: thin solid black;                                                                   
-  height: 40px;                                                                               
-  width: 140px;                                                                               
-  text-align: center;                                                                         
-  padding-top: 12px;                                                                          
-  font-size: medium;                                                                          
-  a:link {                                                                                    
-    color: black;                                                                             
-    text-decoration-line: none;                                                               
-  }                                                                                           
-  a:visited {                                                                                 
-    color: black;                                                                             
-  }                                                                                           
-  a:hover {                                                                                   
-    color: gold;                                                                              
-  }                                                                                           
-}                                                                                             
-                                                                                              
-.luksiden { //knappen der lukker siden, skrift                                                
- font-size: medium;                                                                           
-  a:link {                                                                                    
-   color: black;                                                                              
- }                                                                                            
- a:visited {                                                                                  
-   color: black;                                                                              
- }                                                                                            
- a:hover {                                                                                    
-   color: gold;                                                                               
- }                                                                                            
-}                                                                                             
-                                                                                              
-.popup { //sådan så den skygger hele skærmen i baggrunden                                     
-  width:100%;                                                                                 
-  height:100%;
-  z-index: 12;
-  display:none; //Så selve pop up ikke dukker op, medmindre man klikker                       
-  position:fixed;                                                                             
-  top:0;                                                                                      
-  left:0;
-  background:rgba(0,0,0,0.75);                                                                
-}
-  
-/* Inner */                                                                                   
-.popup-inner { //rediger tekst osv. her                                                       
-  width:400px; //Pop up feltet - angivet bredde
-  height: 700px; //højden                                                                     
-  padding:20px;                                                                               
-  position:absolute; //gør at indholdet rykker 50%ned og til venstre.                         
-  top:50%;                                                                                    
-  left:50%;                                                                                   
-  -webkit-transform:translate(-50%, -50%); //Denne her rykker den -50% til venstre            
-  //af sin bredde og ned -50% af højden. Dette gør at den er responsiv.                       
-  transform:translate(-50%, -50%);                                                            
-  border-radius:3px;                                                                          
-  box-shadow:0 2px 6px rgba(0,0,0,1);//skygge til boksen                                      
-  background:#fff;                                                                            
-}
-  
-/* Close Button */                                                                            
-.popup-close {                                                                                
-  width:30px; //lukikonet --> bredde                                                          
-  height:30px;                                                                                
-  padding-top:4px;                                                                            
-  display:inline-block;                                                                       
-  position:absolute;                                                                          
-  top:0;                                                                                      
-  right:0;
-  -webkit-transform:translate(50%, -50%); //gør det samme som overstående.                    
-  transform:translate(50%, -50%);                                                             
-  border-radius:1000px; //knappens radius (så den bliver cirkelformet)                        
-  background:black;                                                                           
-  text-decoration-line: none;                                                                 
-  font-family: Bagatela, serif; // lukkeknappens skrift type                                  
-  font-size:20px; //lukkeknappens skriftstørrelse                                             
-  text-align:center; //placering af "tekst" da x er et bogstav                                
-  line-height:100%; //linjetættelse                                                           
-  color:#fff; //farve af bogstavet x                                                          
-}                                                                                             
-.popup-close:hover {                                                                          
-  color: $green; //farve af x når man kører musen henover                                     
-  text-decoration-line:none;                                                                  
-}                                                                                             
-                                                                                              
- //------------------------------MENUBAR WEB ----------------------------------------
-  
+  //------------------------------jquery popup WEB ----------------------------------------
+
+  .email {
+    margin-top: 200px;
+  }
+
+  .knappen {
+    margin-top: -10px;
+    a:link {
+      color: #878532;
+      text-decoration-line: none;
+    }
+    a:visited {
+      color: #878532;
+    }
+    a:hover {
+      color: gold;
+    }
+  }
+
+  h2 {
+    font-size: larger;
+    text-align: center;
+    font-family: Bagatela, serif;
+    color: #4b2d1b;
+  }
+
+  hr {
+    margin-top: -15px;
+  }
+
+  .tekst1 {
+    text-align: left;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+    line-height: 17px;
+    color: #4b2d1b;
+  }
+
+  .titel1 {
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+  }
+
+  .bokskvinde, .boksmand {
+    border: thin solid black;
+    width: 80px;
+    height: 25px;
+    background-color: #f4eade;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+    text-align: center;
+    padding: 2px;
+    a:link {
+      color: black;
+      text-decoration-line: none;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      color: gold;
+    }
+  }
+
+  .mand {
+    margin-top: -25px;
+    margin-left: 90px;
+  }
+
+  .kontaktop {
+    display: grid;
+    grid-template-columns: (2fr, 1fr);
+    grid-template-rows: (5fr, 1fr);
+    grid-gap: 30px;
+    margin-top: -20px;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+  }
+
+  .item8:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .textInput {
+    height: 40px;
+    width: 140px;
+    font-size: medium;
+    font-family: "Shree Devanagari 714", serif;
+  }
+
+  .item8:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .item8:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .item8:nth-of-type(4) {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .item8:nth-of-type(5) {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .item8:nth-of-type(6) {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .item8:nth-of-type(7) {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    border: thin solid black;
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    padding-top: 12px;
+    font-size: medium;
+    a:link {
+      color: black;
+      text-decoration-line: none;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      color: gold;
+    }
+  }
+
+  .luksiden { //knappen der lukker siden, skrift
+    font-size: medium;
+    a:link {
+      color: black;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      color: gold;
+    }
+  }
+
+  .popup { //sådan så den skygger hele skærmen i baggrunden
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    display: none; //Så selve pop up ikke dukker op, medmindre man klikker
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  /* Inner */
+  .popup-inner { //rediger tekst osv. her
+    width: 400px; //Pop up feltet - angivet bredde
+    height: 700px; //højden
+    padding: 20px;
+    position: absolute; //gør at indholdet rykker 50%ned og til venstre.
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%); //Denne her rykker den -50% til venstre
+    //af sin bredde og ned -50% af højden. Dette gør at den er responsiv.
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 1); //skygge til boksen
+    background: #fff;
+  }
+
+  /* Close Button */
+  .popup-close {
+    width: 30px; //lukikonet --> bredde
+    height: 30px;
+    padding-top: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(50%, -50%); //gør det samme som overstående.
+    transform: translate(50%, -50%);
+    border-radius: 1000px; //knappens radius (så den bliver cirkelformet)
+    background: black;
+    text-decoration-line: none;
+    font-family: Bagatela, serif; // lukkeknappens skrift type
+    font-size: 20px; //lukkeknappens skriftstørrelse
+    text-align: center; //placering af "tekst" da x er et bogstav
+    line-height: 100%; //linjetættelse
+    color: #fff; //farve af bogstavet x
+  }
+  .popup-close:hover {
+    color: $green; //farve af x når man kører musen henover
+    text-decoration-line: none;
+  }
+
+  //------------------------------MENUBAR WEB ----------------------------------------
+
   .menubar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -987,512 +1714,501 @@ hr {
     }
   }
 
+  .item1:nth-of-type(1) {
+    grid-column: 1 / span 7;
+    grid-row: 1 / span 1;
+    width: 100%;
+    background-image: url("../Image/headerbaggrund.png");
+    z-index: -1;
+    background-size: cover;
+  }
 
-.item1:nth-of-type(1) {
-  grid-column: 1 / span 7;
-  grid-row: 1 / span 1;
-  width: 100%;
-  background-image: url("../Image/headerbaggrund.png");
-  z-index: -1;
-  background-size: cover;
-}
+  .item1:nth-of-type(2) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    margin-top: 100px;
+    margin-left: 30px;
+    z-index: 3;
+    font-size: 15pt;
+  }
 
-.item1:nth-of-type(2) {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-  margin-top: 100px;
-  margin-left: 30px;
-  z-index: 3;
-  font-size: 15pt;
-}
+  .item1:nth-of-type(3) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    margin-top: 100px;
+    z-index: 3;
+    margin-left: -35px;
+    font-size: 15pt;
+  }
 
-.item1:nth-of-type(3) {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
-  margin-top: 100px;
-  z-index: 3;
-  margin-left: -35px;
-  font-size: 15pt;
-}
+  .item1:nth-of-type(4) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    margin-top: 100px;
+    z-index: -1;
+    margin-left: -60px;
+    font-size: 15pt;
+  }
 
-.item1:nth-of-type(4) {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
-  margin-top: 100px;
-  z-index: -1;
-  margin-left: -60px;
-  font-size: 15pt;
-}
+  .item1:nth-of-type(5) {
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
+    margin-top: 40px;
+    z-index: 3;
+    margin-left: -70px;
+  }
 
-.item1:nth-of-type(5){
-  grid-column: 4 / span 2;
-  grid-row: 1 / span 2;
-  margin-top: 40px;
-  z-index: 3;
-  margin-left: -70px;
-}
+  .item1:nth-of-type(6) {
+    grid-column: 6/ span 1;
+    grid-row: 1 / span 1;
+    margin-top: 100px;
+    z-index: 3;
+    font-size: 15pt;
+    margin-left: -50px;
+  }
 
-.item1:nth-of-type(6) {
-  grid-column: 6/ span 1;
-  grid-row: 1 / span 1;
-  margin-top: 100px;
-  z-index: 3;
-  font-size: 15pt;
-  margin-left: -50px;
-}
+  .item1:nth-of-type(7) {
+    grid-column: 7 / span 1;
+    grid-row: 1 / span 1;
+    margin-top: 100px;
+    z-index: 3;
+    font-size: 15pt;
+  }
 
-.item1:nth-of-type(7) {
-  grid-column: 7 / span 1;
-  grid-row: 1 / span 1;
-  margin-top: 100px;
-  z-index: 3;
-  font-size: 15pt;
-}
+  .item1:nth-of-type(8) {
+    grid-column: 1 / span 7;
+    grid-row: 1 / span 1;
+    z-index: 2;
+    background-color: $overlay_web;
+  }
 
-.item1:nth-of-type(8) {
-  grid-column: 1 / span 7;
-  grid-row: 1 / span 1;
-  z-index: 2;
-  background-color: $overlay_web; 
-}
+  .item1:nth-of-type(9) {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    margin-left: 30px;
+    z-index: 3;
+    margin-top: 125px;
+    margin-right: 70px;
+  }
 
-.item1:nth-of-type(9) {
-  grid-column: 1 / span 3;
-  grid-row: 1 / span 1;
-  margin-left: 30px;
-  z-index: 3;
-  margin-top: 125px;
-  margin-right: 70px;
-}
+  .item1:nth-of-type(10) {
+    grid-column: 6 / span 2;
+    grid-row: 1/ span 1;
+    z-index: 3;
+    margin-top: 125px;
+    margin-left: -100px;
+  }
 
-.item1:nth-of-type(10) {
-  grid-column: 6 / span 2;
-  grid-row: 1/ span 1;
-  z-index: 3;
-  margin-top: 125px;
-  margin-left: -100px;
-}
+  .mobilcta {
+    margin-top: -570px;
+    position: absolute;
+    z-index: 4;
+    font-weight: bolder;
+    text-align: left;
+    font-family: "Shree Devanagari 714", serif;
+    @include gold;
+    font-size: larger;
+    line-height: 29px;
+  }
 
- .mobilcta {
-   margin-top: -570px;
-   position: absolute;
-   z-index: 4;
-   font-weight: bolder;
-   text-align: left;
-   font-family: "Shree Devanagari 714",serif;
-   @include gold;
-   font-size: larger;
-   line-height: 29px;
- }
+  .mobilcta2 {
+    margin-top: -380px;
+    position: absolute;
+    z-index: 4;
+    font-size: 20pt;
+    padding-left: 30px;
+  }
 
-.mobilcta2 {
-  margin-top: -380px;
-  position: absolute;
-  z-index: 4;
-  font-size: 20pt;
-  padding-left: 30px;
-}
+  //---------------------------------LINKS------------------------------------------
 
+  a:link {
+    color: #878532;
+    text-decoration-line: none;
+  }
 
+  a:visited {
+    color: #878532;
+  }
 
-//---------------------------------LINKS------------------------------------------
+  a:hover {
+    @include gold;
+  }
 
-a:link {                         
-  color: #878532;                
-  text-decoration-line: none;    
-}                                
-                                 
-a:visited {                      
-  color: #878532;                
-}                                
-                                 
-a:hover {                        
-  @include gold;                 
-}                                
-                                                                        
-//--------------------------------DE 3 BILLEDER WEB-------------------------------
+  //--------------------------------DE 3 BILLEDER WEB-------------------------------
 
-.billedebokse {
-  display: grid;
-  grid-template-columns: (3, 1fr);
-  grid-template-rows: (1, 1fr);
-  position: relative;
-  z-index: 0;
-  margin-right: 90px;
-  margin-top: 70px;
-}
+  .billedebokse {
+    display: grid;
+    grid-template-columns: (3fr, 1fr);
+    grid-template-rows: (1fr, 1fr);
+    position: relative;
+    z-index: 0;
+    margin-right: 90px;
+    margin-top: 70px;
+  }
 
-.item2:nth-of-type(1) {
-  grid-column: 1 / span 1;                                              
-  grid-row: 1 / span 1;
-}
+  .item2:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
 
- .item2:nth-of-type(2) {
-   grid-column: 2 / span 1;
-   grid-row: 1 / span 1;
- }
+  .item2:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
 
- .item2:nth-of-type(3) {                                                
-   grid-column: 3 / span 1;
-   grid-row: 1 / span 1;
- }
+  .item2:nth-of-type(3) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
 
+  //-----------------------3 billedetekst foran billederne--------------------------
 
- //-----------------------3 billedetekst foran billederne--------------------------
+  .billedforan {
+    display: grid;
+    grid-template-columns: (3fr, 1fr);
+    grid-template-rows: (1fr, 1fr);
+    grid-gap: 170px 170px;
+    justify-content: space-between;
+    font-family: Bagatela, serif;
+    font-size: larger;
+    position: absolute;
+    z-index: 1;
+    padding-left: 6%;
+    margin-top: -130px;
+    color: gold;
+  }
 
-.billedforan {                                                          
-  display: grid;
-  grid-template-columns: (3, 1fr);
-  grid-template-rows: (1, 1fr);
-  grid-gap: 170px 170px;                                                
-  justify-content: space-between;                                       
-  font-family: Bagatela, serif;                                         
-  font-size: larger;                                                    
-  position: absolute;                                                   
-  z-index: 1;                                                           
-  padding-left: 6%;                                                     
-  margin-top: -130px;
-  color: gold;
-}                                                                       
-                                                                        
-.boks1 {                                                                
-  grid-column: 1 / span 1;                                              
-  grid-row: 1 / span 1;                                                 
-  @include bordergold;
-  height: 172px;                                                        
-  width: 290px;                                                         
-  background-color: #fff5ed;
-  margin-left: 40px;
-}                                                                       
-                                                                        
-.tekst11, .tekst2, .tekst3 {
-  font-family: "Shree Devanagari 714", serif;                           
-  font-size: large;
-  color: #4b2d1b;
-}                                                                       
-                                                                        
-.boks2 {                                                                
-  grid-column: 2 / span 1;                                              
-  grid-row: 1 / span 1;                                                 
-  @include bordergold;
-  height: 172px;                                                        
-  width: 290px;                                                         
-  background-color: #fff5ed;
-  margin-left: -10px;
-}                                                                       
-                                                                        
-.boks3 {                                                                
-  grid-column: 3 / span 1;                                              
-  grid-row: 1 / span 1;                                                 
-  @include bordergold;
-  height: 172px;                                                        
-  width: 290px;                                                         
-  background-color: #fff5ed;
-  margin-left: -5px;
-}                                                                       
-                                                                        
-.item3:nth-of-type(1) {                                                 
-  grid-column: 1 / span 1;                                              
-  grid-row: 1 / span 1;                                                 
-  @include bordergold;
-  height: 148px;                                                        
-  width: 264px;                                                         
-  padding: 10px;                                                        
-  margin: 10px auto auto auto;                                          
-  text-align: center;                                                   
-                                                                        
-}                                                                       
-                                                                        
-.item3:nth-of-type(2) {                                                 
-  grid-column: 2 / span 1;                                              
-  grid-row: 1 / span 1;                                                 
-  @include bordergold;
-  height: 148px;                                                        
-  width: 264px;                                                         
-  padding: 10px;                                                        
-  margin: 10px auto auto auto;                                          
-  text-align: center;                                                   
-}                                                                       
-                                                                        
-.item3:nth-of-type(3) {                                                 
-  grid-column: 3 / span 1;                                              
-  grid-row: 1 / span 1;                                                 
-  @include bordergold;
-  height: 148px;                                                        
-  width: 264px;                                                         
-  padding: 10px;                                                        
-  margin: 10px auto auto auto;                                          
-  text-align: center;                                                   
-}
+  .boks1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed;
+    margin-left: 40px;
+  }
 
+  .tekst11, .tekst2, .tekst3 {
+    font-family: "Shree Devanagari 714", serif;
+    font-size: large;
+    color: #4b2d1b;
+  }
+
+  .boks2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed;
+    margin-left: -10px;
+  }
+
+  .boks3 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed;
+    margin-left: -5px;
+  }
+
+  .item3:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center;
+
+  }
+
+  .item3:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center;
+  }
+
+  .item3:nth-of-type(3) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center;
+  }
 
   //---------------------------------VINBILLEDER WEB-------------------------------------
 
   .streg2 {
-   margin-bottom: 45px;
+    margin-bottom: 45px;
     margin-top: 152px;
-    margin-left: 450px;  
-  }                      
-
-  .flex{
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-around;
-}
-
-
-.rodvine{
-  width: 350px;
-  height: 223px;
-  margin: 100px auto 100px auto;
-  background-color: $lightbeige;  
-  @include bordergold;              
-  position: relative;             
-  z-index: 0;                     
-  text-align: center;             
-  padding-left: 80px;
-  padding-top: 15px;             
-}
-
-.vinbillede{
-  height: 380px;
-  width: auto;
-  position: absolute;
-  left: -100px;
-  z-index: 1;
-  margin-top: -88px;
-}
-
-.hvid {
-  height: 410px;
-  margin-top: -110px;
-}
-
-.ffh{
-  width: 350px;
-  margin-left: -30px;
-  margin-top: 50px;
-}
-
-.w{
-  font-family: "Shree Devanagari 714", serif;
-  font-size: 18pt;
-  font-weight: lighter;
-}
-
-.name{
-  font-size: 30pt;
-  color: $brown;
-}
-
-.CTA {
-  font-size: x-large;
-  a:link {
-    @include green;
-    text-decoration-line: none;
+    margin-left: 450px;
   }
-  a:visited {
-    @include green;
+
+  .flex {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
   }
-  a:hover {
-    @include gold;
+
+  .rodvine {
+    width: 350px;
+    height: 223px;
+    margin: 100px auto 100px auto;
+    background-color: $lightbeige;
+    @include bordergold;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    padding-left: 80px;
+    padding-top: 15px;
   }
-}
+
+  .vinbillede {
+    height: 380px;
+    width: auto;
+    position: absolute;
+    left: -100px;
+    z-index: 1;
+    margin-top: -88px;
+  }
+
+  .hvid {
+    height: 410px;
+    margin-top: -110px;
+  }
+
+  .ffh {
+    width: 350px;
+    margin-left: -30px;
+    margin-top: 50px;
+  }
+
+  .w {
+    font-family: "Shree Devanagari 714", serif;
+    font-size: 18pt;
+    font-weight: lighter;
+  }
+
+  .name {
+    font-size: 30pt;
+    color: $brown;
+  }
+
+  .CTA {
+    font-size: x-large;
+    a:link {
+      @include green;
+      text-decoration-line: none;
+    }
+    a:visited {
+      @include green;
+    }
+    a:hover {
+      @include gold;
+    }
+  }
 
   //--------------------------------3 ELEMENTER TEKST WEB------------------------------------
-.besøgos {                                                         
-  display: grid;                                                   
-  grid-template-columns: (1, 1fr);                                 
-  grid-template-rows: (3, 1fr);                                    
-  grid-gap: 2px;                                                 
-}                                                                  
-                                                                   
-.item6:nth-of-type(1) {                                            
-  grid-column: 1 / span 1;                                         
-  grid-row: 1 / span 1;                                            
-  @include bordergold;
-  width: 400px;
-  height: 350px;                                                   
-  background-color: #fff5ed;                                       
-  padding-top: 40px;
-  margin-top: -1px;
-  margin-left: 50px;
-  font-size: xx-large;                                             
-  font-family: Bagatela, serif;                                    
-  text-align: center;
-}
-
-.kontaktos {
-  @include gold;
-}
-                                                                   
-.undertekst1 {                                                     
-  font-size: x-large;                                              
-  font-family: "Shree Devanagari 714", serif;                      
-  line-height: 30px;                                               
-  color: #4b2d1b;                                                  
-}                                                                  
-                                                                   
-                                                                   
-.boks01 {                                                          
-  @include bordergold;
-  width: 220px;                                                    
-  height: 50px;                                                    
-  margin-left: 80px;
-  background-color: #f4eade;                                       
-  color: #878532;                                                  
-  font-family:Bagatela, serif;                                     
-  padding-top: 7px;                                                
-}                                                                  
-                                                                   
-                                                                   
-.item6:nth-of-type(2) {                                            
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
-  @include bordergold;
-  width: 400px;
-  height: 350px;                                                   
-  background-color: #fff5ed;                                       
-  padding-top: 40px;                                               
-  font-size: xx-large;                                             
-  font-family: Bagatela, serif;                                    
-  text-align: center;
-  color: gold;
-}
-.nyhed {
-  @include gold;
-}
-                                                                   
-.textInputbokse {
-  margin-top: 15px;                                                
-  font-size: large;                                                  
-  font-family: "Shree Devanagari 714", serif;                      
-  @include bordergold;
-  height: 40px;                                                    
-  width: 220px;                                                    
-  padding-left: 10px;                                              
-}
-                                                                   
-                                                                   
-.boks02b {                                                         
-  @include bordergold;
-  width: 220px;                                                    
-  height: 50px;                                                    
-  margin-left: 90px;
-  background-color: #f4eade;                                       
-  color: #878532;                                                  
-  font-family:Bagatela, serif;                                     
-  padding-top: 7px;                                                
-  margin-top: 8px;                                                 
-}                                                                  
-                                                                   
-                                                                   
-.undertekst2 {                                                     
-  font-size: x-large;                                              
-  font-family: "Shree Devanagari 714", serif;                      
-  line-height: 30px;                                               
-  color: #4b2d1b;                                                  
-}                                                                  
-                                                                   
-                                                                   
-.item6:nth-of-type(3) {                                            
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
-  @include bordergold;
-  width: 400px;
-  height: 350px;                                                   
-  background-color: #fff5ed;                                       
-  padding-top: 40px;                                               
-  font-size: xx-large;                                             
-  font-family: Bagatela, serif;                                    
-  text-align: center;
-  color: gold;
-}
-
-
-.forhandler {
-  @include gold;
-}
-                                                                   
-.undertekst3 {                                                     
-  font-size: x-large;                                              
-  font-family: "Shree Devanagari 714", serif;                      
-  line-height: 30px;                                               
-  color: #4b2d1b;
-  padding-bottom: 25px;
-}                                                                  
-                                                                   
-.boks03b {                                                         
-  @include bordergold;
-  width: 220px;                                                    
-  height: 50px;                                                    
-  margin-left: 90px;
-  background-color: #f4eade;                                       
-  color: #878532;
-  font-family:Bagatela, serif;                                     
-  padding-top: 7px;                                                
-  margin-top: 8px;                                                 
-}
-
-.streg1 {
- margin-bottom: 150px;
-  margin-top: 60px;
-  margin-left: 450px;
-}
-
-//--------------------------------FOOTER WEB ------------------------------------
-
-.display_web{
-  display: inline;
-  color: $darkbeige;
-  font-family: "Shree Devanagari 714", serif;
-  font-weight: lighter;
-  font-size: 16pt;
-  a{
-    color: $darkbeige;
+  .besøgos {
+    display: grid;
+    grid-template-columns: (1fr, 1fr);
+    grid-template-rows: (3fr, 1fr);
+    grid-gap: 2px;
   }
-}
 
-.footer{
-  padding: 50px;
-  margin-top: 70px;
-}
+  .item6:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    width: 400px;
+    height: 350px;
+    background-color: #fff5ed;
+    padding-top: 40px;
+    margin-top: -1px;
+    margin-left: 50px;
+    font-size: xx-large;
+    font-family: Bagatela, serif;
+    text-align: center;
+  }
 
+  .kontaktos {
+    @include gold;
+  }
 
-ul{
-  list-style-type: none;
-}
+  .undertekst1 {
+    font-size: x-large;
+    font-family: "Shree Devanagari 714", serif;
+    line-height: 30px;
+    color: #4b2d1b;
+  }
 
-.kontaktos2, .aabningstider, .voresvine, .arrangementer{
-  text-align: start;
-  margin-top: -5px;
-  line-height: 40pt;
-}
+  .boks01 {
+    @include bordergold;
+    width: 220px;
+    height: 50px;
+    margin-left: 80px;
+    background-color: #f4eade;
+    color: #878532;
+    font-family: Bagatela, serif;
+    padding-top: 7px;
+  }
 
-#linie{
-  line-height: 25pt;
-  margin-top: 10px;
-}
+  .item6:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    width: 400px;
+    height: 350px;
+    background-color: #fff5ed;
+    padding-top: 40px;
+    font-size: xx-large;
+    font-family: Bagatela, serif;
+    text-align: center;
+    color: gold;
+  }
+  .nyhed {
+    @include gold;
+  }
 
-.footertekst{
-  @include flex_center;
-  justify-content: space-between;
-  margin-top: 0;
-}
+  .textInputbokse {
+    margin-top: 15px;
+    font-size: large;
+    font-family: "Shree Devanagari 714", serif;
+    @include bordergold;
+    height: 40px;
+    width: 220px;
+    padding-left: 10px;
+  }
 
-.stregWEB{
-  width: 90%;
-  margin: 90px auto 30px auto;
-}
+  .boks02b {
+    @include bordergold;
+    width: 220px;
+    height: 50px;
+    margin-left: 90px;
+    background-color: #f4eade;
+    color: #878532;
+    font-family: Bagatela, serif;
+    padding-top: 7px;
+    margin-top: 8px;
+  }
 
-.instagram2, .facebook2, .youtube2{
-  margin: -30px auto 30px auto;
-  width: 100px;
-  color: #f4eade;
-}
+  .undertekst2 {
+    font-size: x-large;
+    font-family: "Shree Devanagari 714", serif;
+    line-height: 30px;
+    color: #4b2d1b;
+  }
 
-.overskrift_f{
-  font-size: 22pt;
+  .item6:nth-of-type(3) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    @include bordergold;
+    width: 400px;
+    height: 350px;
+    background-color: #fff5ed;
+    padding-top: 40px;
+    font-size: xx-large;
+    font-family: Bagatela, serif;
+    text-align: center;
+    color: gold;
+  }
+
+  .forhandler {
+    @include gold;
+  }
+
+  .undertekst3 {
+    font-size: x-large;
+    font-family: "Shree Devanagari 714", serif;
+    line-height: 30px;
+    color: #4b2d1b;
+    padding-bottom: 25px;
+  }
+
+  .boks03b {
+    @include bordergold;
+    width: 220px;
+    height: 50px;
+    margin-left: 90px;
+    background-color: #f4eade;
+    color: #878532;
+    font-family: Bagatela, serif;
+    padding-top: 7px;
+    margin-top: 8px;
+  }
+
+  .streg1 {
+    margin-bottom: 150px;
+    margin-top: 60px;
+    margin-left: 450px;
+  }
+
+  //--------------------------------FOOTER WEB ------------------------------------
+
+  .display_web {
+    display: inline;
+    color: $darkbeige;
+    font-family: "Shree Devanagari 714", serif;
+    font-weight: lighter;
+    font-size: 16pt;
+    a {
+      color: $darkbeige;
+    }
+  }
+
+  .footer {
+    padding: 50px;
+    margin-top: 70px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .kontaktos2, .aabningstider, .voresvine, .arrangementer {
+    text-align: start;
+    margin-top: -5px;
+    line-height: 40pt;
+  }
+
+  #linie {
+    line-height: 25pt;
+    margin-top: 10px;
+  }
+
+  .footertekst {
+    @include flex_center;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .stregWEB {
+    width: 90%;
+    margin: 90px auto 30px auto;
+  }
+
+  .instagram2, .facebook2, .youtube2 {
+    margin: -30px auto 30px auto;
+    width: 100px;
+    color: #f4eade;
+  }
+
+  .overskrift_f {
+    font-size: 22pt;
+  }
+
 }
 
 

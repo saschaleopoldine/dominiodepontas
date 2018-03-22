@@ -3,7 +3,7 @@
   overflow: hidden;
   text-transform: capitalize;
   text-align: center;
-  font: 15px/1em inherit;
+  font-size: 15px;
   color: #4b2d1b;
   margin: 0 70px 50px 70px }
   .calendar a {
