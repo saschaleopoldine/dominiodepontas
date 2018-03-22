@@ -12,16 +12,16 @@ body {
   display: none; }
 
 .baggrundsbillede {
-  width: 585px;
-  height: 450px;
+  width: 375px;
+  height: 200px;
   background-image: url("../Image/mobil_baggrund.jpg");
   background-size: cover;
   padding-bottom: 20px;
   position: absolute; }
 
 .header {
-  width: 585px;
-  height: 450px;
+  width: 375px;
+  height: 200px;
   background-color: rgba(75, 45, 27, 0.7); }
 
 .fa-bars {
@@ -29,16 +29,17 @@ body {
   background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 40pt;
+  font-size: 20pt;
   margin-left: 85%;
-  margin-top: 40px; }
+  margin-top: 20px; }
 
 .logomobil {
-  margin: -30px auto 40px auto;
-  padding-bottom: 40px; }
+  margin: -20px auto 40px auto;
+  padding-bottom: 40px;
+  width: 45%; }
 
 #menubaggrund {
-  width: 585px;
+  width: 375px;
   height: 100vh;
   background-color: rgba(75, 45, 27, 0.98);
   display: none;
@@ -73,17 +74,16 @@ body {
 .mobilcta {
   color: #4b2d1b;
   font-family: "Shree Devanagari 714", serif;
-  font-size: large;
+  font-size: medium;
   font-weight: bolder;
-  margin-left: 150px;
   text-align: center;
-  padding-top: 500px;
+  padding-top: 260px;
   line-height: 22px; }
 
 .mobilcta2 {
   color: #878532;
   font-family: Bagatela, serif;
-  font-size: xx-large;
+  font-size: 18pt;
   text-align: center;
   margin-top: 20px; }
 
@@ -134,7 +134,7 @@ hr {
   font-size: small; }
 
 .bokskvinde, .boksmand {
-  border: thin solid black;
+  border: solid thin #fff5ed;
   width: 80px;
   height: 25px;
   background-color: #f4eade;
@@ -142,13 +142,14 @@ hr {
   font-size: small;
   text-align: center;
   padding: 2px; }
-  .bokskvinde a:link, .boksmand a:link {
-    color: black;
+  .bokskvinde a, .boksmand a {
+    color: #4b2d1b;
     text-decoration-line: none; }
-  .bokskvinde a:visited, .boksmand a:visited {
-    color: black; }
   .bokskvinde a:hover, .boksmand a:hover {
-    color: gold; }
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .mand {
   margin-top: -25px;
@@ -156,8 +157,8 @@ hr {
 
 .kontaktop {
   display: grid;
-  grid-template-columns: 2fr, 1fr;
-  grid-template-rows: 5fr, 1fr;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 5, 1fr;
   grid-gap: 30px;
   margin-top: -20px;
   font-family: "Shree Devanagari 714", serif;
@@ -165,17 +166,20 @@ hr {
 
 .item8:nth-of-type(1) {
   grid-column: 1 / span 1;
-  grid-row: 2 / span 1; }
+  grid-row: 2 / span 1;
+  margin-top: -20px; }
 
 .textInput {
   height: 40px;
   width: 140px;
   font-size: medium;
-  font-family: "Shree Devanagari 714", serif; }
+  font-family: "Shree Devanagari 714", serif;
+  border: solid thin #f4eade; }
 
 .item8:nth-of-type(2) {
   grid-column: 2 / span 1;
-  grid-row: 2 / span 1; }
+  grid-row: 2 / span 1;
+  margin-top: -20px; }
 
 .item8:nth-of-type(3) {
   grid-column: 1 / span 1;
@@ -196,33 +200,37 @@ hr {
 .item8:nth-of-type(7) {
   grid-column: 1 / span 1;
   grid-row: 6 / span 1;
-  border: thin solid black;
+  background-color: #878532;
+  border-radius: 3px;
   height: 40px;
-  width: 140px;
+  width: 100px;
   text-align: center;
-  padding-top: 12px;
-  font-size: medium; }
-  .item8:nth-of-type(7) a:link {
-    color: black;
+  padding-top: 11px;
+  font-size: medium;
+  margin-top: -40px; }
+  .item8:nth-of-type(7) a {
+    color: #4b2d1b;
     text-decoration-line: none; }
-  .item8:nth-of-type(7) a:visited {
-    color: black; }
   .item8:nth-of-type(7) a:hover {
-    color: gold; }
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .luksiden {
   font-size: medium; }
-  .luksiden a:link {
-    color: black; }
-  .luksiden a:visited {
-    color: black; }
+  .luksiden a {
+    color: #4b2d1b; }
   .luksiden a:hover {
-    color: gold; }
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .popup {
   width: 100%;
   height: 100%;
-  z-index: 12;
+  z-index: 100;
   display: none;
   position: fixed;
   top: 0;
@@ -231,8 +239,8 @@ hr {
 
 /* Inner */
 .popup-inner {
-  width: 400px;
-  height: 700px;
+  width: 350px;
+  height: 625px;
   padding: 20px;
   position: absolute;
   top: 50%;
@@ -241,7 +249,7 @@ hr {
   transform: translate(-50%, -50%);
   border-radius: 3px;
   box-shadow: 0 2px 6px black;
-  background: #fff; }
+  background: #fff5ed; }
 
 /* Close Button */
 .closebutton {
@@ -255,13 +263,13 @@ hr {
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   border-radius: 1000px;
-  background: black;
+  background-color: #4b2d1b;
   text-decoration-line: none;
   font-family: Bagatela, serif;
   font-size: 20px;
   text-align: center;
   line-height: 100%;
-  color: #fff; }
+  color: #f4eade; }
 
 .popup-close:hover {
   color: #878532;
@@ -269,12 +277,11 @@ hr {
 
 .billedebokse {
   display: grid;
-  grid-template-columns: 3fr, 1fr;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 3fr, 1fr;
   justify-content: space-between;
   grid-gap: 100px;
-  padding-left: 95px;
-  margin-top: 40px;
+  margin: 20px;
   position: relative;
   z-index: 0; }
 
@@ -301,7 +308,7 @@ hr {
   position: absolute;
   z-index: 1;
   margin-top: -860px;
-  padding-left: 24%; }
+  padding-left: 40px; }
 
 .boks1 {
   grid-column: 1 / span 1;
@@ -447,13 +454,13 @@ hr {
   -webkit-text-fill-color: transparent; }
 
 .streg2 {
-  width: 453px;
+  width: 375px;
   margin-top: 150px;
-  padding-left: 100px; }
+  padding-left: 20px; }
 
 .rodvine, .hvidvine, .rosevine {
-  width: 486px;
-  height: 316px;
+  width: 370px;
+  height: 310px;
   background-color: #fff5ed;
   border-left: 2px solid #e4c982;
   border-right: 2px solid #9d7f3f;
@@ -490,8 +497,8 @@ hr {
   margin-top: 50px; }
 
 .ffh {
-  width: 350px;
-  margin-left: 35px;
+  width: 200px;
+  margin-left: 20px;
   margin-top: 70px; }
   .ffh a {
     color: #4b2d1b;
@@ -515,10 +522,10 @@ hr {
   font-size: 35pt; }
 
 .streg1 {
-  width: 453px;
-  margin-top: 120px;
-  margin-bottom: 120px;
-  padding-left: 100px; }
+  width: 375px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  padding-left: 20px; }
 
 .besøgos {
   display: grid;
@@ -541,7 +548,7 @@ hr {
   background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
-  width: 572px;
+  width: 375px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -577,7 +584,7 @@ hr {
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family: Bagatela, serif;
@@ -598,7 +605,7 @@ hr {
   background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
-  width: 572px;
+  width: 375px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -647,7 +654,7 @@ hr {
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family: Bagatela, serif;
@@ -673,7 +680,7 @@ hr {
   height: 40px;
   width: 220px;
   padding-left: 10px;
-  margin-left: 25px; }
+  margin-left: 20px; }
 
 .undertekst2 {
   font-size: x-large;
@@ -696,7 +703,7 @@ hr {
   background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
-  width: 572px;
+  width: 375px;
   height: 350px;
   background-color: #fff5ed;
   padding-top: 40px;
@@ -731,7 +738,7 @@ hr {
   background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
   width: 220px;
   height: 50px;
-  margin-left: 170px;
+  margin-left: 75px;
   background-color: #f4eade;
   color: #878532;
   font-family: Bagatela, serif;
@@ -798,7 +805,784 @@ img {
   max-width: 100%;
   height: auto; }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .baggrundsbillede {
+    width: 768px;
+    height: 400px;
+    background-image: url("../Image/mobil_baggrund.jpg");
+    background-size: cover;
+    padding-bottom: 20px;
+    position: absolute; }
+
+  .header {
+    width: 768px;
+    height: 400px;
+    background-color: rgba(75, 45, 27, 0.7); }
+
+  .fa-bars {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30pt;
+    margin-left: 85%;
+    margin-top: 40px; }
+
+  .logomobil {
+    margin: -20px auto 40px auto;
+    padding-bottom: 40px;
+    width: 45%; }
+
+  #menubaggrund {
+    width: 768px;
+    height: 100vh;
+    background-color: rgba(75, 45, 27, 0.98);
+    display: none;
+    padding-top: 225px;
+    padding-bottom: 60%;
+    z-index: 5;
+    position: absolute; }
+
+  .fa-times {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40pt;
+    z-index: 3;
+    position: absolute;
+    margin-left: 38%;
+    margin-top: -190px; }
+
+  #menubaggrund li {
+    padding-bottom: 30px;
+    font-size: 25pt;
+    text-align: center;
+    list-style: none; }
+    #menubaggrund li a {
+      text-decoration: none;
+      background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+  .mobilcta {
+    color: #4b2d1b;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: 16pt;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 470px;
+    line-height: 22px; }
+
+  .mobilcta2 {
+    color: #878532;
+    font-family: Bagatela, serif;
+    font-size: 25pt;
+    text-align: center;
+    margin-top: 50px; }
+
+  a:link {
+    color: #878532;
+    text-decoration-line: none; }
+
+  a:visited {
+    color: #878532; }
+
+  a:hover {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+  .email {
+    margin-top: 200px; }
+
+  .knappen {
+    margin-top: -10px; }
+    .knappen a:link {
+      color: #878532;
+      text-decoration-line: none; }
+    .knappen a:visited {
+      color: #878532; }
+    .knappen a:hover {
+      color: gold; }
+
+  h2 {
+    font-size: larger;
+    text-align: center;
+    font-family: Bagatela, serif;
+    color: #4b2d1b; }
+
+  hr {
+    margin-top: -15px; }
+
+  .tekst1 {
+    text-align: left;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+    line-height: 17px;
+    color: #4b2d1b; }
+
+  .titel1 {
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small; }
+
+  .bokskvinde, .boksmand {
+    border: solid thin #fff5ed;
+    width: 80px;
+    height: 25px;
+    background-color: #f4eade;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small;
+    text-align: center;
+    padding: 2px; }
+    .bokskvinde a, .boksmand a {
+      color: #4b2d1b;
+      text-decoration-line: none; }
+    .bokskvinde a:hover, .boksmand a:hover {
+      background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+  .mand {
+    margin-top: -25px;
+    margin-left: 90px; }
+
+  .kontaktop {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 5, 1fr;
+    grid-gap: 30px;
+    margin-top: -20px;
+    font-family: "Shree Devanagari 714", serif;
+    font-size: small; }
+
+  .item8:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin-top: -20px; }
+
+  .textInput {
+    height: 40px;
+    width: 140px;
+    font-size: medium;
+    font-family: "Shree Devanagari 714", serif;
+    border: solid thin #f4eade; }
+
+  .item8:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    margin-top: -20px; }
+
+  .item8:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1; }
+
+  .item8:nth-of-type(4) {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1; }
+
+  .item8:nth-of-type(5) {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1; }
+
+  .item8:nth-of-type(6) {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1; }
+
+  .item8:nth-of-type(7) {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    background-color: #878532;
+    border-radius: 3px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    padding-top: 11px;
+    font-size: medium;
+    margin-top: -40px; }
+    .item8:nth-of-type(7) a {
+      color: #4b2d1b;
+      text-decoration-line: none; }
+    .item8:nth-of-type(7) a:hover {
+      background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+  .luksiden {
+    font-size: medium; }
+    .luksiden a {
+      color: #4b2d1b; }
+    .luksiden a:hover {
+      background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+  .popup {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75); }
+
+  /* Inner */
+  .popup-inner {
+    width: 350px;
+    height: 625px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    box-shadow: 0 2px 6px black;
+    background: #fff5ed; }
+
+  /* Close Button */
+  .closebutton {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    border-radius: 1000px;
+    background-color: #4b2d1b;
+    text-decoration-line: none;
+    font-family: Bagatela, serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100%;
+    color: #f4eade; }
+
+  .popup-close:hover {
+    color: #878532;
+    text-decoration-line: none; }
+
+  .billedebokse {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 3fr, 1fr;
+    justify-content: space-between;
+    grid-gap: 100px;
+    padding-left: 150px;
+    padding-top: 40px;
+    position: relative;
+    z-index: 0; }
+
+  .item2:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1; }
+
+  .item2:nth-of-type(2) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1; }
+
+  .item2:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1; }
+
+  .billedforan {
+    display: grid;
+    grid-template-columns: 3fr, 1fr;
+    grid-template-rows: 7fr, 1fr;
+    grid-gap: 70px;
+    justify-content: space-between;
+    font-family: Bagatela, serif;
+    font-size: larger;
+    position: absolute;
+    z-index: 1;
+    margin-top: -860px;
+    padding-left: 210px; }
+
+  .boks1 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed; }
+
+  .tekst11, .tekst2, .tekst3 {
+    font-family: "Shree Devanagari 714", serif;
+    font-size: large;
+    color: #4b2d1b; }
+
+  .boks2 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed; }
+
+  .boks3 {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    height: 172px;
+    width: 290px;
+    background-color: #fff5ed; }
+
+  .item3:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center; }
+
+  .rund {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+  .item3:nth-of-type(2) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center; }
+
+  .vin {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+  .item3:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    height: 148px;
+    width: 264px;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    text-align: center; }
+
+  .events {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+  .streg2 {
+    width: 500px;
+    margin-top: 160px;
+    padding-left: 150px; }
+
+  .rodvine, .hvidvine, .rosevine {
+    width: 620px;
+    height: 310px;
+    background-color: #fff5ed;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    margin: 200px auto 200px auto;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    padding-left: 85px;
+    padding-top: 50px; }
+
+  .vinbillede {
+    height: 480px;
+    width: auto;
+    position: absolute;
+    left: -120px;
+    z-index: 1;
+    margin-top: -120px; }
+
+  .hvid, .rose {
+    height: 550px;
+    margin-top: -170px; }
+
+  #rodvin {
+    margin-top: 50px; }
+
+  .ffh {
+    margin-left: 190px;
+    margin-top: 70px;
+    font-size: 20pt; }
+    .ffh a {
+      color: #4b2d1b;
+      text-decoration: none; }
+    .ffh a:hover {
+      color: #878532; }
+
+  .speciel_tekst {
+    width: 325px;
+    margin-left: 45px; }
+
+  .speciel_cta {
+    margin-top: 30px; }
+
+  .w {
+    font-family: "Shree Devanagari 714", serif;
+    font-size: 20pt;
+    font-weight: lighter; }
+
+  .name {
+    font-size: 40pt; }
+
+  .streg1 {
+    width: 500px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-left: 200px; }
+
+  .besøgos {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 3fr, 1fr;
+    grid-gap: 20px; }
+
+  .item6:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    width: 768px;
+    height: 400px;
+    background-color: #fff5ed;
+    padding-top: 40px;
+    margin-top: 40px;
+    font-size: 40pt;
+    font-family: Bagatela, serif;
+    text-align: center; }
+
+  .kontaktos {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+  .undertekst1 {
+    font-size: x-large;
+    font-family: "Shree Devanagari 714", serif;
+    line-height: 30px;
+    color: #4b2d1b; }
+
+  .boks01 {
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    width: 220px;
+    height: 50px;
+    margin-left: 270px;
+    background-color: #f4eade;
+    color: #878532;
+    font-size: 20pt;
+    font-family: Bagatela, serif;
+    padding-top: 7px; }
+
+  .item6:nth-of-type(2) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    width: 768px;
+    height: 400px;
+    background-color: #fff5ed;
+    padding-top: 40px;
+    font-size: 40pt;
+    font-family: Bagatela, serif;
+    text-align: center; }
+
+  .nyhed {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+  .bokse {
+    margin-top: 15px;
+    font-size: large;
+    font-family: "Shree Devanagari 714", serif;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    height: 40px;
+    width: 220px;
+    padding-left: 10px; }
+
+  .boks02b {
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    width: 220px;
+    height: 50px;
+    margin-left: 270px;
+    background-color: #f4eade;
+    color: #878532;
+    font-family: Bagatela, serif;
+    padding-top: 7px;
+    margin-top: 8px;
+    font-size: 20pt; }
+
+  .textInputbokse {
+    margin-top: 15px;
+    font-size: 10pt;
+    font-family: "Shree Devanagari 714", serif;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    height: 40px;
+    width: 220px;
+    padding-left: 10px;
+    margin-left: 2px; }
+
+  .undertekst2 {
+    font-size: x-large;
+    font-family: "Shree Devanagari 714", serif;
+    line-height: 30px;
+    color: #4b2d1b; }
+
+  .item6:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    width: 768px;
+    height: 400px;
+    background-color: #fff5ed;
+    padding-top: 40px;
+    font-size: 40pt;
+    font-family: Bagatela, serif;
+    text-align: center; }
+
+  .forhandler {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+  .undertekst3 {
+    font-size: x-large;
+    font-family: "Shree Devanagari 714", serif;
+    line-height: 30px;
+    color: #4b2d1b; }
+
+  .boks03b {
+    border-left: 2px solid #e4c982;
+    border-right: 2px solid #9d7f3f;
+    border-radius: 5px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 2px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -webkit-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -moz-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -moz-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: -o-linear-gradient(left, #e4c982 30%, #9d7f3f 80%), -o-linear-gradient(left, #e4c982 50%, #9d7f3f 80%);
+    background-image: linear-gradient(to right, #e4c982 -20%, #9d7f3f 80%), linear-gradient(to right, #e4c982 50%, #9d7f3f 80%);
+    width: 220px;
+    height: 50px;
+    margin-left: 270px;
+    background-color: #f4eade;
+    color: #878532;
+    font-family: Bagatela, serif;
+    padding-top: 7px;
+    margin-top: 8px;
+    font-size: 20pt; }
+
+  .footer {
+    background-color: #4b2d1b;
+    padding: 5px 15px 15px 15px;
+    margin-top: 20px;
+    width: 768px; }
+
+  .display_web {
+    display: none; }
+
+  .footertekst, .aabningstider, .voresvine, .arrangementer {
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 30px; }
+
+  .overskrift_f {
+    background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+  .stregWEB {
+    margin-top: 100px;
+    z-index: 2;
+    width: 100%; }
+
+  .socialemedier {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+    margin-top: -35px; }
+
+  .fa-instagram, .fa-facebook-square, .fa-youtube {
+    background-color: #4b2d1b;
+    width: 60px;
+    text-align: center;
+    color: #f4eade;
+    margin-bottom: 20px; } }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .baggrundsbillede, .vinelementer, .vintekst {
     display: none; }
 
@@ -1070,7 +1854,7 @@ img {
     z-index: 4;
     font-weight: bolder;
     text-align: left;
-    font-family: "Shree Devanagari 714",serif;
+    font-family: "Shree Devanagari 714", serif;
     background: -webkit-linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
     background: linear-gradient(#dcc17a, #a18348, #e4c981, #9d7f3f);
     -webkit-background-clip: text;
